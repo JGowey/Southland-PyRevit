@@ -1,0 +1,11 @@
+title:
+  en_us: Family Parameter Editor
+tooltip:
+  en_us:
+    Browse and edit Family Parameters inside an RFA.
+    View Name, Kind, Modifiable, Value, and Formula.
+    Edit values and formulas with sorting and grid view.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

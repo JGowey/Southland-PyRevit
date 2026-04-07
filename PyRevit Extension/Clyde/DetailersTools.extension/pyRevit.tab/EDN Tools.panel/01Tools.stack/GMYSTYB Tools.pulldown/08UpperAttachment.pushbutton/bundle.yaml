@@ -1,0 +1,54 @@
+title: Upper Attachment
+tooltip: |
+  Move RFA hanger rod-top elevations to follow a sloped structural
+  member or model line -- so rod lengths stay correct along a run that
+  drops or rises with the structure.
+
+  WHAT IT WRITES:
+    Top Offset (FAMILY_TOP_LEVEL_OFFSET_PARAM) on each hanger family
+    instance. This is the parameter Revit moves when you manually type
+    a value into "Top Offset" in the Properties panel. The tool projects
+    each hanger's XY position onto the slope line, interpolates the Z
+    elevation at that point, then writes the level-relative offset needed
+    to place the hanger's insertion point at that Z.
+
+    NOTE: Base Offset is intentionally NOT written. SI_Tools monitors
+    Base Offset and posts a blocking confirmation dialog; writing to
+    Top Offset achieves the same result without triggering that dialog.
+
+  SI_TOOLS WARNING:
+    If SI_Tools is active on your machine, it may still post a warning
+    dialog when Top Offset goes non-zero: "Some hangers have been
+    modified to have a non-zero value in Top Offset or Base Offset..."
+    The tool handles this automatically with an Alt+Y keypress on a
+    background thread -- just let the transaction complete.
+
+  HANGERS OUTSIDE THE SLOPE EXTENT:
+    Hangers whose XY projection falls beyond either endpoint of the
+    model line are skipped and listed in the output panel. Move them
+    within the line's range and re-run, or adjust their elevation manually.
+
+  WORKFLOW:
+    1. Select the RFA hanger family instances to update (Generic Model
+       families). Pre-selection supported.
+    2. Run the tool.
+    3. When prompted, click the sloped model line that defines the
+       structural slope (must be a Model Line, not a Detail Line).
+    4. The tool reports how many hangers were updated, how many were
+       skipped (outside extent), and the slope angle detected.
+    5. All writes are in a single undoable transaction.
+
+  TIP: Used together with Hanger Sync Plus (Lower Attachment tab), this
+  tool completes the full hanger coordination workflow -- Lower Attachment
+  sets BOH elevations from the duct/pipe, Upper Attachment sets rod-top
+  elevations from the structure.
+
+author: Jeremiah Griffith
+order: 13
+script: script.py
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

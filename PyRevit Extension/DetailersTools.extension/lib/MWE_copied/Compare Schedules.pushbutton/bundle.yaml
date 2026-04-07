@@ -1,0 +1,27 @@
+title: Compare Schedules
+tooltip: |
+  Analyzes and compares the definitions of two or more Revit schedules.
+
+  How it works:
+  1. You will be prompted to select two or more schedules from a list of all schedules in the current model.
+  2. Next, you can choose which specific aspects of the schedules to analyze:
+     - Fields
+     - Filters
+     - Sorting/Grouping rules
+     - Field Formatting overrides
+     - Appearance settings (e.g., Show Title, Show Headers)
+  3. Finally, select a comparison mode: show only the differences, only the similarities, or a complete side-by-side view.
+
+  The tool generates a detailed report comparing the selected aspects of the schedules. It also gives you the option to export the full comparison data to a CSV file for documentation or further review.
+order: 04
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: !!file version.txt
+author: Jeremiah Griffith
+highlight: dark
+engine:
+  name: ipy          # fastest cold start (IronPython). Change to python3 if you must.
+  clean: true        # start each run with a clean global scope
+  persistence: true  # 🔥 keep the engine alive between runs (instant subsequent prompts)
+

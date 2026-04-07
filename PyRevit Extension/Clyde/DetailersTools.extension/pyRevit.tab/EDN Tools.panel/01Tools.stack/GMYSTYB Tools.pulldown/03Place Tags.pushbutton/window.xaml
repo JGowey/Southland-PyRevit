@@ -1,0 +1,523 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Place Tags"
+    Width="1050" Height="920"
+    WindowStartupLocation="CenterScreen"
+    Background="#F5F7FB"
+    FontFamily="Segoe UI"
+    FontSize="13"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True">
+
+    <!-- ========= THEME & STYLES ========= -->
+    <Window.Resources>
+        <!-- Palette -->
+        <Color x:Key="ColBg">#F5F7FB</Color>
+        <Color x:Key="ColCard">#FFFFFFFF</Color>
+        <Color x:Key="ColStroke">#E5E8F0</Color>
+        <Color x:Key="ColText">#1F2937</Color>
+        <Color x:Key="ColSubtle">#6B7280</Color>
+        <Color x:Key="ColAccent">#2563EB</Color>
+        <Color x:Key="ColSuccess">#10B981</Color>
+        
+        <SolidColorBrush x:Key="BrushBg" Color="{StaticResource ColBg}"/>
+        <SolidColorBrush x:Key="BrushCard" Color="{StaticResource ColCard}"/>
+        <SolidColorBrush x:Key="BrushStroke" Color="{StaticResource ColStroke}"/>
+        <SolidColorBrush x:Key="BrushText" Color="{StaticResource ColText}"/>
+        <SolidColorBrush x:Key="BrushSubtle" Color="{StaticResource ColSubtle}"/>
+        <SolidColorBrush x:Key="BrushAccent" Color="{StaticResource ColAccent}"/>
+        <SolidColorBrush x:Key="BrushSuccess" Color="{StaticResource ColSuccess}"/>
+
+        <!-- Tooltip Styles -->
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Background" Value="#A0AEC0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="6,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Text" Value="?"/>
+        </Style>
+
+        <!-- Buttons -->
+        <Style x:Key="GhostButton" TargetType="Button">
+            <Setter Property="Foreground" Value="{StaticResource BrushText}"/>
+            <Setter Property="Background" Value="{StaticResource BrushCard}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BrushStroke}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#C9CFDA"/>
+                                <Setter Property="Background" Value="#FFFDFEFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="AccentButton" TargetType="Button" BasedOn="{StaticResource GhostButton}">
+            <Setter Property="Background" Value="#EDF2FE"/>
+            <Setter Property="BorderBrush" Value="#CBD7FB"/>
+            <Setter Property="Foreground" Value="{StaticResource BrushAccent}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="SuccessButton" TargetType="Button" BasedOn="{StaticResource GhostButton}">
+            <Setter Property="Background" Value="#ECFDF5"/>
+            <Setter Property="BorderBrush" Value="#A7F3D0"/>
+            <Setter Property="Foreground" Value="{StaticResource BrushSuccess}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <!-- Card container -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource BrushCard}"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BrushStroke}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="16"/>
+            <Setter Property="Margin" Value="0,0,0,16"/>
+        </Style>
+
+        <!-- DataGrid -->
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value="{StaticResource BrushCard}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BrushStroke}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowBackground" Value="#FFFFFFFF"/>
+            <Setter Property="AlternatingRowBackground" Value="#FAFBFF"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#EEF1F7"/>
+            <Setter Property="ColumnHeaderHeight" Value="36"/>
+            <Setter Property="RowHeight" Value="34"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#F3F5FA"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BrushStroke}"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="Foreground" Value="{StaticResource BrushSubtle}"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <!-- Link-like cells for Grid -->
+        <Style x:Key="LinkCellText" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding State}" Value="link">
+                    <Setter Property="Foreground" Value="{StaticResource BrushAccent}"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding State}" Value="error">
+                    <Setter Property="Foreground" Value="#DC2626"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="Text" Value="[Click to Assign]"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <!-- ========= LAYOUT ========= -->
+    <Grid Background="{StaticResource BrushBg}" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- HEADER -->
+        <DockPanel Grid.Row="0" Margin="0,0,0,20">
+            <StackPanel DockPanel.Dock="Left" VerticalAlignment="Center">
+                <TextBlock Text="Place Tags" FontSize="24" FontWeight="Bold" Foreground="{StaticResource BrushText}"/>
+                <TextBlock Text="Multi-Category Annotation" FontSize="14" Foreground="{StaticResource BrushSubtle}" Margin="0,2,0,0"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" VerticalAlignment="Center">
+                <CheckBox x:Name="IncludeNestedChk" 
+                          Content="Include Nested Families" 
+                          VerticalAlignment="Center"
+                          Margin="0,0,15,0"
+                          IsChecked="True"
+                          ToolTip="When enabled, selecting a host family will also include its nested family instances."/>
+                <CheckBox x:Name="SkipTaggedChk"
+                          Content="Skip Already Tagged"
+                          VerticalAlignment="Center"
+                          Margin="0,0,15,0"
+                          IsChecked="True"
+                          ToolTip="When enabled, elements that already have a tag in the active view are skipped. Prevents duplicates on reruns."/>
+                <Button x:Name="SelectElementsBtn" 
+                        Style="{StaticResource AccentButton}" 
+                        Content="Select Elements in Revit" 
+                        Height="36"
+                        FontSize="14"
+                        Padding="20,0"
+                        Click="OnSelectElements"/>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- MAIN CONTENT -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="340"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- LEFT COL: SETTINGS -->
+            <StackPanel Grid.Column="0">
+                
+                <!-- PROFILE CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                            <TextBlock Text="Placement Profile" FontWeight="SemiBold" Foreground="{StaticResource BrushSubtle}"/>
+                            <!-- Tooltip -->
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <ToolTip Content="Save and load your tag settings (Offsets, Rotation, Leader) for reuse."/>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+                        
+                        <ComboBox x:Name="ProfileCombo" Margin="0,0,0,10" Padding="6" Height="30" SelectionChanged="OnProfileChanged"/>
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox x:Name="ProfileNameBox" Margin="0,0,8,0" Padding="6" VerticalContentAlignment="Center" ToolTip="Enter name to save"/>
+                            <Button x:Name="SaveProfileBtn" Grid.Column="1" Style="{StaticResource GhostButton}" Content="Save As" Padding="12,6" Click="OnSaveProfile"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <!-- OFFSETS CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                            <TextBlock Text="Offsets (Inches)" FontWeight="SemiBold" Foreground="{StaticResource BrushSubtle}"/>
+                            <!-- Tooltip -->
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <ToolTip>
+                                        <TextBlock>
+                                            <Run FontWeight="Bold">Up/Down:</Run> Distance perpendicular to the element's direction.
+                                            <LineBreak/>
+                                            <Run FontWeight="Bold">Along:</Run> Distance parallel to the element's direction.
+                                        </TextBlock>
+                                    </ToolTip>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+                        
+                        <Grid Margin="0,0,0,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Up/Down:" VerticalAlignment="Center"/>
+                            <!-- Renamed x:Name for consistency with python access -->
+                            <TextBox x:Name="OffsetUpDownBox" Grid.Column="1" Text="12" Padding="6" VerticalContentAlignment="Center"/>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Along:" VerticalAlignment="Center"/>
+                            <TextBox x:Name="OffsetAlongBox" Grid.Column="1" Text="0" Padding="6" VerticalContentAlignment="Center"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <!-- ROTATION CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                            <TextBlock Text="Orientation" FontWeight="SemiBold" Foreground="{StaticResource BrushSubtle}"/>
+                            <!-- Tooltip -->
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <ToolTip>
+                                        <TextBlock>
+                                            <Run FontWeight="Bold">In-Line:</Run> Aligns tag with the element's curve.
+                                            <LineBreak/>
+                                            <Run FontWeight="Bold">Horizontal:</Run> Forces tag to be horizontal on sheet.
+                                            <LineBreak/>
+                                            <Run FontWeight="Bold">Extra Angle:</Run> Adds rotation on top of the selected mode.
+                                            <LineBreak/><LineBreak/>
+                                            <Run FontWeight="Bold">Leader Options:</Run>
+                                            <LineBreak/>• <Run FontWeight="Bold">None:</Run> No leader line
+                                            <LineBreak/>• <Run FontWeight="Bold">Attached End:</Run> Leader arrow snaps to element
+                                            <LineBreak/>• <Run FontWeight="Bold">Free End:</Run> Leader arrow positioned freely
+                                            <LineBreak/><LineBreak/>
+                                            <Run FontWeight="Bold">Shoulder:</Run> Horizontal distance to elbow. Auto-directs toward element.
+                                        </TextBlock>
+                                    </ToolTip>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+
+                        <ComboBox x:Name="RotationCombo" Margin="0,0,0,10" Padding="6" Height="30"/>
+                        
+                        <Grid Margin="0,0,0,12">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Extra Angle:" VerticalAlignment="Center"/>
+                            <TextBox x:Name="ExtraAngleBox" Grid.Column="1" Text="0" Padding="6" VerticalContentAlignment="Center"/>
+                        </Grid>
+
+                        <Grid Margin="0,0,0,8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Leader:" VerticalAlignment="Center"/>
+                            <ComboBox x:Name="LeaderCombo" Grid.Column="1" Padding="6" Height="30" SelectionChanged="OnLeaderChanged"/>
+                        </Grid>
+                        
+                        <!-- Leader Offset Panel (hidden by default) -->
+                        <StackPanel x:Name="LeaderOffsetPanel" Visibility="Collapsed">
+                            <TextBlock Text="Leader Shape (Inches)" FontSize="11" Foreground="{StaticResource BrushSubtle}" Margin="0,0,0,6"/>
+                            <Grid Margin="0,0,0,6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="Shoulder:" VerticalAlignment="Center"
+                                           ToolTip="Length of the first leader leg (parallel to the tag/content axis), in inches."/>
+                                <TextBox x:Name="ElbowXBox" Grid.Column="1" Text="0" Padding="6" VerticalContentAlignment="Center"
+                                         ToolTip="Length of the first leader leg (parallel to the tag/content axis), in inches. Set to 0 for auto (natural projection)."/>
+                            </Grid>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+
+            </StackPanel>
+
+            <!-- RIGHT COL: TAG MAPPING + DESELECT -->
+            <StackPanel Grid.Column="2">
+                <!-- TAG CONFIGURATION -->
+                <Border Style="{StaticResource Card}" Padding="0" Height="350">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Border BorderBrush="{StaticResource BrushStroke}" BorderThickness="0,0,0,1" Padding="16,12" Background="#FAFAFC" CornerRadius="10,10,0,0">
+                            <DockPanel>
+                                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                                    <TextBlock Text="Tag Configuration" FontWeight="Bold" Foreground="{StaticResource BrushText}" VerticalAlignment="Center"/>
+                                    <!-- Tooltip -->
+                                    <Border Style="{StaticResource TooltipIcon}">
+                                        <Border.ToolTip>
+                                            <ToolTip Content="Double-click a row to choose a different tag family for that category."/>
+                                        </Border.ToolTip>
+                                        <TextBlock Style="{StaticResource TooltipText}"/>
+                                    </Border>
+                                 </StackPanel>
+                                 
+                                 <TextBlock DockPanel.Dock="Right" Text="Double-click rows to edit" FontStyle="Italic" Foreground="{StaticResource BrushSubtle}" FontSize="11" VerticalAlignment="Center"/>
+                            </DockPanel>
+                        </Border>
+                        
+                        <DataGrid x:Name="MemberGrid" Grid.Row="1" BorderThickness="0" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="2*">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="Padding" Value="12,0"/>
+                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <DataGridTextColumn Header="Count" Binding="{Binding Count}" Width="0.7*">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            <Setter Property="Foreground" Value="{StaticResource BrushSubtle}"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                
+                                <DataGridTextColumn Header="Assigned Tag" Binding="{Binding TagName}" Width="3*">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock" BasedOn="{StaticResource LinkCellText}"/>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Border>
+
+                <!-- DESELECT ELEMENTS CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            <TextBlock Text="Deselect Elements" FontWeight="SemiBold" Foreground="{StaticResource BrushSubtle}"/>
+                            <!-- Tooltip -->
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <ToolTip>
+                                        <TextBlock MaxWidth="280" TextWrapping="Wrap">
+                                            Remove elements from the selection.
+                                            <LineBreak/><LineBreak/>
+                                            <Run FontWeight="Bold">Deselect By:</Run>
+                                            <LineBreak/>• <Run FontWeight="Bold">Individual</Run> - Remove specific elements
+                                            <LineBreak/>• <Run FontWeight="Bold">Category</Run> - Remove by category
+                                            <LineBreak/>• <Run FontWeight="Bold">Family</Run> - Remove by family
+                                            <LineBreak/>• <Run FontWeight="Bold">Type</Run> - Remove by type
+                                            <LineBreak/>• <Run FontWeight="Bold">Tagged</Run> - Shows only already-tagged elements for selective removal
+                                        </TextBlock>
+                                    </ToolTip>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+                        
+                        <!-- Deselect Mode Radio Buttons -->
+                        <Grid Margin="0,0,0,8">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Deselect by:" VerticalAlignment="Top" Margin="0,2,10,0"/>
+                            
+                            <Grid Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <RadioButton x:Name="DeselectIndividualRadio" 
+                                           Grid.Column="0"
+                                           Content="Individual" 
+                                           GroupName="DeselectMode"
+                                           Margin="0,0,15,0"
+                                           Checked="OnDeselectModeChanged"/>
+                                <RadioButton x:Name="DeselectCategoryRadio" 
+                                           Grid.Column="1"
+                                           Content="Category" 
+                                           GroupName="DeselectMode"
+                                           IsChecked="True"
+                                           Margin="0,0,15,0"
+                                           Checked="OnDeselectModeChanged"/>
+                                <RadioButton x:Name="DeselectFamilyRadio" 
+                                           Grid.Column="2"
+                                           Content="Family" 
+                                           GroupName="DeselectMode"
+                                           Margin="0,0,15,0"
+                                           Checked="OnDeselectModeChanged"/>
+                                <RadioButton x:Name="DeselectTypeRadio" 
+                                           Grid.Column="3"
+                                           Content="Type" 
+                                           GroupName="DeselectMode"
+                                           Margin="0,0,15,0"
+                                           Checked="OnDeselectModeChanged"/>
+                                <RadioButton x:Name="DeselectTaggedRadio" 
+                                           Grid.Column="4"
+                                           Content="Tagged" 
+                                           GroupName="DeselectMode"
+                                           Checked="OnDeselectModeChanged"/>
+                            </Grid>
+                        </Grid>
+                        
+                        <ListBox x:Name="DeselectList" 
+                                 Height="150" 
+                                 Margin="0,0,0,10"
+                                 SelectionMode="Extended"
+                                 BorderBrush="{StaticResource BrushStroke}"
+                                 BorderThickness="1">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Name}" FontWeight="SemiBold" VerticalAlignment="Center" Width="500" TextTrimming="CharacterEllipsis"/>
+                                        <TextBlock Text="{Binding Count}" Foreground="{StaticResource BrushSubtle}" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        
+                        <Button x:Name="DeselectBtn" 
+                                Content="Deselect Selected" 
+                                Style="{StaticResource GhostButton}" 
+                                HorizontalAlignment="Left"
+                                Width="150"
+                                Height="32"
+                                Click="OnDeselect"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- FOOTER -->
+        <DockPanel Grid.Row="2" Margin="0,8,0,0">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" VerticalAlignment="Center">
+                <TextBlock x:Name="StatusText" 
+                           Foreground="{StaticResource BrushSubtle}" 
+                           Text="Ready."/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                <Button Content="Cancel" Style="{StaticResource GhostButton}" Height="40" Width="100" IsCancel="True"/>
+                
+                <Button x:Name="RunBtn" 
+                        Content="Place Tags" 
+                        Style="{StaticResource SuccessButton}" 
+                        Height="40" 
+                        Width="140" 
+                        FontSize="14"
+                        Margin="12,0,0,0"
+                        Click="OnRun"/>
+            </StackPanel>
+        </DockPanel>
+
+    </Grid>
+</Window>

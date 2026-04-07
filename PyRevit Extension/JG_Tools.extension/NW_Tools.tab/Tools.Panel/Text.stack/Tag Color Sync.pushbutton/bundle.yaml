@@ -1,0 +1,10 @@
+title:
+  en_us: Tag Color Sync
+tooltip:
+  en_us:
+    Sync tag line colors with their host element filter overrides in the active view.
+    Copies projection/surface override color to tags line color only.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

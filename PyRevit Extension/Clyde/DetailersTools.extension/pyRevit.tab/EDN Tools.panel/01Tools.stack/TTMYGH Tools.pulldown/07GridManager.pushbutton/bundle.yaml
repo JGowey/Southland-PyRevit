@@ -1,0 +1,30 @@
+title: Grid Manager
+tooltip: |
+  Move grids, control bubble visibility, and adjust extents.
+
+  MOVE GRID
+    2D Mode: shifts the grid's visual position in selected views only —
+    the 3D model grid stays put. Great for making one view show a grid
+    differently from the rest (common in coordination drawings).
+    3D Mode: physically relocates the model grid for the entire project.
+
+  BUBBLE VISIBILITY
+    Show or hide the grid bubble at End 0 (South/West) and/or End 1
+    (North/East) across all views, the active view, or a picked list.
+
+  GRID LENGTH
+    Extend or shrink grid extents by entering a delta in inches.
+    Positive = extend outward, Negative = shrink inward.
+    2D mode affects view-specific extents; 3D affects the model line.
+
+  All operations support: All Views, Active View, or Pick Specific Views.
+
+author: Jeremiah Griffith
+order: 12
+script: script.py
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

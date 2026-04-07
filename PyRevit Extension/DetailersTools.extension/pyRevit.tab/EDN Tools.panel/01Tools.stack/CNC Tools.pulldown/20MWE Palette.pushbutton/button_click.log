@@ -1,0 +1,299 @@
+[2025-11-07 17:41:09] ============================================================
+[2025-11-07 17:41:09] MWE Palette button clicked
+[2025-11-07 17:41:09] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-07 17:41:09] Panel opened successfully
+[2025-11-07 17:41:09] ============================================================
+[2025-11-07 17:57:06] ============================================================
+[2025-11-07 17:57:06] MWE Palette button clicked
+[2025-11-07 17:57:06] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-07 17:57:06] Panel opened successfully
+[2025-11-07 17:57:06] ============================================================
+[2025-11-07 17:58:18] ============================================================
+[2025-11-07 17:58:18] MWE Palette button clicked
+[2025-11-07 17:58:18] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-07 17:58:18] Panel opened successfully
+[2025-11-07 17:58:18] ============================================================
+[2025-11-07 18:07:06] ============================================================
+[2025-11-07 18:07:06] MWE Palette button clicked
+[2025-11-07 18:07:06] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-07 18:07:06] Panel opened successfully
+[2025-11-07 18:07:06] ============================================================
+[2025-11-07 18:10:51] ============================================================
+[2025-11-07 18:10:51] MWE Palette button clicked
+[2025-11-07 18:10:51] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-07 18:10:51] Panel opened successfully
+[2025-11-07 18:10:51] ============================================================
+[2025-11-08 07:40:13] ============================================================
+[2025-11-08 07:40:13] MWE Palette button clicked
+[2025-11-08 07:40:13] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 07:40:13] ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+[2025-11-08 07:40:13] Traceback:
+[2025-11-08 07:40:13] Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 32, in <module>
+    forms.open_dockable_panel(panel_id)
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit-Master\pyrevitlib\pyrevit\forms\__init__.py", line 609, in open_dockable_panel
+    toggle_dockable_panel(panel_type_or_id, True)
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit-Master\pyrevitlib\pyrevit\forms\__init__.py", line 640, in toggle_dockable_panel
+    dockable_panel = HOST_APP.uiapp.GetDockablePane(dpanel_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+[2025-11-08 07:40:13] ============================================================
+[2025-11-08 09:30:17] ============================================================
+[2025-11-08 09:30:17] MWE Palette button clicked
+[2025-11-08 09:30:17] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 09:30:17] Panel opened successfully
+[2025-11-08 09:30:17] ============================================================
+[2025-11-08 09:42:38] ============================================================
+[2025-11-08 09:42:38] MWE Palette button clicked
+[2025-11-08 09:42:38] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 09:42:38] Panel opened successfully
+[2025-11-08 09:42:38] ============================================================
+[2025-11-08 11:02:31] ============================================================
+[2025-11-08 11:02:31] MWE Palette button clicked
+[2025-11-08 11:02:31] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 11:02:31] Panel opened successfully
+[2025-11-08 11:02:31] ============================================================
+[2025-11-08 11:08:57] ============================================================
+[2025-11-08 11:08:57] MWE Palette button clicked
+[2025-11-08 11:08:57] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 11:08:57] Panel opened successfully
+[2025-11-08 11:08:57] ============================================================
+[2025-11-08 11:16:01] ============================================================
+[2025-11-08 11:16:01] MWE Palette button clicked
+[2025-11-08 11:16:01] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 11:16:01] Panel opened successfully
+[2025-11-08 11:16:01] ============================================================
+[2025-11-08 11:18:21] ============================================================
+[2025-11-08 11:18:21] MWE Palette button clicked
+[2025-11-08 11:18:21] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 11:18:21] Panel opened successfully
+[2025-11-08 11:18:21] ============================================================
+[2025-11-08 11:34:04] ============================================================
+[2025-11-08 11:34:04] MWE Palette button clicked
+[2025-11-08 11:34:04] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 11:34:04] Panel opened successfully
+[2025-11-08 11:34:04] ============================================================
+[2025-11-08 11:42:13] ============================================================
+[2025-11-08 11:42:13] MWE Palette button clicked
+[2025-11-08 11:42:13] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 11:42:13] Panel opened successfully
+[2025-11-08 11:42:13] ============================================================
+[2025-11-08 12:15:40] ============================================================
+[2025-11-08 12:15:40] MWE Palette button clicked
+[2025-11-08 12:15:40] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 12:15:40] Panel opened successfully
+[2025-11-08 12:15:40] ============================================================
+[2025-11-08 12:29:57] ============================================================
+[2025-11-08 12:29:57] MWE Palette button clicked
+[2025-11-08 12:29:57] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 12:29:57] Panel opened successfully
+[2025-11-08 12:29:57] ============================================================
+[2025-11-08 12:47:00] ============================================================
+[2025-11-08 12:47:00] MWE Palette button clicked
+[2025-11-08 12:47:00] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 12:47:00] Panel opened successfully
+[2025-11-08 12:47:00] ============================================================
+[2025-11-08 13:08:55] ============================================================
+[2025-11-08 13:08:55] MWE Palette button clicked
+[2025-11-08 13:08:55] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 13:08:55] Panel opened successfully
+[2025-11-08 13:08:55] ============================================================
+[2025-11-08 13:14:35] ============================================================
+[2025-11-08 13:14:35] MWE Palette button clicked
+[2025-11-08 13:14:35] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 13:14:35] Panel opened successfully
+[2025-11-08 13:14:35] ============================================================
+[2025-11-08 13:23:08] ============================================================
+[2025-11-08 13:23:08] MWE Palette button clicked
+[2025-11-08 13:23:08] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 13:23:08] Panel opened successfully
+[2025-11-08 13:23:08] ============================================================
+[2025-11-08 13:49:24] ============================================================
+[2025-11-08 13:49:24] MWE Palette button clicked
+[2025-11-08 13:49:24] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 13:49:24] Panel opened successfully
+[2025-11-08 13:49:24] ============================================================
+[2025-11-08 13:50:08] ============================================================
+[2025-11-08 13:50:08] MWE Palette button clicked
+[2025-11-08 13:50:08] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 13:50:08] Panel opened successfully
+[2025-11-08 13:50:08] ============================================================
+[2025-11-08 14:29:35] ============================================================
+[2025-11-08 14:29:35] MWE Palette button clicked
+[2025-11-08 14:29:35] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 14:29:35] Panel opened successfully
+[2025-11-08 14:29:35] ============================================================
+[2025-11-08 15:21:09] ============================================================
+[2025-11-08 15:21:09] MWE Palette button clicked
+[2025-11-08 15:21:09] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-08 15:21:09] Panel opened successfully
+[2025-11-08 15:21:09] ============================================================
+[2025-11-12 12:19:52] ============================================================
+[2025-11-12 12:19:52] MWE Palette button clicked
+[2025-11-12 12:19:52] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-12 12:19:53] Panel opened successfully
+[2025-11-12 12:19:53] ============================================================
+[2025-11-29 07:14:35] ============================================================
+[2025-11-29 07:14:35] MWE Palette button clicked
+[2025-11-29 07:14:35] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-11-29 07:14:35] Panel opened successfully
+[2025-11-29 07:14:35] ============================================================
+[2025-12-10 15:42:39] ============================================================
+[2025-12-10 15:42:39] MWE Palette button clicked
+[2025-12-10 15:42:39] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-12-10 15:42:39] Panel opened successfully
+[2025-12-10 15:42:39] ============================================================
+[2025-12-11 12:49:48] ============================================================
+[2025-12-11 12:49:48] MWE Palette button clicked
+[2025-12-11 12:49:48] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-12-11 12:49:48] Panel opened successfully
+[2025-12-11 12:49:48] ============================================================
+[2025-12-12 12:32:40] ============================================================
+[2025-12-12 12:32:40] MWE Palette button clicked
+[2025-12-12 12:32:40] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-12-12 12:32:40] Panel opened successfully
+[2025-12-12 12:32:40] ============================================================
+[2025-12-12 13:03:18] ============================================================
+[2025-12-12 13:03:18] MWE Palette button clicked
+[2025-12-12 13:03:18] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-12-12 13:03:19] Panel opened successfully
+[2025-12-12 13:03:19] ============================================================
+[2025-12-15 09:35:57] ============================================================
+[2025-12-15 09:35:57] MWE Palette button clicked
+[2025-12-15 09:35:57] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2025-12-15 09:35:57] Panel opened successfully
+[2025-12-15 09:35:57] ============================================================
+[2026-01-14 15:49:06] ============================================================
+[2026-01-14 15:49:06] MWE Palette button clicked
+[2026-01-14 15:49:06] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-14 15:49:06] Panel opened successfully
+[2026-01-14 15:49:06] ============================================================
+[2026-01-16 13:19:32] ============================================================
+[2026-01-16 13:19:32] MWE Palette button clicked
+[2026-01-16 13:19:32] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-16 13:19:32] Panel opened successfully
+[2026-01-16 13:19:32] ============================================================
+[2026-01-17 09:11:48] ============================================================
+[2026-01-17 09:11:48] MWE Palette button clicked
+[2026-01-17 09:11:48] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-17 09:11:48] Panel opened successfully
+[2026-01-17 09:11:48] ============================================================
+[2026-01-17 09:57:00] ============================================================
+[2026-01-17 09:57:00] MWE Palette button clicked
+[2026-01-17 09:57:00] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-17 09:57:00] Panel opened successfully
+[2026-01-17 09:57:00] ============================================================
+[2026-01-21 13:11:14] ============================================================
+[2026-01-21 13:11:14] MWE Palette button clicked
+[2026-01-21 13:11:14] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-21 13:11:14] Panel opened successfully
+[2026-01-21 13:11:14] ============================================================
+[2026-01-23 09:04:35] ============================================================
+[2026-01-23 09:04:35] MWE Palette button clicked
+[2026-01-23 09:04:35] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-23 09:04:35] Panel opened successfully
+[2026-01-23 09:04:35] ============================================================
+[2026-01-23 13:58:57] ============================================================
+[2026-01-23 13:58:57] MWE Palette button clicked
+[2026-01-23 13:58:57] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-23 13:58:57] Panel opened successfully
+[2026-01-23 13:58:57] ============================================================
+[2026-01-29 10:30:00] ============================================================
+[2026-01-29 10:30:00] MWE Palette button clicked
+[2026-01-29 10:30:00] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-29 10:30:00] Panel opened successfully
+[2026-01-29 10:30:00] ============================================================
+[2026-01-29 10:37:32] ============================================================
+[2026-01-29 10:37:32] MWE Palette button clicked
+[2026-01-29 10:37:32] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-01-29 10:37:32] Panel opened successfully
+[2026-01-29 10:37:32] ============================================================
+[2026-02-02 13:28:16] ============================================================
+[2026-02-02 13:28:16] MWE Palette button clicked
+[2026-02-02 13:28:17] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-02-02 13:28:17] Panel opened successfully
+[2026-02-02 13:28:17] ============================================================
+[2026-02-10 11:20:08] ============================================================
+[2026-02-10 11:20:08] MWE Palette button clicked
+[2026-02-10 11:20:08] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-02-10 11:20:08] Panel opened successfully
+[2026-02-10 11:20:08] ============================================================
+[2026-02-12 11:15:09] ============================================================
+[2026-02-12 11:15:09] MWE Palette button clicked
+[2026-02-12 11:15:09] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-02-12 11:15:09] Panel opened successfully
+[2026-02-12 11:15:09] ============================================================
+[2026-02-13 08:45:09] ============================================================
+[2026-02-13 08:45:09] MWE Palette button clicked
+[2026-02-13 08:45:09] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-02-13 08:45:09] Panel opened successfully
+[2026-02-13 08:45:09] ============================================================
+[2026-02-16 09:54:18] ============================================================
+[2026-02-16 09:54:18] MWE Palette button clicked
+[2026-02-16 09:54:18] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-02-16 09:54:18] ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+[2026-02-16 09:54:18] Traceback:
+[2026-02-16 09:54:19] Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\MWE Tools.pulldown\MWE Palette.pushbutton\script.py", line 34, in <module>
+    forms.open_dockable_panel(panel_id)
+  File "C:\Program Files\pyRevit-Master\pyrevitlib\pyrevit\forms\__init__.py", line 612, in open_dockable_panel
+    toggle_dockable_panel(panel_type_or_id, True)
+  File "C:\Program Files\pyRevit-Master\pyrevitlib\pyrevit\forms\__init__.py", line 643, in toggle_dockable_panel
+    dockable_panel = HOST_APP.uiapp.GetDockablePane(dpanel_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+[2026-02-16 09:54:19] ============================================================
+[2026-02-16 10:00:07] ============================================================
+[2026-02-16 10:00:07] MWE Palette button clicked
+[2026-02-16 10:00:07] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-02-16 10:00:07] Panel opened successfully
+[2026-02-16 10:00:07] ============================================================
+[2026-03-16 10:53:05] ============================================================
+[2026-03-16 10:53:05] MWE Palette button clicked
+[2026-03-16 10:53:05] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-03-16 10:53:05] Panel opened successfully
+[2026-03-16 10:53:05] ============================================================
+[2026-03-22 02:22:02] ============================================================
+[2026-03-22 02:22:02] MWE Palette button clicked
+[2026-03-22 02:22:02] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-03-22 02:22:02] Panel opened successfully
+[2026-03-22 02:22:02] ============================================================
+[2026-03-22 03:23:22] ============================================================
+[2026-03-22 03:23:22] MWE Palette button clicked
+[2026-03-22 03:23:22] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-03-22 03:23:22] ERROR: Panel with id "7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11" is not registered
+
+Traceback:
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\20MWE Palette.pushbutton\script.py", line 34, in <module>
+    forms.open_dockable_panel(panel_id)
+
+[2026-03-22 03:23:22] Traceback:
+[2026-03-22 03:23:22] Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\20MWE Palette.pushbutton\script.py", line 34, in <module>
+    forms.open_dockable_panel(panel_id)
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit-Master\pyrevitlib\pyrevit\forms\_ipy.py", line 614, in open_dockable_panel
+    toggle_dockable_panel(panel_type_or_id, True)
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit-Master\pyrevitlib\pyrevit\forms\_ipy.py", line 651, in toggle_dockable_panel
+    raise PyRevitException(
+PyRevitException: Panel with id "7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11" is not registered
+
+Traceback:
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\20MWE Palette.pushbutton\script.py", line 34, in <module>
+    forms.open_dockable_panel(panel_id)
+
+
+[2026-03-22 03:23:22] ============================================================
+[2026-03-23 15:29:21] ============================================================
+[2026-03-23 15:29:21] MWE Palette button clicked
+[2026-03-23 15:29:21] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-03-23 15:29:21] Panel opened successfully
+[2026-03-23 15:29:21] ============================================================
+[2026-03-25 15:20:18] ============================================================
+[2026-03-25 15:20:18] MWE Palette button clicked
+[2026-03-25 15:20:18] Opening panel with ID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+[2026-03-25 15:20:18] Panel opened successfully
+[2026-03-25 15:20:18] ============================================================

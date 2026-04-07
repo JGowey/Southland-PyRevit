@@ -1,0 +1,19 @@
+title:
+  en_us: Add/Remove RFA
+
+tooltip:
+  en_us: |
+    🧩 Toggle Nested RFAs in Assembly
+
+    Quickly add or remove a parent FamilyInstance and its nested RFAs to/from an assembly — all without entering edit mode.
+
+    How to use:
+    1. Click the tool.
+    2. Select a parent RFA (FamilyInstance) in the model.
+    3. If the selected RFA is already part of an assembly:
+       • It and its nested components will be removed from the assembly.
+    4. If the RFA is not part of any assembly:
+       • Select an existing assembly to add the parent and nested RFAs into it.
+author: "Jacob Gowey"
+engine: 
+  persistent: true

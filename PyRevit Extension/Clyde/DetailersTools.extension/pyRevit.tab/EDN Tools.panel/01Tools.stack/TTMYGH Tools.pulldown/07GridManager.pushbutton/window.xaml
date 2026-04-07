@@ -1,0 +1,796 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Grid Manager"
+    Width="940" Height="710"
+    MinWidth="780" MinHeight="540"
+    WindowStartupLocation="CenterScreen"
+    Background="#F5F7FB"
+    FontFamily="Segoe UI"
+    FontSize="12"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"
+    ResizeMode="CanResizeWithGrip">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="PageBg"        Color="#F5F7FB"/>
+        <SolidColorBrush x:Key="CardBg"        Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="StrokePrimary" Color="#E5E8F0"/>
+        <SolidColorBrush x:Key="StrokeLight"   Color="#F0F2F7"/>
+        <SolidColorBrush x:Key="TextPrimary"   Color="#1F2937"/>
+        <SolidColorBrush x:Key="TextMuted"     Color="#6B7280"/>
+        <SolidColorBrush x:Key="AccentPrimary" Color="#2563EB"/>
+        <SolidColorBrush x:Key="AccentDark"    Color="#1D4ED8"/>
+
+        <!-- Typography -->
+        <Style x:Key="WindowTitle" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="WindowSubtitle" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="12"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin"     Value="0,3,0,0"/>
+        </Style>
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize"   Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin"     Value="0,0,0,7"/>
+        </Style>
+        <Style x:Key="Caption" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+        </Style>
+        <Style x:Key="BodyLabel" TargetType="TextBlock">
+            <Setter Property="FontSize"           Value="12"/>
+            <Setter Property="Foreground"         Value="{StaticResource TextPrimary}"/>
+            <Setter Property="VerticalAlignment"  Value="Center"/>
+        </Style>
+
+        <!-- Tooltip icon -->
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width"             Value="15"/>
+            <Setter Property="Height"            Value="15"/>
+            <Setter Property="CornerRadius"      Value="8"/>
+            <Setter Property="Background"        Value="#A0AEC0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin"            Value="5,0,0,0"/>
+            <Setter Property="Cursor"            Value="Hand"/>
+        </Style>
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground"          Value="White"/>
+            <Setter Property="FontWeight"          Value="Bold"/>
+            <Setter Property="FontSize"            Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment"   Value="Center"/>
+            <Setter Property="Text"                Value="?"/>
+        </Style>
+
+        <!-- Card -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="Background"      Value="{StaticResource CardBg}"/>
+            <Setter Property="CornerRadius"    Value="8"/>
+            <Setter Property="BorderBrush"     Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding"         Value="12"/>
+            <Setter Property="Margin"          Value="0,0,0,10"/>
+        </Style>
+
+        <!-- Button base -->
+        <Style x:Key="Btn_Base" TargetType="Button">
+            <Setter Property="Height"          Value="30"/>
+            <Setter Property="Padding"         Value="12,5"/>
+            <Setter Property="Margin"          Value="3,0"/>
+            <Setter Property="Cursor"          Value="Hand"/>
+            <Setter Property="FontWeight"      Value="SemiBold"/>
+            <Setter Property="FontSize"        Value="12"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.88"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Opacity" Value="0.75"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.45"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Btn_Primary" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background"  Value="{StaticResource AccentPrimary}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentDark}"/>
+            <Setter Property="Foreground"  Value="White"/>
+            <Setter Property="FontSize"    Value="13"/>
+        </Style>
+        <Style x:Key="Btn_Ghost" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background"  Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="Foreground"  Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Micro" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Height"      Value="22"/>
+            <Setter Property="Padding"     Value="7,2"/>
+            <Setter Property="Margin"      Value="2,0"/>
+            <Setter Property="FontSize"    Value="10"/>
+            <Setter Property="FontWeight"  Value="Normal"/>
+            <Setter Property="Background"  Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="Foreground"  Value="{StaticResource TextMuted}"/>
+        </Style>
+        <Style x:Key="Btn_ModeTab" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Height"          Value="34"/>
+            <Setter Property="Width"           Value="130"/>
+            <Setter Property="Margin"          Value="0,0,6,0"/>
+            <Setter Property="FontSize"        Value="12"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush"     Value="{StaticResource StrokePrimary}"/>
+        </Style>
+
+        <!-- TextBox -->
+        <Style x:Key="InputBox" TargetType="TextBox">
+            <Setter Property="Height"                  Value="28"/>
+            <Setter Property="Padding"                 Value="7,0"/>
+            <Setter Property="FontSize"                Value="12"/>
+            <Setter Property="BorderBrush"             Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness"         Value="1"/>
+            <Setter Property="Background"              Value="White"/>
+            <Setter Property="Foreground"              Value="{StaticResource TextPrimary}"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- RadioButton -->
+        <Style x:Key="RadioItem" TargetType="RadioButton">
+            <Setter Property="Foreground"               Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize"                 Value="12"/>
+            <Setter Property="Margin"                   Value="0,4,0,0"/>
+            <Setter Property="Cursor"                   Value="Hand"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- ListBorder (inner border for view lists) -->
+        <Style x:Key="ListBorder" TargetType="Border">
+            <Setter Property="BorderBrush"     Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius"    Value="5"/>
+        </Style>
+
+    </Window.Resources>
+
+    <!-- ROOT -->
+    <Grid Margin="14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- ══ HEADER ══ -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Grid Manager" Style="{StaticResource WindowTitle}"/>
+            <TextBlock Text="Move grids, control bubble visibility, and adjust extents — per view or model-wide"
+                       Style="{StaticResource WindowSubtitle}"/>
+        </StackPanel>
+
+        <!-- ══ MAIN: left panel + right panel ══ -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- ─── LEFT: GRIDS ─── -->
+            <Border Grid.Column="0"
+                    Background="{StaticResource CardBg}"
+                    BorderBrush="{StaticResource StrokePrimary}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="10"
+                    Margin="0,0,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Label -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,7">
+                        <TextBlock Text="GRIDS" Style="{StaticResource SectionLabel}" Margin="0"/>
+                        <Border Style="{StaticResource TooltipIcon}">
+                            <Border.ToolTip>
+                                <TextBlock MaxWidth="230" TextWrapping="Wrap">
+                                    Check the grids to act on. [N/S] = vertical, [E/W] = horizontal, [∠] = angled.
+                                    Tip: select grids in Revit before opening this tool, then click "From Sel."
+                                </TextBlock>
+                            </Border.ToolTip>
+                            <TextBlock Style="{StaticResource TooltipText}"/>
+                        </Border>
+                    </StackPanel>
+
+                    <!-- Search -->
+                    <TextBox Grid.Row="1"
+                             x:Name="TxtGridSearch"
+                             Style="{StaticResource InputBox}"
+                             Margin="0,0,0,6"/>
+
+                    <!-- Selection buttons -->
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,7">
+                        <Button x:Name="BtnGridAll"      Content="All"       Style="{StaticResource Btn_Micro}"/>
+                        <Button x:Name="BtnGridNone"     Content="None"      Style="{StaticResource Btn_Micro}"/>
+                        <Button x:Name="BtnGridFromSel"  Content="From Sel." Style="{StaticResource Btn_Micro}"/>
+                    </StackPanel>
+
+                    <!-- Grid list -->
+                    <ScrollViewer Grid.Row="3"
+                                  VerticalScrollBarVisibility="Auto"
+                                  HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel x:Name="GridListPanel"/>
+                    </ScrollViewer>
+
+                    <!-- Count -->
+                    <TextBlock Grid.Row="4"
+                               x:Name="LblGridCount"
+                               Style="{StaticResource Caption}"
+                               FontStyle="Italic"
+                               Margin="0,7,0,0"/>
+                </Grid>
+            </Border>
+
+            <!-- ─── RIGHT: OPERATIONS ─── -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Tab strip -->
+                <Border Grid.Row="0"
+                        Background="{StaticResource CardBg}"
+                        BorderBrush="{StaticResource StrokePrimary}"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Padding="10,8"
+                        Margin="0,0,0,10">
+                    <DockPanel>
+                        <TextBlock DockPanel.Dock="Left"
+                                   Text="OPERATION"
+                                   Style="{StaticResource SectionLabel}"
+                                   Margin="0" VerticalAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" Margin="14,0,0,0">
+                            <Button x:Name="BtnTabMove"
+                                    Content="Move Grid"
+                                    Style="{StaticResource Btn_ModeTab}"
+                                    Background="#2563EB"
+                                    Foreground="White"/>
+                            <Button x:Name="BtnTabBubble"
+                                    Content="Bubble Visibility"
+                                    Style="{StaticResource Btn_ModeTab}"
+                                    Width="150"
+                                    Background="#F0F2F7"
+                                    Foreground="#374151"/>
+                            <Button x:Name="BtnTabLength"
+                                    Content="Grid Length"
+                                    Style="{StaticResource Btn_ModeTab}"
+                                    Background="#F0F2F7"
+                                    Foreground="#374151"/>
+                        </StackPanel>
+                    </DockPanel>
+                </Border>
+
+                <!-- Panel content -->
+                <ScrollViewer Grid.Row="1"
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <StackPanel>
+
+                        <!-- ════════════════════════════ -->
+                        <!-- MOVE PANEL                   -->
+                        <!-- ════════════════════════════ -->
+                        <StackPanel x:Name="PanelMove" Visibility="Visible">
+
+                            <!-- Mode card -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                        <TextBlock Text="MOVE MODE" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                        <Border Style="{StaticResource TooltipIcon}">
+                                            <Border.ToolTip>
+                                                <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                                    2D Move: shifts the grid's visual position in selected views only.
+                                                    The actual 3D model grid does not move — this is like Revit's
+                                                    native "move in view" behavior, giving each view its own look.
+                                                    3D Move: physically relocates the model grid for the entire project.
+                                                    All views that show that grid will reflect the new position.
+                                                </TextBlock>
+                                            </Border.ToolTip>
+                                            <TextBlock Style="{StaticResource TooltipText}"/>
+                                        </Border>
+                                    </StackPanel>
+                                    <RadioButton x:Name="RbMove2D"
+                                                 Content="2D Move — view-specific (visual offset only)"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="MoveModeGrp"
+                                                 IsChecked="True"
+                                                 Margin="0"/>
+                                    <RadioButton x:Name="RbMove3D"
+                                                 Content="3D Move — relocate the model grid (all views)"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="MoveModeGrp"/>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- Offset card -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                        <TextBlock Text="OFFSET (inches)" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                        <Border Style="{StaticResource TooltipIcon}">
+                                            <Border.ToolTip>
+                                                <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                                    Enter offset values in inches. Positive X = East, Negative X = West.
+                                                    Positive Y = North, Negative Y = South. Leave 0 to skip that axis.
+                                                    For N/S running grids, enter an X offset to shift east/west.
+                                                    For E/W running grids, enter a Y offset to shift north/south.
+                                                </TextBlock>
+                                            </Border.ToolTip>
+                                            <TextBlock Style="{StaticResource TooltipText}"/>
+                                        </Border>
+                                    </StackPanel>
+                                    <Grid Margin="0,0,0,8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="190"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="X  (East +  /  West −)" Style="{StaticResource BodyLabel}"/>
+                                        <TextBox   Grid.Column="1" x:Name="TxtOffsetX" Style="{StaticResource InputBox}" Text="0"/>
+                                    </Grid>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="190"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="Y  (North +  /  South −)" Style="{StaticResource BodyLabel}"/>
+                                        <TextBox   Grid.Column="1" x:Name="TxtOffsetY" Style="{StaticResource InputBox}" Text="0"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- View scope card (hidden in 3D mode) -->
+                            <Border x:Name="MoveScopeCard" Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <TextBlock Text="VIEW SCOPE" Style="{StaticResource SectionLabel}"/>
+                                    <RadioButton x:Name="RbMoveScopeAll"
+                                                 Content="All applicable views  (plans, sections, elevations)"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="MoveScopeGrp"
+                                                 IsChecked="True"
+                                                 Margin="0"/>
+                                    <RadioButton x:Name="RbMoveScopeActive"
+                                                 Content="Active view only"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="MoveScopeGrp"/>
+                                    <RadioButton x:Name="RbMoveScopePick"
+                                                 Content="Pick specific views..."
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="MoveScopeGrp"/>
+
+                                    <Border x:Name="MoveViewListBorder" Visibility="Collapsed" Margin="0,9,0,0">
+                                        <StackPanel>
+                                            <DockPanel Margin="0,0,0,5">
+                                                <TextBlock DockPanel.Dock="Left"
+                                                           Style="{StaticResource Caption}"
+                                                           VerticalAlignment="Center"
+                                                           Text="Select views:"/>
+                                                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+                                                    <Button x:Name="BtnMoveViewAll"  Content="All"  Style="{StaticResource Btn_Micro}"/>
+                                                    <Button x:Name="BtnMoveViewNone" Content="None" Style="{StaticResource Btn_Micro}"/>
+                                                </StackPanel>
+                                            </DockPanel>
+                                            <Border Style="{StaticResource ListBorder}">
+                                                <ScrollViewer MaxHeight="180" VerticalScrollBarVisibility="Auto" Padding="7,5">
+                                                    <StackPanel x:Name="ViewListMove"/>
+                                                </ScrollViewer>
+                                            </Border>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+
+                        </StackPanel><!-- end PanelMove -->
+
+                        <!-- ════════════════════════════ -->
+                        <!-- BUBBLE PANEL                 -->
+                        <!-- ════════════════════════════ -->
+                        <StackPanel x:Name="PanelBubble" Visibility="Collapsed">
+
+                            <!-- How it works note -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                        <TextBlock Text="POSITIONAL BUBBLE CONTROL" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                        <Border Style="{StaticResource TooltipIcon}">
+                                            <Border.ToolTip>
+                                                <TextBlock MaxWidth="300" TextWrapping="Wrap">
+                                                    Ends are resolved by geometry, not by draw order.
+                                                    N/S grids (within 44 degrees of vertical) have Top and Bottom ends.
+                                                    E/W grids (within 44 degrees of horizontal) have Left and Right ends.
+                                                    Actions for non-applicable positions are silently skipped — for example,
+                                                    Top/Bottom settings are ignored for E/W grids.
+                                                </TextBlock>
+                                            </Border.ToolTip>
+                                            <TextBlock Style="{StaticResource TooltipText}"/>
+                                        </Border>
+                                    </StackPanel>
+                                    <TextBlock TextWrapping="Wrap" FontSize="11"
+                                               Foreground="#6B7280" Margin="0,0,0,2">
+                                        N/S grids use Top End and Bottom End.
+                                        E/W grids use Left End and Right End.
+                                        Set to No Change to leave an end untouched.
+                                    </TextBlock>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- Two-column layout: N/S ends | E/W ends -->
+                            <Grid Margin="0,0,0,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- TOP END (N/S grids) -->
+                                <Border Grid.Column="0" Style="{StaticResource Card}" Margin="0">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                            <TextBlock Text="TOP END" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                            <Border Style="{StaticResource TooltipIcon}">
+                                                <Border.ToolTip>
+                                                    <TextBlock MaxWidth="240" TextWrapping="Wrap">
+                                                        Applies to N/S grids only (within 44 deg of vertical).
+                                                        Top End = the end with the higher Y coordinate (North).
+                                                    </TextBlock>
+                                                </Border.ToolTip>
+                                                <TextBlock Style="{StaticResource TooltipText}"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <RadioButton x:Name="RbTopShow"
+                                                     Content="Show"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleTopGrp"
+                                                     Margin="0"/>
+                                        <RadioButton x:Name="RbTopHide"
+                                                     Content="Hide"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleTopGrp"/>
+                                        <RadioButton x:Name="RbTopNoChange"
+                                                     Content="No change"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleTopGrp"
+                                                     IsChecked="True"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- BOTTOM END (N/S grids) -->
+                                <Border Grid.Column="2" Style="{StaticResource Card}" Margin="0">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                            <TextBlock Text="BOTTOM END" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                            <Border Style="{StaticResource TooltipIcon}">
+                                                <Border.ToolTip>
+                                                    <TextBlock MaxWidth="240" TextWrapping="Wrap">
+                                                        Applies to N/S grids only (within 44 deg of vertical).
+                                                        Bottom End = the end with the lower Y coordinate (South).
+                                                    </TextBlock>
+                                                </Border.ToolTip>
+                                                <TextBlock Style="{StaticResource TooltipText}"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <RadioButton x:Name="RbBotShow"
+                                                     Content="Show"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleBotGrp"
+                                                     Margin="0"/>
+                                        <RadioButton x:Name="RbBotHide"
+                                                     Content="Hide"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleBotGrp"/>
+                                        <RadioButton x:Name="RbBotNoChange"
+                                                     Content="No change"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleBotGrp"
+                                                     IsChecked="True"/>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+
+                            <Grid Margin="0,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="8"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- LEFT END (E/W grids) -->
+                                <Border Grid.Column="0" Style="{StaticResource Card}" Margin="0">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                            <TextBlock Text="LEFT END" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                            <Border Style="{StaticResource TooltipIcon}">
+                                                <Border.ToolTip>
+                                                    <TextBlock MaxWidth="240" TextWrapping="Wrap">
+                                                        Applies to E/W grids only (within 44 deg of horizontal).
+                                                        Left End = the end with the lower X coordinate (West).
+                                                    </TextBlock>
+                                                </Border.ToolTip>
+                                                <TextBlock Style="{StaticResource TooltipText}"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <RadioButton x:Name="RbLeftShow"
+                                                     Content="Show"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleLeftGrp"
+                                                     Margin="0"/>
+                                        <RadioButton x:Name="RbLeftHide"
+                                                     Content="Hide"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleLeftGrp"/>
+                                        <RadioButton x:Name="RbLeftNoChange"
+                                                     Content="No change"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleLeftGrp"
+                                                     IsChecked="True"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- RIGHT END (E/W grids) -->
+                                <Border Grid.Column="2" Style="{StaticResource Card}" Margin="0">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                            <TextBlock Text="RIGHT END" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                            <Border Style="{StaticResource TooltipIcon}">
+                                                <Border.ToolTip>
+                                                    <TextBlock MaxWidth="240" TextWrapping="Wrap">
+                                                        Applies to E/W grids only (within 44 deg of horizontal).
+                                                        Right End = the end with the higher X coordinate (East).
+                                                    </TextBlock>
+                                                </Border.ToolTip>
+                                                <TextBlock Style="{StaticResource TooltipText}"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <RadioButton x:Name="RbRightShow"
+                                                     Content="Show"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleRightGrp"
+                                                     Margin="0"/>
+                                        <RadioButton x:Name="RbRightHide"
+                                                     Content="Hide"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleRightGrp"/>
+                                        <RadioButton x:Name="RbRightNoChange"
+                                                     Content="No change"
+                                                     Style="{StaticResource RadioItem}"
+                                                     GroupName="BubbleRightGrp"
+                                                     IsChecked="True"/>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+
+                            <!-- View scope -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <TextBlock Text="VIEW SCOPE" Style="{StaticResource SectionLabel}"/>
+                                    <RadioButton x:Name="RbBubbleScopeAll"
+                                                 Content="All applicable views"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="BubbleScopeGrp"
+                                                 IsChecked="True"
+                                                 Margin="0"/>
+                                    <RadioButton x:Name="RbBubbleScopeActive"
+                                                 Content="Active view only"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="BubbleScopeGrp"/>
+                                    <RadioButton x:Name="RbBubbleScopePick"
+                                                 Content="Pick specific views..."
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="BubbleScopeGrp"/>
+
+                                    <Border x:Name="BubbleViewListBorder" Visibility="Collapsed" Margin="0,9,0,0">
+                                        <StackPanel>
+                                            <DockPanel Margin="0,0,0,5">
+                                                <TextBlock DockPanel.Dock="Left" Style="{StaticResource Caption}" VerticalAlignment="Center" Text="Select views:"/>
+                                                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+                                                    <Button x:Name="BtnBubbleViewAll"  Content="All"  Style="{StaticResource Btn_Micro}"/>
+                                                    <Button x:Name="BtnBubbleViewNone" Content="None" Style="{StaticResource Btn_Micro}"/>
+                                                </StackPanel>
+                                            </DockPanel>
+                                            <Border Style="{StaticResource ListBorder}">
+                                                <ScrollViewer MaxHeight="180" VerticalScrollBarVisibility="Auto" Padding="7,5">
+                                                    <StackPanel x:Name="ViewListBubble"/>
+                                                </ScrollViewer>
+                                            </Border>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+
+                        </StackPanel><!-- end PanelBubble -->
+
+                        <!-- ════════════════════════════ -->
+                        <!-- LENGTH PANEL                 -->
+                        <!-- ════════════════════════════ -->
+                        <StackPanel x:Name="PanelLength" Visibility="Collapsed">
+
+                            <!-- Mode card -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                        <TextBlock Text="EXTENT MODE" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                        <Border Style="{StaticResource TooltipIcon}">
+                                            <Border.ToolTip>
+                                                <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                                    2D: adjusts the displayed grid length in selected views only,
+                                                    switching each end to view-specific extents.
+                                                    3D: adjusts the actual model-level grid line length,
+                                                    affecting the entire project.
+                                                </TextBlock>
+                                            </Border.ToolTip>
+                                            <TextBlock Style="{StaticResource TooltipText}"/>
+                                        </Border>
+                                    </StackPanel>
+                                    <RadioButton x:Name="RbLength2D"
+                                                 Content="2D — view-specific extents"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="LengthModeGrp"
+                                                 IsChecked="True"
+                                                 Margin="0"/>
+                                    <RadioButton x:Name="RbLength3D"
+                                                 Content="3D — model extents (all views)"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="LengthModeGrp"/>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- End 0 delta -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                        <TextBlock Text="END 0 DELTA (inches)" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                        <Border Style="{StaticResource TooltipIcon}">
+                                            <Border.ToolTip>
+                                                <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                                    Positive value = extend End 0 outward (away from center).
+                                                    Negative value = shrink End 0 inward (toward center).
+                                                    0 = no change to this end.
+                                                    End 0 is the start point of the grid (typically South or West).
+                                                </TextBlock>
+                                            </Border.ToolTip>
+                                            <TextBlock Style="{StaticResource TooltipText}"/>
+                                        </Border>
+                                    </StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="210"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="End 0  (+  extend  /  − shrink)" Style="{StaticResource BodyLabel}"/>
+                                        <TextBox   Grid.Column="1" x:Name="TxtEnd0Delta" Style="{StaticResource InputBox}" Text="0"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- End 1 delta -->
+                            <Border Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                        <TextBlock Text="END 1 DELTA (inches)" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                        <Border Style="{StaticResource TooltipIcon}">
+                                            <Border.ToolTip>
+                                                <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                                    Positive value = extend End 1 outward.
+                                                    Negative value = shrink End 1 inward.
+                                                    0 = no change to this end.
+                                                    End 1 is the end point of the grid (typically North or East).
+                                                </TextBlock>
+                                            </Border.ToolTip>
+                                            <TextBlock Style="{StaticResource TooltipText}"/>
+                                        </Border>
+                                    </StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="210"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" Text="End 1  (+  extend  /  − shrink)" Style="{StaticResource BodyLabel}"/>
+                                        <TextBox   Grid.Column="1" x:Name="TxtEnd1Delta" Style="{StaticResource InputBox}" Text="0"/>
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- View scope (hidden in 3D mode) -->
+                            <Border x:Name="LengthScopeCard" Style="{StaticResource Card}">
+                                <StackPanel>
+                                    <TextBlock Text="VIEW SCOPE" Style="{StaticResource SectionLabel}"/>
+                                    <RadioButton x:Name="RbLengthScopeAll"
+                                                 Content="All applicable views"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="LengthScopeGrp"
+                                                 IsChecked="True"
+                                                 Margin="0"/>
+                                    <RadioButton x:Name="RbLengthScopeActive"
+                                                 Content="Active view only"
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="LengthScopeGrp"/>
+                                    <RadioButton x:Name="RbLengthScopePick"
+                                                 Content="Pick specific views..."
+                                                 Style="{StaticResource RadioItem}"
+                                                 GroupName="LengthScopeGrp"/>
+
+                                    <Border x:Name="LengthViewListBorder" Visibility="Collapsed" Margin="0,9,0,0">
+                                        <StackPanel>
+                                            <DockPanel Margin="0,0,0,5">
+                                                <TextBlock DockPanel.Dock="Left" Style="{StaticResource Caption}" VerticalAlignment="Center" Text="Select views:"/>
+                                                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+                                                    <Button x:Name="BtnLengthViewAll"  Content="All"  Style="{StaticResource Btn_Micro}"/>
+                                                    <Button x:Name="BtnLengthViewNone" Content="None" Style="{StaticResource Btn_Micro}"/>
+                                                </StackPanel>
+                                            </DockPanel>
+                                            <Border Style="{StaticResource ListBorder}">
+                                                <ScrollViewer MaxHeight="180" VerticalScrollBarVisibility="Auto" Padding="7,5">
+                                                    <StackPanel x:Name="ViewListLength"/>
+                                                </ScrollViewer>
+                                            </Border>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+
+                        </StackPanel><!-- end PanelLength -->
+
+                    </StackPanel>
+                </ScrollViewer>
+
+            </Grid><!-- end right grid -->
+
+        </Grid><!-- end main grid -->
+
+        <!-- ══ FOOTER ══ -->
+        <Border Grid.Row="2"
+                Margin="0,10,0,0"
+                Padding="0,8,0,0"
+                BorderBrush="{StaticResource StrokePrimary}"
+                BorderThickness="0,1,0,0">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Left"
+                           x:Name="TxtStatus"
+                           Style="{StaticResource Caption}"
+                           VerticalAlignment="Center"
+                           Text="Select grids on the left, configure the operation, then click Apply."/>
+                <StackPanel DockPanel.Dock="Right"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    <Button x:Name="BtnApply" Content="Apply" Style="{StaticResource Btn_Primary}" Width="100"/>
+                    <Button x:Name="BtnClose" Content="Close" Style="{StaticResource Btn_Ghost}"   Width="72"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+    </Grid>
+</Window>

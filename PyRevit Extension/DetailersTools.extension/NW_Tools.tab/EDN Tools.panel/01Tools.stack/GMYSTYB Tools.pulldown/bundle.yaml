@@ -1,0 +1,20 @@
+title: GMYSTYB Tools
+tooltip: Drafting, sheet layout, and modification tools for the NW detailing team.
+author: Jeremiah Griffith
+context: doc-open
+
+layout:
+  - 01Renumber.pushbutton
+  - 02Rotate Multiple.pushbutton
+  - 03Place Tags.pushbutton
+  - 05SyncViews.pushbutton
+  - ---
+  - 09ToggleCase.pushbutton
+  - 10ViewConverter.pushbutton
+  - 11BOM_Builder.pushbutton
+  - 08UpperAttachment.pushbutton
+  - ---
+  - 12HangerSync.pushbutton
+  - 14HangerSyncPlus.pushbutton
+  - 15Assembly Studio.pushbutton
+  - 11UpdateSleeve.pushbutton

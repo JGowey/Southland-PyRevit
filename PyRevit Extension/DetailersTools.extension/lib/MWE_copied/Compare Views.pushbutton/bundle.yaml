@@ -1,0 +1,27 @@
+title: Compare Views
+tooltip: |
+  Performs a detailed comparison of the properties and visibility settings of two Revit views or two view templates.
+
+  How it works:
+  1. First, choose whether you want to compare project views or view templates.
+  2. From the list provided, select exactly two items to compare.
+  3. You will then be prompted to select which specific aspects to analyze, including:
+     - Model & Annotation Categories (Visibility and Overrides)
+     - Filters
+     - Worksets
+     - Revit Links
+  4. Finally, choose a comparison mode: show only the differences, only the similarities, or a complete side-by-side view.
+
+  The tool generates a detailed report of the comparison. If any differences are found, you will have the option to export them to a CSV file for your records.
+order: 05
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: !!file version.txt
+author: Jeremiah Griffith
+highlight: dark
+engine:
+  name: ipy          # fastest cold start (IronPython). Change to python3 if you must.
+  clean: true        # start each run with a clean global scope
+  persistence: true  # 🔥 keep the engine alive between runs (instant subsequent prompts)
+

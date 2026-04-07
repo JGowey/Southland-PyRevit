@@ -1,0 +1,8 @@
+title:
+  en_us: Update Welds
+tooltip:
+  en_us: Re-snaps pipe weld markers to their current host joints, updating location, size, and orientation after model changes.
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

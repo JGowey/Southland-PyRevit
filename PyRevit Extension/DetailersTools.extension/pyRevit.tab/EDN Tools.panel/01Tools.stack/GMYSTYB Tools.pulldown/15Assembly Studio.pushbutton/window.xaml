@@ -1,0 +1,651 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Assembly Studio"
+    Width="980"
+    Height="740"
+    MinWidth="880"
+    MinHeight="600"
+    WindowStartupLocation="CenterScreen"
+    Background="#F0F2F7"
+    FontFamily="Segoe UI"
+    ResizeMode="CanResize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="54"/>
+        </Grid.RowDefinitions>
+
+        <!-- ═══ HEADER ═══════════════════════════════════════════════ -->
+        <Border Grid.Row="0" Background="#1E3A5F">
+            <Grid Margin="14,0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="&#x25A6;" Foreground="#8F6C05" FontSize="20"
+                               VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <TextBlock Text="Assembly Studio" Foreground="White"
+                               FontSize="15" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBlock x:Name="HeaderInfo" Foreground="#7FA8CC" FontSize="10"
+                           VerticalAlignment="Center" HorizontalAlignment="Right"
+                           TextTrimming="CharacterEllipsis"/>
+            </Grid>
+        </Border>
+
+        <!-- ═══ BODY ═════════════════════════════════════════════════ -->
+        <Grid Grid.Row="1" Margin="10,8,10,4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="370"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- ─── LEFT PANEL ─────────────────────────────────────── -->
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto"
+                          Margin="0,0,6,0">
+                <StackPanel>
+
+                    <!-- ┌ Card: ASSEMBLY SOURCE ──────────────────────┐ -->
+                    <Border Background="White" CornerRadius="5" Margin="0,0,0,8"
+                            BorderBrush="#E5E7EB" BorderThickness="1">
+                        <StackPanel Margin="14,12">
+
+                            <!-- Mode label + toggle -->
+                            <TextBlock Text="ASSEMBLY SOURCE" Foreground="#8F6C05"
+                                       FontSize="10" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                                <RadioButton x:Name="RbCreate"
+                                             Content="Create New"
+                                             FontSize="12" Foreground="#374151"
+                                             Margin="0,0,16,0"
+                                             GroupName="SourceMode"
+                                             Click="RbCreate_Clicked"/>
+                                <RadioButton x:Name="RbExisting"
+                                             Content="Use Existing Assembly"
+                                             FontSize="12" Foreground="#374151"
+                                             GroupName="SourceMode"
+                                             Click="RbExisting_Clicked"/>
+                            </StackPanel>
+
+                            <!-- ── BUILD SECTION (Create New) ───────── -->
+                            <StackPanel x:Name="BuildSection" Visibility="Collapsed">
+
+                                <!-- Assembly name -->
+                                <Grid Margin="0,0,0,6">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Name"
+                                               Foreground="#6B7280" FontSize="12"
+                                               VerticalAlignment="Center"/>
+                                    <TextBox x:Name="AssemblyNameBox" Grid.Column="1"
+                                             FontSize="12" Padding="6,4"
+                                             BorderBrush="#D1D5DB" BorderThickness="1"
+                                             Background="White"/>
+                                </Grid>
+
+                                <!-- Level -->
+                                <Grid Margin="0,0,0,12">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Level"
+                                               Foreground="#6B7280" FontSize="12"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="LevelCombo" Grid.Column="1"
+                                              FontSize="12" Padding="4,3"/>
+                                </Grid>
+
+                                <!-- Views to create header -->
+                                <TextBlock Text="VIEWS TO CREATE" Foreground="#6B7280"
+                                           FontSize="10" FontWeight="Bold"
+                                           Margin="0,0,0,6"/>
+
+                                <!-- Column headers -->
+                                <Grid Margin="0,0,0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="1" Text="View"
+                                               Foreground="#9CA3AF" FontSize="9"/>
+                                    <TextBlock Grid.Column="2" Text="Template"
+                                               Foreground="#9CA3AF" FontSize="9"/>
+                                </Grid>
+
+                                <!-- 3D Orthographic -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="Chk3D" Grid.Column="0"
+                                              IsChecked="True" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="3D Orthographic"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="Tmpl3D" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Top / Plan -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="ChkTop" Grid.Column="0"
+                                              IsChecked="True" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="Top (Plan)"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="TmplTop" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Front -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="ChkFront" Grid.Column="0"
+                                              IsChecked="True" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="Front Elevation"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="TmplFront" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Back -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="ChkBack" Grid.Column="0"
+                                              IsChecked="True" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="Back Elevation"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="TmplBack" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Left (off by default) -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="ChkLeft" Grid.Column="0"
+                                              IsChecked="False" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="Left Elevation"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="TmplLeft" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Right (off by default) -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="ChkRight" Grid.Column="0"
+                                              IsChecked="False" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="Right Elevation"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="TmplRight" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Separator before schedule -->
+                                <Border BorderBrush="#F0F2F7" BorderThickness="0,1,0,0"
+                                        Margin="0,6,0,4"/>
+
+                                <!-- Parts List -->
+                                <Grid Margin="0,2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="24"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox x:Name="ChkSchedule" Grid.Column="0"
+                                              IsChecked="True" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="Parts List"
+                                               FontSize="11" Foreground="#374151"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="TmplSchedule" Grid.Column="2"
+                                              FontSize="10" Padding="3,2"/>
+                                </Grid>
+
+                                <!-- Create Assembly button -->
+                                <Button x:Name="CreateAssemblyBtn"
+                                        Content="Create Assembly"
+                                        Click="CreateAssembly_Click"
+                                        Height="32" Margin="0,12,0,0"
+                                        Background="#1E3A5F" Foreground="White"
+                                        BorderThickness="0"
+                                        FontSize="12" FontWeight="SemiBold"
+                                        HorizontalAlignment="Stretch"/>
+
+                                <!-- Build status (hidden until creation) -->
+                                <StackPanel x:Name="BuildStatusRow"
+                                            Orientation="Horizontal"
+                                            Visibility="Collapsed"
+                                            Margin="0,8,0,0">
+                                    <TextBlock Text="&#x2713; " Foreground="#16A34A"
+                                               FontSize="12" FontWeight="Bold"/>
+                                    <TextBlock x:Name="BuildStatusLabel"
+                                               Foreground="#374151" FontSize="11"
+                                               TextWrapping="Wrap"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                            <!-- ── END BUILD SECTION ─────────────────── -->
+
+                            <!-- ── EXISTING SECTION ──────────────────── -->
+                            <StackPanel x:Name="ExistingSection" Visibility="Collapsed">
+
+                                <!-- Search filter box -->
+                                <Grid Margin="0,0,0,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Search"
+                                               Foreground="#6B7280" FontSize="12"
+                                               VerticalAlignment="Center"/>
+                                    <Grid Grid.Column="1">
+                                        <TextBox x:Name="AssemblySearchBox"
+                                                 FontSize="11" Padding="6,4"
+                                                 BorderBrush="#D1D5DB" BorderThickness="1"
+                                                 Background="White"
+                                                 TextChanged="AssemblySearch_Changed"/>
+                                        <!-- Placeholder -->
+                                        <TextBlock x:Name="AssemblySearchHint"
+                                                   Text="Type to filter assemblies..."
+                                                   Foreground="#9CA3AF" FontSize="11"
+                                                   Margin="8,4,0,0"
+                                                   IsHitTestVisible="False"/>
+                                    </Grid>
+                                </Grid>
+
+                                <!-- Filtered list (max 8 rows visible) -->
+                                <ListBox x:Name="AssemblyListBox"
+                                         MaxHeight="160"
+                                         FontSize="11"
+                                         Margin="70,0,0,4"
+                                         BorderBrush="#D1D5DB" BorderThickness="1"
+                                         SelectionChanged="AssemblyListBox_Changed"/>
+
+                                <!-- Result count + selection info -->
+                                <TextBlock x:Name="AssemblyInfo"
+                                           Foreground="#9CA3AF" FontSize="10"
+                                           Margin="70,0,0,0"
+                                           Text="Type to search or scroll to select"/>
+                            </StackPanel>
+                            <!-- ── END EXISTING SECTION ──────────────── -->
+
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ┌ Card: SHEET ────────────────────────────────┐ -->
+                    <Border Background="White" CornerRadius="5" Margin="0,0,0,8"
+                            BorderBrush="#E5E7EB" BorderThickness="1">
+                        <StackPanel Margin="14,12">
+                            <TextBlock Text="SHEET" Foreground="#8F6C05"
+                                       FontSize="10" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                            <!-- Titleblock -->
+                            <Grid Margin="0,0,0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Title Block"
+                                           Foreground="#6B7280" FontSize="12"
+                                           VerticalAlignment="Center"/>
+                                <ComboBox x:Name="TitleBlockCombo" Grid.Column="1"
+                                          FontSize="11" Padding="4,3"
+                                          SelectionChanged="TitleBlockCombo_Changed"/>
+                            </Grid>
+                            <TextBlock x:Name="SheetSizeInfo" Foreground="#9CA3AF"
+                                       FontSize="10" Margin="70,0,0,6" Text=""/>
+
+                            <!-- Sheet Number -->
+                            <Grid Margin="0,0,0,6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Number"
+                                           Foreground="#6B7280" FontSize="12"
+                                           VerticalAlignment="Center"/>
+                                <TextBox x:Name="SheetNumberBox" Grid.Column="1"
+                                         FontSize="12" Padding="6,4"
+                                         BorderBrush="#D1D5DB" BorderThickness="1"
+                                         Background="White"/>
+                            </Grid>
+
+                            <!-- Sheet Name -->
+                            <Grid Margin="0,0,0,12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Name"
+                                           Foreground="#6B7280" FontSize="12"
+                                           VerticalAlignment="Center"/>
+                                <TextBox x:Name="SheetNameBox" Grid.Column="1"
+                                         FontSize="12" Padding="6,4"
+                                         BorderBrush="#D1D5DB" BorderThickness="1"
+                                         Background="White"/>
+                            </Grid>
+
+                            <!-- Sheet Location separator -->
+                            <Border BorderBrush="#F0F2F7" BorderThickness="0,1,0,0"
+                                    Margin="0,0,0,10"/>
+
+                            <TextBlock Text="BROWSER LOCATION" Foreground="#6B7280"
+                                       FontSize="10" FontWeight="Bold" Margin="0,0,0,8"/>
+
+                            <!-- Location radio buttons -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                                <RadioButton x:Name="RbLocAssembly"
+                                             Content="Under Assembly"
+                                             FontSize="11" Foreground="#374151"
+                                             GroupName="SheetLocation"
+                                             IsChecked="True"
+                                             Margin="0,0,16,0"
+                                             Click="SheetLocation_Changed"/>
+                                <RadioButton x:Name="RbLocSheets"
+                                             Content="Sheets Browser"
+                                             FontSize="11" Foreground="#374151"
+                                             GroupName="SheetLocation"
+                                             Click="SheetLocation_Changed"/>
+                            </StackPanel>
+
+                            <!-- Under Assembly info -->
+                            <TextBlock x:Name="LocAssemblyHint"
+                                       Foreground="#9CA3AF" FontSize="10"
+                                       TextWrapping="Wrap" Margin="0,0,0,4"
+                                       Text="Sheet will appear nested under the assembly in the project browser."/>
+
+                            <!-- Sheets browser folder (shown when Sheets Browser selected) -->
+                            <StackPanel x:Name="LocFolderPanel" Visibility="Collapsed">
+                                <Grid Margin="0,0,0,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Folder"
+                                               Foreground="#6B7280" FontSize="12"
+                                               VerticalAlignment="Center"/>
+                                    <ComboBox x:Name="SheetFolderCombo" Grid.Column="1"
+                                              FontSize="11" Padding="4,3"
+                                              IsEditable="True"/>
+                                </Grid>
+                                <TextBlock Foreground="#9CA3AF" FontSize="10"
+                                           TextWrapping="Wrap" Margin="70,0,0,0"
+                                           Text="Matches the browser organization field. Leave blank for top-level."/>
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ┌ Card: VIEWS TO PLACE ───────────────────────┐ -->
+                    <Border Background="White" CornerRadius="5" Margin="0,0,0,8"
+                            BorderBrush="#E5E7EB" BorderThickness="1">
+                        <StackPanel Margin="14,12">
+                            <TextBlock Text="VIEWS TO PLACE" Foreground="#8F6C05"
+                                       FontSize="10" FontWeight="Bold" Margin="0,0,0,6"/>
+
+                            <Grid Margin="0,0,0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="24"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="90"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="1" Text="View"
+                                           Foreground="#9CA3AF" FontSize="9"/>
+                                <TextBlock Grid.Column="2" Text="Scale"
+                                           Foreground="#9CA3AF" FontSize="9"/>
+                                <TextBlock Grid.Column="3" Text="VP Type"
+                                           Foreground="#9CA3AF" FontSize="9"/>
+                            </Grid>
+
+                            <StackPanel x:Name="ViewRowsPanel"/>
+
+                            <TextBlock x:Name="NoViewsLabel" Foreground="#9CA3AF"
+                                       FontSize="11" Margin="24,6,0,0"
+                                       Text="No views available"
+                                       Visibility="Visible"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ┌ Card: TITLEBLOCK PARAMETERS (collapsible) ───┐ -->
+                    <Border Background="White" CornerRadius="5" Margin="0,0,0,8"
+                            BorderBrush="#E5E7EB" BorderThickness="1">
+                        <StackPanel>
+
+                            <!-- Clickable header row -->
+                            <Border x:Name="ParamHeaderBorder"
+                                    Background="#FAFAFA"
+                                    CornerRadius="5"
+                                    Padding="14,10"
+                                    Cursor="Hand"
+                                    MouseLeftButtonUp="ParamHeader_Toggle">
+                                <Grid>
+                                    <StackPanel Orientation="Horizontal"
+                                                VerticalAlignment="Center">
+                                        <!-- Chevron arrow -->
+                                        <TextBlock x:Name="ParamChevron"
+                                                   Text="&#x25BA;"
+                                                   Foreground="#8F6C05"
+                                                   FontSize="9"
+                                                   VerticalAlignment="Center"
+                                                   Margin="0,0,6,0"/>
+                                        <TextBlock Text="TITLEBLOCK PARAMETERS"
+                                                   Foreground="#8F6C05"
+                                                   FontSize="10"
+                                                   FontWeight="Bold"
+                                                   VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                    <!-- Filled-count badge, shown when collapsed -->
+                                    <TextBlock x:Name="ParamCountBadge"
+                                               Foreground="#9CA3AF"
+                                               FontSize="10"
+                                               HorizontalAlignment="Right"
+                                               VerticalAlignment="Center"
+                                               Visibility="Collapsed"/>
+                                </Grid>
+                            </Border>
+
+                            <!-- Collapsible body, collapsed by default -->
+                            <StackPanel x:Name="ParamBody" Margin="14,8,14,12"
+                                        Visibility="Collapsed">
+                                <StackPanel x:Name="ParamRowsPanel"/>
+                                <TextBlock x:Name="NoParamsLabel"
+                                           Foreground="#9CA3AF"
+                                           FontSize="11" Margin="0,4,0,0"
+                                           Text="Select a titleblock to see parameters"
+                                           Visibility="Visible"/>
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ┌ Card: PRESETS ──────────────────────────────┐ -->
+                    <Border Background="White" CornerRadius="5" Margin="0,0,0,8"
+                            BorderBrush="#E5E7EB" BorderThickness="1">
+                        <StackPanel Margin="14,12">
+                            <TextBlock Text="PRESETS" Foreground="#8F6C05"
+                                       FontSize="10" FontWeight="Bold" Margin="0,0,0,10"/>
+                            <ComboBox x:Name="PresetCombo" FontSize="11"
+                                      Padding="4,3" Margin="0,0,0,8"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Load"
+                                        Click="LoadPreset_Click"
+                                        Width="65" Height="28"
+                                        Background="White" Foreground="#374151"
+                                        BorderBrush="#D1D5DB" BorderThickness="1"
+                                        FontSize="11" Margin="0,0,6,0"/>
+                                <Button Content="Save As"
+                                        Click="SavePreset_Click"
+                                        Width="65" Height="28"
+                                        Background="White" Foreground="#374151"
+                                        BorderBrush="#D1D5DB" BorderThickness="1"
+                                        FontSize="11" Margin="0,0,6,0"/>
+                                <Button Content="Delete"
+                                        Click="DeletePreset_Click"
+                                        Width="65" Height="28"
+                                        Background="White" Foreground="#374151"
+                                        BorderBrush="#D1D5DB" BorderThickness="1"
+                                        FontSize="11"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ┌ Card: PROFILES ─────────────────────────────┐ -->
+                    <Border Background="White" CornerRadius="5" Margin="0,0,0,8"
+                            BorderBrush="#E5E7EB" BorderThickness="1">
+                        <StackPanel Margin="14,12">
+                            <TextBlock Text="PROFILES" Foreground="#8F6C05"
+                                       FontSize="10" FontWeight="Bold" Margin="0,0,0,4"/>
+                            <TextBlock Foreground="#9CA3AF" FontSize="10"
+                                       TextWrapping="Wrap" Margin="0,0,0,10"
+                                       Text="Save/load full layouts across assemblies. Mismatched views prompt a mapping dialog."/>
+                            <ComboBox x:Name="ProfileCombo" FontSize="11"
+                                      Padding="4,3" Margin="0,0,0,8"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Import"
+                                        Click="ImportProfile_Click"
+                                        Width="65" Height="28"
+                                        Background="White" Foreground="#374151"
+                                        BorderBrush="#D1D5DB" BorderThickness="1"
+                                        FontSize="11" Margin="0,0,6,0"/>
+                                <Button Content="Export"
+                                        Click="ExportProfile_Click"
+                                        Width="65" Height="28"
+                                        Background="#1E3A5F" Foreground="White"
+                                        BorderThickness="0"
+                                        FontSize="11" Margin="0,0,6,0"/>
+                                <Button Content="Delete"
+                                        Click="DeleteProfile_Click"
+                                        Width="65" Height="28"
+                                        Background="White" Foreground="#374151"
+                                        BorderBrush="#D1D5DB" BorderThickness="1"
+                                        FontSize="11"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- ─── RIGHT PANEL (sheet preview canvas) ─────────────── -->
+            <Border Grid.Column="1" Background="White" CornerRadius="5"
+                    BorderBrush="#E5E7EB" BorderThickness="1" Margin="6,0,0,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Margin="14,8,14,6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="SHEET PREVIEW"
+                                   Foreground="#8F6C05" FontSize="10" FontWeight="Bold"
+                                   VerticalAlignment="Center" Margin="0,0,12,0"/>
+                        <TextBlock x:Name="AreaInfoLabel" Grid.Column="1"
+                                   Foreground="#9CA3AF" FontSize="10"
+                                   VerticalAlignment="Center"
+                                   Text="No usable area defined (full sheet used)"
+                                   TextTrimming="CharacterEllipsis"/>
+                        <Button x:Name="ClearAreaBtn" Grid.Column="2"
+                                Content="Clear Area"
+                                Click="ClearArea_Click"
+                                Height="24" Padding="8,0"
+                                Background="White" Foreground="#374151"
+                                BorderBrush="#D1D5DB" BorderThickness="1"
+                                FontSize="10" Margin="0,0,6,0"
+                                Visibility="Collapsed"/>
+                        <Button x:Name="DefineAreaBtn" Grid.Column="3"
+                                Content="Define Usable Area"
+                                Click="DefineArea_Click"
+                                Height="24" Padding="8,0"
+                                Background="White" Foreground="#374151"
+                                BorderBrush="#D1D5DB" BorderThickness="1"
+                                FontSize="10"/>
+                    </Grid>
+
+                    <Border Grid.Row="1" Background="#F8F8F8" Margin="10,0,10,0"
+                            BorderBrush="#D1D5DB" BorderThickness="1">
+                        <Viewbox Stretch="Uniform" Margin="8">
+                            <Canvas x:Name="SheetCanvas" Width="1700" Height="1100"
+                                    Background="White" ClipToBounds="True"/>
+                        </Viewbox>
+                    </Border>
+
+                    <TextBlock x:Name="CoordLabel" Grid.Row="2" Foreground="#9CA3AF"
+                               FontSize="10" Margin="14,6,14,8"
+                               Text="Drag viewports to position them on the sheet"/>
+                </Grid>
+            </Border>
+
+        </Grid>
+
+        <!-- ═══ FOOTER ═══════════════════════════════════════════════ -->
+        <Border Grid.Row="2" Background="#FAFAFA"
+                BorderBrush="#E5E7EB" BorderThickness="0,1,0,0">
+            <Grid Margin="14,0">
+                <Button Content="Cancel"
+                        Click="Cancel_Click"
+                        HorizontalAlignment="Left"
+                        Width="90" Height="34"
+                        Background="White" Foreground="#374151"
+                        BorderBrush="#D1D5DB" BorderThickness="1"
+                        FontSize="12"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Batch Create..."
+                            Click="BatchCreate_Click"
+                            Width="140" Height="34"
+                            Background="White" Foreground="#1E3A5F"
+                            BorderBrush="#1E3A5F" BorderThickness="1"
+                            FontSize="12" FontWeight="SemiBold"
+                            Margin="0,0,8,0"/>
+                    <Button x:Name="CreateSheetBtn"
+                            Content="Create Sheet"
+                            Click="CreateSheet_Click"
+                            Width="150" Height="34"
+                            Background="#1E3A5F" Foreground="White"
+                            BorderThickness="0"
+                            FontSize="12" FontWeight="SemiBold"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

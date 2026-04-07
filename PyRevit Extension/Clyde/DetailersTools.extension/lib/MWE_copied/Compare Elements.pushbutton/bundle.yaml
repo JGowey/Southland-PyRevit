@@ -1,0 +1,120 @@
+title: Compare Elements
+tooltip: |
+  Analyzes and compares the properties of 2 to 100 selected MEP Fabrication Parts (ITMs).
+
+  HOW IT WORKS:
+  1. Select between 2 and 100 MEP Fabrication Parts in your model (or pick when prompted)
+  2. The tool opens a modern comparison window showing all properties side-by-side
+  3. Use view mode buttons to filter results:
+     - Show Everything: Displays all properties with visual indicators
+     - Show Differences: Shows only properties that differ between elements
+     - Show Same: Shows only properties that are identical across all elements
+  4. Export filtered or complete results to CSV for documentation
+
+  KEY FEATURES:
+  - Modern WPF window with intuitive interface
+  - Side-by-side comparison with one column per element
+  - Color-coded buttons for quick mode switching
+  - Yellow highlighting for rows with differences
+  - Dynamic property ordering (important properties first)
+  - Smart connector and allowance detection
+  - Assembly name resolution
+  - Material, service, and specification name lookup
+  - Real-time filter statistics (shows count of differences vs same)
+  - CSV export with full element details and status column
+
+  WHAT IT COMPARES:
+  - Family and display names
+  - Connectors (End1, End2) with fabrication connector names
+  - Connector allowances (End1, End2)
+  - Dimensions (Size, Length, Width, Height, Diameter)
+  - Materials (Material, Gauge, Thickness)
+  - Services (Service ID resolved to name)
+  - Specifications (Insulation, Lining)
+  - Assembly assignments
+  - Weights and areas
+  - Cut types and domain types
+  - Level offsets and elevations
+  - All FabricationPart API properties
+  - Custom parameters
+
+  USE CASES:
+  - Quality Assurance: Verify elements are truly identical
+  - Standardization: Find which properties need to be standardized
+  - Clash Detection: Identify unexpected variations in similar elements
+  - Family Validation: Compare instances to ensure proper family setup
+  - Data Cleanup: Find inconsistencies to fix across selections
+  - Documentation: Export comparison data for reports and records
+  - Troubleshooting: Understand why elements behave differently
+
+  PRACTICAL EXAMPLES:
+  - Compare all duct fittings to find non-standard sizes
+  - Verify structural hangers have identical support specifications
+  - Find which pipes have different service types
+  - Check if all elbows use the correct gauge material
+  - Identify elements with missing or incorrect connector allowances
+  - Compare fabrication items across different assemblies
+
+  WORKFLOW:
+  1. Select 2-100 Fabrication Parts (or use pre-selection)
+  2. Click Compare Elements button
+  3. Window opens showing side-by-side comparison
+  4. Click view mode buttons to filter:
+     - Blue button: Show all properties
+     - Orange button: Show only differences (perfect for QA)
+     - Green button: Show only identical properties
+  5. Review results in the data grid
+  6. Click Export CSV to save results for documentation
+  7. Choose export location and filename
+
+  CSV EXPORT DETAILS:
+  - Includes all properties from current view or all properties
+  - One row per property, one column per element
+  - Status column indicates if property is Different or Same
+  - UTF-8 encoding for international characters
+  - Opens easily in Excel or any CSV viewer
+  - Timestamped filename for version control
+  - Full element ID tracking in column headers
+
+  UI FEATURES:
+  - Clean, modern card-based design
+  - Large, readable data grid with proper spacing
+  - Alternating row colors for easy scanning
+  - Yellow highlighting automatically marks different values
+  - Color-coded mode buttons (Blue, Orange, Green)
+  - Status bar shows property counts and filter statistics
+  - Responsive layout handles many elements gracefully
+  - Tooltips and helpful tips throughout interface
+
+  TECHNICAL DETAILS:
+  - Uses FabricationPart API for comprehensive property access
+  - Resolves IDs to human-readable names (services, materials, specs)
+  - Handles missing properties gracefully (shows dash)
+  - Smart unit conversion for dimensions
+  - Connector detection via ConnectorManager
+  - Assembly name resolution via AssemblyInstanceId
+  - Skips noisy internal properties automatically
+  - Orders properties logically (important ones first)
+
+  TIPS:
+  - Use Show Differences mode for quick QA checks
+  - Use Show Same mode to verify standardization
+  - Yellow rows make differences obvious at a glance
+  - Export Everything mode includes full comparison matrix
+  - Pre-select elements for faster workflow
+  - Works with any fabrication parts (ducts, pipes, fittings, etc)
+  - Handles 2-100 elements efficiently
+
+author: Jeremiah Griffith
+order: 02
+script: script.py
+xaml: window.xaml
+icon: icon.png
+icon-small: icon-small.png
+version: 2.0.0
+highlight: dark
+
+engine:
+  name: ipy
+  clean: true
+  persistence: true

@@ -1,0 +1,10 @@
+title:
+  en_us: RFA EXPORT DATA
+tooltip:
+  en_us:
+    Export type parameters from a selected nested family
+    Choose Feet or Inches, then save results to CSV.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

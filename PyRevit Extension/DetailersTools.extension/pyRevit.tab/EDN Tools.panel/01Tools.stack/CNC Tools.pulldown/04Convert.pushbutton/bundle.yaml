@@ -1,0 +1,29 @@
+title: Convert
+tooltip: |
+  Convert Fabrication Ductwork to Native Revit Elements.
+
+  Unified tool that replaces the individual Convert Straights, Elbows,
+  Transitions, and Taps tools into a single branded window.
+
+  **Workflow:**
+  1. Select fabrication ductwork using Pick, Box Select, All In View, or Visible In View.
+  2. Choose the conversion type: Straights, Elbows, Transitions, or Taps.
+  3. Click Convert to run. Results display in a DataGrid with pass/skip/error per element.
+
+  **Recommended order for full system conversion:**
+  Straights > Elbows > Transitions > Taps
+
+  **Prerequisites:**
+  - Native Revit Duct Types and fittings must be loaded for all required shapes.
+  - Duct Routing Preferences must be configured before running.
+order: 04
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 0.1.0
+highlight: dark
+engine:
+  name: ipy
+  clean: true
+  persistence: false

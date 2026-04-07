@@ -1,0 +1,62 @@
+{
+  "group_by_param": "", 
+  "notes": "Asks For Level Name - Service Acronym - Assembly Name - Mark", 
+  "filter_rules": [
+    {
+      "value": "MEP Fabrication Pipework", 
+      "type": "category_eq"
+    }, 
+    {
+      "value": "Pipe Fittings", 
+      "type": "category_eq"
+    }
+  ], 
+  "filter_logic": "OR", 
+  "outputs": [
+    {
+      "label": "Drawing Name", 
+      "slots": [
+        {
+          "desc": "Ask: Level Name", 
+          "label": "?Level Name", 
+          "unit_type": "string", 
+          "key": "ASK:Level Name", 
+          "read_format": "str", 
+          "color": "#c07000"
+        }, 
+        {
+          "desc": "Fabrication Service Abbreviation", 
+          "label": "Fabrication Service Ab...", 
+          "unit_type": "string", 
+          "key": "param:Fabrication Service Abbreviation", 
+          "storage_type": "String", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }, 
+        {
+          "desc": "Assembly Name", 
+          "label": "Assembly Name", 
+          "unit_type": "string", 
+          "key": "param:Assembly Name", 
+          "storage_type": "String", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }, 
+        {
+          "desc": "Mark", 
+          "label": "Mark", 
+          "unit_type": "string", 
+          "key": "param:Mark", 
+          "storage_type": "String", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }
+      ], 
+      "seq_width": 3, 
+      "target_param": "Rack Spool", 
+      "sep": "-"
+    }
+  ], 
+  "name": "Opal Rack Name", 
+  "allow_nested": false
+}

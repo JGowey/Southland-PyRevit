@@ -1,0 +1,9 @@
+title:
+  en_us: Space Volumes
+tooltip:
+  en_us:
+    Use Create DirectShape 3D volumes from MEP Spaces and write the Space Name to Comments for easy filtering/coloring.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

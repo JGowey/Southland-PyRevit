@@ -1,0 +1,440 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Compare"
+    Width="1300" Height="820"
+    MinWidth="800" MinHeight="500"
+    WindowStartupLocation="CenterScreen"
+    Background="#F5F7FB"
+    FontFamily="Segoe UI"
+    FontSize="12"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"
+    ResizeMode="CanResizeWithGrip">
+
+    <Window.Resources>
+        <!-- Surface -->
+        <SolidColorBrush x:Key="PageBg"       Color="#F5F7FB"/>
+        <SolidColorBrush x:Key="CardBg"       Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="CardBgAlt"    Color="#FAFAFC"/>
+        <SolidColorBrush x:Key="StrokePrimary"   Color="#E5E8F0"/>
+        <SolidColorBrush x:Key="StrokeSecondary" Color="#EEF1F7"/>
+
+        <!-- Text -->
+        <SolidColorBrush x:Key="TextPrimary"   Color="#1F2937"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#374151"/>
+        <SolidColorBrush x:Key="TextMuted"     Color="#6B7280"/>
+
+        <!-- Accent -->
+        <SolidColorBrush x:Key="AccentPrimary" Color="#2563EB"/>
+        <SolidColorBrush x:Key="AccentBg"      Color="#EDF2FE"/>
+        <SolidColorBrush x:Key="AccentBorder"  Color="#CBD7FB"/>
+        <SolidColorBrush x:Key="SuccessBg"     Color="#ECFDF5"/>
+        <SolidColorBrush x:Key="SuccessBorder" Color="#A7F3D0"/>
+        <SolidColorBrush x:Key="SuccessPrimary" Color="#10B981"/>
+        <SolidColorBrush x:Key="WarningBg"     Color="#FFFBEB"/>
+        <SolidColorBrush x:Key="WarningBorder" Color="#FCD34D"/>
+        <SolidColorBrush x:Key="WarningPrimary" Color="#F59E0B"/>
+
+        <!-- Typography -->
+        <Style x:Key="WindowTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="WindowSubtitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin" Value="0,2,0,0"/>
+        </Style>
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin" Value="0,0,0,6"/>
+        </Style>
+        <Style x:Key="Caption" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+        </Style>
+
+        <!-- Tooltip Icon -->
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Background" Value="#A0AEC0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="6,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Text" Value="?"/>
+        </Style>
+
+        <!-- Containers -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="14"/>
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+        <Style x:Key="CardFlush" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+        <Style x:Key="CardHeader" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBgAlt}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="CornerRadius" Value="8,8,0,0"/>
+            <Setter Property="Padding" Value="14,10"/>
+        </Style>
+
+        <!-- Button System -->
+        <Style x:Key="Btn_Base" TargetType="Button">
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Padding" Value="14,6"/>
+            <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.9"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Btn_Primary" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource AccentPrimary}"/>
+            <Setter Property="BorderBrush" Value="#1D4ED8"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style x:Key="Btn_Ghost" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Accent" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource AccentBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBorder}"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Success" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource SuccessBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource SuccessBorder}"/>
+            <Setter Property="Foreground" Value="{StaticResource SuccessPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Warning" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource WarningBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource WarningBorder}"/>
+            <Setter Property="Foreground" Value="{StaticResource WarningPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Small" TargetType="Button" BasedOn="{StaticResource Btn_Ghost}">
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Padding" Value="8,2"/>
+        </Style>
+
+        <!-- Radio -->
+        <Style x:Key="CardRadio" TargetType="RadioButton">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="0,3"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- DataGrid -->
+        <Style x:Key="BrandDataGrid" TargetType="DataGrid">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="RowBackground" Value="#FFFFFF"/>
+            <Setter Property="AlternatingRowBackground" Value="#FAFBFF"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource StrokeSecondary}"/>
+            <Setter Property="ColumnHeaderHeight" Value="36"/>
+            <Setter Property="RowHeight" Value="30"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="SelectionMode" Value="Extended"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+        </Style>
+        <Style x:Key="BrandColumnHeader" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="{StaticResource CardBgAlt}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+        <Style x:Key="BrandCell" TargetType="DataGridCell">
+            <Setter Property="Padding" Value="12,4"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DataGridCell">
+                        <Border Padding="{TemplateBinding Padding}"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Difference row highlight -->
+        <Style x:Key="DiffRowStyle" TargetType="DataGridRow">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsDifferent}" Value="True">
+                    <Setter Property="Background" Value="#FFF9E6"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- HEADER -->
+        <DockPanel Grid.Row="0" Margin="0,0,0,14">
+            <StackPanel DockPanel.Dock="Left">
+                <TextBlock Text="Compare"
+                           Style="{StaticResource WindowTitle}"/>
+                <TextBlock Text="Side-by-side comparison of Revit elements, families, schedules, and views"
+                           Style="{StaticResource WindowSubtitle}"/>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- CONTENT -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- LEFT SIDEBAR -->
+            <StackPanel Grid.Column="0" Margin="0,0,12,0">
+
+                <!-- COMPARE TYPE CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                            <TextBlock Style="{StaticResource SectionLabel}"
+                                       Text="COMPARE TYPE" Margin="0"/>
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                        Elements: pick 2-100 fabrication parts.
+                                        Families: pick 2 loadable families.
+                                        Schedules: pick 2+ schedule views.
+                                        Views: pick 2 views or templates.
+                                    </TextBlock>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+                        <RadioButton x:Name="RbElements"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Elements"
+                                     GroupName="CompareType" IsChecked="True"/>
+                        <RadioButton x:Name="RbFamilies"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Families"
+                                     GroupName="CompareType"/>
+                        <RadioButton x:Name="RbSchedules"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Schedules"
+                                     GroupName="CompareType"/>
+                        <RadioButton x:Name="RbViews"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Views"
+                                     GroupName="CompareType"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- SELECT ITEMS -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                            <TextBlock Style="{StaticResource SectionLabel}"
+                                       Text="SELECTION" Margin="0"/>
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <ToolTip>
+                                        <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                            Click "Select and Compare" to pick items in the model.
+                                            <LineBreak/><LineBreak/>
+                                            Elements: box-select or Ctrl+click 2-100 parts.
+                                            Families/Schedules/Views: pick from a list dialog.
+                                            <LineBreak/><LineBreak/>
+                                            Pre-selecting in Revit before opening also works.
+                                        </TextBlock>
+                                    </ToolTip>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+                        <Button x:Name="BtnSelectItems"
+                                Style="{StaticResource Btn_Primary}"
+                                Content="Select and Compare"
+                                Width="180" Height="36"/>
+                        <TextBlock x:Name="TxtSelectionStatus"
+                                   Text="(none)"
+                                   Style="{StaticResource Caption}"
+                                   Margin="0,8,0,0"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- FILTER MODE -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                            <TextBlock Style="{StaticResource SectionLabel}"
+                                       Text="FILTER" Margin="0"/>
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <ToolTip>
+                                        <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                            Filter the results grid after comparing.
+                                            <LineBreak/><LineBreak/>
+                                            <Bold>Everything</Bold> -- show all parameters.
+                                            <LineBreak/>
+                                            <Bold>Differences Only</Bold> -- rows where values differ (highlighted amber).
+                                            <LineBreak/>
+                                            <Bold>Same Only</Bold> -- rows where all values match.
+                                        </TextBlock>
+                                    </ToolTip>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+                        <Button x:Name="BtnEverything"
+                                Style="{StaticResource Btn_Accent}"
+                                Content="Everything" Width="180"
+                                IsEnabled="False" Margin="0,0,0,4"/>
+                        <Button x:Name="BtnDifferences"
+                                Style="{StaticResource Btn_Warning}"
+                                Content="Differences Only" Width="180"
+                                IsEnabled="False" Margin="0,0,0,4"/>
+                        <Button x:Name="BtnSame"
+                                Style="{StaticResource Btn_Success}"
+                                Content="Same Only" Width="180"
+                                IsEnabled="False"/>
+                        <TextBlock x:Name="TxtFilterStatus"
+                                   Text=""
+                                   Style="{StaticResource Caption}"
+                                   Margin="0,8,0,0"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <!-- RIGHT PANEL: RESULTS -->
+            <Border x:Name="ResultsCard" Grid.Column="1"
+                    Style="{StaticResource CardFlush}"
+                    Visibility="Collapsed">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Results Header -->
+                    <Border Grid.Row="0" Style="{StaticResource CardHeader}">
+                        <DockPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        DockPanel.Dock="Left">
+                                <TextBlock Text="Results"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource TextPrimary}"/>
+                                <TextBlock x:Name="TxtResultsSummary"
+                                           Text=""
+                                           Style="{StaticResource Caption}"
+                                           VerticalAlignment="Center"
+                                           Margin="12,0,0,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        DockPanel.Dock="Right"
+                                        HorizontalAlignment="Right">
+                                <Button x:Name="BtnExportCsv"
+                                        Style="{StaticResource Btn_Small}"
+                                        Content="Export CSV" Margin="0,0,4,0"/>
+                                <Button x:Name="BtnExportXls"
+                                        Style="{StaticResource Btn_Small}"
+                                        Content="Export XLS"/>
+                            </StackPanel>
+                        </DockPanel>
+                    </Border>
+
+                    <!-- Results DataGrid -->
+                    <DataGrid x:Name="DgResults" Grid.Row="1"
+                              Style="{StaticResource BrandDataGrid}"
+                              CellStyle="{StaticResource BrandCell}"
+                              ColumnHeaderStyle="{StaticResource BrandColumnHeader}"
+                              RowStyle="{StaticResource DiffRowStyle}">
+                        <!-- Columns generated dynamically -->
+                    </DataGrid>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- FOOTER -->
+        <DockPanel Grid.Row="2" Margin="0,10,0,0">
+            <TextBlock x:Name="TxtStatus"
+                       Style="{StaticResource Caption}"
+                       DockPanel.Dock="Left"
+                       Text="Choose a compare type, then Select and Compare"
+                       VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal"
+                        DockPanel.Dock="Right">
+                <Button x:Name="BtnClose"
+                        Style="{StaticResource Btn_Ghost}"
+                        Content="Close"
+                        Width="90"
+                        IsCancel="True"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>

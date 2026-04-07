@@ -1,0 +1,2621 @@
+
+======================================================================
+UpdateSleeve  session  2026-03-20  15:15:19
+======================================================================
+15:15:19.583 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+15:15:24.138 >>> PickSource -- ENTER
+15:15:25.194 --- Source element ---
+  ID           : 923986
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : Workset1
+  Loc (curve)  : (52.646,26.271,6.000)->(52.646,22.573,6.000)
+  Writable params (59 total, showing first 16):
+    CPH_CID Value                            [String] = 
+    CPH_Food Group                           [String] = 
+    CP_Construction Area                     [String] = 
+    CP_Fabrication_Connector_Name_1          [String] = 
+    CP_Fabrication_Connector_Name_2          [String] = 
+    CP_Fabrication_Connector_Name_3          [String] = 
+    CP_Fabrication_Connector_Name_4          [String] = 
+    CP_Fabrication_Connector_Size_1          [String] = 
+    CP_Fabrication_Connector_Size_2          [String] = 
+    CP_Fabrication_Connector_Size_3          [String] = 
+    CP_Fabrication_Connector_Size_4          [String] = 
+    CP_Food Group                            [String] = 
+    CP_Package Name                          [String] = 
+    CP_Tap Offset                            [Double] = 
+    Comments                                 [String] = 
+    Export to IFC                            [Integer] = By Type
+    ... +43 more
+15:15:25.325 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 5.50000 ft  = 5'-6.0"
+  Ctr. Elev.    : 6.00000 ft  = 6'-0.0"
+  Top Elev.     : 6.50000 ft  = 6'-6.0"
+  Length        : 3.69792 ft  = 44.3750 in
+15:15:25.341 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  15:20:21
+======================================================================
+15:20:21.494 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+15:20:21.540 WARNING: doc.IsModifiable=False at launch.
+  ContentDoc queue may be hot. Sync to Central and
+  restart Revit before using Apply.
+15:20:23.826 >>> PickSource -- ENTER
+15:20:25.033 --- Source element ---
+  ID           : 923986
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : Workset1
+  Loc (curve)  : (52.646,26.271,6.000)->(52.646,22.573,6.000)
+15:20:25.068 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 5.50000 ft  = 5'-6.0"
+  Ctr. Elev.    : 6.00000 ft  = 6'-0.0"
+  Top Elev.     : 6.50000 ft  = 6'-6.0"
+  Length        : 3.69792 ft  = 44.3750 in
+15:20:25.089 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  15:26:28
+======================================================================
+15:26:28.882 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+15:26:28.927 WARNING: doc.IsModifiable=False at launch.
+  ContentDoc queue may be hot. Sync to Central and
+  restart Revit before using Apply.
+15:26:30.690 >>> PickSource -- ENTER
+15:26:31.603 --- Source element ---
+  ID           : 923986
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : Workset1
+  Loc (curve)  : (52.646,26.271,6.000)->(52.646,22.573,6.000)
+15:26:31.635 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 5.50000 ft  = 5'-6.0"
+  Ctr. Elev.    : 6.00000 ft  = 6'-0.0"
+  Top Elev.     : 6.50000 ft  = 6'-6.0"
+  Length        : 3.69792 ft  = 44.3750 in
+15:26:31.665 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  15:43:39
+======================================================================
+15:43:39.919 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+15:43:39.969 WARNING: doc.IsModifiable=False at launch.
+  ContentDoc queue may be hot. Sync to Central and
+  restart Revit before using Apply.
+15:43:51.171 >>> PickSource -- ENTER
+15:43:52.220 --- Source element ---
+  ID           : 923986
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : Workset1
+  Loc (curve)  : (52.646,26.271,6.000)->(52.646,22.573,6.000)
+15:43:52.262 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 5.50000 ft  = 5'-6.0"
+  Ctr. Elev.    : 6.00000 ft  = 6'-0.0"
+  Top Elev.     : 6.50000 ft  = 6'-6.0"
+  Length        : 3.69792 ft  = 44.3750 in
+15:43:52.287 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  15:53:11
+======================================================================
+15:53:11.879 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+15:53:11.926 WARNING: doc.IsModifiable=False at launch.
+  ContentDoc queue may be hot. Sync to Central and
+  restart Revit before using Apply.
+15:53:13.740 >>> PickSource -- ENTER
+15:53:14.838 --- Source element ---
+  ID           : 923986
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : Workset1
+  Loc (curve)  : (52.646,26.271,6.000)->(52.646,22.573,6.000)
+15:53:14.880 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 5.50000 ft  = 5'-6.0"
+  Ctr. Elev.    : 6.00000 ft  = 6'-0.0"
+  Top Elev.     : 6.50000 ft  = 6'-6.0"
+  Length        : 3.69792 ft  = 44.3750 in
+15:53:14.913 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  15:59:37
+======================================================================
+15:59:37.878 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+15:59:37.928 BLOCKED: doc.IsModifiable=False.
+  Revit has queued ContentDoc operations from a prior
+  crashed or incomplete Sync to Central.
+  Fix: delete the local copy, create a fresh local
+  from central, confirm IsModifiable=True in the log.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  16:01:38
+======================================================================
+16:01:39.077 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+16:01:39.130 BLOCKED: doc.IsModifiable=False.
+  Revit has queued ContentDoc operations from a prior
+  crashed or incomplete Sync to Central.
+  Fix: delete the local copy, create a fresh local
+  from central, confirm IsModifiable=True in the log.
+16:01:40.688 >>> PickSource -- ENTER
+16:01:42.001 --- Source element ---
+  ID           : 923986
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : Workset1
+  Loc (curve)  : (52.646,26.271,6.000)->(52.646,22.573,6.000)
+16:01:42.050 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 5.50000 ft  = 5'-6.0"
+  Ctr. Elev.    : 6.00000 ft  = 6'-0.0"
+  Top Elev.     : 6.50000 ft  = 6'-6.0"
+  Length        : 3.69792 ft  = 44.3750 in
+16:01:42.072 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  16:12:27
+======================================================================
+16:12:27.361 === SESSION SNAPSHOT ===
+  Doc              : Project1
+  IsWorkshared     : False
+  IsModifiable     : False
+  Revit build      : 24.3.40.26
+  Sleeve cats resolved (10):
+    Generic Models             id=-2000151
+    Fab. Ductwork              id=-2008193
+    Duct Fittings              id=-2008010
+    Duct Accessories           id=-2008016
+    Fab. Pipework              id=-2008208
+    Pipe Fittings              id=-2008049
+    Pipe Accessories           id=-2008055
+    Mechanical Equipment       id=-2001140
+    Structural Framing         id=-2001320
+    Structural Columns         id=-2001330
+  Source cat IDs   : [-2008208, -2008193, -2008050, -2008044, -2008020, -2008000]
+  Config file      : NOT FOUND
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+16:12:27.413 BLOCKED: doc.IsModifiable=False.
+  Revit has queued ContentDoc operations from a prior
+  crashed or incomplete Sync to Central.
+  Fix: delete the local copy, create a fresh local
+  from central, confirm IsModifiable=True in the log.
+16:12:28.875 >>> PickSource -- ENTER
+16:12:29.583 --- Source element ---
+  ID           : 3481
+  Category     : MEP Fabrication Ductwork  (id=-2008193)
+  Family       : Straight
+  Type         : --
+  Workset      : 
+  Loc (curve)  : (11.205,4.445,7.000)->(11.205,9.143,7.000)
+16:12:29.605 --- Extracted source values ---
+  Width         : 1.00000 ft  = 12.0000 in
+  Height        : 1.00000 ft  = 12.0000 in
+  Diameter      : None (not found on element)
+  Nominal Dia.  : None (not found on element)
+  Bot. Elev.    : 6.50000 ft  = 6'-6.0"
+  Ctr. Elev.    : 7.00000 ft  = 7'-0.0"
+  Top Elev.     : 7.50000 ft  = 7'-6.0"
+  Length        : 4.69792 ft  = 56.3750 in
+16:12:29.631 >>> PickSource -- OK
+
+======================================================================
+UpdateSleeve  session  2026-03-20  16:27:41
+======================================================================
+16:27:41.872 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  Revit build      : 24.3.40.26
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+  Config file      : NOT FOUND
+16:27:41.892 >>> PickObject (script level, no window open)
+16:27:43.054   Picked id=923986  cat=MEP Fabrication Ductwork
+16:27:43.100   Size=12x12"  Elev=Bot 5'-6.0"
+16:27:43.103 >>> PickObject OK
+16:27:43.301 --- Window opened
+16:27:43.301 --- Window opened
+16:27:43.329 --- Starting sleeve scan
+16:27:43.334 --- Scanning for sleeve families ---
+16:27:43.355   Checked 40 family instances, found 2 sleeves
+16:27:43.386 --- Scan complete: 2 sleeve(s) found
+16:27:51.363 >>> Apply -- ENTER
+16:27:51.366   Target count: 2
+16:27:51.372 --- Transaction.Start()
+16:27:51.381 --- Transaction.Commit()
+16:27:51.386 --- Committed OK
+16:27:51.389 >>> Apply -- Updated: 2  Failed: 0
+16:27:59.610 Select all
+16:28:00.467 >>> Rescan
+16:28:00.471 --- Scanning for sleeve families ---
+16:28:00.479   Checked 40 family instances, found 2 sleeves
+16:28:00.485 --- Scan complete: 2 sleeve(s) found
+16:28:05.432 >>> Apply -- ENTER
+16:28:05.435   Target count: 2
+16:28:05.438 --- Transaction.Start()
+16:28:05.441 --- Transaction.Commit()
+16:28:05.444 --- Committed OK
+16:28:05.446 >>> Apply -- Updated: 2  Failed: 0
+16:28:07.506 >>> Apply -- ENTER
+16:28:07.510   Target count: 2
+16:28:07.513 --- Transaction.Start()
+16:28:07.516 --- Transaction.Commit()
+16:28:07.519 --- Committed OK
+16:28:07.521 >>> Apply -- Updated: 2  Failed: 0
+16:28:26.736 Select all
+16:28:27.394 >>> Rescan
+16:28:27.399 --- Scanning for sleeve families ---
+16:28:27.408   Checked 40 family instances, found 2 sleeves
+16:28:27.413 --- Scan complete: 2 sleeve(s) found
+
+======================================================================
+UpdateSleeve  session  2026-03-20  16:38:42
+======================================================================
+16:38:42.280 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  Revit build      : 24.3.40.26
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+  Config file      : NOT FOUND
+16:38:42.297 >>> PickObject (script level, no window open)
+16:38:43.093   Picked id=923986  cat=MEP Fabrication Ductwork
+16:38:43.126   Size=12x12"  Elev=Bot 5'-6.0"
+16:38:43.129 >>> PickObject OK
+16:38:43.201 --- Window opened
+16:38:43.201 --- Window opened
+16:38:43.212 --- Starting sleeve scan
+16:38:43.215 --- Scanning for sleeve families ---
+16:38:43.222   Checked 40 family instances, found 2 sleeves
+16:38:43.260 --- Scan complete: 2 sleeve(s) found
+16:38:45.865 >>> Apply -- ENTER
+16:38:45.868   Target count: 2
+16:38:45.871 --- Apply ABORTED: no active mappings
+16:39:12.188 --- Mapping saved.
+16:39:15.243 >>> Apply -- ENTER
+16:39:15.246   Target count: 2
+16:39:15.248 --- Apply ABORTED: no active mappings
+16:39:38.581 --- Mapping saved.
+16:39:41.204 --- Settings saved.
+16:39:45.435 >>> Apply -- ENTER
+16:39:45.437   Target count: 2
+16:39:45.441 --- Apply ABORTED: no active mappings
+16:40:17.267 --- Mapping saved.
+16:40:21.037 >>> Apply -- ENTER
+16:40:21.040   Target count: 2
+16:40:21.042 --- Apply ABORTED: no active mappings
+16:40:26.388 --- Mapping saved.
+16:40:48.520 >>> Apply -- ENTER
+16:40:48.522   Target count: 2
+16:40:48.525 --- Apply ABORTED: no active mappings
+
+======================================================================
+UpdateSleeve  session  2026-03-20  16:54:56
+======================================================================
+16:54:56.764 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  Revit build      : 24.3.40.26
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+  Config file      : EXISTS
+16:54:56.781 >>> PickObject (script level, no window open)
+16:54:57.786   Picked id=923986  cat=MEP Fabrication Ductwork
+16:54:57.800   Size=12x12"  Elev=Bot 5'-6.0"
+16:54:57.803 >>> PickObject OK
+16:54:57.901 --- Window opened
+16:54:57.901 --- Window opened
+16:54:57.914 --- Starting sleeve scan
+16:54:57.918 --- Scanning for sleeve families ---
+16:54:57.925   Checked 40 family instances, found 2 sleeves
+16:54:57.937 --- Scan complete: 2 sleeve(s) found
+16:55:08.373 >>> Apply -- ENTER
+16:55:08.377   Target count: 2
+16:55:08.380 --- Apply ABORTED: no active mappings
+16:55:19.996 --- Mapping saved.
+16:55:22.801 >>> Apply -- ENTER
+16:55:22.804   Target count: 2
+16:55:22.807 --- Apply ABORTED: no active mappings
+16:55:24.367 >>> Apply -- ENTER
+16:55:24.370   Target count: 2
+16:55:24.372 --- Apply ABORTED: no active mappings
+16:55:30.542 >>> Rescan
+16:55:30.546 --- Scanning for sleeve families ---
+16:55:30.551   Checked 40 family instances, found 2 sleeves
+16:55:30.556 --- Scan complete: 2 sleeve(s) found
+16:55:45.678 >>> InspectSleeve -- Hide + pick
+16:55:46.859   Inspected id=979107  family=BIMrx_DuctAccessory_Sleeve_Rectangular  type=BIMrx_DuctAccessory_Sleeve_Rectangular
+16:55:46.893   25 writable params
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:00:27
+======================================================================
+17:00:28.003 === SESSION SNAPSHOT ===
+  Doc              : MAJ Out Process_jer.griffith
+  IsWorkshared     : True
+  Revit build      : 24.3.40.26
+  Log file         : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+  Config file      : EXISTS
+17:00:28.023 >>> PickObject (script level, no window open)
+17:00:47.652   Picked id=923986  cat=MEP Fabrication Ductwork
+17:00:47.695   Size=12x12"  Elev=Bot 5'-6.0"
+17:00:47.699 >>> PickObject OK
+17:00:47.887 --- Window opened
+17:00:47.887 --- Window opened
+17:00:47.920 --- Starting sleeve scan
+17:00:47.924 --- Scanning for sleeve families ---
+17:00:47.941   Checked 40 family instances, found 2 sleeves
+17:00:47.972 --- Scan complete: 2 sleeve(s) found
+17:00:51.357 >>> InspectSleeve -- Hide + pick
+17:00:52.487   Inspected id=979107  family=BIMrx_DuctAccessory_Sleeve_Rectangular  type=BIMrx_DuctAccessory_Sleeve_Rectangular
+17:00:52.521   25 writable params
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:07:39
+======================================================================
+17:07:39.145 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:07:39.162 >>> PickObject
+17:07:40.290   Picked id=923986  cat=MEP Fabrication Ductwork
+17:07:40.321   Size=12x12"  Elev=Bot 5'-6.0"
+17:07:40.324 >>> PickObject OK
+17:07:40.464 --- Window opened
+17:07:40.473 --- Scanning for sleeve families ---
+17:07:40.493   Checked 40 instances, found 2 sleeves
+17:07:40.535 --- Scan complete: 2 sleeve(s) found.
+17:08:45.870 >>> Rescan
+17:08:45.875 --- Scanning for sleeve families ---
+17:08:45.882   Checked 40 instances, found 2 sleeves
+17:08:45.887 --- Scan complete: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:12:42
+======================================================================
+17:12:42.379 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:12:42.393 >>> PickObject
+17:12:42.847   id=923986  cat=MEP Fabrication Ductwork
+17:12:42.878   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:12:42.973 --- Window opened
+17:12:43.000 --- Scanning for sleeve families ---
+17:12:43.009   Checked 40 instances, found 2 sleeves
+17:12:43.021 --- Scan: 2 sleeve(s) found.
+17:12:54.661 >>> Apply -- ENTER
+17:12:54.665 --- Apply aborted: no active mappings
+17:12:57.099 >>> Apply -- ENTER
+17:12:57.102 --- Apply aborted: no active mappings
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:16:36
+======================================================================
+17:16:36.524 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:16:36.540 >>> PickObject
+17:16:37.514   id=923986  cat=MEP Fabrication Ductwork
+17:16:37.527   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:16:37.584 --- Window opened
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:18:02
+======================================================================
+17:18:02.940 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:18:02.956 >>> PickObject
+17:18:15.068   id=923986  cat=MEP Fabrication Ductwork
+17:18:15.082   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:18:15.140 --- Window opened
+17:18:15.146 --- Scanning for sleeve families ---
+17:18:15.153   Checked 40 instances, found 2 sleeves
+17:18:15.165 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:22:22
+======================================================================
+17:22:22.637 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:22:22.653 >>> PickObject
+17:22:22.727   id=923986  cat=MEP Fabrication Ductwork
+17:22:22.746   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:22:22.809 --- Window opened
+17:22:22.815 --- Scanning for sleeve families ---
+17:22:22.825   Checked 40 instances, found 2 sleeves
+17:22:22.841 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:26:39
+======================================================================
+17:26:39.407 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:26:39.423 >>> PickObject
+17:26:40.282   id=923986  cat=MEP Fabrication Ductwork
+17:26:40.296   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:26:40.363 --- Window opened
+17:26:40.371 --- Scanning for sleeve families ---
+17:26:40.380   Checked 40 instances, found 2 sleeves
+17:26:40.402 --- Scan: 2 sleeve(s) found.
+17:26:42.545 >>> Apply -- src_pt (52.646, 24.422, 6.000)
+17:26:43.395 >>> Apply -- Moved: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:33:48
+======================================================================
+17:33:48.214 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:33:48.228 >>> PickObject
+17:33:48.700   id=923986  cat=MEP Fabrication Ductwork
+17:33:48.737   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:33:48.788 --- Window opened
+17:33:48.793 --- Scanning for sleeve families ---
+17:33:48.802   Checked 40 instances, found 2 sleeves
+17:33:48.819 --- Scan: 2 sleeve(s) found.
+17:33:54.238 >>> Apply -- src_pt (52.646, 24.422, 6.000)
+17:33:54.514 >>> Apply -- Moved: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:37:50
+======================================================================
+17:37:50.152 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:37:50.167 >>> PickObject
+17:37:50.723   id=923986  cat=MEP Fabrication Ductwork
+17:37:50.737   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:37:50.793 --- Window opened
+17:37:50.799 --- Scanning for sleeve families ---
+17:37:50.806   Checked 40 instances, found 2 sleeves
+17:37:50.819 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:38:53
+======================================================================
+17:38:53.862 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:38:53.876 >>> PickObject
+17:38:54.559   id=923986  cat=MEP Fabrication Ductwork
+17:38:54.572   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:38:54.625 --- Window opened
+17:38:54.630 --- Scanning for sleeve families ---
+17:38:54.638   Checked 40 instances, found 2 sleeves
+17:38:54.652 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:42:08
+======================================================================
+17:42:08.076 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:42:08.091 >>> PickObject
+17:42:09.486   id=923986  cat=MEP Fabrication Ductwork
+17:42:09.499   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:42:09.571 --- Window opened
+17:42:09.578 --- Scanning for sleeve families ---
+17:42:09.585   Checked 40 instances, found 2 sleeves
+17:42:09.622 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  17:43:18
+======================================================================
+17:43:18.563 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+17:43:18.574 >>> PickObject
+17:43:20.027   id=923986  cat=MEP Fabrication Ductwork
+17:43:20.040   Size=12x12"  Elev=Bot 5'-6.0"  OK
+17:43:20.102 --- Window opened
+17:43:20.107 --- Scanning for sleeve families ---
+17:43:20.114   Checked 40 instances, found 2 sleeves
+17:43:20.139 --- Scan: 2 sleeve(s) found.
+17:43:29.856 >>> Apply -- src_pt (52.646, 24.422, 6.000)
+17:43:29.964 >>> Apply -- Moved: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:06:50
+======================================================================
+22:06:50.459 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:06:50.468 >>> PickObject
+22:06:51.224   id=923986  cat=MEP Fabrication Ductwork
+22:06:51.237   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:06:51.309 --- Window opened
+22:06:51.314 --- Scanning for sleeve families ---
+22:06:51.321   Checked 40 instances, found 2 sleeves
+22:06:51.335 --- Scan: 2 sleeve(s) found.
+22:06:53.941 >>> Rescan
+22:06:53.944 --- Scanning for sleeve families ---
+22:06:53.949   Checked 40 instances, found 2 sleeves
+22:06:53.953 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:11:32
+======================================================================
+22:11:32.863 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:11:32.872 >>> PickObject
+22:11:35.765   id=923986  cat=MEP Fabrication Ductwork
+22:11:35.779   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:11:35.846 --- Window opened
+22:11:35.851 --- Scanning for sleeve families ---
+22:11:35.865   Checked 40 instances, found 2 sleeves
+22:11:35.877 --- Scan: 2 sleeve(s) found.
+22:11:38.999 >>> Apply -- src_pt (52.646, 24.422, 6.000)
+22:11:39.379 >>> Apply -- Moved: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:13:29
+======================================================================
+22:13:29.099 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:13:29.119 >>> PickObject
+22:13:31.732   id=923986  cat=MEP Fabrication Ductwork
+22:13:31.758   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:13:31.823 --- Window opened
+22:13:31.828 --- Scanning for sleeve families ---
+22:13:31.834   Checked 40 instances, found 2 sleeves
+22:13:31.846 --- Scan: 2 sleeve(s) found.
+22:13:54.772 >>> Apply -- src_pt (52.646, 24.422, 6.000)
+22:13:55.338 >>> Apply -- Moved: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:14:31
+======================================================================
+22:14:31.244 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:14:31.254 >>> PickObject
+22:14:32.008   id=923986  cat=MEP Fabrication Ductwork
+22:14:32.021   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:14:32.093 --- Window opened
+22:14:32.098 --- Scanning for sleeve families ---
+22:14:32.104   Checked 40 instances, found 2 sleeves
+22:14:32.124 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:16:41
+======================================================================
+22:16:41.596 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:16:41.617 >>> PickObject
+22:16:42.090   id=923986  cat=MEP Fabrication Ductwork
+22:16:42.103   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:16:42.165 --- Window opened
+22:16:42.169 --- Scanning for sleeve families ---
+22:16:42.176   Checked 40 instances, found 2 sleeves
+22:16:42.199 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:22:02
+======================================================================
+22:22:02.970 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:22:02.979 >>> PickObject
+22:22:03.463   id=923986  cat=MEP Fabrication Ductwork
+22:22:03.475   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:22:03.569 --- Window opened
+22:22:03.574 --- Scanning for sleeve families ---
+22:22:03.580   Checked 40 instances, found 2 sleeves
+22:22:03.596 --- Scan: 2 sleeve(s) found.
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:23:24
+======================================================================
+22:23:24.499 === SESSION SNAPSHOT ===
+  Doc          : MAJ Out Process_jer.griffith
+  IsWorkshared : True
+  Build        : 24.3.40.26
+  Log          : C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\EDN Tools.panel\01Tools.stack\CNC Tools.pulldown\11UpdateSleeve.pushbutton\debug_log.txt
+22:23:24.508 >>> PickObject
+22:23:25.089   id=923986  cat=MEP Fabrication Ductwork
+22:23:25.119   Size=12x12"  Elev=Bot 5'-6.0"  OK
+22:23:25.182 --- Window opened
+22:23:25.187 --- Scanning for sleeve families ---
+22:23:25.193   Checked 40 instances, found 2 sleeves
+22:23:25.205 --- Scan: 2 sleeve(s) found.
+22:23:25.230 --- Detected 8 candidate params: CP_Elevation_Center, CP_Host Depth, CP_Host Width, CP_Sleeve_Clearance, CP_Sleeve_Depth, CP_Sleeve_Length, CP_Sleeve_Width, Elevation from Level
+22:23:25.234   Pre-selected  width='CP_Host Width'  height='CP_Host Depth'  dia='-- none --'
+22:23:34.305 >>> Rescan
+22:23:34.309 --- Scanning for sleeve families ---
+22:23:34.314   Checked 40 instances, found 2 sleeves
+22:23:34.318 --- Scan: 2 sleeve(s) found.
+22:23:34.323 --- Detected 8 candidate params: CP_Elevation_Center, CP_Host Depth, CP_Host Width, CP_Sleeve_Clearance, CP_Sleeve_Depth, CP_Sleeve_Length, CP_Sleeve_Width, Elevation from Level
+22:23:34.325   Pre-selected  width='CP_Host Width'  height='CP_Host Depth'  dia='-- none --'
+22:23:45.349 >>> Rescan
+22:23:45.352 --- Scanning for sleeve families ---
+22:23:45.357   Checked 40 instances, found 2 sleeves
+22:23:45.361 --- Scan: 2 sleeve(s) found.
+22:23:45.365 --- Detected 8 candidate params: CP_Elevation_Center, CP_Host Depth, CP_Host Width, CP_Sleeve_Clearance, CP_Sleeve_Depth, CP_Sleeve_Length, CP_Sleeve_Width, Elevation from Level
+22:23:45.368   Pre-selected  width='CP_Host Width'  height='CP_Host Depth'  dia='-- none --'
+22:23:46.785 >>> Rescan
+22:23:46.788 --- Scanning for sleeve families ---
+22:23:46.792   Checked 40 instances, found 2 sleeves
+22:23:46.795 --- Scan: 2 sleeve(s) found.
+22:23:46.799 --- Detected 8 candidate params: CP_Elevation_Center, CP_Host Depth, CP_Host Width, CP_Sleeve_Clearance, CP_Sleeve_Depth, CP_Sleeve_Length, CP_Sleeve_Width, Elevation from Level
+22:23:46.802   Pre-selected  width='CP_Host Width'  height='CP_Host Depth'  dia='-- none --'
+22:23:51.018 >>> Rescan
+22:23:51.022 --- Scanning for sleeve families ---
+22:23:51.026   Checked 40 instances, found 2 sleeves
+22:23:51.030 --- Scan: 2 sleeve(s) found.
+22:23:51.033 --- Detected 8 candidate params: CP_Elevation_Center, CP_Host Depth, CP_Host Width, CP_Sleeve_Clearance, CP_Sleeve_Depth, CP_Sleeve_Length, CP_Sleeve_Width, Elevation from Level
+22:23:51.036   Pre-selected  width='CP_Host Width'  height='CP_Host Depth'  dia='-- none --'
+22:24:11.945 >>> Apply -- src_pt (52.646, 24.422, 6.000)
+22:24:12.281 >>> Apply -- Moved: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:34:35
+======================================================================
+22:34:35.438 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:34:36.485 Picked id=923986  12x12"
+22:34:36.556 --- Scanning for sleeve families ---
+22:34:36.563   Checked 40 instances, found 2 sleeves
+22:35:13.735 --- Scanning for sleeve families ---
+22:35:13.749   Checked 40 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:41:54
+======================================================================
+22:41:54.294 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:41:55.855 Picked id=923986  12x12"
+22:41:55.929 --- Scanning for sleeve families ---
+22:41:55.936   Checked 40 instances, found 2 sleeves
+22:42:27.527 --- Scanning for sleeve families ---
+22:42:27.533   Checked 40 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:46:32
+======================================================================
+22:46:32.163 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:46:34.116 Picked id=923986  12x12"
+22:46:34.185 --- Scanning for sleeve families ---
+22:46:34.193   Checked 40 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:50:34
+======================================================================
+22:50:34.583 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:50:35.475 Picked id=923986  12x12"
+22:50:35.550 --- Scanning for sleeve families ---
+22:50:35.556   Checked 40 instances, found 2 sleeves
+22:51:39.543 Apply -- Moved: 2  Writes OK: 2  Failed: 2
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:52:13
+======================================================================
+22:52:13.755 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:52:15.508 Picked id=923986  12x12"
+22:52:15.580 --- Scanning for sleeve families ---
+22:52:15.587   Checked 40 instances, found 2 sleeves
+22:52:32.899 Apply -- Moved: 2  Writes OK: 2  Failed: 2
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:54:58
+======================================================================
+22:54:58.389 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:54:59.602 Picked id=923986  12x12"
+22:54:59.687 --- Scanning for sleeve families ---
+22:54:59.694   Checked 40 instances, found 2 sleeves
+22:55:23.987 Apply -- Moved: 2  Writes OK: 2  Failed: 2
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:55:50
+======================================================================
+22:55:50.937 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:55:55.169 Picked id=923986  12x12"
+22:55:55.241 --- Scanning for sleeve families ---
+22:55:55.247   Checked 40 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  22:59:06
+======================================================================
+22:59:06.694 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:59:08.445 Picked id=923986  12x12"
+22:59:08.532 --- Scanning for sleeve families ---
+22:59:08.540   Checked 40 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:04:37
+======================================================================
+23:04:37.416 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:04:38.023 Picked id=980379  8" dia
+23:04:38.145 --- Scanning for sleeve families ---
+23:04:38.154   Checked 45 instances, found 4 sleeves
+23:05:18.482 Apply -- Moved: 2  Writes OK: 0  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:05:55
+======================================================================
+23:05:55.389 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:05:56.653 Picked id=980379  8" dia
+23:05:56.726 --- Scanning for sleeve families ---
+23:05:56.732   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:06:42
+======================================================================
+23:06:42.043 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:06:42.919 Picked id=980379  8" dia
+23:06:42.986 --- Scanning for sleeve families ---
+23:06:42.993   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:11:18
+======================================================================
+23:11:18.819 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:11:19.699 Picked id=980379  8" dia
+23:11:19.773 --- Scanning for sleeve families ---
+23:11:19.796   Checked 45 instances, found 4 sleeves
+23:11:50.562 Apply -- Moved: 1  Writes OK: 0  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:12:28
+======================================================================
+23:12:28.524 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:12:32.923 Picked id=980379  8" dia
+23:12:32.990 --- Scanning for sleeve families ---
+23:12:32.997   Checked 45 instances, found 4 sleeves
+23:12:57.042 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:14:10
+======================================================================
+23:14:10.017 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:14:10.661 Picked id=980379  8" dia
+23:14:10.727 --- Scanning for sleeve families ---
+23:14:10.734   Checked 45 instances, found 4 sleeves
+23:14:33.489 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:16:58
+======================================================================
+23:16:58.258 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:16:59.282 Picked id=980379  8" dia
+23:16:59.364 --- Scanning for sleeve families ---
+23:16:59.371   Checked 45 instances, found 4 sleeves
+23:17:21.312 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+23:17:36.168 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+23:17:37.325 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+23:17:39.413 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:19:16
+======================================================================
+23:19:16.774 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:19:18.634 Picked id=980379  8" dia
+23:19:18.694 --- Scanning for sleeve families ---
+23:19:18.702   Checked 45 instances, found 4 sleeves
+23:19:43.176 Apply -- Moved: 1  Writes OK: 0  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:29:08
+======================================================================
+23:29:08.035 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:29:22.136 Picked id=980379  8" dia
+23:29:22.212 --- Scanning for sleeve families ---
+23:29:22.220   Checked 45 instances, found 4 sleeves
+23:29:42.532 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:30:14
+======================================================================
+23:30:14.177 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:30:14.826 Picked id=980379  8" dia
+23:30:14.903 --- Scanning for sleeve families ---
+23:30:14.911   Checked 45 instances, found 4 sleeves
+23:30:47.010 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:36:25
+======================================================================
+23:36:25.838 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:36:27.967 Picked id=980379  8" dia
+23:36:28.050 --- Scanning for sleeve families ---
+23:36:28.057   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:44:26
+======================================================================
+23:44:26.647 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:44:27.260 Picked id=980379  8" dia
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:48:05
+======================================================================
+23:48:05.804 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:48:07.275 Picked id=980379  8" dia
+23:48:07.387 --- Scanning for sleeve families (keyword='sleeve') ---
+23:48:07.396   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:54:51
+======================================================================
+23:54:51.939 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:54:52.701 Picked id=980379  8" dia
+23:54:52.797 --- Scanning sleeves  rule: sleeve AND (pipe) ---
+23:54:52.808   Checked 45 instances, found 2 sleeves
+23:55:16.860 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+23:55:16.865   Checked 45 instances, found 2 sleeves
+23:55:26.512 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+23:55:26.517   Checked 45 instances, found 2 sleeves
+23:55:57.049 Apply -- Moved: 2  Writes OK: 0  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:56:47
+======================================================================
+23:56:47.561 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:56:48.103 Picked id=980379  8" dia
+23:56:48.189 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+23:56:48.207   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-20  23:59:53
+======================================================================
+23:59:53.801 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:59:57.047 Picked id=980379  8" dia
+23:59:57.150 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+23:59:57.161   Checked 45 instances, found 2 sleeves
+00:00:30.345 Apply -- Moved: 2  Writes OK: 1  Failed: 1
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:03:13
+======================================================================
+00:03:13.079 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:03:14.787 Picked id=980379  8" dia
+00:03:14.899 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:03:14.913   Checked 45 instances, found 2 sleeves
+00:04:19.320 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:05:23
+======================================================================
+00:05:23.374 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:05:25.047 Picked id=980379  8" dia
+00:05:25.124 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:05:25.144   Checked 45 instances, found 2 sleeves
+00:05:46.650 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:08:05
+======================================================================
+00:08:05.164 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:08:10.230 Picked id=980379  8" dia
+00:08:10.336 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:08:10.348   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:15:44
+======================================================================
+00:15:44.858 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:15:49.786 Part+Sleeve src id=980379  8" dia
+00:15:50.792 Part+Sleeve slv id=982458
+00:15:50.948 Part+Sleeve done: MOVED  delta (-0.421, 0.000, 1.574) ft; FAIL  Diameter -> CP_Sleeve_Nominal Diameter = 10.00in  (not found: 'CP_Sleeve_Nominal Diameter')
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:18:01
+======================================================================
+00:18:01.369 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:18:04.610 Part+Sleeve src id=980379  8" dia
+00:18:05.664 Part+Sleeve slv id=982458
+00:18:05.858 Part+Sleeve done: MOVED  delta (-0.421, 0.000, 1.574) ft; FAIL  Diameter -> CP_Sleeve_Nominal Diameter = 10.00in  (not found: 'CP_Sleeve_Nominal Diameter')
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:18:28
+======================================================================
+00:18:28.841 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:18:31.541 Picked id=980379  8" dia
+00:18:31.616 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:18:31.630   Checked 45 instances, found 2 sleeves
+00:18:51.288 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:19:30
+======================================================================
+00:19:30.652 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:19:33.716 Picked id=980379  8" dia
+00:19:33.795 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:19:33.807   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:23:07
+======================================================================
+00:23:07.054 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:23:11.063 Picked id=980379  8" dia
+00:23:11.137 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:23:11.148   Checked 45 instances, found 2 sleeves
+00:23:23.367 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:23:57
+======================================================================
+00:23:57.861 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:24:01.477 Picked id=980379  8" dia
+00:24:01.551 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:24:01.564   Checked 45 instances, found 2 sleeves
+00:24:46.477 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:25:05
+======================================================================
+00:25:05.842 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:25:08.403 Picked id=980379  8" dia
+00:25:08.465 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:25:08.477   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:27:22
+======================================================================
+00:27:22.436 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:27:25.297 Picked id=980379  8" dia
+00:27:25.365 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:27:25.376   Checked 45 instances, found 2 sleeves
+00:27:36.864 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:28:06
+======================================================================
+00:28:06.845 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:28:09.777 Picked id=980379  8" dia
+00:28:09.851 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:28:09.867   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:31:30
+======================================================================
+00:31:30.384 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:31:32.689 Picked id=980379  8" dia
+00:31:32.760 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:31:32.786   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:33:44
+======================================================================
+00:33:44.400 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:33:47.413 Picked id=980379  8" dia
+00:33:47.471 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:33:47.484   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:35:25
+======================================================================
+00:35:25.869 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:35:28.667 Picked id=980379  8" dia
+00:35:28.739 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:35:28.755   Checked 45 instances, found 2 sleeves
+00:35:36.951 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:36:24
+======================================================================
+00:36:24.632 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:36:27.823 Picked id=980379  8" dia
+00:36:27.883 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:36:27.894   Checked 45 instances, found 2 sleeves
+00:39:14.773 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:39:56
+======================================================================
+00:39:56.062 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:39:59.276 Picked id=980379  8" dia
+00:39:59.350 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:39:59.370   Checked 45 instances, found 2 sleeves
+00:40:09.379 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:40:48
+======================================================================
+00:40:48.316 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:40:51.341 Picked id=980379  8" dia
+00:40:51.403 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:40:51.426   Checked 45 instances, found 2 sleeves
+00:40:59.276 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:41:26
+======================================================================
+00:41:26.542 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:41:29.571 Picked id=980379  8" dia
+00:41:29.642 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:41:29.659   Checked 45 instances, found 2 sleeves
+00:41:38.966 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:42:07
+======================================================================
+00:42:07.439 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:42:10.459 Part+Sleeve src id=980379  8" dia
+00:42:12.198 Part+Sleeve slv id=982458
+00:42:12.309 Part+Sleeve done: MOVED  delta (1.163, -0.000, 1.900) ft; FAIL  Diameter -> CP_Sleeve_Nominal Diameter = 10.00in  (not found: 'CP_Sleeve_Nominal Diameter')
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:42:31
+======================================================================
+00:42:31.207 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:42:33.953 Part+Sleeve src id=980379  8" dia
+00:42:35.781 Part+Sleeve slv id=982974
+00:42:35.954 Part+Sleeve done: MOVED  delta (-1.337, 0.000, 1.737) ft; OK    Diameter -> CP_Sleeve_Nominal Diameter = 10.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:47:41
+======================================================================
+00:47:41.265 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:47:44.730 Picked id=980379  8" dia
+00:47:44.793 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:47:44.804   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:48:03
+======================================================================
+00:48:03.068 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:48:07.031 Picked id=980379  8" dia
+00:48:07.096 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:48:07.118   Checked 45 instances, found 2 sleeves
+00:48:14.615 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  00:49:53
+======================================================================
+00:49:53.620 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:49:56.613 Picked id=980379  8" dia
+00:49:56.669 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+00:49:56.680   Checked 45 instances, found 2 sleeves
+00:50:30.262 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  09:24:59
+======================================================================
+09:24:59.997 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:25:03.763 Part+Sleeve src id=980379  8" dia
+09:25:04.810 Part+Sleeve slv id=982974
+09:25:05.010 Part+Sleeve done: MOVED  delta (-0.921, 0.000, 1.532) ft; OK    Diameter -> CP_Sleeve_Nominal Diameter = 10.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  09:25:20
+======================================================================
+09:25:20.447 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:25:22.915 Part+Sleeve src id=980379  8" dia
+09:25:23.881 Part+Sleeve slv id=982458
+09:25:23.991 Part+Sleeve done: MOVED  delta (1.496, -0.000, 1.766) ft; FAIL  Diameter -> CP_Sleeve_Nominal Diameter = 10.00in  (not found: 'CP_Sleeve_Nominal Diameter')
+
+======================================================================
+UpdateSleeve  session  2026-03-21  09:40:52
+======================================================================
+09:40:52.877 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:40:56.339 Picked id=980379  8" dia
+09:40:56.422 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+09:40:56.436   Checked 45 instances, found 2 sleeves
+09:41:23.421 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  09:41:47
+======================================================================
+09:41:47.305 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:41:49.941 Part+Sleeve src id=980379  8" dia
+09:41:50.773 Part+Sleeve slv id=982974
+09:41:51.117 Part+Sleeve done: MOVED  delta (1.413, -0.000, 2.422) ft; OK    Diameter -> CP_Sleeve_Nominal Diameter = 10.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:07:51
+======================================================================
+10:07:51.872 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:07:54.664 Part+Sleeve src id=980379  8" dia
+10:07:55.872 Part+Sleeve slv id=982458 fam=BIMrx_PipeAccessory_Sleeve_Round
+10:08:23.689 Part+Sleeve done: MOVED  delta (-2.171, 0.000, 2.022) ft; FAIL  Diameter -> CP_Sleeve_Nominal Diameter = 10.00in  (not found: 'CP_Sleeve_Nominal Diameter')
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:09:28
+======================================================================
+10:09:28.130 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:10:00.980 Picked id=980379  8" dia
+10:10:01.070 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+10:10:01.083   Checked 45 instances, found 2 sleeves
+10:11:31.720 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:15:59
+======================================================================
+10:15:59.070 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:16:03.298 Picked id=980379  8" dia
+10:16:03.358 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+10:16:03.368   Checked 45 instances, found 2 sleeves
+10:16:13.976 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:16:37
+======================================================================
+10:16:37.983 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:16:43.143 Picked id=980379  8" dia
+10:16:43.225 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+10:16:43.249   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:16:59
+======================================================================
+10:16:59.907 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:17:02.541 Part+Sleeve src id=980379  8" dia
+10:17:03.778 Part+Sleeve slv id=982458 fam=BIMrx_PipeAccessory_Sleeve_Round
+10:17:05.443 Part+Sleeve done: MOVED  delta (-0.837, 0.000, 1.851) ft; OK    Diameter -> BIMrx_SLEEVE WIDTH = 10.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:17:25
+======================================================================
+10:17:25.854 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:17:30.061 Picked id=923986  12x12"
+10:17:30.122 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:17:30.134   Checked 45 instances, found 2 sleeves
+10:17:54.735 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:18:37
+======================================================================
+10:18:37.014 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:18:41.167 Picked id=923986  12x12"
+10:18:41.246 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:18:41.260   Checked 45 instances, found 2 sleeves
+10:18:54.839 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:19:34
+======================================================================
+10:19:34.693 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:19:38.583 Picked id=923986  12x12"
+10:19:38.658 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:19:38.675   Checked 45 instances, found 2 sleeves
+10:21:59.060 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:22:21
+======================================================================
+10:22:21.646 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:22:25.053 Picked id=923986  12x12"
+10:22:25.129 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:22:25.143   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:23:17
+======================================================================
+10:23:17.289 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:23:28.308 Picked id=923986  12x12"
+10:23:28.365 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:23:28.404   Checked 45 instances, found 2 sleeves
+10:23:43.968 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:24:39
+======================================================================
+10:24:39.509 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:24:43.148 Picked id=923986  12x12"
+10:24:43.220 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:24:43.254   Checked 45 instances, found 2 sleeves
+10:25:19.585 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:25:47
+======================================================================
+10:25:47.253 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:25:52.179 Picked id=923986  12x12"
+10:25:52.262 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:25:52.271   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:30:15
+======================================================================
+10:30:15.077 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:30:19.588 Picked id=923986  12x12"
+10:30:19.697 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:30:19.718   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:32:46
+======================================================================
+10:32:46.740 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:32:50.576 Picked id=923986  12x12"
+10:32:50.654 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:32:50.680   Checked 45 instances, found 2 sleeves
+10:32:56.314 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:33:26
+======================================================================
+10:33:26.998 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:33:32.884 Picked id=923986  12x12"
+10:33:32.950 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:33:32.962   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:37:10
+======================================================================
+10:37:10.729 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:37:14.225 Picked id=923986  12x12"
+10:37:14.302 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:37:14.319   Checked 45 instances, found 2 sleeves
+10:37:26.226 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:39:25
+======================================================================
+10:39:25.716 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:39:29.749 Picked id=923986  12x12"
+10:39:29.826 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+10:39:29.839   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:40:07
+======================================================================
+10:40:07.959 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:40:10.765 Part+Sleeve src id=923986  12x12"
+10:40:12.238 Part+Sleeve slv id=977145
+10:40:12.633 Part+Sleeve done: MOVED  delta (-2.688, 0.000, 1.897) ft; OK    Width -> CP_Sleeve_Depth = 14.00in; OK    Height -> CP_Sleeve_Width = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:41:46
+======================================================================
+10:41:46.074 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:41:48.768 Part+Sleeve src id=923986  12x12"
+10:41:49.786 Part+Sleeve slv id=977145
+10:41:50.112 Part+Sleeve done: MOVED  delta (-2.688, 0.000, 1.897) ft; OK    Width -> CP_Sleeve_Depth = 14.00in; OK    Height -> CP_Sleeve_Width = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:42:04
+======================================================================
+10:42:04.247 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:42:07.788 Part+Sleeve src id=923986  12x12"
+10:42:08.983 Part+Sleeve slv id=979107
+10:42:09.154 Part+Sleeve done: MOVED  delta (-2.688, 0.000, -1.526) ft; OK    Width -> BIMrx_SLEEVE WIDTH = 14.00in; OK    Height -> BIMrx_SLEEVE HEIGHT = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:42:27
+======================================================================
+10:42:27.966 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:42:30.182 Part+Sleeve src id=980379  8" dia
+10:42:31.006 Part+Sleeve slv id=982458
+10:42:31.127 Part+Sleeve done: MOVED  delta (-0.837, 0.000, 1.851) ft; OK    Diameter -> BIMrx_SLEEVE WIDTH = 10.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  10:42:44
+======================================================================
+10:42:44.600 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:42:47.589 Part+Sleeve src id=980379  8" dia
+10:42:48.457 Part+Sleeve slv id=982974
+10:42:48.666 Part+Sleeve done: MOVED  delta (1.413, -0.000, 2.161) ft; OK    Diameter -> CP_Sleeve_Nominal Diameter = 10.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:03:53
+======================================================================
+14:03:53.761 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:03:56.036 Picked id=980379  12" dia
+14:03:56.087 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+14:03:56.108   Checked 45 instances, found 2 sleeves
+14:03:59.313 Apply -- Moved: 2  Writes OK: 1  Failed: 1
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:04:34
+======================================================================
+14:04:34.472 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:04:36.571 Picked id=980379  12" dia
+14:04:36.601 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+14:04:36.613   Checked 45 instances, found 2 sleeves
+14:04:38.231 Apply -- Moved: 2  Writes OK: 1  Failed: 1
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:05:52
+======================================================================
+14:05:52.782 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:05:54.875 Picked id=980379  12" dia
+14:05:54.906 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+14:05:54.917   Checked 45 instances, found 2 sleeves
+14:05:56.942 Apply -- Moved: 2  Writes OK: 1  Failed: 1
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:06:08
+======================================================================
+14:06:08.780 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:06:11.458 Picked id=980379  12" dia
+14:06:11.491 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+14:06:11.503   Checked 45 instances, found 2 sleeves
+14:06:21.317 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:06:58
+======================================================================
+14:06:58.314 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:07:00.516 Picked id=923986  12x12"
+14:07:00.538 --- Scanning sleeves  rule: sleeve AND (rect OR rec) ---
+14:07:00.561   Checked 45 instances, found 2 sleeves
+14:07:15.577 --- Scanning sleeves  rule: sleeve ---
+14:07:15.585   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:07:57
+======================================================================
+14:07:57.810 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:08:00.560 Picked id=923986  12x12"
+14:08:00.583 --- Scanning sleeves  rule: sleeve ---
+14:08:00.592   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:11:46
+======================================================================
+14:11:46.768 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:11:52.311 Picked id=923986  12x12"
+14:11:52.335 --- Scanning sleeves  rule: sleeve ---
+14:11:52.354   Checked 45 instances, found 4 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:12:27
+======================================================================
+14:12:27.462 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:12:30.194 Picked id=980379  12" dia
+14:12:30.237 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+14:12:30.251   Checked 45 instances, found 2 sleeves
+14:12:35.126 --- Scanning sleeves  rule: sleeve AND (pipe OR rd) ---
+14:12:35.134   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  14:14:39
+======================================================================
+14:14:39.135 === SESSION ===  doc=MAJ Out Process_jer.griffith
+14:14:41.845 Picked id=923986  12x12"
+14:14:41.878 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+14:14:41.890   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  22:50:00
+======================================================================
+22:50:00.119 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:50:06.121 Picked id=923986  12x12"
+22:50:06.173 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+22:50:06.195   Checked 45 instances, found 2 sleeves
+22:50:15.820 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+22:50:15.825   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  22:53:45
+======================================================================
+22:53:45.883 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:53:48.465 Picked id=980379  12" dia
+22:53:48.500 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+22:53:48.512   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  22:59:08
+======================================================================
+22:59:08.063 === SESSION ===  doc=MAJ Out Process_jer.griffith
+22:59:10.681 Picked id=980379  12" dia
+22:59:10.714 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+22:59:10.726   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  23:15:26
+======================================================================
+23:15:26.356 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:15:29.437 Picked id=980379  12" dia
+23:15:29.469 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+23:15:29.480   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  23:18:47
+======================================================================
+23:18:47.836 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:18:50.219 Picked id=980379  12" dia
+23:18:50.247 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+23:18:50.258   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-21  23:22:14
+======================================================================
+23:22:14.443 === SESSION ===  doc=MAJ Out Process_jer.griffith
+23:22:17.715 Picked id=980379  12" dia
+23:22:17.740 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+23:22:17.751   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-22  00:44:45
+======================================================================
+00:44:45.843 === SESSION ===  doc=MAJ Out Process_jer.griffith
+00:44:48.431 Picked id=980379  12" dia
+00:44:48.457 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+00:44:48.475   Checked 45 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-22  03:50:03
+======================================================================
+03:50:03.540 === SESSION ===  doc=MAJ Out Process_jer.griffith
+
+======================================================================
+UpdateSleeve  session  2026-03-22  03:50:28
+======================================================================
+03:50:28.766 === SESSION ===  doc=MAJ Out Process_jer.griffith
+
+======================================================================
+UpdateSleeve  session  2026-03-22  03:50:31
+======================================================================
+03:50:31.580 === SESSION ===  doc=MAJ Out Process_jer.griffith
+
+======================================================================
+UpdateSleeve  session  2026-03-23  07:26:25
+======================================================================
+07:26:25.264 === SESSION ===  doc=MAJ Out Process_jer.griffith
+07:26:31.548 Picked id=980379  12" dia
+07:26:31.602 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+07:26:31.630   Checked 536 instances, found 2 sleeves
+07:26:43.047 Apply -- Moved: 2  Writes OK: 1  Failed: 1
+
+======================================================================
+UpdateSleeve  session  2026-03-23  07:28:22
+======================================================================
+07:28:22.745 === SESSION ===  doc=MAJ Out Process_jer.griffith
+07:28:25.712 Picked id=980379  12" dia
+07:28:25.883 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+07:28:25.920   Checked 536 instances, found 2 sleeves
+07:28:32.945 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  07:29:37
+======================================================================
+07:29:37.209 === SESSION ===  doc=MAJ Out Process_jer.griffith
+07:29:39.462 Picked id=980379  6" dia
+07:29:39.626 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+07:29:39.658   Checked 536 instances, found 2 sleeves
+07:29:47.854 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  07:33:57
+======================================================================
+07:33:57.916 === SESSION ===  doc=MAJ Out Process_jer.griffith
+07:34:00.840 Picked id=980379  6" dia
+07:34:01.003 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+07:34:01.034   Checked 536 instances, found 2 sleeves
+07:34:23.429 Apply -- Moved: 2  Writes OK: 1  Failed: 1
+
+======================================================================
+UpdateSleeve  session  2026-03-23  07:34:34
+======================================================================
+07:34:34.011 === SESSION ===  doc=MAJ Out Process_jer.griffith
+07:34:36.844 Picked id=980379  6" dia
+07:34:37.006 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+07:34:37.039   Checked 536 instances, found 2 sleeves
+07:34:45.159 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:15:27
+======================================================================
+08:15:27.718 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:15:30.535 Picked id=980379  12" dia
+08:15:30.739 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:15:30.773   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:37:06
+======================================================================
+08:37:06.784 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:37:09.095 Picked id=980379  12" dia
+08:37:09.361 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:37:09.413   Checked 536 instances, found 2 sleeves
+08:37:13.913 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:37:13.931   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:37:42
+======================================================================
+08:37:42.037 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:37:48.553 Picked id=980379  12" dia
+08:37:48.764 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:37:48.808   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:38:34
+======================================================================
+08:38:34.209 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:38:37.588 Picked id=980379  12" dia
+08:38:37.789 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:38:37.823   Checked 536 instances, found 2 sleeves
+08:38:40.527 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:38:40.552   Checked 536 instances, found 2 sleeves
+08:38:41.141 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:38:41.152   Checked 536 instances, found 2 sleeves
+08:38:41.370 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:38:41.380   Checked 536 instances, found 2 sleeves
+08:38:41.568 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:38:41.586   Checked 536 instances, found 2 sleeves
+08:38:41.772 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:38:41.783   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:41:00
+======================================================================
+08:41:00.394 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:41:02.712 Picked id=980379  12" dia
+08:41:02.919 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:02.953   Checked 536 instances, found 2 sleeves
+08:41:06.094 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:06.110   Checked 536 instances, found 2 sleeves
+08:41:07.025 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:07.037   Checked 536 instances, found 2 sleeves
+08:41:07.518 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:07.533   Checked 536 instances, found 2 sleeves
+08:41:07.716 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:07.726   Checked 536 instances, found 2 sleeves
+08:41:08.397 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:08.411   Checked 536 instances, found 2 sleeves
+08:41:08.630 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:08.640   Checked 536 instances, found 2 sleeves
+08:41:10.248 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:10.262   Checked 536 instances, found 2 sleeves
+08:41:10.508 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:10.519   Checked 536 instances, found 2 sleeves
+08:41:17.112 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:17.122   Checked 536 instances, found 2 sleeves
+08:41:23.568 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:23.584   Checked 536 instances, found 2 sleeves
+08:41:33.032 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:41:33.047   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:45:03
+======================================================================
+08:45:03.102 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:45:06.049 Picked id=980379  12" dia
+08:45:06.244 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:45:06.276   Checked 536 instances, found 2 sleeves
+08:45:12.055 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:45:12.071   Checked 536 instances, found 2 sleeves
+08:45:12.601 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:45:12.612   Checked 536 instances, found 2 sleeves
+08:45:12.802 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:45:12.816   Checked 536 instances, found 2 sleeves
+08:45:13.072 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:45:13.082   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:48:37
+======================================================================
+08:48:37.423 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:48:40.445 Picked id=980379  12" dia
+08:48:40.678 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:48:40.715   Checked 536 instances, found 2 sleeves
+08:48:45.897 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:48:45.913   Checked 536 instances, found 2 sleeves
+08:48:50.343 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:48:50.360   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:52:54
+======================================================================
+08:52:54.749 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:52:57.102 Picked id=980379  12" dia
+08:52:57.429 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:52:57.470   Checked 536 instances, found 2 sleeves
+08:53:00.982 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:53:00.996   Checked 536 instances, found 2 sleeves
+08:53:05.907 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:53:05.922   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:57:40
+======================================================================
+08:57:40.982 === SESSION ===  doc=MAJ Out Process_jer.griffith
+08:57:43.901 Picked id=980379  12" dia
+08:57:44.125 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:57:44.170   Checked 536 instances, found 2 sleeves
+08:57:49.256 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:57:49.267   Checked 536 instances, found 2 sleeves
+08:57:57.268 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:57:57.282   Checked 536 instances, found 2 sleeves
+08:58:08.162 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+08:58:08.178   Checked 536 instances, found 2 sleeves
+08:58:10.720 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  08:59:58
+======================================================================
+08:59:58.540 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:00:01.400 Picked id=980379  12" dia
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:00:01.671 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:00:01.726   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  09:00:41
+======================================================================
+09:00:41.663 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:00:44.888 Picked id=980379  12" dia
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:00:44.951 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:00:44.969   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  09:01:58
+======================================================================
+09:01:58.986 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:02:02.080 Picked id=980379  12" dia
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:02:02.142 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:02:02.163   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:02:10.753 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:02:10.761   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:02:23.785 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:02:23.793   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:02:24.529 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:02:24.536   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=4.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:02:28.896 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:02:28.904   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) dist=5.79ft radius=4.0ft -> SKIP
+  sleeve 982974: ep=(47.41,23.64,4.22) dist=6.16ft radius=4.0ft -> SKIP
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:02:32.721 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:02:32.729   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  09:23:36
+======================================================================
+09:23:36.943 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:23:40.267 Picked id=980379  12" dia
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:23:40.540 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:23:40.578   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:23:43.813 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:23:43.831   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=4.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:23:48.143 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:23:48.159   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) dist=0.93ft radius=4.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) dist=2.32ft radius=4.0ft -> PASS
+=== Radius Debug ===
+  radius_ft=4.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:23:49.266 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:23:49.284   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) dist=0.93ft radius=4.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) dist=2.32ft radius=4.0ft -> PASS
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:23:52.933 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:23:52.946   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+09:23:53.989 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:23:53.999   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  10:54:02
+======================================================================
+10:54:02.426 === SESSION ===  doc=MAJ Out Process_jer.griffith
+10:54:05.232 Picked id=980379  12" dia
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+10:54:05.501 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+10:54:05.538   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=2.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+10:54:10.038 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+10:54:10.053   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) dist=0.93ft radius=2.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) dist=2.32ft radius=2.0ft -> SKIP
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+10:54:17.760 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+10:54:17.772   Checked 536 instances, found 2 sleeves
+=== Radius Debug ===
+  radius_ft=2.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+10:54:23.793 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+10:54:23.804   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) dist=0.93ft radius=2.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) dist=2.32ft radius=2.0ft -> SKIP
+=== Radius Debug ===
+  radius_ft=0.0
+  loc type=LocationCurve
+  curve: p0=(49.73,22.57,9.93) p1=(49.73,25.29,9.93)
+  src_pt=(49.73,23.93,9.93)
+  raw=(0.000,2.720,0.000) length=2.720
+  flow_vec=(0.000,1.000,0.000)
+10:54:54.293 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+10:54:54.302   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  11:03:09
+======================================================================
+11:03:09.031 === SESSION ===  doc=MAJ Out Process_jer.griffith
+11:03:11.364 Picked id=980379  12" dia
+11:03:11.586 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+11:03:11.620   Checked 536 instances, found 2 sleeves
+11:03:14.281 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+11:03:14.291   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  11:04:45
+======================================================================
+11:04:45.571 === SESSION ===  doc=MAJ Out Process_jer.griffith
+11:04:49.213 Picked id=980379  12" dia
+11:04:49.423 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+11:04:49.455   Checked 536 instances, found 2 sleeves
+11:04:52.121 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+11:04:52.139   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  11:11:34
+======================================================================
+11:11:34.924 === SESSION ===  doc=MAJ Out Process_jer.griffith
+11:11:37.997 Picked id=980379  12" dia
+11:11:38.258 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+11:11:38.290   Checked 536 instances, found 2 sleeves
+11:11:41.166 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+11:11:41.178   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  11:59:00
+======================================================================
+11:59:00.490 === SESSION ===  doc=MAJ Out Process_jer.griffith
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:04:37
+======================================================================
+12:04:37.327 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:04:39.689 Picked id=980379  12" dia
+12:04:39.915 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:04:39.950   Checked 536 instances, found 2 sleeves
+12:04:45.724 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:04:45.740   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:16:16
+======================================================================
+12:16:16.760 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:16:23.434 Picked id=980379  12" dia
+12:16:23.674 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:16:23.717   Checked 536 instances, found 2 sleeves
+12:16:29.159 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:16:29.176   Checked 536 instances, found 2 sleeves
+12:16:30.559 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:16:30.574   Checked 536 instances, found 2 sleeves
+12:16:31.565 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:16:31.576   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:32:00
+======================================================================
+12:32:00.953 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:32:03.293 Picked id=980379  12" dia
+12:32:03.505 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:03.542   Checked 536 instances, found 2 sleeves
+12:32:09.421 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:09.437   Checked 536 instances, found 2 sleeves
+12:32:10.611 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:10.620   Checked 536 instances, found 2 sleeves
+12:32:14.335 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:14.345   Checked 536 instances, found 2 sleeves
+12:32:17.681 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:17.696   Checked 536 instances, found 2 sleeves
+12:32:20.443 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:20.462   Checked 536 instances, found 2 sleeves
+12:32:23.960 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:23.975   Checked 536 instances, found 2 sleeves
+12:32:26.881 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:26.895   Checked 536 instances, found 2 sleeves
+12:32:29.294 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:29.318   Checked 536 instances, found 2 sleeves
+12:32:33.115 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:32:33.124   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:44:31
+======================================================================
+12:44:31.763 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:44:35.202 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=None
+12:44:35.492 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:44:35.536   Checked 536 instances, found 2 sleeves
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=1.0
+12:44:40.614 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:44:40.631   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=1.0ft -> SKIP
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=1.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=5.0
+12:44:45.361 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:44:45.372   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=5.0ft -> SKIP
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=5.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=6.0
+12:44:49.447 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:44:49.465   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=6.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=6.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=7.0
+12:44:57.995 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:44:58.004   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=7.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=7.0ft -> PASS
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=1.0
+12:45:22.912 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:45:22.923   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=1.0ft -> SKIP
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=1.0ft -> SKIP
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:45:30
+======================================================================
+12:45:30.636 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:45:32.985 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=None
+12:45:33.226 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:45:33.262   Checked 536 instances, found 2 sleeves
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:47:21
+======================================================================
+12:47:21.109 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:47:23.356 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=1.0
+12:47:23.590 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:47:23.626   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=1.0ft -> SKIP
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=1.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=7.0
+12:47:31.358 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+12:47:31.373   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=7.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=7.0ft -> PASS
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:47:44
+======================================================================
+12:47:44.425 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:47:48.704 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=7.0
+12:47:48.939 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:47:48.974   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=7.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=7.0ft -> PASS
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=1.0
+12:47:55.342 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:47:55.352   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=1.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=1.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=2.0
+12:47:58.928 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:47:58.943   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=2.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=2.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=3.0
+12:48:02.074 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:48:02.089   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=3.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=3.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=4.0
+12:48:05.026 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:48:05.037   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=4.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=4.0ft -> PASS
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=5.0
+12:48:08.832 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:48:08.842   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=5.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=5.0ft -> PASS
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:48:45
+======================================================================
+12:48:45.153 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:48:47.392 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=5.0
+12:48:47.649 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:48:47.689   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=5.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=5.0ft -> PASS
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=4.0
+12:49:00.223 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:49:00.241   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=4.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=4.0ft -> PASS
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:51:42
+======================================================================
+12:51:42.675 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:51:45.381 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=4.0
+12:51:45.634 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:51:45.671   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=4.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=4.0ft -> PASS
+
+======================================================================
+UpdateSleeve  session  2026-03-23  12:52:09
+======================================================================
+12:52:09.559 === SESSION ===  doc=MAJ Out Process_jer.griffith
+12:52:11.742 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=4.0
+12:52:11.979 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+12:52:12.014   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=4.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=4.0ft -> PASS
+
+======================================================================
+UpdateSleeve  session  2026-03-23  13:31:10
+======================================================================
+13:31:10.050 === SESSION ===  doc=MAJ Out Process_jer.griffith
+13:31:13.085 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=4.0
+13:31:13.363 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+13:31:13.404   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=4.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=4.0ft -> PASS
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=6.0
+13:31:21.887 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+13:31:21.899   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=6.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=6.0ft -> PASS
+13:31:59.875 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  13:32:07
+======================================================================
+13:32:07.917 === SESSION ===  doc=MAJ Out Process_jer.griffith
+
+======================================================================
+UpdateSleeve  session  2026-03-23  13:32:17
+======================================================================
+13:32:17.997 === SESSION ===  doc=MAJ Out Process_jer.griffith
+13:32:20.643 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=6.0
+13:32:20.959 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+13:32:21.007   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=6.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=6.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=8.0
+13:32:29.593 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+13:32:29.603   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=8.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=8.0ft -> PASS
+13:32:51.497 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  15:34:33
+======================================================================
+15:34:33.647 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:34:37.813 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+15:34:38.105 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+15:34:38.154   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=8.0ft -> PASS
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=2.0
+15:35:06.721 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+15:35:06.731   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=2.0ft -> SKIP
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=2.0ft -> SKIP
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+15:35:14.792 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+15:35:14.803   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=8.0ft -> PASS
+15:35:18.532 Apply -- Moved: 2  Writes OK: 2  Failed: 2
+
+======================================================================
+UpdateSleeve  session  2026-03-23  15:35:27
+======================================================================
+15:35:27.117 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:35:29.613 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+15:35:29.844 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+15:35:29.876   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(50.14,23.64,6.78) perp_dist=0.000ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(50.14,23.98,6.78) perp_dist=0.000ft radius=8.0ft -> PASS
+15:35:46.190 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  15:35:58
+======================================================================
+15:35:58.626 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:36:01.127 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+15:36:01.360 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+15:36:01.393   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=8.0ft -> PASS
+15:36:17.820 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  15:36:25
+======================================================================
+15:36:25.357 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:36:27.865 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=8.0
+15:36:28.099 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+15:36:28.131   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=8.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=8.0ft -> PASS
+15:36:37.671 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  15:36:46
+======================================================================
+15:36:46.775 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:36:49.041 Part+Sleeve src id=923986  12x12"
+15:36:50.623 Part+Sleeve slv id=979107
+15:36:50.862 Part+Sleeve done: MOVED  delta (-3.188, 0.000, -1.369) ft; FAIL  Width -> CP_Sleeve_Depth = 14.00in  (not found: 'CP_Sleeve_Depth'); FAIL  Height -> CP_Sleeve_Width = 14.00in  (not found: 'CP_Sleeve_Width')
+
+======================================================================
+UpdateSleeve  session  2026-03-23  16:06:38
+======================================================================
+16:06:38.704 === SESSION ===  doc=MAJ Out Process_jer.griffith
+16:06:42.748 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+16:06:42.989 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+16:06:43.025   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=8.0ft -> PASS
+16:07:57.303 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  16:16:35
+======================================================================
+16:16:35.010 === SESSION ===  doc=MAJ Out Process_jer.griffith
+
+======================================================================
+UpdateSleeve  session  2026-03-23  16:16:51
+======================================================================
+16:16:51.737 === SESSION ===  doc=MAJ Out Process_jer.griffith
+16:16:55.176 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+16:16:55.399 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+16:16:55.432   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=8.0ft -> PASS
+16:17:41.470 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-23  16:17:51
+======================================================================
+16:17:51.352 === SESSION ===  doc=MAJ Out Process_jer.griffith
+16:17:54.991 Part+Sleeve src id=923986  12x12"
+16:17:55.928 Part+Sleeve slv id=979107
+16:17:56.173 Part+Sleeve done: MOVED  delta (-3.188, 0.000, -1.369) ft; OK    Width -> BIMrx_SLEEVE WIDTH = 14.00in; OK    Height -> BIMrx_SLEEVE HEIGHT = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-24  09:30:18
+======================================================================
+09:30:18.449 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:30:20.592 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=8.0
+09:30:20.858 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:30:20.900   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=8.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=8.0ft -> PASS
+09:30:48.671 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-24  09:30:54
+======================================================================
+09:30:54.365 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:30:57.238 Part+Sleeve src id=923986  12x12"
+09:31:00.383 Part+Sleeve slv id=979107
+09:31:00.631 Part+Sleeve done: MOVED  delta (-3.188, 0.000, -1.369) ft; OK    Width -> BIMrx_SLEEVE WIDTH = 14.00in; OK    Height -> BIMrx_SLEEVE HEIGHT = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-25  15:19:33
+======================================================================
+15:19:33.360 === SESSION ===  doc=Facility Water Module
+
+======================================================================
+UpdateSleeve  session  2026-03-25  15:20:35
+======================================================================
+15:20:35.886 === SESSION ===  doc=Facility Water Module
+15:20:41.315 Pick cancelled: The user aborted the pick operation.
+
+======================================================================
+UpdateSleeve  session  2026-03-25  15:24:44
+======================================================================
+15:24:44.783 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:24:47.875 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=8.0
+15:24:48.154 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+15:24:48.202   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=8.0ft -> PASS
+  sleeve 982974: ep=(47.41,23.64,4.22) perp_dist=6.163ft radius=8.0ft -> PASS
+15:25:04.831 Apply -- Moved: 1  Writes OK: 1  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-25  15:25:08
+======================================================================
+15:25:08.374 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:25:11.405 Part+Sleeve src id=980379  12" dia
+15:25:12.701 Part+Sleeve slv id=982974
+15:25:13.162 Part+Sleeve done: MOVED  delta (2.320, -0.000, 5.710) ft; OK    Diameter -> CP_Sleeve_Nominal Diameter = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-25  15:25:50
+======================================================================
+15:25:50.247 === SESSION ===  doc=MAJ Out Process_jer.griffith
+15:25:52.847 Part+Sleeve src id=980379  12" dia
+15:25:53.764 Part+Sleeve slv id=982974
+15:25:54.046 Part+Sleeve done: MOVED  delta (2.320, -0.000, 5.710) ft; OK    Diameter -> CP_Sleeve_Nominal Diameter = 14.00in
+
+======================================================================
+UpdateSleeve  session  2026-03-28  09:34:08
+======================================================================
+09:34:08.089 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:34:11.496 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=8.0
+09:34:11.778 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+09:34:11.820   Checked 536 instances, found 2 sleeves
+  sleeve 982458: ep=(50.66,23.98,4.22) perp_dist=5.785ft radius=8.0ft -> PASS
+  sleeve 982974: ep=(47.66,23.64,4.85) perp_dist=5.489ft radius=8.0ft -> PASS
+09:34:49.345 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-28  09:34:59
+======================================================================
+09:34:59.163 === SESSION ===  doc=MAJ Out Process_jer.griffith
+09:35:01.214 Picked id=923986  12x12"
+=== Radius Setup ===
+  src_pt=(50.136,24.422,6.784)
+  flow_vec=(0.0, -1.0, 0.0)
+  perp_u=(1.0, 0.0, 0.0)  perp_v=(-0.0, 0.0, 1.0)
+  radius_ft=8.0
+09:35:01.473 --- Scanning sleeves  rule: sleeve AND (rect OR rec)  shape: rect ---
+09:35:01.517   Checked 536 instances, found 2 sleeves
+  sleeve 977145: ep=(53.32,23.64,4.06) perp_dist=4.194ft radius=8.0ft -> PASS
+  sleeve 979107: ep=(53.32,23.98,8.15) perp_dist=3.470ft radius=8.0ft -> PASS
+09:35:11.095 Apply -- Moved: 2  Writes OK: 4  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-30  13:39:05
+======================================================================
+13:39:05.039 === SESSION ===  doc=MAJ Out Process_jer.griffith
+13:39:09.593 Picked id=980379  12" dia
+=== Radius Setup ===
+  src_pt=(49.728,23.927,9.932)
+  flow_vec=(2.6121066696238738e-15, 1.0, 0.0)
+  perp_u=(0.0, 0.0, 1.0)  perp_v=(1.0, -2.6121066696238738e-15, 0.0)
+  radius_ft=8.0
+13:39:09.855 --- Scanning sleeves  rule: sleeve AND (pipe OR rd)  shape: round ---
+13:39:09.898   Checked 537 instances, found 2 sleeves
+  sleeve 982458: ep=(53.57,23.98,9.65) perp_dist=3.857ft radius=8.0ft -> PASS
+  sleeve 982974: ep=(47.57,23.64,6.86) perp_dist=3.754ft radius=8.0ft -> PASS
+13:39:51.846 Apply -- Moved: 2  Writes OK: 2  Failed: 0
+
+======================================================================
+UpdateSleeve  session  2026-03-30  13:39:57
+======================================================================
+13:39:57.954 === SESSION ===  doc=MAJ Out Process_jer.griffith
+13:40:02.884 Part+Sleeve src id=923986  12x12"
+13:40:04.465 Part+Sleeve slv id=977145
+13:40:04.933 Part+Sleeve done: MOVED  delta (-3.272, 0.000, 3.268) ft; OK    Width -> CP_Sleeve_Depth = 14.00in; OK    Height -> CP_Sleeve_Width = 14.00in

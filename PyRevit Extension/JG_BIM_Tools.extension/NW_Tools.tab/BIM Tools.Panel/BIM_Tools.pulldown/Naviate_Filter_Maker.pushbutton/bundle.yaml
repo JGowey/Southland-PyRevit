@@ -1,0 +1,11 @@
+title:
+  en_us: Naviate Filter Maker
+tooltip:
+  en_us:
+     Enter a Condition Name and Filter Name
+     Search and select filterable categories from the model.
+     Save the selection as a Naviate-compatible JSON file for import
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

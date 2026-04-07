@@ -1,0 +1,36 @@
+title: Hanger Sync
+tooltip: |
+  STEP 1: Select duct(s) or pipe(s) -- including sloped runs.
+  STEP 2: Run this tool.
+
+  Finds all Generic Model RFA hangers within 1 ft XY of each selected
+  element and syncs the following to each hanger:
+
+    BOHElevation              -- interpolated along the pipe/duct slope at
+                                 the hanger's exact position along the run
+    CP_Hung Object Diameter   -- nominal OD + 2x insulation (clevis)
+    CP_Host Nominal Diameter  -- same as above
+    CP_Trapeze Width Desired  -- duct width (trapeze hangers)
+    XY position               -- projected perpendicular to centerline only;
+                                 hanger stays at its along-run position
+
+  Insulation: check the Insulation param checkbox and pick the content
+  parameter that holds insulation thickness. The column shows each pipe's
+  insulation value before you sync. Insulated OD is used for clamp sizing.
+
+  If nothing is pre-selected, a pick prompt appears.
+  Use Pick Host to manually reassign any hanger to different content.
+  Dist column shows orange when a match exceeds 0.5 ft -- verify before sync.
+
+  Supports: MEP Fabrication Pipework, MEP Fabrication Ductwork,
+            native Duct, native Pipe -- including sloped elements.
+
+author: Jeremiah Griffith
+order: 12
+script: script.py
+version: 4.2.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

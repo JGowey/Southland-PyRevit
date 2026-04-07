@@ -1,0 +1,23 @@
+title:
+  en_us: RFA Parameter Transfer
+
+tooltip:
+  en_us: |
+    Copy values between family parameters or Type Name across all family types.
+
+    Typical uses
+    - Push Type Name to CP Size parameter
+    - Push Diameter to Type Name
+    - Clean text with Find / Replace
+    - Normalize text with Trim Spaces
+
+    Targets supported
+    - Type Name
+    - Writable text parameters
+
+    Runs in the Family Editor only.
+
+author: Jacob Gowey & AI
+
+engine:
+  persistent: true

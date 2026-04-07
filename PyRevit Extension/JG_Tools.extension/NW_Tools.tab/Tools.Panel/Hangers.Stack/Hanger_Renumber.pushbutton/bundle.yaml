@@ -1,0 +1,8 @@
+title:
+  en_us: Param & Number
+tooltip:
+  en_us: Write formula-based values to Revit element parameters. Build profiles to collect, filter, group, and number any element type.
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

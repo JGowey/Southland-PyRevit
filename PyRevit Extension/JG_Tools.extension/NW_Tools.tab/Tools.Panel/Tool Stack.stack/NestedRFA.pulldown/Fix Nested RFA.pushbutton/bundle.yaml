@@ -1,0 +1,17 @@
+title:
+  en_us: Fix Nested RFA
+
+tooltip:
+  en_us: |
+    Use this tool to repeatedly add nested RFAs to their parent assemblies without entering edit mode.
+
+    How to use:
+    1. Click the tool.
+    2. Click a **parent RFA** (FamilyInstance) that is already in an assembly.
+    3. The tool will automatically add any **nested RFAs** to that same assembly.
+    4. Repeat for as many parent RFAs as needed.
+       If the selected RFA is not in an assembly, you'll get a warning.
+       Press ESC or Right-Click to stop the tool.
+author: "Jacob Gowey"
+engine: 
+  persistent: true

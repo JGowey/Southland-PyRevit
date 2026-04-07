@@ -1,0 +1,351 @@
+================================================================================
+DETAILERSTOOLS EXTENSION SITE MAP
+================================================================================
+pyRevit Extension for MEP Fabrication & Detailing Workflows
+Southland Industries - Jeremiah Griffith
+Last Updated: November 2024
+================================================================================
+
+ROOT LEVEL FILES
+================================================================================
+extension.yaml               Extension configuration file
+startup.py                   Extension startup script (registers MWE dockable pane)
+mwe_startup.log             MWE Palette registration log (for debugging)
+Site Map.txt                This file - extension structure documentation
+Thumbs.db                   Windows thumbnail cache (can be deleted)
+
+================================================================================
+DIRECTORY STRUCTURE
+================================================================================
+
+DetailersTools.extension/
+│
+├── extension.yaml
+├── startup.py
+├── mwe_startup.log
+├── Site Map.txt
+├── Thumbs.db
+│
+├── Archive/
+│   ├── CHANGELOG.md
+│   ├── Element Visibility Heirarchy.png
+│   ├── Element Visibility Structure.xlsx
+│   └── Hint Tests.xlsx
+│
+├── lib/
+│   ├── __init__.py
+│   ├── mwe_pane.py
+│   ├── mwe_targets.json
+│   ├── mwe_registration_log.txt
+│   ├── martha_wash.png
+│   │
+│   └── MWE_copied/
+│       ├── icon.png
+│       ├── Compare Elements.pushbutton/
+│       ├── Compare Families.pushbutton/
+│       ├── Compare Schedules.pushbutton/
+│       ├── Compare Views.pushbutton/
+│       ├── Element Visibility.pushbutton/
+│       ├── ReNumber.pushbutton/
+│       ├── Rotate Multiple.pushbutton/
+│       └── Snoop Selection.pushbutton/
+│
+└── pyRevit.tab/
+    │
+    ├── EDN Tools.panel/
+    │   │
+    │   ├── CNC Tools.pulldown/
+    │   │   ├── bundle.yaml
+    │   │   ├── ICON.png
+    │   │   │
+    │   │   ├── 01Element Visibility.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── window.xaml
+    │   │   │   ├── old script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 02Compare Elements.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── window.xaml
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 03Compare Families.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 04Compare Schedules.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 05Compare Views.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 06Convert Straights.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 07Convert Elbows.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   ├── 08Convert Transitions.pushbutton/
+    │   │   │   ├── script.py
+    │   │   │   ├── icon.png
+    │   │   │   ├── icon-small.png
+    │   │   │   └── bundle.yaml
+    │   │   │
+    │   │   └── 09Convert Taps.pushbutton/
+    │   │       ├── script.py
+    │   │       ├── icon.png
+    │   │       ├── icon-small.png
+    │   │       └── bundle.yaml
+    │   │
+    │   └── GMYSTYB Tools.pulldown/
+    │       ├── icon.png
+    │       ├── icon-small.png
+    │       │
+    │       ├── 01Export Native Duct Data.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       ├── 02Import Native Duct Data.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       ├── 03ReNumber.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── window.xaml
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       ├── 04Rotate Multiple.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       ├── 05Snoop Selection.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── window.xaml
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       ├── 06Check Duct.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       ├── 07Export Family Data.pushbutton/
+    │       │   ├── script.py
+    │       │   ├── icon.png
+    │       │   ├── icon-small.png
+    │       │   └── bundle.yaml
+    │       │
+    │       └── 08Import Family Data.pushbutton/
+    │           ├── script.py
+    │           ├── icon.png
+    │           ├── icon-small.png
+    │           └── bundle.yaml
+    │
+    └── MWE Tools.panel/
+        │
+        └── MWE Palette.pushbutton/
+            ├── script.py
+            └── icon.png
+
+================================================================================
+FILE DESCRIPTIONS
+================================================================================
+
+ROOT LEVEL
+──────────────────────────────────────────────────────────────────────────
+extension.yaml              Extension configuration and metadata
+startup.py                  Registers MWE dockable pane on extension load (30KB)
+mwe_startup.log            MWE Palette registration debug log
+Site Map.txt               This file - extension structure documentation
+Thumbs.db                  Windows thumbnail cache (can be deleted)
+
+ARCHIVE/
+──────────────────────────────────────────────────────────────────────────
+CHANGELOG.md                          Development history and updates
+Element Visibility Heirarchy.png      Visual diagram of element hierarchy
+Element Visibility Structure.xlsx     Element organization reference
+Hint Tests.xlsx                       Testing documentation
+
+LIB/
+──────────────────────────────────────────────────────────────────────────
+__init__.py                 Makes lib a Python package
+mwe_pane.py                MWE Palette dockable pane provider class (6.9KB)
+mwe_targets.json           MWE Palette tool configuration data
+mwe_registration_log.txt   Pane registration debug log
+martha_wash.png            Martha Wash image for palette theme (38KB)
+
+LIB/MWE_COPIED/
+──────────────────────────────────────────────────────────────────────────
+Backup copies of working MWE tools preserved during development
+
+CNC TOOLS.PULLDOWN/
+──────────────────────────────────────────────────────────────────────────
+01Element Visibility       Control element visibility by type/category
+02Compare Elements          Compare properties of two selected elements
+03Compare Families         Compare family instances across project
+04Compare Schedules        Compare schedule data and configurations
+05Compare Views            Compare view properties and settings
+06Convert Straights        Convert straight ductwork to fabrication
+07Convert Elbows           Convert elbow fittings to fabrication
+08Convert Transitions      Convert transition fittings to fabrication
+09Convert Taps             Convert tap fittings to fabrication
+
+GMYSTYB TOOLS.PULLDOWN/
+──────────────────────────────────────────────────────────────────────────
+01Export Native Duct Data  Export ductwork to external format
+02Import Native Duct Data  Import ductwork from external format
+03ReNumber                 Advanced renumbering with size/spatial ordering,
+                          profiles, and parameter-based deselection
+04Rotate Multiple          Rotate multiple elements simultaneously
+05Snoop Selection         Inspect selection properties with WPF data grid
+06Check Duct              Quality assurance checks for ductwork
+07Export Family Data      Export family parameters to Excel
+08Import Family Data      Import family parameters from Excel
+
+MWE TOOLS.PANEL/
+──────────────────────────────────────────────────────────────────────────
+MWE Palette               Show dockable palette with quick-access tool buttons
+      
+================================================================================
+KEY FEATURES & ARCHITECTURE
+================================================================================
+
+EXTENSION STARTUP SEQUENCE
+  startup.py (root level)
+    └─> Registers MWE Palette dockable pane using External Event pattern
+    └─> Writes logs to mwe_startup.log for debugging
+    └─> Must run during Revit startup (panes cannot register on-demand)
+
+MWE PALETTE ARCHITECTURE
+  lib/mwe_pane.py            Dockable pane provider class
+  lib/mwe_targets.json       Tool button configuration
+  lib/martha_wash.png        Theme image (38KB)
+  
+  Design Pattern:
+    • Dockable interface registered at startup
+    • Quick-access buttons to frequently used tools
+    • External Event handlers for transaction context
+    • Martha Wash themed UI elements
+
+TOOL ORGANIZATION
+  pyRevit.tab/
+    ├─> EDN Tools.panel/
+    │     ├─> CNC Tools.pulldown/        (9 fabrication conversion tools)
+    │     └─> GMYSTYB Tools.pulldown/    (8 general MEP workflow tools)
+    │
+    └─> MWE Tools.panel/
+          └─> MWE Palette.pushbutton/    (Shows dockable palette)
+
+STANDARD TOOL STRUCTURE
+  Each .pushbutton/ folder contains:
+    ├── script.py                   Main Python script (required)
+    ├── bundle.yaml                 Tool configuration (optional)
+    ├── icon.png (32x32)           Large icon for ribbon
+    ├── icon-small.png (16x16)     Small icon for menus
+    └── window.xaml                 WPF interface (if needed)
+
+BACKUP & ARCHIVE STRATEGY
+  lib/MWE_copied/        Working tool backups during development
+  Archive/               Historical documentation and diagrams
+
+RECENT ENHANCEMENTS (Nov 2024)
+  - ReNumber: Advanced deselection by parameter value
+  - Element Visibility: Fixed Unicode rendering issues
+  - Snoop Selection: Modern WPF data grid interface
+  - MWE Palette: Proper External Event handling for transactions
+  - Removed geometry operations from palette initialization (performance)
+
+================================================================================
+DEVELOPMENT GUIDELINES
+================================================================================
+
+ADDING A NEW TOOL
+  1. Choose appropriate location in tree:
+     pyRevit.tab/EDN Tools.panel/[CNC or GMYSTYB].pulldown/
+  
+  2. Create folder structure:
+     ##NewTool.pushbutton/
+     ├── script.py              (required)
+     ├── bundle.yaml            (optional configuration)
+     ├── icon.png               (32x32 pixels)
+     ├── icon-small.png         (16x16 pixels)
+     └── window.xaml            (if WPF interface needed)
+  
+  3. Follow numbering convention:
+     Use prefix: 01, 02, 03... for proper ordering in pulldown menu
+
+EXAMPLE: Adding "Convert Caps" tool
+  pyRevit.tab/
+  └── EDN Tools.panel/
+      └── CNC Tools.pulldown/
+          └── 10Convert Caps.pushbutton/    ← New tool
+              ├── script.py
+              ├── bundle.yaml
+              ├── icon.png
+              └── icon-small.png
+
+WORKING WITH DOCKABLE PANES
+  Structure:
+    startup.py (root)
+      └─> Registers pane with External Event
+    
+    lib/your_pane.py
+      └─> Provider class implementation
+      └─> Event handler classes
+  
+  Critical Rules:
+    • Must register in startup.py (not in button script)
+    • Use External Event pattern for transactions
+    • Provider class inherits from IExternalEventHandler
+
+SHARED CODE MODULES
+  Location: lib/ directory
+  
+  lib/
+  ├── __init__.py              (makes it a package)
+  ├── your_module.py           (your shared code)
+  └── other_module.py
+  
+  Import in tools:
+    from lib.your_module import YourClass
+    from lib.other_module import helper_function
+
+BACKUP WORKFLOW
+  Before major changes to working tool:
+    1. Copy entire .pushbutton/ folder to lib/MWE_copied/
+    2. Preserves last working version
+    3. Example:
+       lib/MWE_copied/
+       └── ReNumber.pushbutton/    ← Backup before major refactor
+
+================================================================================
+END OF SITE MAP
+================================================================================

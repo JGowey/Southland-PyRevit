@@ -1,0 +1,10 @@
+[
+  {"key":"element_visibility","label":"Element Visibility","match":["element visibility"]},
+  {"key":"compare_tools","label":"Compare (C+C)","match":["compare","c+c"],"multi":true},
+  {"key":"renumber","label":"Renumber","match":["renumber"]},
+  {"key":"rotate_multiple","label":"Rotate Multiple","match":["rotate multiple"]},
+  {"key":"snoop_selection","label":"Snoop Selection","match":["snoop selection","snoop"]},
+  {"key":"check_duct_orientation","label":"Check Duct Orientation","match":["check duct orientation","duct orientation","check duct"]},
+  {"key":"place_tags","label":"Place Tags","match":["place tags","tags","tag"]},
+  {"key":"convert_straights","label":"Convert Straights","match":["convert straights","straights"]}
+]

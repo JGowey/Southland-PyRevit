@@ -1,0 +1,107 @@
+2025-11-04 14:52:23.047000 - ============================================================
+2025-11-04 14:52:23.053000 - mwe_pane.py module is being imported
+2025-11-04 14:52:23.058000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-04 14:52:23.061000 - Starting auto-registration attempt
+2025-11-04 14:52:23.063000 - Checking if __revit__ is in dir()...
+2025-11-04 14:52:23.065000 - __revit__ is NOT available in dir()
+2025-11-04 14:52:23.069000 - Available names: ['BUTTONS', 'Button', 'DockablePaneId', 'DockablePaneProviderData', 'EXT_ROOT', 'Guid', 'IDockablePaneProvider', 'LIB_ROOT', 'LOG_FILE', 'MweProvider', 'PANE_GUID', 'StringReader', 'Thickness', 'XAML', 'XamlReader', 'XmlReader', 'clr', 'log', 'os', 'sys', 'traceback']
+2025-11-04 14:52:23.074000 - Auto-registration section completed
+2025-11-04 14:52:23.076000 - ============================================================
+2025-11-04 14:53:12.922000 - ============================================================
+2025-11-04 14:53:12.925000 - mwe_pane.py module is being imported
+2025-11-04 14:53:12.929000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-04 14:53:12.932000 - Starting auto-registration attempt
+2025-11-04 14:53:12.934000 - Checking if __revit__ is in dir()...
+2025-11-04 14:53:12.936000 - __revit__ is NOT available in dir()
+2025-11-04 14:53:12.939000 - Available names: ['BUTTONS', 'Button', 'DockablePaneId', 'DockablePaneProviderData', 'EXT_ROOT', 'Guid', 'IDockablePaneProvider', 'LIB_ROOT', 'LOG_FILE', 'MweProvider', 'PANE_GUID', 'StringReader', 'Thickness', 'XAML', 'XamlReader', 'XmlReader', 'clr', 'log', 'os', 'sys', 'traceback']
+2025-11-04 14:53:12.941000 - Auto-registration section completed
+2025-11-04 14:53:12.943000 - ============================================================
+2025-11-04 15:31:00.366000 - ============================================================
+2025-11-04 15:31:00.374000 - mwe_pane.py module is being imported
+2025-11-04 15:31:00.390000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-04 15:31:00.393000 - Starting auto-registration attempt
+2025-11-04 15:31:00.395000 - Checking if __revit__ is in dir()...
+2025-11-04 15:31:00.397000 - __revit__ is NOT available in dir()
+2025-11-04 15:31:00.401000 - Available names: ['BUTTONS', 'Button', 'DockablePaneId', 'DockablePaneProviderData', 'EXT_ROOT', 'Guid', 'IDockablePaneProvider', 'LIB_ROOT', 'LOG_FILE', 'MweProvider', 'PANE_GUID', 'StringReader', 'Thickness', 'XAML', 'XamlReader', 'XmlReader', 'clr', 'log', 'os', 'sys', 'traceback']
+2025-11-04 15:31:00.403000 - Auto-registration section completed
+2025-11-04 15:31:00.405000 - ============================================================
+2025-11-07 16:50:23.699000 - ============================================================
+2025-11-07 16:50:23.701000 - mwe_pane.py module is being imported
+2025-11-07 16:50:23.712000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 16:50:23.716000 - mwe_pane.py module loaded successfully (no auto-registration)
+2025-11-07 16:50:23.718000 - ============================================================
+2025-11-07 16:50:23.742000 - SetupDockablePane called
+2025-11-07 16:50:27.660000 - Added button: Element Visibility -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Element Visibility.pushbutton\script.py
+2025-11-07 16:50:27.664000 - Added button: Compare - Elements -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Elements.pushbutton\script.py
+2025-11-07 16:50:27.667000 - Added button: Compare - Families -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Families.pushbutton\script.py
+2025-11-07 16:50:27.670000 - Added button: Compare - Schedules -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Schedules.pushbutton\script.py
+2025-11-07 16:50:27.674000 - Added button: Compare - Views -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Views.pushbutton\script.py
+2025-11-07 16:50:27.678000 - Added button: ReNumber -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\ReNumber.pushbutton\script.py
+2025-11-07 16:50:27.681000 - Added button: Rotate Multiple -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Rotate Multiple.pushbutton\script.py
+2025-11-07 16:50:27.686000 - Added button: Snoop Selection -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Snoop Selection.pushbutton\script.py
+2025-11-07 16:50:27.690000 - SetupDockablePane completed - 8 buttons added
+2025-11-07 16:54:17.487000 - ============================================================
+2025-11-07 16:54:17.490000 - mwe_pane.py module is being imported
+2025-11-07 16:54:17.512000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 16:54:17.515000 - mwe_pane.py module loaded successfully (no auto-registration)
+2025-11-07 16:54:17.517000 - ============================================================
+2025-11-07 16:54:17.537000 - SetupDockablePane called
+2025-11-07 16:54:21.094000 - Added button: Element Visibility -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Element Visibility.pushbutton\script.py
+2025-11-07 16:54:21.099000 - Added button: Compare - Elements -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Elements.pushbutton\script.py
+2025-11-07 16:54:21.103000 - Added button: Compare - Families -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Families.pushbutton\script.py
+2025-11-07 16:54:21.107000 - Added button: Compare - Schedules -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Schedules.pushbutton\script.py
+2025-11-07 16:54:21.111000 - Added button: Compare - Views -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Views.pushbutton\script.py
+2025-11-07 16:54:21.114000 - Added button: ReNumber -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\ReNumber.pushbutton\script.py
+2025-11-07 16:54:21.117000 - Added button: Rotate Multiple -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Rotate Multiple.pushbutton\script.py
+2025-11-07 16:54:21.120000 - Added button: Snoop Selection -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Snoop Selection.pushbutton\script.py
+2025-11-07 16:54:21.125000 - SetupDockablePane completed - 8 buttons added
+2025-11-07 16:57:42.862000 - ============================================================
+2025-11-07 16:57:42.865000 - mwe_pane.py module is being imported
+2025-11-07 16:57:42.889000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 16:57:42.893000 - mwe_pane.py module loaded successfully (no auto-registration)
+2025-11-07 16:57:42.896000 - ============================================================
+2025-11-07 16:57:42.921000 - SetupDockablePane called
+2025-11-07 16:57:46.386000 - Added button: Element Visibility -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Element Visibility.pushbutton\script.py
+2025-11-07 16:57:46.392000 - Added button: Compare - Elements -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Elements.pushbutton\script.py
+2025-11-07 16:57:46.396000 - Added button: Compare - Families -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Families.pushbutton\script.py
+2025-11-07 16:57:46.400000 - Added button: Compare - Schedules -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Schedules.pushbutton\script.py
+2025-11-07 16:57:46.405000 - Added button: Compare - Views -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Views.pushbutton\script.py
+2025-11-07 16:57:46.409000 - Added button: ReNumber -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\ReNumber.pushbutton\script.py
+2025-11-07 16:57:46.413000 - Added button: Rotate Multiple -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Rotate Multiple.pushbutton\script.py
+2025-11-07 16:57:46.416000 - Added button: Snoop Selection -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Snoop Selection.pushbutton\script.py
+2025-11-07 16:57:46.421000 - SetupDockablePane completed - 8 buttons added
+2025-11-07 17:06:23.085000 - ============================================================
+2025-11-07 17:06:23.088000 - mwe_pane.py module is being imported
+2025-11-07 17:06:23.103000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 17:06:23.149000 - mwe_pane.py module loaded successfully (no auto-registration)
+2025-11-07 17:06:23.151000 - ============================================================
+2025-11-07 17:06:23.172000 - SetupDockablePane called
+2025-11-07 17:06:26.340000 - Added button: Element Visibility -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Element Visibility.pushbutton\script.py
+2025-11-07 17:06:26.345000 - Added button: Compare - Elements -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Elements.pushbutton\script.py
+2025-11-07 17:06:26.350000 - Added button: Compare - Families -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Families.pushbutton\script.py
+2025-11-07 17:06:26.354000 - Added button: Compare - Schedules -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Schedules.pushbutton\script.py
+2025-11-07 17:06:26.358000 - Added button: Compare - Views -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Views.pushbutton\script.py
+2025-11-07 17:06:26.361000 - Added button: ReNumber -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\ReNumber.pushbutton\script.py
+2025-11-07 17:06:26.365000 - Added button: Rotate Multiple -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Rotate Multiple.pushbutton\script.py
+2025-11-07 17:06:26.369000 - Added button: Snoop Selection -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Snoop Selection.pushbutton\script.py
+2025-11-07 17:06:26.373000 - SetupDockablePane completed - 8 buttons added
+2025-11-07 17:14:07.880000 - ============================================================
+2025-11-07 17:14:07.883000 - mwe_pane.py module is being imported
+2025-11-07 17:14:07.909000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 17:14:07.913000 - mwe_pane.py module loaded successfully (no auto-registration)
+2025-11-07 17:14:07.915000 - ============================================================
+2025-11-07 17:14:07.942000 - SetupDockablePane called
+2025-11-07 17:14:11.808000 - Added button: Element Visibility -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Element Visibility.pushbutton\script.py
+2025-11-07 17:14:11.813000 - Added button: Compare - Elements -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Elements.pushbutton\script.py
+2025-11-07 17:14:11.821000 - Added button: Compare - Families -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Families.pushbutton\script.py
+2025-11-07 17:14:11.825000 - Added button: Compare - Schedules -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Schedules.pushbutton\script.py
+2025-11-07 17:14:11.938000 - Added button: Compare - Views -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Compare Views.pushbutton\script.py
+2025-11-07 17:14:11.941000 - Added button: ReNumber -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\ReNumber.pushbutton\script.py
+2025-11-07 17:14:11.946000 - Added button: Rotate Multiple -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Rotate Multiple.pushbutton\script.py
+2025-11-07 17:14:11.949000 - Added button: Snoop Selection -> C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib\MWE_copied\Snoop Selection.pushbutton\script.py
+2025-11-07 17:14:11.953000 - SetupDockablePane completed - 8 buttons added
+2025-11-07 17:14:17.780000 - ============================================================
+2025-11-07 17:14:17.783000 - mwe_pane.py module is being imported
+2025-11-07 17:14:17.792000 - PANE_GUID: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 17:14:17.795000 - mwe_pane.py module loaded successfully (no auto-registration)
+2025-11-07 17:14:17.798000 - ============================================================

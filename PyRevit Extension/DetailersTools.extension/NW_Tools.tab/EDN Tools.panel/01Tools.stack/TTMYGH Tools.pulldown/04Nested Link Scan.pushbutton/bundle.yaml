@@ -1,0 +1,33 @@
+title: Nested Link Scan
+tooltip: |
+  Finds Attachment-type sub-links bleeding into the host model through Overlay-linked files.
+
+  When a Revit link is set to Overlay, its own nested sub-links (those set to Attachment
+  inside the linked file's own Manage Links) can bleed into the host model to some capacity,
+  appearing as Null Workset entries in schedules and loading without your control.
+
+  This tool scans every Overlay link in the active model, opens each loaded linked document,
+  and reports any Attachment-type sub-links found inside. Use the report to contact BIM teams
+  and ask them to change their sub-link reference types to Overlay.
+
+  Steps:
+    1. Click Scan -- all loaded Overlay links are inspected.
+    2. Orange rows = Attachment sub-links bleeding in. Note the parent link name and nested
+       link name for your BIM coordination request.
+    3. Export Report sends a formatted summary to the pyRevit output window for sharing.
+    4. Fix Selected attempts to change the nested type to Overlay directly by writing to the
+       linked document. This only succeeds if the linked file is locally modifiable -- it will
+       fail (gracefully) on workshared files that are read-only from the host.
+
+  Note: The root fix always lives inside the linked file. Ask the BIM team who owns that
+  file to open it, go to Manage Links, and change each Attachment sub-link to Overlay.
+
+author: Jeremiah Griffith
+order: 15
+script: script.py
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

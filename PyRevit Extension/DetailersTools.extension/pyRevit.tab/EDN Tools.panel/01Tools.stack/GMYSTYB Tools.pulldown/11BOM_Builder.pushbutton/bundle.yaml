@@ -1,0 +1,51 @@
+title: BOM Builder
+tooltip: |
+  Multi-category Bill of Materials generator with advanced filtering,
+  grouping, and CSV export -- designed for MEP fabrication spool packages
+  and coordination deliverables.
+
+  SUPPORTED CATEGORIES:
+    - MEP Fabrication Parts (ductwork and pipework ITMs)
+    - Mechanical Equipment
+    - Pipe and Duct Accessories
+    - Pipe, Duct, and Air Terminal Fittings
+    - Structural Framing and Connections
+    - Conduit Fittings
+
+  FILTER ENGINE:
+    Build unlimited filter rules with AND / OR logic. Each rule targets
+    any element parameter and supports: equals, contains, starts with,
+    is blank, is not blank, greater than, less than. Combine rules to
+    isolate exactly the parts needed (e.g., "Service contains SUPPLY"
+    AND "Spool Number is not blank").
+
+  OUTPUT MODES:
+    Grouped  -- rows collapsed by matching parameter value (e.g., by ITM
+                part number) with a quantity column summed per group.
+    Flat     -- one row per element with element ID for traceability.
+
+  WORKFLOW:
+    1. Set the scope: Active View, Selection, Entire Model, or Linked Models.
+    2. Choose categories to include.
+    3. Add filter rules as needed (optional -- leave empty for all parts).
+    4. Choose columns to display from the parameter list.
+    5. Click Generate. Results appear in the DataGrid.
+    6. Sort by any column by clicking the header.
+    7. Click Export CSV to save the BOM for shop or procurement use.
+
+  TIP: Save your filter + column configuration as a named profile for
+  repeat deliverables (e.g., "Spool Package", "Procurement Package").
+
+author: Jeremiah Griffith
+order: 11
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: 1.0.0
+min_revit_ver: 2021
+max_revit_ver: 2026
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

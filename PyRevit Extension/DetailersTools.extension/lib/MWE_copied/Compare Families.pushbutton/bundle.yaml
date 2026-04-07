@@ -1,0 +1,26 @@
+title: Compare Families
+tooltip: |
+  Performs a detailed comparison of two Revit families, analyzing their properties, parameters, and internal types.
+
+  How it works:
+  1. You will first be prompted to select one or more model categories to narrow down the family list.
+  2. From the filtered list, you will select exactly two families to compare.
+  3. You can then choose which specific aspects to analyze:
+     - Family Properties (e.g., Category, Shared status)
+     - Family-level Parameters
+     - Family Types (including a deep comparison of all their parameters)
+  4. Finally, choose a display mode: show only differences, only similarities, or everything.
+
+  The tool generates a comprehensive report that highlights the differences and similarities between the two selected families. It also provides an option to export all found differences to a CSV file for your records.
+order: 03
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: !!file version.txt
+author: Jeremiah Griffith
+highlight: dark
+engine:
+  name: ipy          # fastest cold start (IronPython). Change to python3 if you must.
+  clean: true        # start each run with a clean global scope
+  persistence: true  # 🔥 keep the engine alive between runs (instant subsequent prompts)
+

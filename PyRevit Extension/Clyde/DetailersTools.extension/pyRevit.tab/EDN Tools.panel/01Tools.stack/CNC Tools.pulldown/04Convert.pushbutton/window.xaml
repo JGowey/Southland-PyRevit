@@ -1,0 +1,424 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Convert Fab to Native"
+    Width="720" Height="580"
+    MinWidth="600" MinHeight="480"
+    WindowStartupLocation="CenterScreen"
+    Background="#F5F7FB"
+    FontFamily="Segoe UI"
+    FontSize="12"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"
+    ResizeMode="CanResizeWithGrip">
+
+    <!-- ═══════ MASTER UI RESOURCES ═══════ -->
+    <Window.Resources>
+        <!-- Surface -->
+        <SolidColorBrush x:Key="PageBg"       Color="#F5F7FB"/>
+        <SolidColorBrush x:Key="CardBg"       Color="#FFFFFFFF"/>
+        <SolidColorBrush x:Key="CardBgAlt"    Color="#FAFAFC"/>
+        <SolidColorBrush x:Key="CardBgHover"  Color="#FDFEFF"/>
+
+        <!-- Border -->
+        <SolidColorBrush x:Key="StrokePrimary"   Color="#E5E8F0"/>
+        <SolidColorBrush x:Key="StrokeSecondary" Color="#EEF1F7"/>
+        <SolidColorBrush x:Key="StrokeHover"     Color="#C9CFDA"/>
+
+        <!-- Text -->
+        <SolidColorBrush x:Key="TextPrimary"   Color="#1F2937"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#374151"/>
+        <SolidColorBrush x:Key="TextMuted"     Color="#6B7280"/>
+        <SolidColorBrush x:Key="TextDisabled"  Color="#9CA3AF"/>
+
+        <!-- Accent -->
+        <SolidColorBrush x:Key="AccentPrimary" Color="#2563EB"/>
+        <SolidColorBrush x:Key="AccentBg"      Color="#EDF2FE"/>
+        <SolidColorBrush x:Key="AccentBorder"  Color="#CBD7FB"/>
+
+        <SolidColorBrush x:Key="SuccessPrimary" Color="#10B981"/>
+        <SolidColorBrush x:Key="SuccessBg"      Color="#ECFDF5"/>
+        <SolidColorBrush x:Key="SuccessBorder"  Color="#A7F3D0"/>
+
+        <SolidColorBrush x:Key="WarningPrimary" Color="#F59E0B"/>
+        <SolidColorBrush x:Key="WarningBg"      Color="#FFFBEB"/>
+        <SolidColorBrush x:Key="WarningBorder"  Color="#FCD34D"/>
+
+        <SolidColorBrush x:Key="DangerPrimary"  Color="#EF4444"/>
+        <SolidColorBrush x:Key="DangerBg"       Color="#FEF2F2"/>
+        <SolidColorBrush x:Key="DangerBorder"   Color="#FECACA"/>
+
+        <!-- Typography -->
+        <Style x:Key="WindowTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="WindowSubtitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin" Value="0,2,0,0"/>
+        </Style>
+        <Style x:Key="SectionHeader" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin" Value="0,0,0,6"/>
+        </Style>
+        <Style x:Key="Caption" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+        </Style>
+
+        <!-- Tooltip Icon -->
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Background" Value="#A0AEC0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="6,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Text" Value="?"/>
+        </Style>
+
+        <!-- Containers -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="14"/>
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+        <Style x:Key="CardFlush" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+        <Style x:Key="CardHeader" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBgAlt}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="CornerRadius" Value="8,8,0,0"/>
+            <Setter Property="Padding" Value="14,10"/>
+        </Style>
+
+        <!-- Button System -->
+        <Style x:Key="Btn_Base" TargetType="Button">
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="Padding" Value="14,6"/>
+            <Setter Property="Margin" Value="4,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.9"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Btn_Primary" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource AccentPrimary}"/>
+            <Setter Property="BorderBrush" Value="#1D4ED8"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style x:Key="Btn_Ghost" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Accent" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource AccentBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBorder}"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Success" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource SuccessBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource SuccessBorder}"/>
+            <Setter Property="Foreground" Value="{StaticResource SuccessPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Danger" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background" Value="{StaticResource DangerBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource DangerBorder}"/>
+            <Setter Property="Foreground" Value="{StaticResource DangerPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Small" TargetType="Button" BasedOn="{StaticResource Btn_Ghost}">
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Padding" Value="8,2"/>
+        </Style>
+
+        <!-- Radio / CheckBox -->
+        <Style x:Key="CardRadio" TargetType="RadioButton">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="0,3"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="0,3"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- DataGrid -->
+        <Style x:Key="BrandDataGrid" TargetType="DataGrid">
+            <Setter Property="Background" Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="RowBackground" Value="#FFFFFF"/>
+            <Setter Property="AlternatingRowBackground" Value="#FAFBFF"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush"
+                    Value="{StaticResource StrokeSecondary}"/>
+            <Setter Property="ColumnHeaderHeight" Value="36"/>
+            <Setter Property="RowHeight" Value="30"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+        </Style>
+        <Style x:Key="BrandColumnHeader" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="{StaticResource CardBgAlt}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="12,0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+        <Style x:Key="BrandCell" TargetType="DataGridCell">
+            <Setter Property="Padding" Value="12,4"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DataGridCell">
+                        <Border Padding="{TemplateBinding Padding}"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <!-- ═══════ LAYOUT ═══════ -->
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>  <!-- Header -->
+            <RowDefinition Height="*"/>     <!-- Content -->
+            <RowDefinition Height="Auto"/>  <!-- Footer -->
+        </Grid.RowDefinitions>
+
+        <!-- ===== HEADER ===== -->
+        <DockPanel Grid.Row="0" Margin="0,0,0,14">
+            <StackPanel DockPanel.Dock="Left">
+                <TextBlock Text="Convert Fab to Native"
+                           Style="{StaticResource WindowTitle}"/>
+                <TextBlock Text="Fabrication ductwork to native Revit elements"
+                           Style="{StaticResource WindowSubtitle}"/>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- ===== CONTENT ===== -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+
+                <!-- SELECTION CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                            <TextBlock Style="{StaticResource SectionLabel}"
+                                       Text="SELECTION" Margin="0"/>
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <TextBlock MaxWidth="280" TextWrapping="Wrap">
+                                        Pre-select in Revit before launching, or
+                                        use Pick Elements to select interactively.
+                                        Only Fabrication Ductwork elements are included.
+                                    </TextBlock>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                            <Button x:Name="BtnPickElements"
+                                    Style="{StaticResource Btn_Accent}"
+                                    Content="Pick Elements" Width="110"/>
+                            <Button x:Name="BtnAllInView"
+                                    Style="{StaticResource Btn_Ghost}"
+                                    Content="All In View" Width="90"/>
+                            <Button x:Name="BtnVisible"
+                                    Style="{StaticResource Btn_Ghost}"
+                                    Content="Visible In View" Width="110"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="TxtElementCount"
+                                       Text="(none)"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       FontWeight="SemiBold"
+                                       VerticalAlignment="Center"/>
+                            <Button x:Name="BtnClearSelection"
+                                    Style="{StaticResource Btn_Small}"
+                                    Content="Clear" Margin="12,0,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- CONVERSION TYPE CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                            <TextBlock Style="{StaticResource SectionLabel}"
+                                       Text="CONVERSION TYPE" Margin="0"/>
+                            <Border Style="{StaticResource TooltipIcon}">
+                                <Border.ToolTip>
+                                    <TextBlock MaxWidth="280" TextWrapping="Wrap">
+                                        Recommended order for full system conversion:
+                                        Straights first, then Elbows,
+                                        then Transitions, then Taps.
+                                    </TextBlock>
+                                </Border.ToolTip>
+                                <TextBlock Style="{StaticResource TooltipText}"/>
+                            </Border>
+                        </StackPanel>
+
+                        <RadioButton x:Name="RbStraights"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Straights"
+                                     GroupName="ConvertType" IsChecked="True"/>
+                        <RadioButton x:Name="RbElbows"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Elbows"
+                                     GroupName="ConvertType"/>
+                        <RadioButton x:Name="RbTransitions"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Transitions"
+                                     GroupName="ConvertType"/>
+                        <RadioButton x:Name="RbTaps"
+                                     Style="{StaticResource CardRadio}"
+                                     Content="Taps"
+                                     GroupName="ConvertType"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- OPTIONS CARD -->
+                <Border Style="{StaticResource Card}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource SectionLabel}"
+                                   Text="OPTIONS"/>
+                        <CheckBox x:Name="ChkDeleteOriginals"
+                                  Content="Delete original fabrication parts after conversion"
+                                  IsChecked="True"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- RESULTS CARD (hidden until conversion runs) -->
+                <Border x:Name="ResultsCard" Style="{StaticResource CardFlush}"
+                        Visibility="Collapsed">
+                    <StackPanel>
+                        <Border Style="{StaticResource CardHeader}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Results"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource TextPrimary}"/>
+                                <TextBlock x:Name="TxtResultsSummary"
+                                           Text=""
+                                           Style="{StaticResource Caption}"
+                                           VerticalAlignment="Center"
+                                           Margin="12,0,0,0"/>
+                            </StackPanel>
+                        </Border>
+                        <DataGrid x:Name="DgResults"
+                                  Style="{StaticResource BrandDataGrid}"
+                                  CellStyle="{StaticResource BrandCell}"
+                                  ColumnHeaderStyle="{StaticResource BrandColumnHeader}"
+                                  MaxHeight="200">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Element ID"
+                                                    Binding="{Binding ElemId}"
+                                                    Width="100"/>
+                                <DataGridTextColumn Header="Status"
+                                                    Binding="{Binding Status}"
+                                                    Width="80"/>
+                                <DataGridTextColumn Header="Message"
+                                                    Binding="{Binding Message}"
+                                                    Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- ===== FOOTER ===== -->
+        <DockPanel Grid.Row="2" Margin="0,10,0,0">
+            <TextBlock x:Name="TxtStatus"
+                       Style="{StaticResource Caption}"
+                       DockPanel.Dock="Left"
+                       Text="Select elements, choose type, then Convert"
+                       VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal"
+                        DockPanel.Dock="Right">
+                <Button x:Name="BtnCancel"
+                        Style="{StaticResource Btn_Ghost}"
+                        Content="Cancel"
+                        Width="90"
+                        IsCancel="True"/>
+                <Button x:Name="BtnConvert"
+                        Style="{StaticResource Btn_Primary}"
+                        Content="Convert"
+                        Width="120"
+                        IsEnabled="False"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>

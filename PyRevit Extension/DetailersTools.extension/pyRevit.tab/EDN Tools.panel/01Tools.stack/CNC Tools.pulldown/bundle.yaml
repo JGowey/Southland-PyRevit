@@ -1,0 +1,33 @@
+title: CNC Tools
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+context: doc-open
+
+layout:
+  - 02Compare
+  - 04Convert
+  - 09Data
+  - '---'
+  - 06NW Shop QA
+  - 07CoilDuct
+  - 99Add to CID Database
+  - '---'
+  - 20MWE Palette
+
+tooltip: |
+  CNC Tools - Compare, Convert, Data & QA Toolkit
+
+  Compare:
+    Elements, Families, Schedules, Views
+
+  Convert:
+    Straights, Elbows, Transitions, Taps
+
+  Data:
+    Export/Import Native Duct, Export/Import Family
+
+  QA:
+    NW Shop QA, CoilDuct, Add to CID Database
+
+  MWE Palette - dockable MWE panel launcher

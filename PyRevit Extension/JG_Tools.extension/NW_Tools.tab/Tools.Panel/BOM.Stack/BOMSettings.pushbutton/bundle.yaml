@@ -1,0 +1,9 @@
+title:
+  en_us: BOM Settings
+tooltip:
+  en_us:
+    use to add Additional Parameters to the BOM
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

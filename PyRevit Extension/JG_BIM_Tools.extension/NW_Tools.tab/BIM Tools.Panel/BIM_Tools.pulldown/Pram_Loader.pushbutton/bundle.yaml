@@ -1,0 +1,14 @@
+title:
+  en_us: SP Loader
+tooltip:
+  en_us:
+    Batch load in Parameters
+    Build Shared Parameter configs
+    Pick parameters from a Shared Parameters file
+    Set Group Key, RFA/RVT Instance vs Type
+    Check the Revit Categories
+    If Shared is read-only, a personal copy is saved automatically
+author: "Jacob Gowey and AI"
+
+engine:
+  persistent: true

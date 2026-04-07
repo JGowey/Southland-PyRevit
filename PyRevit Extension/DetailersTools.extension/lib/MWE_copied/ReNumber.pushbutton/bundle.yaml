@@ -1,0 +1,190 @@
+title: Renumber
+tooltip: |
+  Intelligently renumber selected elements with advanced ordering, filtering, and comparison options.
+  
+  ═══════════════════════════════════════════════════════════════════
+  KEY FEATURES
+  ═══════════════════════════════════════════════════════════════════
+  
+  TARGET PARAMETERS:
+  • Write to up to 3 target parameters simultaneously
+  • Works with instance and type parameters
+  • Supports built-in, shared, and project parameters
+  • Configure prefix, suffix, and start number
+  
+  SELECTION & FILTERING:
+  • Pre-selection support (select before launching tool)
+  • Pick elements in model
+  • Filter by parameter value (post-pick filtering)
+  • Deselect elements by multiple methods:
+    - Individual elements
+    - By category (all elements in selected categories)
+    - By family (all elements of selected families)
+    - By type (all elements of selected types)
+    - By parameter value (NEW - all elements with selected parameter values)
+  
+  ORDERING MODES:
+  • Largest to Smallest (size-based sorting)
+  • Smallest to Largest (size-based sorting)
+  • Clockwise (angular sorting from center)
+  • Counterclockwise (angular sorting from center)
+  • Follow spline (sort along picked curve)
+  • Manual pick order (click elements in desired sequence)
+  
+  GROUPING MODES:
+  • All at Once (single numbering sequence for all elements)
+  • By Category (separate numbering per category with custom order)
+  • By Family (separate numbering per family with custom order)
+  • By Type (separate numbering per type with custom order)
+  • Order by Parameter (group by parameter value, reorder groups manually)
+  
+  IDENTICAL PARTS MATCHING:
+  • Assign same number to identical elements
+  • Extensive field comparison (18+ standard fields):
+    - Alias, Angle, Category, CutType, Cid, Connectors
+    - Dimensions, FamilyInfo, InsulationSpecification, InsulationType
+    - Length, LiningThickness, Material, Service, Size
+    - Specification, Status, FabricationNotes
+  • Add up to 4 custom compare parameters
+  • Check/uncheck individual comparison fields
+  • Works with Fabrication Parts and standard elements
+  
+  TAG PLACEMENT:
+  • Create TextNotes with element numbers
+  • Option to prompt for tag position (manual placement)
+  • Automatic position calculation (center/anchor point)
+  
+  PROFILE MANAGEMENT:
+  • Save current configuration as reusable profile
+  • Load previously saved profiles
+  • Profiles store all settings (targets, compare fields, grouping, etc.)
+  • XML-based profile format
+  
+  ═══════════════════════════════════════════════════════════════════
+  DETAILED WORKFLOWS
+  ═══════════════════════════════════════════════════════════════════
+  
+  BASIC WORKFLOW:
+  1. Pick elements (or use pre-selected elements)
+  2. [Optional] Filter by parameter value
+  3. [Optional] Deselect unwanted elements
+  4. Choose target parameter(s) to write numbers
+  5. Configure prefix/suffix/start number
+  6. Select grouping mode
+  7. Select ordering mode
+  8. [Optional] Enable tags and/or identical matching
+  9. Apply renumbering
+  
+  ADVANCED WORKFLOW - GROUPED WITH CUSTOM ORDER:
+  1. Pick elements
+  2. Select "By Category" (or Family/Type) grouping mode
+  3. View the auto-populated group list
+  4. Use Move Up/Down buttons to reorder groups
+  5. Select ordering mode for elements within each group
+  6. Apply renumbering (groups process in your custom order)
+  
+  ORDER BY PARAMETER WORKFLOW:
+  1. Pick elements
+  2. Select "Order by Parameter" grouping mode
+  3. Choose parameter from dropdown
+  4. View groups created by parameter values
+  5. Use Move Up/Down buttons to reorder parameter value groups
+  6. Apply renumbering
+  
+  MANUAL PICK ORDER WORKFLOW:
+  1. Enable "Manually Pick Order" checkbox
+  2. Click "Pick Order" button
+  3. Click elements in model in desired sequence
+  4. Press ESC when finished
+  5. View element count in order status
+  6. Apply renumbering (elements numbered in picked order)
+  
+  FOLLOW SPLINE WORKFLOW:
+  1. Select "Follow spline" ordering mode
+  2. Click "Pick Curve" button
+  3. Select a curve in the model
+  4. Elements will be ordered by distance along the curve
+  5. Apply renumbering
+  
+  IDENTICAL PARTS WORKFLOW:
+  1. Enable "Same Number for Identical" checkbox
+  2. Check desired comparison fields (Alias, Size, Material, etc.)
+  3. [Optional] Add custom compare parameters
+  4. Elements matching all checked fields receive same number
+  5. Non-matching elements get incremented numbers
+  
+  FILTER & DESELECT WORKFLOW:
+  1. Pick large set of elements
+  2. Use "Filter Selection" to reduce to specific parameter value
+  3. Review filtered elements (shows "X/Y elements")
+  4. Use "Deselect Elements" to further refine:
+     - Switch between Individual/Category/Family/Type/Parameter Value modes
+     - Select items to remove
+     - Click "Deselect" button
+  5. Apply renumbering to final refined selection
+  
+  PARAMETER VALUE DESELECT WORKFLOW:
+  1. In "Deselect Elements" section, select "Parameter Value" mode
+  2. Choose parameter from dropdown
+  3. View list of unique values with element counts
+  4. Select one or more values to exclude
+  5. Click "Deselect" to remove those elements
+  6. Continue refining or proceed with renumbering
+  
+  ═══════════════════════════════════════════════════════════════════
+  ELEMENT SUPPORT
+  ═══════════════════════════════════════════════════════════════════
+  
+  WORKS WITH:
+  • Fabrication Parts (Ductwork, Pipework, Hangers, Supports)
+  • MEP Elements (Ducts, Pipes, Fittings, Accessories, Equipment)
+  • Architectural Elements (Walls, Doors, Windows, Rooms)
+  • Structural Elements (Beams, Columns, Foundations)
+  • Generic Model Elements
+  • Specialty Equipment
+  • Any Revit element with writable parameters
+  
+  SPECIAL SUPPORT:
+  • Assembly Name and Assembly Mark parameters
+  • Fabrication-specific parameters (Alias, PCF_SPOOL, etc.)
+  • Shared parameters
+  • Project parameters
+  • Type and instance parameters
+  
+  ═══════════════════════════════════════════════════════════════════
+  TIPS & BEST PRACTICES
+  ═══════════════════════════════════════════════════════════════════
+  
+  • Save commonly used configurations as profiles for quick reuse
+  • Use grouping modes to maintain logical numbering sequences
+  • Filter first, then deselect for maximum control
+  • Enable "Same for Identical" to maintain consistency in identical parts
+  • Use parameter value deselect to exclude specific sizes, services, or materials
+  • Manual pick order overrides all other ordering modes
+  • Combine prefix/suffix with grouping for hierarchical numbering schemes
+  • Preview element count after filtering to verify selection
+  • Use "Deselect All" to start fresh without closing the tool
+  
+  ═══════════════════════════════════════════════════════════════════
+  VERSION NOTES
+  ═══════════════════════════════════════════════════════════════════
+  
+  Version 2.2.0+ Features:
+  • Deselect by parameter value
+  • Enhanced filtering capabilities
+  • Improved group ordering interface
+  • Order by Parameter grouping mode
+  • Multi-mode deselection system
+
+order: 03
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 2.2.0
+highlight: dark
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

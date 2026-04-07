@@ -1,0 +1,16 @@
+{
+  "skip_tagged": true, 
+  "rotation": "Horizontal", 
+  "off_along": 0.0, 
+  "leader": "Free End", 
+  "elbow_x": 16.0, 
+  "tag_assignments": {
+    "MEP Fabrication Ductwork": {
+      "family": "TGF_Duct_ItemNo-Aligned_SI", 
+      "type": "6 Characters"
+    }
+  }, 
+  "extra_angle": 0.0, 
+  "off_updown": 12.0, 
+  "name": "Duct Item Numbers"
+}

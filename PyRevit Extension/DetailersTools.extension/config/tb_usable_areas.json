@@ -1,0 +1,34 @@
+{
+  "318613": {
+    "area": {
+      "h_in": 16.500000000000004, 
+      "x_in": 1.5, 
+      "w_in": 18.5, 
+      "y_in": 0.75
+    }, 
+    "margins": {
+      "margin_r": 4.0, 
+      "margin_t": 0.75, 
+      "revision_w": 0.0, 
+      "margin_b": 0.75, 
+      "title_h": 0.0, 
+      "margin_l": 1.5
+    }
+  }, 
+  "1151091": {
+    "area": {
+      "y_in": 0.5, 
+      "h_in": 10.0, 
+      "x_in": 0.5, 
+      "w_in": 14.375
+    }, 
+    "margins": {
+      "margin_l": 0.5, 
+      "title_h": 0.0, 
+      "revision_w": 0.0, 
+      "margin_r": 2.125, 
+      "margin_t": 0.5, 
+      "margin_b": 0.5
+    }
+  }
+}

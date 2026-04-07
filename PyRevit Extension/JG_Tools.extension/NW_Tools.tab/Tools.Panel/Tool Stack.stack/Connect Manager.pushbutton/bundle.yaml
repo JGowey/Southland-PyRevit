@@ -1,0 +1,8 @@
+title:
+  en_us: Disconnect/Reconnect
+tooltip:
+  en_us: Disconnects or reconnects MEP connectors for selected, active view, or model elements.
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

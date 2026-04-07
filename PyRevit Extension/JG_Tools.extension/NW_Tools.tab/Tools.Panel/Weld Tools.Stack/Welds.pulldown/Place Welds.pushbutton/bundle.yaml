@@ -1,0 +1,17 @@
+title:
+  en_us: Place Welds
+
+tooltip:
+  en_us: |
+    Places missing Pipe Weld markers at valid pipe joints.
+
+    - Works with pre-selection or active view
+    - Loads the Pipe Weld family if needed
+    - Supports tight couplings and short fittings
+    - Updates existing welds instead of duplicating
+    - Adds welds to assemblies when applicable
+
+author: Jacob Gowey
+
+engine:
+  persistent: true

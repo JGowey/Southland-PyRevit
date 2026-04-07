@@ -1,0 +1,51 @@
+title: View Converter
+tooltip: |
+  Convert between Legend views and Drafting Detail views -- in either
+  direction. Rebuilds elements from scratch using native Revit creation
+  APIs so the result is a proper view of the target type, not a copy.
+
+  CONVERSION DIRECTIONS:
+    Legend  -->  Drafting Detail
+      Useful when a Legend needs to become a referenceable Drafting view
+      so it can be placed as a detail reference on sheets with a callout.
+
+    Drafting Detail  -->  Legend
+      Useful when a Drafting view needs to appear on multiple sheets
+      (Legends can be placed on any number of sheets; Drafting views
+      cannot be duplicated across sheets).
+
+  WHAT TRANSFERS:
+    - Detail lines and line-based elements (redrawn with same style)
+    - Text notes (content, font size, bold/italic preserved)
+    - Filled regions (boundary and fill pattern)
+    - Detail components (family instances re-placed at same location)
+    - View crop region (target view sized to match source)
+
+  WHAT CANNOT TRANSFER:
+    - Legend components (family-type symbols) when converting TO Drafting
+      -- these are Legend-only elements; they are skipped with a warning.
+    - Annotations referencing specific model elements (dimension targets,
+      element-hosted tags).
+    - Raster images.
+
+  WORKFLOW:
+    1. Open (or select in Project Browser) the view to convert.
+    2. Run the tool. A dialog shows the source view name and detected type.
+    3. Confirm the conversion direction.
+    4. A new view is created with the converted content. The source view
+       is left intact -- review the result before deleting the original.
+    5. Any skipped elements are listed in the output panel.
+
+  NOTE: The converted view inherits the source view's scale. Assign it
+  to a View Template after conversion to apply consistent graphics.
+
+author: Jeremiah Griffith
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

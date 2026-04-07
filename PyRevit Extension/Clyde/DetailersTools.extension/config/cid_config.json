@@ -1,0 +1,362 @@
+{
+  "cid_map": {
+    "11": {
+      "alias": "", 
+      "description": "Square Offset", 
+      "is_preferred": true, 
+      "part_type": "Ogee", 
+      "service_name": "SA02"
+    }, 
+    "1112": {
+      "alias": "", 
+      "description": "Coupler Pipe", 
+      "is_preferred": true, 
+      "part_type": "Coupler Pipe", 
+      "service_name": "SA02"
+    }, 
+    "1137": {
+      "alias": "", 
+      "description": "Round Dbl Shoe", 
+      "is_preferred": true, 
+      "part_type": "Round Dbl Shoe", 
+      "service_name": "SA02"
+    }, 
+    "12": {
+      "alias": "FEC", 
+      "description": "Furnace Cap", 
+      "is_preferred": true, 
+      "part_type": "Cap", 
+      "service_name": "SA02"
+    }, 
+    "13": {
+      "alias": "", 
+      "description": "Square Tee", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "14": {
+      "alias": "23", 
+      "description": "Y Branch", 
+      "is_preferred": false, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "15": {
+      "alias": "", 
+      "description": "Lateral Tap", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "16": {
+      "alias": "", 
+      "description": "Tap Straight on Rect", 
+      "is_preferred": true, 
+      "part_type": "Straight", 
+      "service_name": "SA02"
+    }, 
+    "160": {
+      "alias": "", 
+      "description": "Tee wReducer Lateral", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "162": {
+      "alias": "", 
+      "description": "Reducer Offset Flat1Side", 
+      "is_preferred": true, 
+      "part_type": "Ogee", 
+      "service_name": "SA02"
+    }, 
+    "17": {
+      "alias": "9", 
+      "description": "Reducing Elbow", 
+      "is_preferred": true, 
+      "part_type": "Elbow", 
+      "service_name": "SA02"
+    }, 
+    "186": {
+      "alias": "", 
+      "description": "Tap Conical on Rect", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "2": {
+      "alias": "12", 
+      "description": "Transition Tap", 
+      "is_preferred": true, 
+      "part_type": "Transition", 
+      "service_name": "SA02"
+    }, 
+    "20": {
+      "alias": "11", 
+      "description": "Mitered Elbow", 
+      "is_preferred": false, 
+      "part_type": "MiteredElbow", 
+      "service_name": "SA02"
+    }, 
+    "25": {
+      "alias": "", 
+      "description": "Straight Tap", 
+      "is_preferred": true, 
+      "part_type": "Straight", 
+      "service_name": "SA02"
+    }, 
+    "3": {
+      "alias": "10", 
+      "description": "Square Elbow with TV", 
+      "is_preferred": false, 
+      "part_type": "SquareElbow", 
+      "service_name": "SA02"
+    }, 
+    "30": {
+      "alias": "OS", 
+      "description": "Mitered Offset", 
+      "is_preferred": true, 
+      "part_type": "Offset", 
+      "service_name": "SA02"
+    }, 
+    "31": {
+      "alias": "", 
+      "description": "GRD Can-Round", 
+      "is_preferred": true, 
+      "part_type": "GRD Can-Round", 
+      "service_name": "SA02"
+    }, 
+    "328": {
+      "alias": "", 
+      "description": "Pants", 
+      "is_preferred": true, 
+      "part_type": "Pants", 
+      "service_name": "SA02"
+    }, 
+    "330": {
+      "alias": "", 
+      "description": "Radius 2 Way Offset", 
+      "is_preferred": true, 
+      "part_type": "Ogee", 
+      "service_name": "SA02"
+    }, 
+    "382": {
+      "alias": "", 
+      "description": "Plenum Box-Round", 
+      "is_preferred": true, 
+      "part_type": "Plenum Box-Round", 
+      "service_name": "SA02"
+    }, 
+    "399": {
+      "alias": "", 
+      "description": "Drop Cheek Elbow", 
+      "is_preferred": true, 
+      "part_type": "Elbow", 
+      "service_name": "SA02"
+    }, 
+    "4": {
+      "alias": "", 
+      "description": "Square Throat Radius Heel Elbow", 
+      "is_preferred": true, 
+      "part_type": "SquareElbow", 
+      "service_name": "SA02"
+    }, 
+    "40": {
+      "alias": "", 
+      "description": "BE Coupler", 
+      "is_preferred": true, 
+      "part_type": "BE Coupler", 
+      "service_name": "SA02"
+    }, 
+    "41": {
+      "alias": "", 
+      "description": "Pipe LongSeam", 
+      "is_preferred": true, 
+      "part_type": "Pipe LongSeam", 
+      "service_name": "SA02"
+    }, 
+    "60": {
+      "alias": "EC", 
+      "description": "EndCap", 
+      "is_preferred": true, 
+      "part_type": "Cap", 
+      "service_name": "SA02"
+    }, 
+    "68": {
+      "alias": "", 
+      "description": "Offset Mitered Round", 
+      "is_preferred": true, 
+      "part_type": "Offset", 
+      "service_name": "SA02"
+    }, 
+    "69": {
+      "alias": "", 
+      "description": "Boot Tap On Round", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "7": {
+      "alias": "6", 
+      "description": "Boot Tap", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "75": {
+      "alias": "", 
+      "description": "Tee Conical - BE", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "751": {
+      "alias": "", 
+      "description": "Conical Tap on Round", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "8": {
+      "alias": "17", 
+      "description": "Square to Round", 
+      "is_preferred": true, 
+      "part_type": "SquareToRound", 
+      "service_name": "SA02"
+    }, 
+    "808": {
+      "alias": "", 
+      "description": "Tee Shoe - BE", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "818": {
+      "alias": "", 
+      "description": "Tee wReducer Rect Boot - VD", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "821": {
+      "alias": "", 
+      "description": "Y Gore", 
+      "is_preferred": true, 
+      "part_type": "Y Gore", 
+      "service_name": "SA02"
+    }, 
+    "83": {
+      "alias": "F90", 
+      "description": "Elbow Spiral 90", 
+      "is_preferred": true, 
+      "part_type": "Elbow", 
+      "service_name": "SA02"
+    }, 
+    "839": {
+      "alias": "", 
+      "description": "Tee wReducer Rect 90", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "851": {
+      "alias": "", 
+      "description": "Tee Lateral", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "862": {
+      "alias": "EC", 
+      "description": "TDC End Cap", 
+      "is_preferred": true, 
+      "part_type": "Cap", 
+      "service_name": "SA02"
+    }, 
+    "863": {
+      "alias": "", 
+      "description": "Simple Breaches Piece", 
+      "is_preferred": true, 
+      "part_type": "Simple Breaches Piece", 
+      "service_name": "SA02"
+    }, 
+    "866": {
+      "alias": "3", 
+      "description": "Straight", 
+      "is_preferred": true, 
+      "part_type": "Straight", 
+      "service_name": "SA02"
+    }, 
+    "869": {
+      "alias": "", 
+      "description": "Trouser", 
+      "is_preferred": true, 
+      "part_type": "Trouser", 
+      "service_name": "SA02"
+    }, 
+    "871": {
+      "alias": "", 
+      "description": "Shoe Tap", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "875": {
+      "alias": "", 
+      "description": "Lateral Tap", 
+      "is_preferred": true, 
+      "part_type": "Tap", 
+      "service_name": "SA02"
+    }, 
+    "890": {
+      "alias": "", 
+      "description": "Tee wReducer Shoe", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "891": {
+      "alias": "", 
+      "description": "Tee wReducer Conical - BE", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "9": {
+      "alias": "15", 
+      "description": "Radius Offset", 
+      "is_preferred": true, 
+      "part_type": "Ogee", 
+      "service_name": "SA02"
+    }, 
+    "902": {
+      "alias": "", 
+      "description": "AccuFlange Round", 
+      "is_preferred": true, 
+      "part_type": "AccuFlange Round", 
+      "service_name": "SA02"
+    }, 
+    "921": {
+      "alias": "VD", 
+      "description": "VD Round (Standoff 2)", 
+      "is_preferred": true, 
+      "part_type": "VD Round (Standoff 2)", 
+      "service_name": "SA02"
+    }, 
+    "923": {
+      "alias": "", 
+      "description": "Tee Rect Lateral", 
+      "is_preferred": true, 
+      "part_type": "Tee", 
+      "service_name": "SA02"
+    }, 
+    "981": {
+      "alias": "DM", 
+      "description": "DM Frame", 
+      "is_preferred": true, 
+      "part_type": "DM Frame", 
+      "service_name": "SA02"
+    }
+  }, 
+  "notes": "CID mappings for NW Shop QA tool. Auto-populated by 'Dump FabPart Info' tool. Shared across all NW Shop QA instances."
+}

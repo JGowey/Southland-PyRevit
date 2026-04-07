@@ -1,0 +1,10 @@
+title:
+  en_us: Schedule Prep
+
+tooltip:
+  en_us: Populates and updates BOM parameters for selected fabrication parts, native MEP elements, and RFAs. Fills CP_BOM_Description, CP_Material & Coating, CP_Size, CP_Length, and fabrication connector name parameters without modifying item numbers.
+
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

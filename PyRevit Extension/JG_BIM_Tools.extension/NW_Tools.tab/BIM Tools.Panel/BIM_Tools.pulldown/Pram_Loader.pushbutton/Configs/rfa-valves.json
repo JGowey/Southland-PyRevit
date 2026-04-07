@@ -1,0 +1,49 @@
+{
+  "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+  "display_name": "RFA Valves", 
+  "parameters": [
+    {
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "name": "CP_Size", 
+      "source": "shared", 
+      "group_key": "Construction", 
+      "rvt_is_instance": true, 
+      "rvt_categories": [], 
+      "rvt_allow_vary_between_groups": true
+    }, 
+    {
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "name": "CP_Weight", 
+      "source": "shared", 
+      "group_key": "Construction", 
+      "rvt_is_instance": true, 
+      "rvt_categories": [], 
+      "rvt_allow_vary_between_groups": true
+    }, 
+    {
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "name": "CP_Volume", 
+      "source": "shared", 
+      "group_key": "Construction", 
+      "rvt_is_instance": true, 
+      "rvt_categories": [], 
+      "rvt_allow_vary_between_groups": true
+    }, 
+    {
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "name": "CP_Type Name", 
+      "source": "shared", 
+      "group_key": "Construction", 
+      "rvt_is_instance": true, 
+      "rvt_categories": [], 
+      "rvt_allow_vary_between_groups": true
+    }
+  ], 
+  "last_modified_by": "jgowey", 
+  "version": 1, 
+  "last_modified_on": "2026-03-28 19:32:04"
+}

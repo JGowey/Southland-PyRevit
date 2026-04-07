@@ -1,0 +1,125 @@
+2025-11-07 16:50:23.622000 - ============================================================
+2025-11-07 16:50:23.628000 - MWE Palette button clicked
+2025-11-07 16:50:23.688000 - ext_root: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension
+2025-11-07 16:50:23.690000 - lib_path: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib
+2025-11-07 16:50:23.721000 - PANE_GUID imported: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 16:50:23.723000 - Got UIApplication
+2025-11-07 16:50:23.725000 - Created DockablePaneId
+2025-11-07 16:50:23.730000 - ERROR getting pane: No dockable pane has been registered with this identifier.
+Parameter name: id
+2025-11-07 16:50:23.735000 - Attempting to register pane...
+2025-11-07 16:50:27.693000 - Pane registered
+2025-11-07 16:50:27.695000 - ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+2025-11-07 16:50:27.697000 - Traceback:
+2025-11-07 16:50:27.726000 - Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 78, in <module>
+    pane = uiapp.GetDockablePane(pane_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+2025-11-07 16:50:31.241000 - ============================================================
+2025-11-07 16:54:17.417000 - ============================================================
+2025-11-07 16:54:17.424000 - MWE Palette button clicked
+2025-11-07 16:54:17.467000 - ext_root: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension
+2025-11-07 16:54:17.471000 - lib_path: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib
+2025-11-07 16:54:17.520000 - PANE_GUID imported: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 16:54:17.523000 - Got UIApplication
+2025-11-07 16:54:17.525000 - Created DockablePaneId
+2025-11-07 16:54:17.529000 - ERROR getting pane: No dockable pane has been registered with this identifier.
+Parameter name: id
+2025-11-07 16:54:17.531000 - Attempting to register pane...
+2025-11-07 16:54:21.128000 - Pane registered
+2025-11-07 16:54:21.131000 - ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+2025-11-07 16:54:21.134000 - Traceback:
+2025-11-07 16:54:21.156000 - Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 78, in <module>
+    pane = uiapp.GetDockablePane(pane_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+2025-11-07 16:54:46.222000 - ============================================================
+2025-11-07 16:57:42.787000 - ============================================================
+2025-11-07 16:57:42.795000 - MWE Palette button clicked
+2025-11-07 16:57:42.849000 - ext_root: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension
+2025-11-07 16:57:42.852000 - lib_path: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib
+2025-11-07 16:57:42.900000 - PANE_GUID imported: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 16:57:42.902000 - Got UIApplication
+2025-11-07 16:57:42.905000 - Created DockablePaneId
+2025-11-07 16:57:42.910000 - ERROR getting pane: No dockable pane has been registered with this identifier.
+Parameter name: id
+2025-11-07 16:57:42.914000 - Attempting to register pane...
+2025-11-07 16:57:46.424000 - Pane registered
+2025-11-07 16:57:46.427000 - ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+2025-11-07 16:57:46.430000 - Traceback:
+2025-11-07 16:57:46.446000 - Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 78, in <module>
+    pane = uiapp.GetDockablePane(pane_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+2025-11-07 16:57:49.497000 - ============================================================
+2025-11-07 17:06:23.031000 - ============================================================
+2025-11-07 17:06:23.036000 - MWE Palette button clicked
+2025-11-07 17:06:23.072000 - ext_root: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension
+2025-11-07 17:06:23.075000 - lib_path: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib
+2025-11-07 17:06:23.154000 - PANE_GUID imported: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 17:06:23.157000 - Got UIApplication
+2025-11-07 17:06:23.159000 - Created DockablePaneId
+2025-11-07 17:06:23.163000 - ERROR getting pane: No dockable pane has been registered with this identifier.
+Parameter name: id
+2025-11-07 17:06:23.166000 - Attempting to register pane...
+2025-11-07 17:06:26.377000 - Pane registered
+2025-11-07 17:06:26.380000 - ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+2025-11-07 17:06:26.383000 - Traceback:
+2025-11-07 17:06:26.420000 - Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 78, in <module>
+    pane = uiapp.GetDockablePane(pane_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+2025-11-07 17:06:28.836000 - ============================================================
+2025-11-07 17:14:07.805000 - ============================================================
+2025-11-07 17:14:07.808000 - MWE Palette button clicked
+2025-11-07 17:14:07.855000 - ext_root: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension
+2025-11-07 17:14:07.858000 - lib_path: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib
+2025-11-07 17:14:07.919000 - PANE_GUID imported: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 17:14:07.922000 - Got UIApplication
+2025-11-07 17:14:07.925000 - Created DockablePaneId
+2025-11-07 17:14:07.931000 - ERROR getting pane: No dockable pane has been registered with this identifier.
+Parameter name: id
+2025-11-07 17:14:07.934000 - Attempting to register pane...
+2025-11-07 17:14:11.956000 - Pane registered
+2025-11-07 17:14:11.959000 - ERROR: The requested dockable pane has not been created yet.
+Parameter name: id
+2025-11-07 17:14:11.961000 - Traceback:
+2025-11-07 17:14:11.971000 - Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 78, in <module>
+    pane = uiapp.GetDockablePane(pane_id)
+Exception: The requested dockable pane has not been created yet.
+Parameter name: id
+
+2025-11-07 17:14:14.265000 - ============================================================
+2025-11-07 17:14:17.735000 - ============================================================
+2025-11-07 17:14:17.738000 - MWE Palette button clicked
+2025-11-07 17:14:17.770000 - ext_root: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension
+2025-11-07 17:14:17.772000 - lib_path: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\lib
+2025-11-07 17:14:17.801000 - PANE_GUID imported: 7b9a87b0-5b78-4b2a-8b7c-0f4f9a5e6e11
+2025-11-07 17:14:17.804000 - Got UIApplication
+2025-11-07 17:14:17.807000 - Created DockablePaneId
+2025-11-07 17:14:17.810000 - ERROR getting pane: The requested dockable pane has not been created yet.
+Parameter name: id
+2025-11-07 17:14:17.842000 - Attempting to register pane...
+2025-11-07 17:14:17.847000 - ERROR: Cannot register the same dockable pane ID more than once.
+Parameter name: id
+2025-11-07 17:14:17.850000 - Traceback:
+2025-11-07 17:14:17.861000 - Traceback (most recent call last):
+  File "C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py", line 74, in <module>
+    uiapp.RegisterDockablePane(pane_id, "MWE Palette", provider)
+Exception: Cannot register the same dockable pane ID more than once.
+Parameter name: id
+
+2025-11-07 17:14:22.314000 - ============================================================

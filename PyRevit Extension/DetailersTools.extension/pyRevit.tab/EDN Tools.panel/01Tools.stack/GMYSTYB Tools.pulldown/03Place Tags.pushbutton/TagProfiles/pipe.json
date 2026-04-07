@@ -1,0 +1,16 @@
+{
+  "leader": "Free End", 
+  "elbow_y": 0.0, 
+  "elbow_x": 8.0, 
+  "off_updown": 16.0, 
+  "tag_assignments": {
+    "MEP Fabrication Pipework": {
+      "family": "PIPE_No", 
+      "type": "2 Characters"
+    }
+  }, 
+  "extra_angle": 0.0, 
+  "name": "pipe", 
+  "off_along": -12.0, 
+  "rotation": "In-Line"
+}

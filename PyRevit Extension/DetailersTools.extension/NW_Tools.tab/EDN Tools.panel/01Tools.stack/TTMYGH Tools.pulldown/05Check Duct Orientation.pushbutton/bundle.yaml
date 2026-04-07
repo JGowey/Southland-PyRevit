@@ -1,0 +1,28 @@
+title: Check Duct Orientation
+tooltip: |
+  Detect rectangular ducts with mismatched Width x Height labels.
+
+  OVERVIEW:
+  Identifies fabrication ducts where dimension labels (Width x Height)
+  don't match the physical orientation in plan view.
+
+  CHECKS:
+  - Rectangular duct orientation in plan view
+  - Compares labeled Width x Height with physical dimensions
+  - Flags ducts where labels are swapped (e.g., 20x40 should be 40x20)
+
+  OUTPUT:
+  - Mismatched elements are selected
+  - Report shows which ducts have swapped dimensions
+
+author: Jeremiah Griffith
+order: 09
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

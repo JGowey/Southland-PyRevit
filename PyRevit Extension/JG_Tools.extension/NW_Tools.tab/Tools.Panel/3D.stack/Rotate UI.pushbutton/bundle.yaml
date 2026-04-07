@@ -1,0 +1,9 @@
+title:
+  en_us: Rotate UI
+tooltip:
+  en_us: |
+    Rotate Setting.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

@@ -1,0 +1,22 @@
+title: Toggle Case
+tooltip: |
+  Toggle Case (Shift+F3 equivalent)
+
+  Cycles selected TextNote elements through:
+    UPPERCASE -> Title Case -> lowercase -> UPPERCASE
+
+  Select one or more TextNote elements in the active
+  view, then run the tool to advance to the next case.
+
+  Multiple notes selected together advance as a group
+  based on the majority current state.
+
+author: Jeremiah Griffith
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

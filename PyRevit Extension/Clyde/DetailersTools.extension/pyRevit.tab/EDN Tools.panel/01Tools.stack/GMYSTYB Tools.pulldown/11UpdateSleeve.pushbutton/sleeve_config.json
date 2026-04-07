@@ -1,0 +1,108 @@
+{
+  "oversize_round_in": 2.0, 
+  "oversize_rect_in": 2.0, 
+  "family_params": {
+    "BIMrx_PipeAccessory_Sleeve_Round": {
+      "w": "__none__", 
+      "h": "__none__", 
+      "d": "BIMrx_SLEEVE WIDTH"
+    }, 
+    "Sleeve_Duct_Wall_REC_SI": {
+      "h": "CP_Sleeve_Width", 
+      "d": "__none__", 
+      "w": "CP_Sleeve_Depth"
+    }, 
+    "BIMrx_DuctAccessory_Sleeve_Rectangular": {
+      "w": "BIMrx_SLEEVE WIDTH", 
+      "h": "BIMrx_SLEEVE HEIGHT", 
+      "d": "__none__"
+    }, 
+    "Sleeve_Pipe_Wall_RND_SI": {
+      "w": "__none__", 
+      "h": "__none__", 
+      "d": "CP_Sleeve_Nominal Diameter"
+    }
+  }, 
+  "param_dia": "__none__", 
+  "rules": [
+    {
+      "kw4": "", 
+      "enabled": true, 
+      "kw2": "rect", 
+      "kw3": "rec", 
+      "kw1": "sleeve", 
+      "match": "Fabrication Rect Ductwork"
+    }, 
+    {
+      "kw4": "RND", 
+      "enabled": true, 
+      "kw2": "round", 
+      "kw3": "rd", 
+      "kw1": "sleeve", 
+      "match": "Fabrication RD Ductwork"
+    }, 
+    {
+      "kw4": "", 
+      "enabled": true, 
+      "kw2": "pipe", 
+      "kw3": "rd", 
+      "kw1": "sleeve", 
+      "match": "Fabrication Pipework"
+    }
+  ], 
+  "param_height": "CP_Sleeve_Width", 
+  "oversize_width_in": 2.0, 
+  "oversize_dia_in": 2.0, 
+  "oversize_length_in": 0.0, 
+  "last_height_param": "CP_Host Depth", 
+  "last_dia_param": "", 
+  "param_width": "CP_Sleeve_Depth", 
+  "oversize_all_in": 2.0, 
+  "oversize_in": 3.0, 
+  "version": "2.0.0", 
+  "oversize_uniform": true, 
+  "mappings": {
+    "Length": {
+      "apply_oversize": false, 
+      "target": "", 
+      "enabled": false
+    }, 
+    "CenterElev": {
+      "apply_oversize": true, 
+      "target": "", 
+      "enabled": true
+    }, 
+    "Width": {
+      "apply_oversize": true, 
+      "target": "", 
+      "enabled": false
+    }, 
+    "TopElev": {
+      "apply_oversize": false, 
+      "target": "", 
+      "enabled": false
+    }, 
+    "Diameter": {
+      "apply_oversize": true, 
+      "target": "", 
+      "enabled": false
+    }, 
+    "Height": {
+      "apply_oversize": true, 
+      "target": "", 
+      "enabled": false
+    }, 
+    "BottomElev": {
+      "apply_oversize": false, 
+      "target": "", 
+      "enabled": false
+    }, 
+    "NominalDia": {
+      "apply_oversize": true, 
+      "target": "", 
+      "enabled": false
+    }
+  }, 
+  "last_width_param": "CP_Host Width", 
+  "oversize_height_in": 2.0
+}

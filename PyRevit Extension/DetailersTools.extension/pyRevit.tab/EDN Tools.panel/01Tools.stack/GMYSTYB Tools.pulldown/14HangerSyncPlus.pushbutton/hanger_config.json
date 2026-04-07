@@ -1,0 +1,28 @@
+{
+  "host_params": {
+    "service_name": "Fabrication Service Name",
+    "service_abbrev": "Service Abbreviation",
+    "width": "Main Primary Width",
+    "depth": "Main Primary Depth",
+    "diameter": "Main Primary Diameter",
+    "insulation_thickness": "Insulation Thickness"
+  },
+  "hanger_params": {
+    "service": "CP_Service",
+    "hanger_size": "HangerSize",
+    "rod_length": "HangerFabLength",
+    "rod_length_left": "RodLengthLeft",
+    "rod_length_right": "RodLengthRight",
+    "boh_elevation": "BOHElevation",
+    "insulation_adjust": "CP_Hanger Insulation Adjust",
+    "item_number": "ItemNumber"
+  },
+  "insertion_mode": "centerline",
+  "last_search_radius": 2.5,
+  "last_struct_offset": 1.5,
+  "last_place_struct_offset": 1.5,
+  "last_spacing": 10.0,
+  "last_fitting_clear": 0.5,
+  "last_rod_dia": 0.375,
+  "last_family_search": ""
+}

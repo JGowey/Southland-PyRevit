@@ -1,0 +1,10 @@
+title: MWE Palette
+tooltip: Open the MWE Palette dockable panel.
+author: Jeremiah Griffith
+order: 20
+script: script.py
+icon: icon.png
+engine:
+  name: ipy
+  clean: true
+  persistence: false

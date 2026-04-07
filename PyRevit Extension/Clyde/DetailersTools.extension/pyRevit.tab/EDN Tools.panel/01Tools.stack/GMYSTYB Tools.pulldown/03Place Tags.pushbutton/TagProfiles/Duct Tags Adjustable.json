@@ -1,0 +1,16 @@
+{
+  "elbow_x": 16.0, 
+  "rotation": "Horizontal", 
+  "leader": "Free End", 
+  "tag_assignments": {
+    "MEP Fabrication Ductwork": {
+      "type": "6 Characters", 
+      "family": "TGF_Duct_ItemNo_Adjustable_SI"
+    }
+  }, 
+  "off_along": 0.0, 
+  "off_updown": 12.0, 
+  "extra_angle": 0.0, 
+  "skip_tagged": true, 
+  "name": "Duct Tags Adjustable"
+}

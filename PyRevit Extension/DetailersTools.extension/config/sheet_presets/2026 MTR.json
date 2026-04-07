@@ -1,0 +1,32 @@
+{
+  "name": "2026 MTR", 
+  "slots": [
+    {
+      "x_fraction": 0.22059999999999999, 
+      "scale": 24, 
+      "viewport_type": null, 
+      "y_fraction": 0.2273, 
+      "is_schedule": false, 
+      "view_key": "top"
+    }, 
+    {
+      "x_fraction": 0.22059999999999999, 
+      "scale": 24, 
+      "viewport_type": null, 
+      "y_fraction": 0.77270000000000005, 
+      "is_schedule": false, 
+      "view_key": "front"
+    }, 
+    {
+      "x_fraction": 0.68379999999999996, 
+      "scale": 24, 
+      "viewport_type": null, 
+      "y_fraction": 0.2273, 
+      "is_schedule": false, 
+      "view_key": "3d"
+    }
+  ], 
+  "parameters": {}, 
+  "version": 1, 
+  "titleblock": "TBLK_11x17_SI: 11x17 Standard"
+}

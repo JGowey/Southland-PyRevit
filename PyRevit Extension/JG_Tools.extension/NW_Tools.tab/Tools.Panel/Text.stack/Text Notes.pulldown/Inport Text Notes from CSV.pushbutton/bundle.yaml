@@ -1,0 +1,8 @@
+title:
+  en_us: Inport From CSV
+tooltip:
+  en_us:Imports text notes from Excel.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

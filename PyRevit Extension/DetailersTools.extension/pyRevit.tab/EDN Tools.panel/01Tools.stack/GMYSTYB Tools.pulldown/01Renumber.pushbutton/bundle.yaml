@@ -1,0 +1,52 @@
+title: Renumber
+tooltip: |
+  Wizard-driven renumbering for fabrication parts, families, and any
+  element with a text parameter -- with spatial ordering, grouping,
+  identical-part matching, and saved profiles.
+
+  ORDERING MODES (how elements are sequenced before numbering):
+    Left to Right     -- by X coordinate ascending
+    Top to Bottom     -- by Y coordinate descending
+    Nearest Neighbor  -- shortest-path walk (minimizes backtracking)
+    Path Order        -- follow a picked spline or polyline through the model
+    Angular           -- radial sweep from a picked center point
+    Size-Based        -- sort by a dimensional parameter before numbering
+
+  GROUPING MODES (how elements are batched):
+    All At Once       -- single sequential run across entire selection
+    By Category       -- each Revit category gets its own number series
+    By Family         -- each family gets its own series
+    By Type           -- each type gets its own series
+    By Parameter      -- group by any parameter value (e.g., spool number)
+
+  IDENTICAL PARTS MATCHING:
+    Compares parts across 18+ fields (CID, dimensions, connectors, service,
+    insulation, etc.) and assigns the same number to matching parts.
+    Useful for generating accurate BOM quantities.
+
+  OTHER FEATURES:
+    - Prefix and suffix on the number (e.g., "SA-" prefix + "001")
+    - Start number and increment configurable
+    - Tag placement after numbering (manual pick or auto-place)
+    - Save and load named profiles for repeat workflows
+    - Results preview before committing
+
+  WORKFLOW:
+    1. Pre-select elements OR click Select in the tool to pick.
+    2. Choose your target parameter, ordering mode, and grouping mode.
+    3. Configure prefix/suffix and start number.
+    4. Click Preview to see the assigned numbers before writing.
+    5. Click Apply to commit. All writes are in a single undoable transaction.
+
+author: Jeremiah Griffith
+order: 03
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: 2.2.0
+highlight: dark
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

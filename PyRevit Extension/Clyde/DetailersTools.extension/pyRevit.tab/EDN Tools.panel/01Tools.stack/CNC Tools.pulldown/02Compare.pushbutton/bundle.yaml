@@ -1,0 +1,30 @@
+title: Compare
+tooltip: |
+  Compare Revit Elements, Families, Schedules, or Views side-by-side.
+
+  Unified tool consolidating Compare Elements, Families, Schedules, and Views
+  into a single branded window.
+
+  **All four engines are live:**
+  - Elements: Compare 2-100 fabrication parts property-by-property
+  - Families: Compare 2 loadable families (properties, parameters, types)
+  - Schedules: Compare 2+ schedules (fields, filters, sorting, formatting, appearance)
+  - Views: Compare 2 views or view templates (categories, filters, worksets, links)
+
+  **Workflow:**
+  1. Choose the comparison type.
+  2. Click Select and Compare to pick items.
+  3. Results appear in a DataGrid with yellow-highlighted difference rows.
+  4. Filter by Everything, Differences Only, or Same Only.
+  5. Export results to CSV or XLS.
+order: 02
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 1.0.0
+highlight: dark
+engine:
+  name: ipy
+  clean: true
+  persistence: false

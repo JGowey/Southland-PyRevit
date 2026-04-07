@@ -1,0 +1,28 @@
+title: Assembly Studio
+tooltip: |
+  Full assembly lifecycle in one tool — create assembly, configure views, and
+  lay out the sheet with a visual drag-and-drop canvas.
+
+  TWO MODES:
+    Build New:  Select fabrication elements, name the assembly, choose which
+                views and templates to generate, then click Create Assembly.
+                Views auto-populate the sheet layout canvas.
+    Use Existing: Pick any existing assembly — views load automatically.
+
+  SHEET LAYOUT (both modes):
+    - Drag viewport rectangles to precise positions on the canvas
+    - Set scale and viewport type per view
+    - Fill titleblock parameters (Drawn By, Date, etc.)
+    - Save / load layout presets for consistent sheets across jobs
+
+  Replaces Assembly Builder (16) and Assembly Sheet Creator (15).
+
+author: Jeremiah Griffith
+order: 15
+script: script.py
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

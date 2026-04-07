@@ -1,0 +1,57 @@
+{
+  "parameters": [
+    {
+      "group_key": "Construction", 
+      "name": "CP_Line Set ID", 
+      "rfa_is_instance": true, 
+      "source": "shared", 
+      "rvt_is_instance": true, 
+      "rvt_allow_vary_between_groups": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rvt_categories": [
+        "Mechanical Equipment", 
+        "MEP Fabrication Pipework", 
+        "Pipe Accessories", 
+        "Pipe Fittings", 
+        "Pipes"
+      ]
+    }, 
+    {
+      "group_key": "Construction", 
+      "name": "CP_Line Set Branch ID", 
+      "rfa_is_instance": true, 
+      "source": "shared", 
+      "rvt_is_instance": true, 
+      "rvt_allow_vary_between_groups": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rvt_categories": [
+        "Mechanical Equipment", 
+        "MEP Fabrication Pipework", 
+        "Pipe Accessories", 
+        "Pipe Fittings", 
+        "Pipes"
+      ]
+    }, 
+    {
+      "group_key": "Construction", 
+      "name": "CP_Outdoor Unit ID", 
+      "rfa_is_instance": true, 
+      "source": "shared", 
+      "rvt_is_instance": true, 
+      "rvt_allow_vary_between_groups": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rvt_categories": [
+        "Mechanical Equipment", 
+        "MEP Fabrication Pipework", 
+        "Pipe Accessories", 
+        "Pipe Fittings", 
+        "Pipes"
+      ]
+    }
+  ], 
+  "last_modified_on": "2026-02-11 17:15:59", 
+  "display_name": "VRF Refrigeration", 
+  "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+  "version": 1, 
+  "last_modified_by": "jgowey"
+}

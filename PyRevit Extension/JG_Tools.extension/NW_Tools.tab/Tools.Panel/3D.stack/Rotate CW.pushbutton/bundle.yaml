@@ -1,0 +1,9 @@
+title:
+  en_us: Rotate CW
+tooltip:
+  en_us: |
+    Rotate using settings Angle.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

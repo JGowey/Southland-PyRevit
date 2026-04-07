@@ -1,0 +1,50 @@
+title: Coil Duct
+tooltip: |
+  Calculate overall cut lengths for the coil machine and classify every
+  rectangular fabrication duct segment by production method.
+
+  Evaluates each piece against your configured coil machine limits, then
+  applies color overrides in the active view so the shop instantly knows
+  which pieces go to coil vs. break press -- no separate spreadsheet needed.
+
+  RESULT BUCKETS (5 categories):
+    GREEN  - COIL READY      Width and length within coil machine limits.
+                              Cut length printed on tag. Send directly to coil.
+    AMBER  - COIL OVERSIZED  Width exceeds coil max. Must be break-pressed.
+    YELLOW - COIL TOO SHORT  Below minimum run length. Not worth coil setup;
+                              cut on the break press instead.
+    GREY   - NON-RECTANGULAR Round or oval duct -- coil does not apply.
+    BLUE   - ALREADY TAGGED  Previously processed this session; skipped to
+                              avoid duplicate tagging.
+
+  CONNECTOR ALLOWANCES (added to bare duct length):
+    None / RAW / RAW 1 NOTCH / DM 35  -->  0"
+    S&D / S&S                         -->  0.5" per end
+    TDC                               -->  1-7/8" per end
+
+  NOTE: Cut length is derived from fabrication part geometry, not bounding
+  box -- connector flanges and couplings are correctly excluded.
+
+  WORKFLOW:
+    1. Open a view containing the duct run to evaluate.
+    2. Pre-select duct segments OR leave nothing selected to scan the
+       entire active view.
+    3. Choose coil width (60" or 48") from the settings dropdown.
+    4. Click Run. Color overrides apply and a summary report prints to
+       the output panel with element ID, dimensions, cut length, and bucket.
+    5. Click any row in the report to zoom to that element.
+
+  SETTINGS (persisted per-machine):
+    - Coil max width (inches)
+    - Coil minimum run length (inches)
+    - Tag family to apply on coil-ready pieces
+
+author: Jeremiah Griffith
+order: 07
+script: script.py
+version: 1.3.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

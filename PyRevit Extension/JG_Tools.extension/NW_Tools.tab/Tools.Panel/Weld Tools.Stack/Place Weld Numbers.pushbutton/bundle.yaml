@@ -1,0 +1,22 @@
+title:
+  en_us: Place Weld Numbers
+
+tooltip:
+  en_us: |
+    Click to place sequential weld number notes (W1, W2, etc.) with smart leader placement.
+
+    - Continues numbering from existing weld notes
+    - Can auto-fill blanks or renumber the view
+    - Detects duplicates before placing
+    - Scale-aware and view-safe
+    - Works in plan, section, and locked 3D views
+
+    Controls:
+    - Click to place
+    - SHIFT = place text on right
+    - ESC = finish
+
+author: Jacob Gowey
+
+engine:
+  persistent: true

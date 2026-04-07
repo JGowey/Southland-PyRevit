@@ -1,0 +1,29 @@
+title: Place Tags
+tooltip: |
+  Universal multi-category tagging with advanced placement controls.
+
+  This tool allows you to tag any model category (MEP, Architecture, Structure) with precise control over position, rotation, and tag type.
+
+  **Workflow:**
+  1. **Select Elements**: Select elements in Revit (pre-selection supported) or click "Select Elements" in the tool.
+  2. **Assign Tags**: The tool auto-detects tags. Double-click any category in the list to change the specific Tag Family/Type.
+  3. **Configure**: Set offsets (Left/Right, Along) and Rotation (In-Line, Horizontal, etc.).
+  4. **Place**: Click "Place Tags" to generate annotations.
+
+  **Features:**
+  - Works on ANY model category (Ducts, Pipes, Walls, Doors, etc.)
+  - Smart "In-Line" rotation aligns tags with element curves
+  - Save and Load reusable Placement Profiles
+  - Robust auto-detection of loaded tag families
+  - Support for Leader lines
+
+order: 12
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 1.0.0
+engine:
+  name: ipy
+  clean: true
+  persistence: false

@@ -1,0 +1,17 @@
+title:
+  en_us: Micron Sync
+
+tooltip:
+  en_us: |
+    Writes standard MTI parameters to model elements based on view, selection, or entire model.
+
+    • Assigns Job Number and Scope parameters
+    • Automatically determines Micron construction zones using spatial analysis
+    • Normalizes Construction Status (WIP / IFF / AB)
+    • Supports owned-elements-only
+    • Optional Sync with Central on completion
+
+author: Jacob Gowey
+
+engine:
+  persistent: true

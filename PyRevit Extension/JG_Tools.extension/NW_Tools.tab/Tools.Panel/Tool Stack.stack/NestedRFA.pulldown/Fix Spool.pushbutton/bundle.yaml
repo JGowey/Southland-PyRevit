@@ -1,0 +1,17 @@
+title:
+  en_us: Fix Spool
+
+tooltip:
+  en_us: |
+    Pull Nested RFAs into Assembly.
+    
+    Use this tool to automatically scan and add any nested RFAs that are children of existing assembly members
+
+    How to use:
+    1. Click the tool.
+    2. Select an existing Assembly in the model.
+    3. The tool checks all FamilyInstances in the assembly.
+       • If they contain nested RFAs not already in the assembly those will be added automatically.
+author: "Jacob Gowey"
+engine: 
+  persistent: true

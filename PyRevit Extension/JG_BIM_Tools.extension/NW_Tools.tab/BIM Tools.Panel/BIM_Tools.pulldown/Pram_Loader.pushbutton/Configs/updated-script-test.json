@@ -1,0 +1,32 @@
+{
+  "shared_parameter_file": "\\\\si.net\\bim\\Revit\\Common\\Shared Parameters\\AEC_Shared Parameters.txt", 
+  "last_modified_by": "jgowey", 
+  "display_name": "Updated Script Test", 
+  "parameters": [
+    {
+      "rvt_is_instance": true, 
+      "shared_parameter_file": "\\\\si.net\\bim\\Revit\\Common\\Shared Parameters\\AEC_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "rvt_categories": [
+        "MEP Ancillary Framing", 
+        "MEP Ancillary Framing Tags", 
+        "MEP Fabrication Containment", 
+        "MEP Fabrication Containment Tags", 
+        "MEP Fabrication Ductwork", 
+        "MEP Fabrication Ductwork Stiffener Tags", 
+        "MEP Fabrication Ductwork Stiffeners", 
+        "MEP Fabrication Ductwork Tags", 
+        "MEP Fabrication Hanger Tags", 
+        "MEP Fabrication Hangers", 
+        "MEP Fabrication Pipework", 
+        "MEP Fabrication Pipework Tags"
+      ], 
+      "name": "CP_Length", 
+      "rvt_allow_vary_between_groups": true, 
+      "source": "shared", 
+      "group_key": "Construction"
+    }
+  ], 
+  "last_modified_on": "2026-01-30 17:12:53", 
+  "version": 1
+}

@@ -1,0 +1,52 @@
+title: Snoop Selection
+tooltip: |
+  Advanced Element Inspector with Comparison Mode
+  
+  OVERVIEW:
+  Deep dive into element properties, parameters, methods, and relationships.
+  NEW: Compare multiple elements to find similarities and differences!
+  
+  KEY FEATURES:
+  - Complete property access (hidden and internal properties)
+  - Safe method inspection without execution
+  - Parameter analysis with storage types
+  - Real-time search and filtering
+  - Drill-down navigation for nested objects
+  - Data export (clipboard and CSV)
+  - COMPARISON MODE for multiple elements
+  
+  COMPARISON MODE:
+  - Similarities View: Shows ONLY identical values across all elements
+  - Differences View: Shows ONLY varying values with side-by-side comparison
+  - Smart comparison of parameters and properties
+  - Perfect for quality assurance and standardization checks
+  
+  USE CASES:
+  - Troubleshooting element behavior
+  - API development and property discovery
+  - Quality control and verification
+  - Find non-standard elements in a group
+  - Verify family instances are identical
+  - Identify inconsistencies across selections
+  
+  WORKFLOW:
+  1. Click button (or pre-select elements)
+  2. Pick elements if needed
+  3. Use Normal mode for single-element drill-down
+  4. Use Similarities/Differences for multi-element comparison
+  5. Search, export, or copy data as needed
+  
+  TIP: Comparison buttons only enabled with 2+ elements selected
+
+author: Jeremiah Griffith
+order: 05
+script: script.py
+xaml: window.xaml
+icon: icon.png
+icon-small: icon-small.png
+version: 2.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

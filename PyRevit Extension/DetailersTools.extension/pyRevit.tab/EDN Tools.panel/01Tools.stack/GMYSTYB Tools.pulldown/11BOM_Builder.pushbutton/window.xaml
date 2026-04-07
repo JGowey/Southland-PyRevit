@@ -1,0 +1,521 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="BOM Builder"
+    Width="1060" Height="720"
+    MinWidth="840" MinHeight="560"
+    WindowStartupLocation="CenterScreen"
+    Background="#F5F7FB"
+    FontFamily="Segoe UI"
+    FontSize="12"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"
+    ResizeMode="CanResizeWithGrip">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="PageBg"         Color="#F5F7FB"/>
+        <SolidColorBrush x:Key="CardBg"         Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="StrokePrimary"  Color="#E5E8F0"/>
+        <SolidColorBrush x:Key="StrokeLight"    Color="#F0F2F7"/>
+        <SolidColorBrush x:Key="TextPrimary"    Color="#1F2937"/>
+        <SolidColorBrush x:Key="TextMuted"      Color="#6B7280"/>
+        <SolidColorBrush x:Key="AccentPrimary"  Color="#2563EB"/>
+        <SolidColorBrush x:Key="AccentDark"     Color="#1D4ED8"/>
+
+        <!-- Typography -->
+        <Style x:Key="WindowTitle" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="WindowSubtitle" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="12"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin"     Value="0,3,0,0"/>
+        </Style>
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize"   Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+            <Setter Property="Margin"     Value="0,0,0,7"/>
+        </Style>
+        <Style x:Key="Caption" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="11"/>
+            <Setter Property="Foreground" Value="{StaticResource TextMuted}"/>
+        </Style>
+
+        <!-- Tooltip icon -->
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width"             Value="15"/>
+            <Setter Property="Height"            Value="15"/>
+            <Setter Property="CornerRadius"      Value="8"/>
+            <Setter Property="Background"        Value="#A0AEC0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin"            Value="5,0,0,0"/>
+            <Setter Property="Cursor"            Value="Hand"/>
+        </Style>
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground"          Value="White"/>
+            <Setter Property="FontWeight"          Value="Bold"/>
+            <Setter Property="FontSize"            Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment"   Value="Center"/>
+            <Setter Property="Text"                Value="?"/>
+        </Style>
+
+        <!-- Card -->
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="Background"      Value="{StaticResource CardBg}"/>
+            <Setter Property="CornerRadius"    Value="8"/>
+            <Setter Property="BorderBrush"     Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding"         Value="12"/>
+            <Setter Property="Margin"          Value="0,0,0,10"/>
+        </Style>
+
+        <!-- Base button template -->
+        <Style x:Key="Btn_Base" TargetType="Button">
+            <Setter Property="Height"          Value="30"/>
+            <Setter Property="Padding"         Value="12,5"/>
+            <Setter Property="Margin"          Value="3,0"/>
+            <Setter Property="Cursor"          Value="Hand"/>
+            <Setter Property="FontWeight"      Value="SemiBold"/>
+            <Setter Property="FontSize"        Value="12"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="6"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="0.88"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Opacity" Value="0.75"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Opacity" Value="0.45"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Btn_Primary" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background"  Value="{StaticResource AccentPrimary}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentDark}"/>
+            <Setter Property="Foreground"  Value="White"/>
+            <Setter Property="FontSize"    Value="13"/>
+        </Style>
+        <Style x:Key="Btn_Secondary" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background"  Value="#F0F5FF"/>
+            <Setter Property="BorderBrush" Value="#BFDBFE"/>
+            <Setter Property="Foreground"  Value="{StaticResource AccentPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Ghost" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Background"  Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="Foreground"  Value="{StaticResource TextPrimary}"/>
+        </Style>
+        <Style x:Key="Btn_Micro" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Height"      Value="22"/>
+            <Setter Property="Padding"     Value="7,2"/>
+            <Setter Property="Margin"      Value="3,0"/>
+            <Setter Property="FontSize"    Value="10"/>
+            <Setter Property="FontWeight"  Value="Normal"/>
+            <Setter Property="Background"  Value="{StaticResource CardBg}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="Foreground"  Value="{StaticResource TextMuted}"/>
+        </Style>
+
+        <!-- Mode tab button (styled by code) -->
+        <Style x:Key="Btn_ModeTab" TargetType="Button" BasedOn="{StaticResource Btn_Base}">
+            <Setter Property="Height"          Value="34"/>
+            <Setter Property="Width"           Value="155"/>
+            <Setter Property="Margin"          Value="0,0,4,0"/>
+            <Setter Property="FontSize"        Value="12"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush"     Value="{StaticResource StrokePrimary}"/>
+        </Style>
+
+        <!-- CheckBox -->
+        <Style x:Key="CardCheck" TargetType="CheckBox">
+            <Setter Property="Foreground"               Value="{StaticResource TextPrimary}"/>
+            <Setter Property="FontSize"                 Value="12"/>
+            <Setter Property="Margin"                   Value="0,3"/>
+            <Setter Property="Cursor"                   Value="Hand"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- DataGrid -->
+        <Style x:Key="BomGrid" TargetType="DataGrid">
+            <Setter Property="Background"               Value="White"/>
+            <Setter Property="RowBackground"            Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#FAFBFD"/>
+            <Setter Property="BorderBrush"              Value="{StaticResource StrokePrimary}"/>
+            <Setter Property="BorderThickness"          Value="0"/>
+            <Setter Property="GridLinesVisibility"      Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource StrokeLight}"/>
+            <Setter Property="FontSize"                 Value="11"/>
+            <Setter Property="RowHeight"                Value="24"/>
+            <Setter Property="IsReadOnly"               Value="True"/>
+            <Setter Property="CanUserSortColumns"       Value="True"/>
+            <Setter Property="CanUserResizeColumns"     Value="True"/>
+            <Setter Property="CanUserReorderColumns"    Value="True"/>
+            <Setter Property="SelectionMode"            Value="Extended"/>
+            <Setter Property="SelectionUnit"            Value="FullRow"/>
+            <Setter Property="AutoGenerateColumns"      Value="True"/>
+            <Setter Property="VerticalScrollBarVisibility"   Value="Auto"/>
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+        </Style>
+
+    </Window.Resources>
+
+    <!-- ROOT -->
+    <Grid Margin="14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>  <!-- header -->
+            <RowDefinition Height="Auto"/>  <!-- mode tabs -->
+            <RowDefinition Height="*"/>     <!-- main -->
+            <RowDefinition Height="Auto"/>  <!-- footer -->
+        </Grid.RowDefinitions>
+
+        <!-- ══ HEADER ══ -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="BOM Builder" Style="{StaticResource WindowTitle}"/>
+            <TextBlock Text="Multi-category bill of materials with unlimited filters and CSV export"
+                       Style="{StaticResource WindowSubtitle}"/>
+        </StackPanel>
+
+        <!-- ══ MODE TABS ══ -->
+        <Border Grid.Row="1"
+                Background="{StaticResource CardBg}"
+                BorderBrush="{StaticResource StrokePrimary}"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="10,8"
+                Margin="0,0,0,10">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Left"
+                           Text="MODE"
+                           Style="{StaticResource SectionLabel}"
+                           Margin="0" VerticalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Margin="12,0,0,0">
+                    <Button x:Name="BtnModeGrab"
+                            Content="Grab Elements"
+                            Style="{StaticResource Btn_ModeTab}"
+                            Background="#2563EB"
+                            Foreground="White"/>
+                    <Button x:Name="BtnModeSched"
+                            Content="Existing Schedule"
+                            Style="{StaticResource Btn_ModeTab}"
+                            Background="#F0F2F7"
+                            Foreground="#374151"/>
+                </StackPanel>
+                <TextBlock DockPanel.Dock="Right"
+                           Style="{StaticResource Caption}"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                           Text="Grab: collect live elements by category.   Schedule: read any existing schedule view."/>
+            </DockPanel>
+        </Border>
+
+        <!-- ══ MAIN: left config + right results ══ -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- ─── LEFT PANEL ─── -->
+            <ScrollViewer Grid.Column="0" Margin="0,0,10,0"
+                          VerticalScrollBarVisibility="Auto"
+                          HorizontalScrollBarVisibility="Disabled">
+                <StackPanel>
+
+                    <!-- ── MODE A: Grab Elements ── -->
+                    <StackPanel x:Name="PanelGrab">
+
+                        <!-- Categories -->
+                        <Border Style="{StaticResource Card}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                    <TextBlock Text="CATEGORIES" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                    <Border Style="{StaticResource TooltipIcon}">
+                                        <Border.ToolTip>
+                                            <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                                Select one or more categories. All are collected
+                                                in a single pass. Fabrication Parts covers all
+                                                four ITM disciplines (pipe, duct, hangers, containment).
+                                            </TextBlock>
+                                        </Border.ToolTip>
+                                        <TextBlock Style="{StaticResource TooltipText}"/>
+                                    </Border>
+                                </StackPanel>
+                                <CheckBox x:Name="ChkFab"       Content="Fabrication Parts (ITMs)"  Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkMech"      Content="Mechanical Equipment"       Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkPipeAcc"   Content="Pipe Accessories"           Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkPipeFit"   Content="Pipe Fittings"              Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkDuctAcc"   Content="Duct Accessories"           Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkDuctFit"   Content="Duct Fittings"              Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkStructFrm"  Content="Structural Framing"        Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkStructConn" Content="Structural Connections"    Style="{StaticResource CardCheck}"/>
+                                <CheckBox x:Name="ChkConduitFit" Content="Conduit Fittings"          Style="{StaticResource CardCheck}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Options -->
+                        <Border Style="{StaticResource Card}">
+                            <StackPanel>
+                                <TextBlock Text="OPTIONS" Style="{StaticResource SectionLabel}"/>
+                                <CheckBox x:Name="ChkGroup"
+                                          Content="Group by Type (show Count)"
+                                          Style="{StaticResource CardCheck}"
+                                          IsChecked="True"/>
+                                <CheckBox x:Name="ChkView"
+                                          Content="Active view only"
+                                          Style="{StaticResource CardCheck}"
+                                          Margin="0,3,0,0"/>
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel><!-- end PanelGrab -->
+
+                    <!-- ── MODE B: Existing Schedule ── -->
+                    <StackPanel x:Name="PanelSched" Visibility="Collapsed">
+
+                        <Border Style="{StaticResource Card}">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Margin="0,0,0,7">
+                                    <TextBlock Text="SCHEDULE" Style="{StaticResource SectionLabel}" Margin="0"/>
+                                    <Border Style="{StaticResource TooltipIcon}">
+                                        <Border.ToolTip>
+                                            <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                                Pick any schedule view in the project. Click Load
+                                                to read its rows into the DataGrid. Then add
+                                                filters and click Apply Filters.
+                                            </TextBlock>
+                                        </Border.ToolTip>
+                                        <TextBlock Style="{StaticResource TooltipText}"/>
+                                    </Border>
+                                </StackPanel>
+
+                                <ComboBox x:Name="CbSchedule"
+                                          Margin="0,0,0,8"
+                                          FontSize="11"/>
+
+                                <Button x:Name="BtnLoadSched"
+                                        Content="Load Schedule"
+                                        Style="{StaticResource Btn_Secondary}"
+                                        HorizontalAlignment="Left"
+                                        Margin="0"/>
+
+                                <CheckBox x:Name="ChkGroupB"
+                                          Content="Group identical rows (show Count)"
+                                          Style="{StaticResource CardCheck}"
+                                          IsChecked="False"
+                                          Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel><!-- end PanelSched -->
+
+                    <!-- ── FILTERS (shared) ── -->
+                    <Border Style="{StaticResource Card}">
+                        <StackPanel>
+                            <DockPanel Margin="0,0,0,7">
+                                <TextBlock Text="FILTERS" Style="{StaticResource SectionLabel}"
+                                           DockPanel.Dock="Left" Margin="0" VerticalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right"
+                                            HorizontalAlignment="Right">
+                                    <Border Style="{StaticResource TooltipIcon}">
+                                        <Border.ToolTip>
+                                            <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                                Each rule: Logic (AND/OR) + Parameter + Operator + Value.
+                                                Rules evaluate left-to-right. First rule logic is ignored.
+                                                Run BOM once with no filters to populate parameter list.
+                                            </TextBlock>
+                                        </Border.ToolTip>
+                                        <TextBlock Style="{StaticResource TooltipText}"/>
+                                    </Border>
+                                    <Button x:Name="BtnAddRule"
+                                            Content="+ Add Rule"
+                                            Style="{StaticResource Btn_Micro}"
+                                            Margin="8,0,0,0"/>
+                                </StackPanel>
+                            </DockPanel>
+
+                            <!-- Column headers -->
+                            <Grid Margin="0,0,0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="56"/>
+                                    <ColumnDefinition Width="154"/>
+                                    <ColumnDefinition Width="104"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Logic"     Style="{StaticResource Caption}" FontWeight="SemiBold"/>
+                                <TextBlock Grid.Column="1" Text="Parameter" Style="{StaticResource Caption}" FontWeight="SemiBold" Margin="4,0,0,0"/>
+                                <TextBlock Grid.Column="2" Text="Operator"  Style="{StaticResource Caption}" FontWeight="SemiBold" Margin="4,0,0,0"/>
+                                <TextBlock Grid.Column="3" Text="Value"     Style="{StaticResource Caption}" FontWeight="SemiBold" Margin="4,0,0,0"/>
+                            </Grid>
+
+                            <StackPanel x:Name="RulesPanel"/>
+
+                            <TextBlock x:Name="LblNoRules"
+                                       Text="No filters — all elements will be shown"
+                                       Style="{StaticResource Caption}"
+                                       FontStyle="Italic"
+                                       Margin="0,4,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- ── COLUMNS (shared) ── -->
+                    <Border Style="{StaticResource Card}">
+                        <StackPanel>
+                            <DockPanel Margin="0,0,0,7">
+                                <TextBlock Text="COLUMNS" Style="{StaticResource SectionLabel}"
+                                           DockPanel.Dock="Left" Margin="0" VerticalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right"
+                                            HorizontalAlignment="Right">
+                                    <Button x:Name="BtnAllCols"  Content="All"     Style="{StaticResource Btn_Micro}"/>
+                                    <Button x:Name="BtnNoneCols" Content="None"    Style="{StaticResource Btn_Micro}"/>
+                                    <Button x:Name="BtnDefCols"  Content="Default" Style="{StaticResource Btn_Micro}"/>
+                                </StackPanel>
+                            </DockPanel>
+                            <StackPanel x:Name="ColumnsPanel"/>
+                            <TextBlock x:Name="LblNoCols"
+                                       Text="Run BOM once to discover parameters"
+                                       Style="{StaticResource Caption}"
+                                       FontStyle="Italic"
+                                       Margin="0,4,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- ─── RIGHT PANEL: results ─── -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Status bar -->
+                <Border Grid.Row="0"
+                        Background="{StaticResource CardBg}"
+                        BorderBrush="{StaticResource StrokePrimary}"
+                        BorderThickness="1"
+                        CornerRadius="6"
+                        Padding="10,6"
+                        Margin="0,0,0,8">
+                    <DockPanel>
+                        <TextBlock x:Name="TxtCount"
+                                   DockPanel.Dock="Right"
+                                   Style="{StaticResource Caption}"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Right"
+                                   FontFamily="Consolas"
+                                   Text=""/>
+                        <TextBlock x:Name="TxtStatus"
+                                   Style="{StaticResource Caption}"
+                                   VerticalAlignment="Center"
+                                   Text="Select a mode above, configure, then click Build BOM"/>
+                    </DockPanel>
+                </Border>
+
+                <!-- DataGrid -->
+                <Border Grid.Row="1"
+                        CornerRadius="8"
+                        BorderBrush="{StaticResource StrokePrimary}"
+                        BorderThickness="1"
+                        ClipToBounds="True">
+                    <DataGrid x:Name="ResultsGrid"
+                              Style="{StaticResource BomGrid}">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background"      Value="#F0F2F7"/>
+                                <Setter Property="Foreground"      Value="#374151"/>
+                                <Setter Property="FontWeight"      Value="SemiBold"/>
+                                <Setter Property="FontSize"        Value="11"/>
+                                <Setter Property="Padding"         Value="8,5"/>
+                                <Setter Property="BorderBrush"     Value="{StaticResource StrokePrimary}"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#DBEAFE"/>
+                                        <Setter Property="Foreground" Value="#1E40AF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Padding"           Value="7,3"/>
+                                <Setter Property="BorderThickness"   Value="0"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background"  Value="Transparent"/>
+                                        <Setter Property="BorderBrush" Value="Transparent"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.CellStyle>
+                    </DataGrid>
+                </Border>
+
+            </Grid>
+        </Grid><!-- end main grid -->
+
+        <!-- ══ FOOTER ══ -->
+        <Border Grid.Row="3"
+                Margin="0,10,0,0"
+                Padding="0,8,0,0"
+                BorderBrush="{StaticResource StrokePrimary}"
+                BorderThickness="0,1,0,0">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Left"
+                           Style="{StaticResource Caption}"
+                           VerticalAlignment="Center"
+                           Text="Grab mode: run once to discover params, add filters, run again.   Schedule mode: Load → filter → export."/>
+                <StackPanel DockPanel.Dock="Right"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    <Button x:Name="BtnBuild"
+                            Content="Build BOM"
+                            Style="{StaticResource Btn_Primary}"
+                            Width="116"/>
+                    <Button x:Name="BtnExport"
+                            Content="Export CSV"
+                            Style="{StaticResource Btn_Secondary}"
+                            Width="100"
+                            IsEnabled="False"/>
+                    <Button x:Name="BtnExportSchedule"
+                            Content="Export to Schedule"
+                            Style="{StaticResource Btn_Secondary}"
+                            Width="140"
+                            IsEnabled="False"/>
+                    <Button x:Name="BtnClose"
+                            Content="Close"
+                            Style="{StaticResource Btn_Ghost}"
+                            Width="72"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+title:
+  en_us: Export to CSV
+tooltip:
+  en_us:Select text notes to export to Excel.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

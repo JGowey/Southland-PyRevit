@@ -1,0 +1,43 @@
+title: Add to CID Database
+tooltip: |
+  Register fabrication part CID aliases into the shared NW Shop QA
+  identification database so the QA tool can correctly classify fittings
+  by type during its scan.
+
+  WHY THIS MATTERS:
+  NW Shop QA identifies fitting types (ogee offset, barrel tee, mitered
+  elbow, etc.) using CID alias codes extracted from your active MAJ files
+  (Rect.MAJ, Rd.MAJ, RdBarrel.MAJ, RectAlternate.MAJ). If a fitting's
+  alias is missing from the database, the QA tool either misclassifies it
+  or skips it. Run this tool whenever you add new ITMs or custom fittings
+  to your fabrication configuration.
+
+  WORKFLOW:
+    1. Select one or more fabrication parts whose CID aliases you want
+       to register (pre-selection supported), OR leave nothing selected
+       to be prompted to pick.
+    2. Run the tool. For each selected part it extracts:
+         - CID number
+         - Alias code (from the active MAJ file entry)
+         - Product name
+         - Service type
+    3. New entries are written to the shared cid_config.json in the
+       DetailersTools config folder. Existing entries are skipped.
+    4. A summary shows how many entries were added vs. already present.
+
+  AFTER ADDING:
+  Re-run NW Shop QA. Newly registered fittings will now appear in the
+  CID Database tab and be correctly evaluated against shop rules.
+
+  NOTE: Alias identification uses your currently active fabrication
+  configuration. If you run multiple configurations, register parts
+  from each one separately.
+
+author: Jeremiah Griffith
+order: 99
+script: script.py
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

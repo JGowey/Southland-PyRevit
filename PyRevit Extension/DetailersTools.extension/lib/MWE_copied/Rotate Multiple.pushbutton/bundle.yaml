@@ -1,0 +1,28 @@
+title: Rotate Multiple
+tooltip: |
+  Rotates each selected element about its own center.
+
+  This tool allows you to rotate multiple elements simultaneously, each around its own center point.
+
+  **Workflow:**
+  1. **Angle**: Enter the rotation angle in degrees (positive = counterclockwise).
+  2. **Axis**: Choose between World Z (Up) or Active View Normal.
+  3. **Center**: Select Auto (Location then BBox) or Force BBox Center.
+  4. **Select Elements**: Choose a selection method: Pick, Box Select, All In View, Visible In View, or Use Current Selection.
+  5. **Pinned Elements**: If pinned elements are detected, choose whether to temporarily unpin them.
+
+  **Features:**
+  - Respects element pinning (with optional override)
+  - Progress bar with cancel option
+  - Detailed summary of results
+
+order: 04
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 0.1.0
+engine:
+  name: ipy
+  clean: true
+  persistence: false

@@ -1,0 +1,8 @@
+title:
+  en_us: PCF Export
+tooltip:
+  en_us: Export Fabrication Piping to PCF by Assembly, Selection Set, or Parameter Grouping
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

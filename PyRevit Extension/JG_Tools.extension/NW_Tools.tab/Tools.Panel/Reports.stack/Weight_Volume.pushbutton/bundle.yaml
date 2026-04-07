@@ -1,0 +1,8 @@
+title:
+  en_us: Weight & Volume
+tooltip:
+  en_us: Calculates and syncs weight and volume parameters for model elements
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

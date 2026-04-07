@@ -1,0 +1,48 @@
+{
+  "titleblock": "TBLK_18x24_SI: 18x24 Standard", 
+  "parameters": {}, 
+  "name": "My Layout", 
+  "version": 1, 
+  "slots": [
+    {
+      "y_fraction": 0.22220000000000001, 
+      "view_key": "top", 
+      "is_schedule": false, 
+      "scale": 48, 
+      "x_fraction": 0.2344, 
+      "viewport_type": null
+    }, 
+    {
+      "y_fraction": 0.22220000000000001, 
+      "view_key": "right", 
+      "is_schedule": false, 
+      "scale": 48, 
+      "x_fraction": 0.66149999999999998, 
+      "viewport_type": null
+    }, 
+    {
+      "y_fraction": 0.77780000000000005, 
+      "view_key": "front", 
+      "is_schedule": false, 
+      "scale": 48, 
+      "x_fraction": 0.2344, 
+      "viewport_type": null
+    }, 
+    {
+      "y_fraction": 0.77780000000000005, 
+      "view_key": "3d", 
+      "is_schedule": false, 
+      "scale": 48, 
+      "x_fraction": 0.66149999999999998, 
+      "viewport_type": null
+    }, 
+    {
+      "y_fraction": 0.5, 
+      "view_key": "schedule", 
+      "is_schedule": true, 
+      "scale": null, 
+      "x_fraction": 0.44790000000000002, 
+      "viewport_type": null
+    }
+  ]
+}

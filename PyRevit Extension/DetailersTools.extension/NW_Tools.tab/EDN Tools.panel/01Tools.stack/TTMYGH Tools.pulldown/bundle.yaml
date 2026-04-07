@@ -1,0 +1,26 @@
+title: TTMYGH Tools
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+order: 03
+context: doc-open
+
+layout:
+  - 01Element Visibility
+  - 02Snoop Selection
+  - 03Find Sheet
+  - 04Nested Link Scan
+  - '---'
+  - 05Check Duct Orientation
+  - 07GridManager
+
+tooltip: |
+  Things That Make You Go Hmm Tools
+  Investigation, inspection, and diagnostic tools.
+
+  Element Visibility     -- diagnose why an element is visible or hidden
+  Snoop Selection        -- deep property inspector (params, geometry, connectors)
+  Find Sheet             -- locate which sheet a view lives on
+  Nested Link Scan       -- detect nested Attachment-type links in loaded Revit links
+  Check Duct Orientation -- flag fabrication duct where width < depth
+  GridManager            -- move grids, control bubble visibility, adjust extents

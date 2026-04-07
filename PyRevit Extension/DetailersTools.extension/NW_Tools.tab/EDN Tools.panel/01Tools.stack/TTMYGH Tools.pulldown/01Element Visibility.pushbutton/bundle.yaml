@@ -1,0 +1,33 @@
+title: Element Visibility
+tooltip: |
+  Diagnoses why a specific Revit element is visible in one view but hidden in another.
+
+  How it works:
+  1. You will be prompted to select the element in question. You can pick it directly in the model, enter its ElementId, or reuse the last element you analyzed.
+  2. Next, you will select the "Source" view, where the element is currently visible.
+  3. Finally, you will select the "Target" view, where the element is missing.
+
+  The script then runs a comprehensive series of checks on the target view's settings to identify the cause. The analysis includes:
+  - Direct element overrides (Hide in View)
+  - Category and Subcategory visibility
+  - View Filters
+  - Workset visibility
+  - View Discipline settings
+  - Phasing and Phase Filters
+  - Design Option settings
+  - Crop Region, Scope Box, and Far Clip boundaries
+  - View Range for plan views
+  - Revit Link visibility and overrides
+
+  The tool generates a report detailing the results of each check, highlighting the likely causes to help you quickly resolve the visibility issue.
+order: 01
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: !!file version.txt
+author: Jeremiah Griffith
+highlight: dark
+engine:
+  name: ipy          # fastest cold start (IronPython). Change to python3 if you must.
+  clean: true        # start each run with a clean global scope
+  persistence: true  # 🔥 keep the engine alive between runs (instant subsequent prompts)

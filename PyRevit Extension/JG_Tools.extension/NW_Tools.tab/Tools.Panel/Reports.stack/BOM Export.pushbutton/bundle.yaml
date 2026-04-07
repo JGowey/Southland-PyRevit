@@ -1,0 +1,10 @@
+title:
+  en_us: NW BOM Export
+
+tooltip:
+  en_us: Exports selected fabrication parts, native MEP elements, and RFAs (including nested families) to a formatted BOM. Derives hanger rod rows, applies pipe stock prefixes, assigns stable sorting codes, formats lengths and sizes for Excel, and copies a pivot-ready TSV export to the clipboard for the NW_BOM Template.
+
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

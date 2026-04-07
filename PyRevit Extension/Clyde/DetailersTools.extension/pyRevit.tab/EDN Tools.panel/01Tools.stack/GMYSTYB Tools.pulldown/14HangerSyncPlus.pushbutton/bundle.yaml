@@ -1,0 +1,31 @@
+title: Hanger Sync Plus
+tooltip: |
+  Sync RFA hanger elevations and upper attachments from selected duct or pipe.
+
+  LOWER ATTACHMENT TAB
+    Writes BOH elevation (slope-interpolated), hanger clamp/trapeze size,
+    insulation thickness, and XY recenter to all matched Generic Model hangers.
+    Hangers are auto-discovered within a configurable proximity radius.
+
+  UPPER ATTACHMENT TAB
+    Pick a sloped model line and sync the Top Offset on each hanger so
+    rod-top elevations follow the structural slope.
+
+  SYNC BOTH
+    Run Lower then Upper in one click.
+
+  QUICK PAIR
+    Pick one part + one hanger directly — skips auto-discovery.
+
+  Content-first: select duct(s) or pipe(s) before running, or pick when prompted.
+  No fabrication collectors are scanned. Transactions open only at Sync time.
+
+author: Jeremiah Griffith
+order: 14
+script: script.py
+version: 5.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

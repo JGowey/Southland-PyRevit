@@ -1,0 +1,14 @@
+{
+    "builtin": "False",
+    "default_enabled": "True",
+    "type": "extension",
+    "rocket_mode_compatible": "True",
+    "name": "pyRevit Autosave",
+    "description": "Autosave functionality for pyRevit",
+    "author": "Alex D'Aversa",
+    "author_profile": "https://github.com/alexdaversa",
+    "url": "https://github.com/alexdaversa/pyRevit-Autosave",
+    "website": "https://github.com/alexdaversa/pyRevit-Autosave",
+    "image": "",
+    "dependencies": []
+    }

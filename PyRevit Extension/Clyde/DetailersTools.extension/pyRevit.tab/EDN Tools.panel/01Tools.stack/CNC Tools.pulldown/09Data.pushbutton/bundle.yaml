@@ -1,0 +1,28 @@
+title: Data
+tooltip: |
+  Import and export native duct geometry and family data.
+
+  Unified tool consolidating Export/Import Native Duct Data
+  and Export/Import Family Data into a single branded window.
+
+  **All four engines are live:**
+  - Export Native Duct Data: duct/fitting geometry to JSONL + CSV
+  - Import Native Duct Data: create ducts/fittings from JSONL/CSV
+  - Export Family Data: family params, geometry, connectors to JSONL + CSV
+  - Import Family Data: recreate proxy families from JSONL
+
+  **Workflow:**
+  1. Choose the data type (Native Duct or Family).
+  2. Choose the operation (Export or Import).
+  3. Click Run. The engine handles selection, file dialogs, and progress.
+order: 09
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 1.0.0
+highlight: dark
+engine:
+  name: ipy
+  clean: true
+  persistence: false

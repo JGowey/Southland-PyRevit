@@ -1,0 +1,9 @@
+title:
+  en_us: Filter Edit
+tooltip:
+  en_us:
+    Excel Filter Tool
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

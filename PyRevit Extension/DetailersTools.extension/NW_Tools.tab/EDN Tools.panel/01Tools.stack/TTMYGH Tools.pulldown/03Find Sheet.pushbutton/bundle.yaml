@@ -1,0 +1,15 @@
+title: Find Sheet
+tooltip: |
+  Find Which Sheet a View Is On
+  
+  WORKFLOW:
+  1. Select a view in Project Browser
+  2. Run this tool
+  3. Result shows which sheet(s) the view is placed on
+  4. Choose to navigate to the sheet
+  
+  If view is on multiple sheets, a list appears to choose from.
+  If view is not placed, you'll be notified.
+
+author: Jeremiah Griffith
+order: 10

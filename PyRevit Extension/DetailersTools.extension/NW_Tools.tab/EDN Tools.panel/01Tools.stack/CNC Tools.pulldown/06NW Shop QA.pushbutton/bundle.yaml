@@ -1,0 +1,24 @@
+title: NW Shop QA — Coil Line
+tooltip: |
+  Analyze MEP Fabrication Ductwork for coil-line and shop-standard compliance.
+
+  OVERVIEW:
+  Scans MEP Fabrication Parts and flags items that won’t fit a 60" coil line or violate shop rules.
+
+  CHECKS:
+  - Rectangular straights: joint-length targets (TDC/TDC ≈ 56.25", S&D/S&D ≈ 59", S&D/Large Head ≈ 58.5"); hard cap ≤ 60"
+  - Transitions: length range 12"–48"
+  - Elbows: min CLR by angle (enable once item dimensions are mapped)
+  - Output: CSV to clipboard with ElementId, PartType, Service, W, H, CL, Issue
+
+author: Jeremiah Griffith
+order: 06
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

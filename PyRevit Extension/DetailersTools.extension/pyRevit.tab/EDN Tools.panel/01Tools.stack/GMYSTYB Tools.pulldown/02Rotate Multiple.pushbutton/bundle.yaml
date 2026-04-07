@@ -1,0 +1,39 @@
+title: Rotate Multiple
+tooltip: |
+  Rotates each selected element about its own center.
+
+  **Selection:**
+  - Auto-detects current Revit selection on launch.
+  - "Pick Elements" to select new elements from the model.
+  - Deselect panel to remove elements by Individual, Category, Family, or Type.
+
+  **Angle Modes:**
+  - **Manual Angle**: Enter a rotation angle in degrees (positive = CCW).
+  - **Align to Reference**: Pick a reference element or two points to define
+    a target direction, then each element is rotated to match.
+
+  **Supported References (Align mode):**
+  Duct, Pipe, Conduit, Cable Tray (centerline), Detail/Model Lines,
+  Grids, Scope Boxes (primary edge), Family Instances (facing direction),
+  or pick any two points in the model.
+
+  **Alignment Options:**
+  - Parallel: align element orientation to match the reference direction.
+  - Perpendicular: align 90 degrees to the reference direction.
+
+  **Features:**
+  - Respects element pinning (with optional override)
+  - Progress bar with cancel option
+  - Detailed summary of results
+  - Skips already-aligned elements (within 0.1 deg tolerance)
+
+order: 04
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 0.2.0
+engine:
+  name: ipy
+  clean: true
+  persistence: false

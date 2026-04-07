@@ -1,0 +1,113 @@
+{
+    "RUNTIME": {
+        "allow_ogee": false, 
+        "allow_sq2rd_straight": false, 
+        "allow_trans_straight": false, 
+        "db_profile": "Enterprise", 
+        "allow_bullhead_tees": false
+    }, 
+    "SHOP_STANDARDS": {
+        "ext_ogee_1way": 0.0, 
+        "min_transition_length": 12.0, 
+        "ext_tdc": 2.0, 
+        "elbow_throat_radius": 6.0, 
+        "target_len_sd": 59.0, 
+        "ext_sd": 1.0, 
+        "max_coil_width": 60.0, 
+        "min_straight_tdc": 9.0, 
+        "max_rect_straight_length": 60.0, 
+        "tolerance": 0.25, 
+        "liner_widths": {
+            "k flex": 60, 
+            "k-flex": 60, 
+            "armacell_ap": 48, 
+            "spiracoustic": 48, 
+            "kflex": 60, 
+            "ap coilflex": 48, 
+            "armacell": 48
+        }, 
+        "elbow_min_radius_table": [
+            [
+                60.0, 
+                6.0
+            ], 
+            [
+                51.0, 
+                7.0
+            ], 
+            [
+                45.0, 
+                8.0
+            ], 
+            [
+                40.0, 
+                9.0
+            ], 
+            [
+                36.0, 
+                10.0
+            ], 
+            [
+                33.0, 
+                11.0
+            ], 
+            [
+                30.0, 
+                12.0
+            ], 
+            [
+                28.0, 
+                13.0
+            ], 
+            [
+                26.0, 
+                14.0
+            ], 
+            [
+                24.0, 
+                15.0
+            ], 
+            [
+                22.0, 
+                16.0
+            ], 
+            [
+                21.0, 
+                17.0
+            ], 
+            [
+                20.0, 
+                18.0
+            ], 
+            [
+                19.0, 
+                19.0
+            ], 
+            [
+                18.0, 
+                20.0
+            ], 
+            [
+                17.0, 
+                21.0
+            ], 
+            [
+                16.0, 
+                22.0
+            ], 
+            [
+                15.0, 
+                24.0
+            ]
+        ], 
+        "max_spiral_length_round": 240.0, 
+        "max_spiral_length_oval": 120.0, 
+        "elbow_split_threshold_a": 40.0, 
+        "target_len_tdc": 56.25, 
+        "elbow_split_threshold_b": 60.0, 
+        "max_transition_length": 48.0, 
+        "damper_buyout_height": 12.0, 
+        "target_len_sd_large": 58.5, 
+        "min_spiral_length": 4.0
+    }
+}

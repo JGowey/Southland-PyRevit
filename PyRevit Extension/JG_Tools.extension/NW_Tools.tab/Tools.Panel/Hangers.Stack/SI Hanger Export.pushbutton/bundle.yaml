@@ -1,0 +1,8 @@
+title:
+  en_us: Hanger Export Testing
+tooltip:
+  en_us: Export selected hangers to CSV (ITM Fabrication or RFA Generic Model)
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

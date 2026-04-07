@@ -1,0 +1,10 @@
+title:
+  en_us: "Schedule & Renumber"
+
+tooltip:
+  en_us: "Applies stable item numbering to selected fabrication parts, native MEP elements, and RFAs."
+
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

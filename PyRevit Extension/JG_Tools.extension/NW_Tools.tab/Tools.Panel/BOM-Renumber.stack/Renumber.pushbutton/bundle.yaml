@@ -1,0 +1,10 @@
+title:
+  en_us: "Renumber"
+
+tooltip:
+  en_us: "Applies stable item numbering to selected fabrication parts, native MEP elements, and RFAs. Groups for renumbering by matching properties: Fabrication (Description, Material, CID, Size, Length +/- 1/16 in), Native MEP (Category, Description, Size, Length +/- 1/16 in), RFAs (Category, Family, Type, and dimensions). Welds receive individual W1, W2, W3 numbering."
+
+author: "Jacob Gowey & AI"
+
+engine:
+  persistent: true

@@ -1,0 +1,49 @@
+title: Sync Views
+tooltip: >-
+  Sync pan/zoom across 2D views or match camera across 3D views.
+
+  TWO MODES in one tool - toggle [Sync 2D] / [Match 3D] tabs:
+
+  SYNC 2D:
+  - Sync pan and zoom across views with matching type and scale
+  - From Palette: CONTINUOUS AUTO-SYNC (pan any view, others follow)
+  - From Dropdown: ONE-SHOT SYNC (click Sync Now)
+
+  MATCH 3D (Owner/Slave):
+  - Owner = the view you read FROM (never modified, can be someone else's)
+  - Slaves = YOUR views that get modified to match the owner
+  - Avoids worksharing conflicts by only writing to your own views
+  - From Palette: CONTINUOUS DYNAMIC MATCH (orbit owner, slaves follow)
+  - From Dropdown: ONE-SHOT MATCH (click Match Now)
+
+  MATCH 3D OPTIONS:
+  - Camera Orientation (eye, up, forward)
+  - Zoom Level
+  - Section Box (off by default, copies owner's box to slaves)
+  - Visual Style (Wireframe, Shaded, Realistic, etc.)
+  - Detail Level (Coarse, Medium, Fine)
+
+  HOW TO USE:
+  1. Open and tile your views (WT command)
+  2. Click Sync Views
+  3. Toggle between Sync 2D / Match 3D tabs
+  4. For Match 3D: select owner (radio), check slaves, pick options
+  5. Click action button
+
+  AUTO-DETECT: Opens on Match 3D tab if active view is 3D.
+
+  GUARDRAILS (Sync 2D):
+  - Only views with matching TYPE can sync (plan to plan, section to section)
+  - Only views with matching SCALE can sync (1/8" to 1/8", 1/4" to 1/4")
+
+order: 05
+script: script.py
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+version: 3.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

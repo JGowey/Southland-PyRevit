@@ -1,0 +1,33 @@
+title: GMYSTYB Tools
+icon: icon.png
+icon-small: icon-small.png
+author: Jeremiah Griffith
+context: doc-open
+
+layout:
+  - 01Renumber
+  - 02Rotate Multiple
+  - 03Place Tags
+  - 05SyncViews
+  - '---'
+  - 09ToggleCase
+  - 10ViewConverter
+  - 11BOM_Builder
+  - 08UpperAttachment
+  - '---'
+  - 12HangerSync
+  - 14HangerSyncPlus
+  - 11UpdateSleeve
+
+tooltip: |
+  GMYSTYB Tools - Gonna Make You Sweat Tools
+  Drafting, modification, and fabrication workflow tools.
+
+  Detailing:
+    Renumber, Rotate Multiple, Place Tags, SyncViews
+
+  Modify:
+    ToggleCase, ViewConverter, BOM Builder, UpperAttachment
+
+  Fabrication:
+    HangerSync, HangerSyncPlus, UpdateSleeve

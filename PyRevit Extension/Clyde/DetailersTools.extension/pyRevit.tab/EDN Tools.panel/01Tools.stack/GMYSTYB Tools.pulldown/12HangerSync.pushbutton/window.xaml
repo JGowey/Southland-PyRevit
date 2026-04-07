@@ -1,0 +1,227 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="RFA Hanger Sync"
+    Width="1100" Height="460"
+    MinWidth="800" MinHeight="340"
+    WindowStartupLocation="CenterScreen"
+    FontFamily="Segoe UI" FontSize="12"
+    ResizeMode="CanResizeWithGrip">
+
+    <Window.Resources>
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Background" Value="#6B7280"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="6,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Text" Value="?"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#FFF8E1" BorderBrush="#FFD54F"
+                BorderThickness="1" CornerRadius="3" Padding="8,6" Margin="0,0,0,8">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,2">
+                    <TextBlock FontWeight="SemiBold" FontSize="12">
+                        Hangers matched to selected content are shown below.
+                    </TextBlock>
+                    <Border Style="{StaticResource TooltipIcon}">
+                        <Border.ToolTip>
+                            <ToolTip>
+                                <TextBlock MaxWidth="280" TextWrapping="Wrap">
+                                    Select duct or pipe in Revit first, then run this tool.
+                                    All Generic Model RFA hangers within the proximity radius
+                                    are auto-discovered and listed here.
+                                    <LineBreak/><LineBreak/>
+                                    Each row shows one content-hanger pair. Review the Dist
+                                    column -- orange means the match is over 0.5 ft away and
+                                    should be verified before syncing.
+                                    <LineBreak/><LineBreak/>
+                                    Click <Bold>Sync All</Bold> to write elevation, size,
+                                    insulation, and XY to all Ready hangers at once.
+                                </TextBlock>
+                            </ToolTip>
+                        </Border.ToolTip>
+                        <TextBlock Style="{StaticResource TooltipText}"/>
+                    </Border>
+                </StackPanel>
+                <TextBlock Foreground="#555" FontSize="11">
+                    Select row(s) and click <Bold>Remove Selected</Bold> to exclude hangers from the sync.
+                    <LineBreak/>
+                    <Bold>Sync All</Bold> writes elevation (slope-interpolated), size, insulation, and XY to all Ready hangers.
+                </TextBlock>
+            </StackPanel>
+        </Border>
+
+        <!-- Grid -->
+        <!-- Insulation override -->
+        <!-- Proximity radius input -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,2,0,4"
+                    VerticalAlignment="Center">
+            <TextBlock VerticalAlignment="Center" Margin="0,0,8,0"
+                       Foreground="Gray" FontSize="11">Max hanger distance:</TextBlock>
+            <TextBox x:Name="txtProximity" Width="48" VerticalAlignment="Center"
+                     Text="1.0"
+                     ToolTip="Max XY distance (ft) from content centerline for auto-match. Default 1.0 ft."/>
+            <TextBlock VerticalAlignment="Center" Margin="4,0,0,0"
+                       Foreground="Gray" FontSize="11"> ft</TextBlock>
+            <Border Style="{StaticResource TooltipIcon}">
+                <Border.ToolTip>
+                    <ToolTip>
+                        <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                            How far from the duct/pipe centerline (in XY only) the tool
+                            searches for Generic Model hangers.
+                            <LineBreak/><LineBreak/>
+                            Default 1.0 ft works for most single-pipe hangers. Increase
+                            to 2-3 ft only if your hangers are offset from centerline
+                            (e.g., trapeze bars on wide duct).
+                            <LineBreak/><LineBreak/>
+                            Using 3+ ft risks matching hangers from adjacent pipes.
+                            Orange Dist cells flag any match over 0.5 ft.
+                        </TextBlock>
+                    </ToolTip>
+                </Border.ToolTip>
+                <TextBlock Style="{StaticResource TooltipText}"/>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,4,0,4"
+                    VerticalAlignment="Center">
+            <CheckBox x:Name="chkInsulation" VerticalAlignment="Center"
+                      Margin="0,0,8,0" Checked="chkInsulation_Changed"
+                      Unchecked="chkInsulation_Changed">
+                Insulation param:
+            </CheckBox>
+            <ComboBox x:Name="cmbInsulParam" Width="260" IsEnabled="False"
+                      VerticalAlignment="Center"
+                      ToolTip="Pick the content parameter that holds insulation thickness"/>
+            <TextBlock x:Name="txtInsulPreview" VerticalAlignment="Center"
+                       Margin="8,0,0,0" Foreground="Gray" FontSize="11"/>
+            <Border Style="{StaticResource TooltipIcon}">
+                <Border.ToolTip>
+                    <ToolTip>
+                        <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                            Enable to factor insulation into hanger clamp sizing.
+                            <LineBreak/><LineBreak/>
+                            When checked, select the parameter on your fabrication
+                            content that stores insulation thickness (e.g. "Insulation
+                            Thickness" or a custom shared parameter).
+                            <LineBreak/><LineBreak/>
+                            The Insulation column shows each pipe's value so you can
+                            confirm it is reading correctly before syncing.
+                            <LineBreak/><LineBreak/>
+                            Insulated clamp size = nominal diameter + 2x insulation.
+                        </TextBlock>
+                    </ToolTip>
+                </Border.ToolTip>
+                <TextBlock Style="{StaticResource TooltipText}"/>
+            </Border>
+        </StackPanel>
+
+        <!-- Column visibility toggles -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,2,0,4">
+            <TextBlock VerticalAlignment="Center" Margin="0,0,8,0"
+                       Foreground="Gray" FontSize="11">Columns:</TextBlock>
+            <CheckBox x:Name="chkColFamily" IsChecked="True" Margin="0,0,12,0"
+                      Checked="ColVisibility_Changed" Unchecked="ColVisibility_Changed">
+                Family
+            </CheckBox>
+            <CheckBox x:Name="chkColType" IsChecked="True" Margin="0,0,12,0"
+                      Checked="ColVisibility_Changed" Unchecked="ColVisibility_Changed">
+                Type
+            </CheckBox>
+            <CheckBox x:Name="chkColStatus" IsChecked="False" Margin="0,0,12,0"
+                      Checked="ColVisibility_Changed" Unchecked="ColVisibility_Changed">
+                Status detail
+            </CheckBox>
+        </StackPanel>
+
+        <DataGrid x:Name="dgHangers" Grid.Row="4"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Extended"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  HeadersVisibility="Column"
+                  RowHeight="22"
+                  VirtualizingStackPanel.IsVirtualizing="True"
+                  VirtualizingStackPanel.VirtualizationMode="Recycling"
+                  GridLinesVisibility="Horizontal">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Content ID"   Binding="{Binding ContentId}"   Width="72"/>
+                <DataGridTextColumn Header="Type"         Binding="{Binding ContentType}" Width="160"/>
+                <DataGridTextColumn Header="Size"         Binding="{Binding ContentSize}"  Width="70"/>
+                <DataGridTextColumn Header="Hanger ID"    Binding="{Binding HangerId}"    Width="72"/>
+                <DataGridTextColumn x:Name="colFamily" Header="Family"
+                                    Binding="{Binding HangerFamily}" Width="220"/>
+                <DataGridTextColumn x:Name="colType"   Header="Type"
+                                    Binding="{Binding HangerType}"   Width="90" MinWidth="80"/>
+                <DataGridTemplateColumn Header="Dist" Width="55">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding DistFt}" VerticalAlignment="Center" Margin="4,0">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding DistWarning}" Value="True">
+                                                <Setter Property="Foreground" Value="#E65100"/>
+                                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                                <Setter Property="ToolTip" Value="Distance &gt; 0.5ft -- verify this is the correct pipe"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Insulation"   Binding="{Binding Insulation}"   Width="*" MinWidth="55"/>
+                <DataGridTextColumn x:Name="colStatus" Header="Status ▶" Binding="{Binding Status}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Separator Grid.Row="5" Margin="0,6,0,6"/>
+
+        <!-- Footer -->
+        <DockPanel Grid.Row="6">
+            <Button x:Name="btnRemoveRow" DockPanel.Dock="Left"
+                    Content="Remove Selected" Width="120" Margin="0,0,8,0"
+                    IsEnabled="False" Click="btnRemoveRow_Click"
+                    ToolTip="Remove selected hanger row(s) from list. They will not be synced. Re-scan to restore."/>
+            <Button x:Name="btnRescan" DockPanel.Dock="Left"
+                    Content="Re-Scan" Width="70" Margin="0,0,0,0"
+                    Click="btnRescan_Click"
+                    ToolTip="Re-run the proximity search using the current Max hanger distance value above."/>
+            <Button x:Name="btnClose" DockPanel.Dock="Right"
+                    Content="Close" Width="70" Margin="8,0,0,0"
+                    Click="btnClose_Click"/>
+            <Button x:Name="btnSyncAll" DockPanel.Dock="Right"
+                    Content="Sync All" Width="80"
+                    IsEnabled="False" Click="btnSyncAll_Click"/>
+            <TextBlock x:Name="txtStatus" VerticalAlignment="Center"
+                       Foreground="Gray" Margin="6,0"/>
+        </DockPanel>
+    </Grid>
+</Window>

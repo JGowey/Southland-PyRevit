@@ -1,0 +1,72 @@
+2025-11-04 15:38:18.234000 - ============================================================
+2025-11-04 15:38:18.237000 - __init__.py is being executed
+2025-11-04 15:38:18.239000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 15:38:18.243000 - Checking for __revit__...
+2025-11-04 15:38:18.245000 - __revit__ NOT available
+2025-11-04 15:38:18.248000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 15:38:18.250000 - __init__.py completed
+2025-11-04 15:38:18.252000 - ============================================================
+2025-11-04 15:38:30.581000 - ============================================================
+2025-11-04 15:38:30.584000 - __init__.py is being executed
+2025-11-04 15:38:30.590000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 15:38:30.592000 - Checking for __revit__...
+2025-11-04 15:38:30.595000 - __revit__ NOT available
+2025-11-04 15:38:30.598000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 15:38:30.600000 - __init__.py completed
+2025-11-04 15:38:30.602000 - ============================================================
+2025-11-04 16:12:21.750000 - ============================================================
+2025-11-04 16:12:21.756000 - __init__.py is being executed
+2025-11-04 16:12:21.759000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 16:12:21.761000 - Checking for __revit__...
+2025-11-04 16:12:21.768000 - __revit__ NOT available
+2025-11-04 16:12:21.771000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 16:12:21.774000 - __init__.py completed
+2025-11-04 16:12:21.776000 - ============================================================
+2025-11-04 16:15:11.176000 - ============================================================
+2025-11-04 16:15:11.180000 - __init__.py is being executed
+2025-11-04 16:15:11.182000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 16:15:11.184000 - Checking for __revit__...
+2025-11-04 16:15:11.186000 - __revit__ NOT available
+2025-11-04 16:15:11.195000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 16:15:11.197000 - __init__.py completed
+2025-11-04 16:15:11.199000 - ============================================================
+2025-11-04 17:21:54.974000 - ============================================================
+2025-11-04 17:21:54.982000 - __init__.py is being executed
+2025-11-04 17:21:54.984000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 17:21:54.986000 - Checking for __revit__...
+2025-11-04 17:21:54.994000 - __revit__ NOT available
+2025-11-04 17:21:54.998000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 17:21:55 - __init__.py completed
+2025-11-04 17:21:55.003000 - ============================================================
+2025-11-04 17:22:31.107000 - ============================================================
+2025-11-04 17:22:31.117000 - __init__.py is being executed
+2025-11-04 17:22:31.120000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 17:22:31.122000 - Checking for __revit__...
+2025-11-04 17:22:31.124000 - __revit__ NOT available
+2025-11-04 17:22:31.127000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 17:22:31.129000 - __init__.py completed
+2025-11-04 17:22:31.132000 - ============================================================
+2025-11-04 17:22:37.132000 - ============================================================
+2025-11-04 17:22:37.135000 - __init__.py is being executed
+2025-11-04 17:22:37.138000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-04 17:22:37.140000 - Checking for __revit__...
+2025-11-04 17:22:37.142000 - __revit__ NOT available
+2025-11-04 17:22:37.145000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-04 17:22:37.148000 - __init__.py completed
+2025-11-04 17:22:37.150000 - ============================================================
+2025-11-06 06:50:13.522000 - ============================================================
+2025-11-06 06:50:13.528000 - __init__.py is being executed
+2025-11-06 06:50:13.531000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-06 06:50:13.534000 - Checking for __revit__...
+2025-11-06 06:50:13.536000 - __revit__ NOT available
+2025-11-06 06:50:13.541000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-06 06:50:13.544000 - __init__.py completed
+2025-11-06 06:50:13.547000 - ============================================================
+2025-11-06 06:50:16.265000 - ============================================================
+2025-11-06 06:50:16.268000 - __init__.py is being executed
+2025-11-06 06:50:16.272000 - __file__: C:\Users\jgriffith\AppData\Roaming\pyRevit\Extensions\DetailersTools.extension\pyRevit.tab\MWE (Martha Wash Edition).panel\MWE Palette.pushbutton\script.py
+2025-11-06 06:50:16.274000 - Checking for __revit__...
+2025-11-06 06:50:16.277000 - __revit__ NOT available
+2025-11-06 06:50:16.761000 - Available: ['LOG_FILE', 'log', 'os', 'sys']
+2025-11-06 06:50:16.764000 - __init__.py completed
+2025-11-06 06:50:16.767000 - ============================================================

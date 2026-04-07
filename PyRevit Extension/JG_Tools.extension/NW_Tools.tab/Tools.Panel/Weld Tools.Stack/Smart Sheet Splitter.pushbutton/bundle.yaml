@@ -1,0 +1,19 @@
+title:
+  en_us: Smart Sheet Splitter
+
+tooltip:
+  en_us: |
+    Supports:
+    - Project & Shared Parameters (Comments, etc.)
+    - Built-in Revit Parameters (Category, Family, Type, Family and Type)
+
+    Automatically:
+    - Duplicates template sheet
+    - Applies view filters
+    - Tracks created sheets
+    - Skips already existing values
+
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

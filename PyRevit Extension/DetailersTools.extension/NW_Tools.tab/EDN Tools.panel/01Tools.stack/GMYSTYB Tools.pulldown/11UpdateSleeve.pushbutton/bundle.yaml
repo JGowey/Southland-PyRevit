@@ -1,0 +1,18 @@
+title: UpdateSleeve
+tooltip: |
+  Sync duct/pipe dimensions to sleeve families.
+
+  Two workflows:
+    Pick Part + Sleeve -- instant one-shot alignment and sizing
+    Pick in Viewport   -- full window with per-family param mapping
+
+  Supports rect duct, round duct, and fabrication pipework.
+  Parameters and oversize values remembered per sleeve family.
+
+author: Jeremiah Griffith
+version: 1.0.0
+
+engine:
+  name: ipy
+  clean: true
+  persistence: false

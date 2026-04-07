@@ -1,0 +1,574 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hanger Sync"
+        Width="1140" Height="600"
+        MinWidth="860" MinHeight="460"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5"
+        Foreground="#1E1E1E"
+        FontFamily="Segoe UI"
+        FontSize="12"
+        ResizeMode="CanResizeWithGrip">
+
+    <Window.Resources>
+
+        <!-- DataGrid column header -->
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background"      Value="#E0E0E0"/>
+            <Setter Property="Foreground"      Value="#333333"/>
+            <Setter Property="FontWeight"      Value="SemiBold"/>
+            <Setter Property="FontSize"        Value="11"/>
+            <Setter Property="Padding"         Value="8,4"/>
+            <Setter Property="BorderBrush"     Value="#CCCCCC"/>
+            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+        </Style>
+
+        <!-- DataGrid row -->
+        <Style TargetType="DataGridRow">
+            <Setter Property="Background" Value="White"/>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#E3F2FD"/>
+                    <Setter Property="Foreground" Value="#1565C0"/>
+                </Trigger>
+                <Trigger Property="AlternationIndex" Value="1">
+                    <Setter Property="Background" Value="#FAFAFA"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- DataGrid cell -->
+        <Style TargetType="DataGridCell">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding"         Value="6,0"/>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Primary button (blue) -->
+        <Style x:Key="BtnPrimary" TargetType="Button">
+            <Setter Property="Background"      Value="#1565C0"/>
+            <Setter Property="Foreground"      Value="White"/>
+            <Setter Property="FontWeight"      Value="SemiBold"/>
+            <Setter Property="Padding"         Value="14,5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor"          Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="3"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#1976D2"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#BDBDBD"/>
+                                <Setter Property="Foreground" Value="#757575"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Accent button (teal — Sync Both) -->
+        <Style x:Key="BtnAccent" TargetType="Button">
+            <Setter Property="Background"      Value="#00796B"/>
+            <Setter Property="Foreground"      Value="White"/>
+            <Setter Property="FontWeight"      Value="Bold"/>
+            <Setter Property="Padding"         Value="16,5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor"          Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="3"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#00897B"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#BDBDBD"/>
+                                <Setter Property="Foreground" Value="#757575"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Secondary button (outlined) -->
+        <Style x:Key="BtnSec" TargetType="Button">
+            <Setter Property="Background"      Value="White"/>
+            <Setter Property="Foreground"      Value="#333333"/>
+            <Setter Property="Padding"         Value="12,5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush"     Value="#BDBDBD"/>
+            <Setter Property="Cursor"          Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="3"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#F5F5F5"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background"  Value="#F5F5F5"/>
+                                <Setter Property="Foreground"  Value="#BDBDBD"/>
+                                <Setter Property="BorderBrush" Value="#E0E0E0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Tab header style -->
+        <Style TargetType="TabItem">
+            <Setter Property="FontSize"     Value="12"/>
+            <Setter Property="FontWeight"   Value="SemiBold"/>
+            <Setter Property="Padding"      Value="14,6"/>
+            <Setter Property="Foreground"   Value="#555555"/>
+            <Setter Property="Background"   Value="#EEEEEE"/>
+            <Setter Property="BorderBrush"  Value="#CCCCCC"/>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Foreground" Value="#1565C0"/>
+                    <Setter Property="Background" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Tooltip Icon Style -->
+        <Style x:Key="TooltipIcon" TargetType="Border">
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Background" Value="#6B7280"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="6,0,0,0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+        <Style x:Key="TooltipText" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Text" Value="?"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>   <!-- header: content info + slope line -->
+            <RowDefinition Height="Auto"/>   <!-- separator -->
+            <RowDefinition Height="*"/>      <!-- tab control -->
+            <RowDefinition Height="Auto"/>   <!-- separator -->
+            <RowDefinition Height="Auto"/>   <!-- footer buttons -->
+        </Grid.RowDefinitions>
+
+        <!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
+        <Grid Grid.Row="0" Margin="12,8,12,6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="16"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Content info -->
+            <TextBlock Grid.Column="0" x:Name="txtContentInfo"
+                       Text="No content loaded"
+                       VerticalAlignment="Center"
+                       Foreground="#444" FontSize="11"
+                       TextTrimming="CharacterEllipsis"/>
+
+            <!-- Slope line label -->
+            <TextBlock Grid.Column="1" Text="Slope line:"
+                       VerticalAlignment="Center"
+                       Foreground="#555" FontSize="11"
+                       Margin="0,0,6,0"/>
+            <TextBlock Grid.Column="4" x:Name="LineLabel"
+                       Text="No slope line selected"
+                       VerticalAlignment="Center"
+                       Foreground="#1565C0" FontWeight="SemiBold" FontSize="11"
+                       TextTrimming="CharacterEllipsis"
+                       Margin="0,0,8,0"/>
+            <StackPanel Grid.Column="5" Orientation="Horizontal">
+                <Button Content="Pick Line"
+                        Style="{StaticResource BtnSec}"
+                        Click="pick_line_click"/>
+                <Border Style="{StaticResource TooltipIcon}">
+                    <Border.ToolTip>
+                        <ToolTip>
+                            <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                Pick a <Bold>Model Line</Bold> defining the structural slope for
+                                the Upper Attachment tab. The line's endpoints set the Z gradient.
+                                <LineBreak/><LineBreak/>
+                                Required for <Bold>Sync Upper</Bold> and <Bold>Sync Both</Bold>.
+                                Not needed if you are only running <Bold>Sync Lower</Bold>.
+                                <LineBreak/><LineBreak/>
+                                Hangers outside the line's XY extent are skipped.
+                            </TextBlock>
+                        </ToolTip>
+                    </Border.ToolTip>
+                    <TextBlock Style="{StaticResource TooltipText}"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <Border Grid.Row="1" Height="1" Background="#DDDDDD" Margin="0,0,0,0"/>
+
+        <!-- ══ TAB CONTROL ═════════════════════════════════════════════════════ -->
+        <TabControl Grid.Row="2" x:Name="tabMain"
+                    Background="White"
+                    BorderBrush="#CCCCCC"
+                    BorderThickness="0,1,0,0">
+
+            <!-- ── LOWER ATTACHMENT TAB ──────────────────────────────────────── -->
+            <TabItem Header="Lower Attachment  (BOH Elevation)">
+                <Grid Margin="10,6,10,4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Proximity + insulation row -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,4,0,4">
+                        <TextBlock VerticalAlignment="Center" Margin="0,0,6,0"
+                                   Foreground="Gray" FontSize="11">Max hanger distance:</TextBlock>
+                        <TextBox x:Name="txtProximity" Width="48" VerticalAlignment="Center"
+                                 Text="1.0"
+                                 ToolTip="Max XY distance (ft) from content centerline for auto-match. Default 1.0 ft."/>
+                        <TextBlock VerticalAlignment="Center" Margin="4,0,16,0"
+                                   Foreground="Gray" FontSize="11">ft</TextBlock>
+                        <Border Style="{StaticResource TooltipIcon}" Margin="0,0,16,0">
+                            <Border.ToolTip>
+                                <ToolTip>
+                                    <TextBlock MaxWidth="260" TextWrapping="Wrap">
+                                        XY search radius from the content centerline used to
+                                        auto-discover nearby Generic Model RFA hangers.
+                                        <LineBreak/><LineBreak/>
+                                        Default 1.0 ft suits most single-pipe hangers. Orange
+                                        Dist cells flag any match over 0.5 ft -- verify before syncing.
+                                        <LineBreak/><LineBreak/>
+                                        Avoid values over 3 ft; wide searches match hangers from
+                                        adjacent pipes.
+                                    </TextBlock>
+                                </ToolTip>
+                            </Border.ToolTip>
+                            <TextBlock Style="{StaticResource TooltipText}"/>
+                        </Border>
+
+                        <CheckBox x:Name="chkInsulation" VerticalAlignment="Center"
+                                  Margin="0,0,8,0"
+                                  Checked="chkInsulation_Changed"
+                                  Unchecked="chkInsulation_Changed">
+                            Insulation param:
+                        </CheckBox>
+                        <ComboBox x:Name="cmbInsulParam" Width="240" IsEnabled="False"
+                                  VerticalAlignment="Center"
+                                  ToolTip="Select the content parameter that holds insulation thickness"/>
+                        <TextBlock x:Name="txtInsulPreview" VerticalAlignment="Center"
+                                   Margin="8,0,0,0" Foreground="Gray" FontSize="11"/>
+                        <Border Style="{StaticResource TooltipIcon}">
+                            <Border.ToolTip>
+                                <ToolTip>
+                                    <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                        Enable to include insulation in clamp sizing.
+                                        <LineBreak/><LineBreak/>
+                                        Choose the parameter on your fabrication content that
+                                        stores insulation thickness. The preview column confirms
+                                        the value being read before you sync.
+                                        <LineBreak/><LineBreak/>
+                                        Insulated clamp size = nominal diameter + 2x insulation.
+                                    </TextBlock>
+                                </ToolTip>
+                            </Border.ToolTip>
+                            <TextBlock Style="{StaticResource TooltipText}"/>
+                        </Border>
+                    </StackPanel>
+
+                    <!-- Column toggles -->
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,4">
+                        <TextBlock VerticalAlignment="Center" Margin="0,0,8,0"
+                                   Foreground="Gray" FontSize="11">Columns:</TextBlock>
+                        <CheckBox x:Name="chkColFamily" IsChecked="True" Margin="0,0,12,0"
+                                  Checked="ColVisibility_Changed" Unchecked="ColVisibility_Changed">
+                            Family
+                        </CheckBox>
+                        <CheckBox x:Name="chkColType" IsChecked="True" Margin="0,0,12,0"
+                                  Checked="ColVisibility_Changed" Unchecked="ColVisibility_Changed">
+                            Type
+                        </CheckBox>
+                        <CheckBox x:Name="chkColStatus" IsChecked="False"
+                                  Checked="ColVisibility_Changed" Unchecked="ColVisibility_Changed">
+                            Status detail
+                        </CheckBox>
+                    </StackPanel>
+
+                    <Border Grid.Row="2" Height="1" Background="#EEEEEE" Margin="0,2,0,4"/>
+
+                    <!-- Lower DataGrid -->
+                    <DataGrid Grid.Row="3" x:Name="dgLower"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              SelectionMode="Extended"
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              HeadersVisibility="Column"
+                              RowHeight="22"
+                              AlternationCount="2"
+                              GridLinesVisibility="Horizontal"
+                              HorizontalGridLinesBrush="#EEEEEE"
+                              BorderBrush="#CCCCCC" BorderThickness="1"
+                              Background="White"
+                              SelectionChanged="dgLower_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Content ID"  Binding="{Binding ContentId}"   Width="72"/>
+                            <DataGridTextColumn Header="Type"        Binding="{Binding ContentType}" Width="150"/>
+                            <DataGridTextColumn Header="Size"        Binding="{Binding ContentSize}" Width="64"/>
+                            <DataGridTextColumn Header="Hanger ID"   Binding="{Binding HangerId}"   Width="72"/>
+                            <DataGridTextColumn x:Name="colFamily"
+                                                Header="Family"
+                                                Binding="{Binding HangerFamily}"
+                                                Width="200"/>
+                            <DataGridTextColumn x:Name="colType"
+                                                Header="Type"
+                                                Binding="{Binding HangerType}"
+                                                Width="90" MinWidth="70"/>
+                            <DataGridTemplateColumn Header="Dist" Width="54">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding DistFt}"
+                                                   VerticalAlignment="Center" Margin="4,0">
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding DistWarning}" Value="True">
+                                                            <Setter Property="Foreground" Value="#E65100"/>
+                                                            <Setter Property="FontWeight" Value="SemiBold"/>
+                                                            <Setter Property="ToolTip"    Value="Distance &gt; 0.5 ft — verify this is the correct content"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="Insulation"  Binding="{Binding Insulation}"  Width="70"/>
+                            <DataGridTextColumn x:Name="colStatus"
+                                                Header="Status"
+                                                Binding="{Binding Status}"
+                                                Width="*" MinWidth="80"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- ── UPPER ATTACHMENT TAB ──────────────────────────────────────── -->
+            <TabItem Header="Upper Attachment  (Top Offset / Slope Line)">
+                <Grid Margin="10,6,10,4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Margin="0,4,0,6" Foreground="#555" FontSize="11"
+                               TextWrapping="Wrap">
+                        Hangers auto-discovered from selected content are listed below.
+                        Pick a slope line using the button in the header, then click
+                        <Bold>Sync Upper</Bold> or <Bold>Sync Both</Bold>.
+                        Rows will show <Italic>No slope line</Italic> until a line is picked.
+                    </TextBlock>
+
+                    <Border Grid.Row="1" Height="1" Background="#EEEEEE" Margin="0,0,0,4"/>
+
+                    <!-- Upper DataGrid -->
+                    <DataGrid Grid.Row="2" x:Name="dgUpper"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              SelectionMode="Extended"
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              HeadersVisibility="Column"
+                              RowHeight="24"
+                              AlternationCount="2"
+                              GridLinesVisibility="Horizontal"
+                              HorizontalGridLinesBrush="#EEEEEE"
+                              BorderBrush="#CCCCCC" BorderThickness="1"
+                              Background="White"
+                              SelectionChanged="dgUpper_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Hanger ID"      Binding="{Binding HangerID}"      Width="80"/>
+                            <DataGridTextColumn Header="Family"          Binding="{Binding Family}"         Width="*"/>
+                            <DataGridTextColumn Header="Type"            Binding="{Binding Type}"           Width="90"/>
+                            <DataGridTextColumn Header="Top Level"       Binding="{Binding TopLevel}"       Width="90"/>
+                            <DataGridTextColumn Header="Current Offset"  Binding="{Binding CurrentOffset}"  Width="110"/>
+                            <DataGridTextColumn Header="New Offset"      Binding="{Binding NewOffset}"      Width="110"/>
+                            <DataGridTemplateColumn Header="Status" Width="110">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Status}"
+                                                   Foreground="{Binding StatusColor}"
+                                                   FontWeight="SemiBold"
+                                                   VerticalAlignment="Center"
+                                                   Padding="6,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+        <!-- ══ FOOTER ══════════════════════════════════════════════════════════ -->
+        <Border Grid.Row="3" Height="1" Background="#DDDDDD"/>
+
+        <Grid Grid.Row="4" Margin="12,8,12,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="8"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" x:Name="btnRemoveRow"
+                    Content="Remove Selected"
+                    Style="{StaticResource BtnSec}"
+                    IsEnabled="False"
+                    Margin="0,0,6,0"
+                    Click="btnRemoveRow_Click"
+                    ToolTip="Remove selected hanger row(s). They will not be synced. Re-Scan to restore."/>
+
+            <Button Grid.Column="1" x:Name="btnRescan"
+                    Content="Re-Scan"
+                    Style="{StaticResource BtnSec}"
+                    Click="btnRescan_Click"
+                    ToolTip="Re-run proximity search using the current Max hanger distance value."/>
+
+            <TextBlock Grid.Column="3" x:Name="txtStatus"
+                       Text="Ready"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="#757575"
+                       FontSize="11"/>
+
+            <StackPanel Grid.Column="4" Orientation="Horizontal" Margin="0,0,6,0">
+                <Button x:Name="btnSyncLower"
+                        Content="Sync Lower"
+                        Style="{StaticResource BtnPrimary}"
+                        IsEnabled="False"
+                        Click="btnSyncLower_Click"
+                        ToolTip="Write BOH elevation, hanger size, insulation, and XY to all Ready hangers in the Lower tab."/>
+                <Border Style="{StaticResource TooltipIcon}">
+                    <Border.ToolTip>
+                        <ToolTip>
+                            <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                Writes to every Ready hanger in the <Bold>Lower Attachment</Bold> tab:
+                                <LineBreak/>
+                                • BOH elevation (slope-interpolated from duct/pipe)
+                                <LineBreak/>
+                                • Clamp/trapeze size (nominal + insulation)
+                                <LineBreak/>
+                                • Insulation thickness parameter
+                                <LineBreak/>
+                                • XY recenter perpendicular to centerline
+                                <LineBreak/><LineBreak/>
+                                All writes are in a single undoable transaction.
+                            </TextBlock>
+                        </ToolTip>
+                    </Border.ToolTip>
+                    <TextBlock Style="{StaticResource TooltipText}"/>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="5" Orientation="Horizontal" Margin="0,0,6,0">
+                <Button x:Name="btnSyncUpper"
+                        Content="Sync Upper"
+                        Style="{StaticResource BtnPrimary}"
+                        IsEnabled="False"
+                        Click="btnSyncUpper_Click"
+                        ToolTip="Write Top Offset from slope line to all Ready hangers in the Upper tab."/>
+                <Border Style="{StaticResource TooltipIcon}">
+                    <Border.ToolTip>
+                        <ToolTip>
+                            <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                Writes the slope-interpolated <Bold>Top Offset</Bold> to every Ready
+                                hanger in the <Bold>Upper Attachment</Bold> tab.
+                                <LineBreak/><LineBreak/>
+                                Requires a slope line to be picked first (button in the header).
+                                Hangers outside the line's XY extent are skipped.
+                            </TextBlock>
+                        </ToolTip>
+                    </Border.ToolTip>
+                    <TextBlock Style="{StaticResource TooltipText}"/>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="6" Orientation="Horizontal" Margin="0,0,6,0">
+                <Button x:Name="btnSyncBoth"
+                        Content="Sync Both"
+                        Style="{StaticResource BtnAccent}"
+                        IsEnabled="False"
+                        Click="btnSyncBoth_Click"
+                        ToolTip="Run Lower then Upper sync in sequence. Slope line required for Upper portion."/>
+                <Border Style="{StaticResource TooltipIcon}">
+                    <Border.ToolTip>
+                        <ToolTip>
+                            <TextBlock MaxWidth="270" TextWrapping="Wrap">
+                                Runs <Bold>Sync Lower</Bold> then <Bold>Sync Upper</Bold> in one click.
+                                <LineBreak/><LineBreak/>
+                                Both a content selection and a slope line must be loaded.
+                                If no slope line is set, only the Lower sync runs.
+                                <LineBreak/><LineBreak/>
+                                Use this for the complete hanger coordination workflow in a
+                                single transaction.
+                            </TextBlock>
+                        </ToolTip>
+                    </Border.ToolTip>
+                    <TextBlock Style="{StaticResource TooltipText}"/>
+                </Border>
+            </StackPanel>
+
+            <Button Grid.Column="7" x:Name="btnClose"
+                    Content="Close"
+                    Style="{StaticResource BtnSec}"
+                    Click="btnClose_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>

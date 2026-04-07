@@ -1,0 +1,74 @@
+{
+  "usable_area": {
+    "y_in": 0.75, 
+    "x_in": 1.5, 
+    "h_in": 16.500000000000004, 
+    "w_in": 18.5
+  }, 
+  "titleblock_id": 318613, 
+  "sheet_number": "A-001", 
+  "tb_params": {}, 
+  "slots": [
+    {
+      "enabled": true, 
+      "scale": 48, 
+      "view_key": "top", 
+      "viewport_type": null, 
+      "is_schedule": false, 
+      "view_name": "Plan Detail", 
+      "y_frac": 0.19700000000000001, 
+      "x_frac": 0.223
+    }, 
+    {
+      "enabled": true, 
+      "scale": 48, 
+      "view_key": "right", 
+      "viewport_type": null, 
+      "is_schedule": false, 
+      "view_name": "Elevation Right", 
+      "y_frac": 0.19700000000000001, 
+      "x_frac": 0.77700000000000002
+    }, 
+    {
+      "enabled": true, 
+      "scale": 48, 
+      "view_key": "front", 
+      "viewport_type": null, 
+      "is_schedule": false, 
+      "view_name": "Elevation Front", 
+      "y_frac": 0.80300000000000005, 
+      "x_frac": 0.223
+    }, 
+    {
+      "enabled": true, 
+      "scale": 48, 
+      "view_key": "3d", 
+      "viewport_type": null, 
+      "is_schedule": false, 
+      "view_name": "3D Ortho", 
+      "y_frac": 0.80300000000000005, 
+      "x_frac": 0.77700000000000002
+    }, 
+    {
+      "enabled": true, 
+      "scale": null, 
+      "view_key": "schedule", 
+      "viewport_type": null, 
+      "is_schedule": true, 
+      "view_name": "Part List", 
+      "y_frac": 0.5, 
+      "x_frac": 0.5
+    }
+  ], 
+  "name": "My Assembly Profile", 
+  "version": 2, 
+  "tb_margins": {
+    "margin_r": 4.0, 
+    "margin_t": 0.75, 
+    "revision_w": 0.0, 
+    "margin_b": 0.75, 
+    "margin_l": 1.5, 
+    "title_h": 0.0
+  }, 
+  "titleblock": "TBLK_18x24_SI: 18x24 Standard"
+}

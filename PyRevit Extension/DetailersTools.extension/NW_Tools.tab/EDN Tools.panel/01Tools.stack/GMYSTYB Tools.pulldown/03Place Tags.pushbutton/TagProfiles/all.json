@@ -1,0 +1,35 @@
+{
+  "off_along": -12.0, 
+  "extra_angle": 0.0, 
+  "leader": "Free End", 
+  "elbow_x": 8.0, 
+  "tag_assignments": {
+    "Duct Accessories": {
+      "family": "DA_No", 
+      "type": "Standard"
+    }, 
+    "Structural Framing": {
+      "family": "STR_No", 
+      "type": "STR_No"
+    }, 
+    "Specialty Equipment": {
+      "family": "SE_No", 
+      "type": "SE_No"
+    }, 
+    "MEP Fabrication Pipework": {
+      "family": "PIPE_No", 
+      "type": "2 Characters"
+    }, 
+    "MEP Fabrication Ductwork": {
+      "family": "Duct Multi-Tag_w_weight", 
+      "type": "No"
+    }, 
+    "Generic Models": {
+      "family": "GM_No", 
+      "type": "GM_No"
+    }
+  }, 
+  "rotation": "In-Line", 
+  "off_updown": 16.0, 
+  "name": "all"
+}

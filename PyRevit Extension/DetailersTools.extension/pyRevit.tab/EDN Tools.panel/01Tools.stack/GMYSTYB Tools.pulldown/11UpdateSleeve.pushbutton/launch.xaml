@@ -1,0 +1,184 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UpdateSleeve"
+        Width="420" Height="260"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI" FontSize="13">
+
+    <Window.Resources>
+        <Style x:Key="AccentBtn" TargetType="Button">
+            <Setter Property="Background" Value="#2563EB"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="14,0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="6"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#1D4ED8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="GoldBtn" TargetType="Button">
+            <Setter Property="Background" Value="#92400E"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="14,0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="6"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#78350F"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SmallBtn" TargetType="Button">
+            <Setter Property="Background" Value="#F1F5F9"/>
+            <Setter Property="Foreground" Value="#1E293B"/>
+            <Setter Property="BorderBrush" Value="#CBD5E1"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="14,0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="6" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E2E8F0"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title bar -->
+        <Border Grid.Row="0" Background="#F8FAFC"
+                BorderBrush="#E2E8F0" BorderThickness="0,0,0,1"
+                Padding="20,14">
+            <StackPanel Orientation="Horizontal">
+                <Border Width="36" Height="36" CornerRadius="18"
+                        Background="#EFF6FF" Margin="0,0,12,0">
+                    <TextBlock Text="S" FontSize="16" FontWeight="Bold"
+                               Foreground="#2563EB"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                </Border>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="UpdateSleeve" FontSize="14"
+                               FontWeight="SemiBold" Foreground="#1E293B"/>
+                    <TextBlock Text="Content selection required"
+                               FontSize="11" Foreground="#64748B"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Steps -->
+        <StackPanel Grid.Row="1" Margin="20,16">
+            <Grid Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="28"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Width="22" Height="22" CornerRadius="11"
+                        Background="#1E293B" VerticalAlignment="Top">
+                    <TextBlock Text="1" Foreground="White" FontSize="11"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                </Border>
+                <TextBlock Grid.Column="1" VerticalAlignment="Center"
+                           TextWrapping="Wrap" FontSize="13">
+                    <Run>Select a </Run>
+                    <Run FontWeight="SemiBold">duct or pipe</Run>
+                    <Run> in the model</Run>
+                </TextBlock>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="28"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Width="22" Height="22" CornerRadius="11"
+                        Background="#1E293B" VerticalAlignment="Top">
+                    <TextBlock Text="2" Foreground="White" FontSize="11"
+                               FontWeight="SemiBold"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                </Border>
+                <TextBlock Grid.Column="1" VerticalAlignment="Center"
+                           TextWrapping="Wrap" FontSize="13">
+                    <Run>Click </Run>
+                    <Run FontWeight="SemiBold">Pick in Viewport</Run>
+                    <Run> to open the full window, or </Run>
+                    <Run FontWeight="SemiBold">Pick Part + Sleeve</Run>
+                    <Run> to pick content and sleeve directly -- applies instantly</Run>
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+
+        <!-- Buttons -->
+        <Border Grid.Row="2" Background="#F8FAFC"
+                BorderBrush="#E2E8F0" BorderThickness="0,1,0,0"
+                Padding="16,12">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="BtnCancel" Content="Cancel"
+                        Style="{StaticResource SmallBtn}"
+                        Height="34"/>
+                <Button Grid.Column="2" x:Name="BtnPickViewport" Content="Pick in Viewport"
+                        Style="{StaticResource GoldBtn}"
+                        Height="34"/>
+                <Button Grid.Column="4" x:Name="BtnPickPartSleeve" Content="Pick Part + Sleeve"
+                        Style="{StaticResource AccentBtn}"
+                        Height="34"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

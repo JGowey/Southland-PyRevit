@@ -1,0 +1,31 @@
+title:
+  en_us: Copy Fab Connect
+tooltip:
+  en_us: |
+    Copies, pastes, and connects Fabrication Parts with interactive alignment.
+
+    Copy Fab Connect allows you to copy a chain of **Fabrication Parts** and intelligently
+    place them onto an existing open connector in your model. This tool provides
+    live placement feedback and interactive controls.
+
+    **How to Use:**
+      1. Select Source: Run the tool, then select the entire chain of Fabrication Parts you want to copy.
+      2. Pick Transfer Point: Next, click on the **connector face** on your **selected Fabrication chain**
+         that will act as the 'transfer point' (i.e., the connector that will align with your target).
+      3. Pick Target Point: Now, click on an open connector face in your model where you want to place the copied Fabrication chain.
+
+    **Interactive Placement:**
+    Once placed, the copied elements will be 'floating' and can be adjusted:
+    * Press **SPACEBAR** to rotate the copied chain by 45 degrees around the target connector.
+    * Press **ENTER** to confirm the placement and connect the chain.
+    * Press **ESC** to cancel the placement and discard the copied elements.
+
+    **Important Notes:**
+    * This tool is specifically designed for **Fabrication Parts** and their connectors.
+    * If elements are automatically deleted during duplication (e.g., due to welding or flanging requirements
+      intrinsic to Fabrication Parts), try adjusting your selection to ensure all parts can be independently
+      copied and connected.
+author: Jacob Gowey, Chat GPT, Gemini
+engine:
+  persistent: true
+date: 2025-07-31

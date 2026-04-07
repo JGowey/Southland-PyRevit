@@ -1,0 +1,9 @@
+title:
+  en_us: Rotate CCW
+tooltip:
+  en_us: |
+    Rotate using Setting Angle.
+author: "Jacob Gowey"
+
+engine:
+  persistent: true
