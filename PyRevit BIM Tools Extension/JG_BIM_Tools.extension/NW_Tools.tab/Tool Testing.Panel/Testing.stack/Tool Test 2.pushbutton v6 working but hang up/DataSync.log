@@ -1,0 +1,21 @@
+Loaded 9 rules; 3 groups.
+
+==================================================================================
+Run started @ 2025-11-11 20:51:40
+Scope: Current Selection
+Rules to run (1): Clean Category -> CP_BOM_Category
+Using Selection scope (2 candidates).
+Staged 2 updates. Starting apply…
+Apply complete • elements: 2 • writes: 0 • conflicts: 0 • skips: 2 (missing 0, readonly 0, convert 0, type 0, error 0)
+Run finished.
+Processed: 2/2 elements.
+
+==================================================================================
+Run started @ 2025-11-11 20:51:58
+Scope: Active View
+Rules to run (1): Clean Category -> CP_BOM_Category
+Using Active View scope (4012 candidates).
+Staged 4012 updates. Starting apply…
+Apply complete • elements: 4012 • writes: 0 • conflicts: 0 • skips: 4012 (missing 0, readonly 0, convert 0, type 0, error 0)
+Run finished.
+Processed: 4012/4012 elements.

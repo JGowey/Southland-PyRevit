@@ -1,0 +1,162 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DataSync"
+    Width="1600" Height="900"
+    WindowStartupLocation="CenterOwner"
+    ResizeMode="CanResizeWithGrip">
+  <DockPanel Margin="12">
+    <!-- Header -->
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,8">
+      <TextBlock Text="DataSync" FontSize="20" FontWeight="SemiBold"/>
+      <TextBlock Text="  •  " FontSize="20"/>
+      <TextBlock Text="{Binding Status}" FontSize="14" VerticalAlignment="Center"/>
+    </StackPanel>
+
+    <!-- Footer -->
+    <DockPanel DockPanel.Dock="Bottom" Margin="0,8,0,0">
+      <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,4,0,0">
+        <Run Text="{Binding Done}"/><Run Text="/"/><Run Text="{Binding Total}"/><Run Text=" scanned"/>
+      </TextBlock>
+      <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" HorizontalAlignment="Right">
+        <Button Content="Run"   MinWidth="130" Margin="0,0,8,0" Click="Run_Click"/>
+        <Button Content="Stop"  MinWidth="130" Margin="0,0,8,0" Click="Stop_Click"/>
+        <Button Content="Close" MinWidth="130" Click="Close_Click" IsCancel="True"/>
+      </StackPanel>
+    </DockPanel>
+
+    <!-- Body -->
+    <Grid>
+      <Grid.RowDefinitions>
+        <!-- Compact reserved space for progress bar so layout never jumps -->
+        <RowDefinition Height="44"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="240"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="420"/>
+        <ColumnDefinition Width="12"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+
+      <!-- Progress (reserved; starts Hidden) -->
+      <Border x:Name="ProgressPanel" Grid.Row="0" Grid.ColumnSpan="3" Padding="0,0,0,8"
+              Visibility="Hidden">
+        <Grid>
+          <ProgressBar Minimum="0" Maximum="{Binding Total, FallbackValue=1}" Value="{Binding Done}" Height="14" VerticalAlignment="Center"/>
+          <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,8,0">
+            <Run Text="{Binding Done}"/><Run Text="/"/><Run Text="{Binding Total}"/>
+          </TextBlock>
+        </Grid>
+      </Border>
+
+      <!-- Scope + Groups -->
+      <GroupBox Header="Scope" Grid.Row="1" Grid.Column="0">
+        <DockPanel Margin="8">
+          <!-- groups toolbar (TOP RIGHT) -->
+          <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,6">
+            <Button Content="Select All" Width="90" Margin="0,0,6,0" Click="SelectAllGroups_Click"/>
+            <Button Content="Clear" Width="70" Click="ClearGroups_Click"/>
+          </StackPanel>
+
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="8"/>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <RadioButton x:Name="RadioSelection" Grid.Row="0"
+                         Content="Current Selection (Preselected)"
+                         GroupName="ScopeMode" Checked="ScopeSelection_Checked"/>
+            <RadioButton x:Name="RadioActiveView" Grid.Row="1"
+                         Content="Active View"
+                         GroupName="ScopeMode" Checked="ScopeActiveView_Checked"/>
+
+            <ListBox x:Name="GroupsList" Grid.Row="3"
+                     ItemsSource="{Binding Groups}"
+                     SelectionMode="Extended"
+                     SelectionChanged="GroupsList_SelectionChanged"
+                     ScrollViewer.CanContentScroll="True"
+                     VirtualizingStackPanel.IsVirtualizing="True"
+                     VirtualizingStackPanel.VirtualizationMode="Recycling"/>
+          </Grid>
+        </DockPanel>
+      </GroupBox>
+
+      <!-- Rules -->
+      <GroupBox Header="Rules" Grid.Row="1" Grid.Column="2">
+        <DockPanel Margin="6">
+          <!-- rules toolbar -->
+          <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,6">
+            <Button Content="Select All" Width="90" Margin="0,0,6,0" Click="RuleSelectAll_Click"/>
+            <Button Content="Clear" Width="70" Click="RuleClear_Click"/>
+            <TextBox x:Name="RuleSearchBox" Width="260" Margin="12,0,0,0"
+                     ToolTip="Filter rules by name, description, or categories"
+                     TextChanged="RuleSearchBox_TextChanged"/>
+          </StackPanel>
+
+          <ListView x:Name="RulesList"
+                    ItemsSource="{Binding Rules}"
+                    ScrollViewer.CanContentScroll="True"
+                    VirtualizingStackPanel.IsVirtualizing="True"
+                    VirtualizingStackPanel.VirtualizationMode="Recycling"
+                    SnapsToDevicePixels="True">
+            <!-- row grid lines -->
+            <ListView.Resources>
+              <Style TargetType="{x:Type ListViewItem}">
+                <Setter Property="BorderBrush" Value="#FFE0E0E0"/>
+                <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                <Setter Property="Padding" Value="2"/>
+              </Style>
+            </ListView.Resources>
+            <ListView.View>
+              <GridView AllowsColumnReorder="true">
+                <GridViewColumn Width="60" Header="">
+                  <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                      <CheckBox IsChecked="{Binding [enabled], Mode=TwoWay}"/>
+                    </DataTemplate>
+                  </GridViewColumn.CellTemplate>
+                </GridViewColumn>
+                <GridViewColumn Width="360" Header="Name">
+                  <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding [name]}" FontWeight="Bold"/>
+                    </DataTemplate>
+                  </GridViewColumn.CellTemplate>
+                </GridViewColumn>
+                <!-- Keep Description moderate so Categories is always visible -->
+                <GridViewColumn Width="460" Header="Description">
+                  <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding [description]}" FontStyle="Italic" Foreground="Gray"/>
+                    </DataTemplate>
+                  </GridViewColumn.CellTemplate>
+                </GridViewColumn>
+                <!-- Wider Categories -->
+                <GridViewColumn Width="600" Header="Categories">
+                  <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                      <TextBlock Text="{Binding [categories_count]}" ToolTip="{Binding [categories_tooltip]}"/>
+                    </DataTemplate>
+                  </GridViewColumn.CellTemplate>
+                </GridViewColumn>
+              </GridView>
+            </ListView.View>
+          </ListView>
+        </DockPanel>
+      </GroupBox>
+
+      <!-- Log -->
+      <GroupBox Header="Log" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,8,0,0">
+        <TextBox x:Name="LogTextbox" Margin="6"
+                 Text="{Binding Log}" IsReadOnly="True"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto"/>
+      </GroupBox>
+    </Grid>
+  </DockPanel>
+</Window>

@@ -1,0 +1,2388 @@
+################################################################
+ElementId 3434465	Category Pipes	Family Pipe Types	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0.00
+Area	40.09 SF
+BIMrx_SERVICE_NAME	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Pipes
+Category	Pipes
+Comments	0.0
+Connection Type	Generic
+Design Option	-1
+Diameter	6"
+Edited by	jgoweyLFZ7H
+End Middle Elevation	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Pipe Types
+Family Name	0.0
+Family and Type	Pipe Types: Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Flow	0.0
+Flow State	0.0
+Friction	0.0
+Friction Factor	0.0
+Horizontal Justification	Center
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOm0
+Image	0.0
+Inside Diameter	6"
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+Invert Elevation	1' - 10 3/4"
+Length	25' - 6 1/4"
+Lower End Bottom Elevation	1' - 10 5/8"
+Lower End Bottom of Insulation Elevation	1' - 10 5/8"
+Lower End Centerline Elevation	2' - 1 3/4"
+Lower End Invert Elevation	1' - 10 3/4"
+Lower End Obvert Elevation	2' - 4 3/4"
+Lower End Top Elevation	2' - 4 7/8"
+Lower End Top of Insulation Elevation	2' - 4 7/8"
+Mark	0.0
+Material	CP_PI - Iron - Cast
+Middle Elevation	2' - 1 3/4"
+NW_Spool ID	0.0
+Outside Diameter	6 1/4"
+Overall Size	6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Segment	CP_PI - Iron - Cast - No-Hub - Charlotte
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.001717
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds Number	0.0
+Roughness	0.00085'
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Schedule/Type	No-Hub - Charlotte
+Section	0.0
+Segment Description	0.0
+Size	6"
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	2' - 1 3/4"
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Type Id	296268
+Type Name	0.0
+Upper End Bottom Elevation	1' - 10 5/8"
+Upper End Bottom of Insulation Elevation	1' - 10 5/8"
+Upper End Centerline Elevation	2' - 1 3/4"
+Upper End Invert Elevation	1' - 10 3/4"
+Upper End Obvert Elevation	2' - 4 3/4"
+Upper End Top Elevation	2' - 4 7/8"
+Upper End Top of Insulation Elevation	2' - 4 7/8"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Wall Thickness	1/8"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Pipes
+Category	Pipes
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Pipe Types
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+PipeCostIntercept	0.0
+PipeCostSlopeInvert	0.0
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEz
+Type Image	0.0
+Type Mark	0.0
+Type Name	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+URL	0.0
+UnitLength	0.0
+Workset	Pipe Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434471	Category Pipes	Family Pipe Types	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0.00
+Area	16.56 SF
+BIMrx_SERVICE_NAME	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Pipes
+Category	Pipes
+Comments	0.0
+Connection Type	Generic
+Design Option	-1
+Diameter	6"
+Edited by	jgoweyLFZ7H
+End Middle Elevation	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Pipe Types
+Family Name	0.0
+Family and Type	Pipe Types: Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Flow	0.0
+Flow State	0.0
+Friction	0.0
+Friction Factor	0.0
+Horizontal Justification	Center
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOm6
+Image	0.0
+Inside Diameter	6"
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+Invert Elevation	1' - 10 3/4"
+Length	10' - 6 1/2"
+Lower End Bottom Elevation	1' - 10 5/8"
+Lower End Bottom of Insulation Elevation	1' - 10 5/8"
+Lower End Centerline Elevation	2' - 1 3/4"
+Lower End Invert Elevation	1' - 10 3/4"
+Lower End Obvert Elevation	2' - 4 3/4"
+Lower End Top Elevation	2' - 4 7/8"
+Lower End Top of Insulation Elevation	2' - 4 7/8"
+Mark	0.0
+Material	CP_PI - Iron - Cast
+Middle Elevation	2' - 1 3/4"
+NW_Spool ID	0.0
+Outside Diameter	6 1/4"
+Overall Size	6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Segment	CP_PI - Iron - Cast - No-Hub - Charlotte
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.001717
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds Number	0.0
+Roughness	0.00085'
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Schedule/Type	No-Hub - Charlotte
+Section	0.0
+Segment Description	0.0
+Size	6"
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	2' - 1 3/4"
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Type Id	296268
+Type Name	0.0
+Upper End Bottom Elevation	1' - 10 5/8"
+Upper End Bottom of Insulation Elevation	1' - 10 5/8"
+Upper End Centerline Elevation	2' - 1 3/4"
+Upper End Invert Elevation	1' - 10 3/4"
+Upper End Obvert Elevation	2' - 4 3/4"
+Upper End Top Elevation	2' - 4 7/8"
+Upper End Top of Insulation Elevation	2' - 4 7/8"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Wall Thickness	1/8"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Pipes
+Category	Pipes
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Pipe Types
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+PipeCostIntercept	0.0
+PipeCostSlopeInvert	0.0
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEz
+Type Image	0.0
+Type Mark	0.0
+Type Name	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+URL	0.0
+UnitLength	0.0
+Workset	Pipe Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434482	Category Pipe Fittings	Family Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Angle	90.00°
+Area	0.0
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Material & Coating	0.0
+CP_Phase Future	0.0
+CP_Service	0.0
+CP_Service Abbv	0.0
+CP_Service Name	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+Category	Pipe Fittings
+Category	Pipe Fittings
+Center Radius	7"
+Center to End	7"
+Comments	0.0
+D	0' - 9"
+D2	0' - 4 1/2"
+Design Option	-1
+Edited by	jgoweyLFZ7H
+Elevation from Level	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+Family Name	0.0
+Family and Type	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI: Standard
+Host Id	-1
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOmJ
+Image	0.0
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+IsCustom	0.0
+Level	Level 01
+Level	Level 01
+Loss Method	3bf616f9-6b98-4a21-80ff-da1120c8f6d6
+Loss Method Settings	0.0
+Main Nominal Diameter	6"
+Main Nominal Radius	3"
+Mark	0.0
+Maximum Size	6"
+Minimum Size	6"
+NW_Equipment Weight	0.0
+NW_Equipment Weight Charged	0.0
+NW_Pipe Charged Weight	0.0
+NW_Pipe Dry Weight	0.0
+NW_Pipe Liquid Weight	0.0
+NW_Pipe Volume Gallons	0.0
+NW_Spool ID	0.0
+Overall Size	6"x6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Inside Diameter	0' - 6"
+Pipe Inside Radius	0' - 3"
+Pipe Outside Diameter	6 1/4"
+Pipe Outside Radius	3 1/8"
+Pressure Drop	0.0
+Report_Volume	0.0
+Report_Weight	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Size	6"x6"
+Specification Section	0.0
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Standard
+Type Id	296264
+Type Name	0.0
+Use Annotation Scale	Yes
+Volume	0.31 gal
+W	1' - 5 1/8"
+Weight	17.1
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+04 CSI	22 00 00
+95 CSI	15100
+Assembly Code	D2090800
+Assembly Description	Piping & Fittings
+CP_ElementFilter_Type	0.0
+CP_FX_PF_Bracket Description	0.0
+Category	Pipe Fittings
+Category	Pipe Fittings
+Certifications	http://www.charlottepipe.com/Documents/CI_Certification.pdf
+Code Name	0.0
+Cost	0.0
+Default Elevation	0' - 0"
+Description	1 1/2 NO HUB 1/8 BEND
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+Intercept	0.0
+K Coefficient	0.0
+K Coefficient Table	Regular 45, 90 and 180 Elbow
+Keynote	0.0
+LEED and Sustainability	http://www.charlottepipe.com/Documents/LEED_CastIron.pdf
+Lookup Table Name 12	NH-12
+Lookup Table Name 16	NH-16
+Loss Method	K Coefficient from Table
+Manufacturer	Charlotte Pipe and Foundry
+Material	Cast Iron-Charlotte
+Model	NH-12
+Model Number	61194200169
+OmniClass Number	23.60.30.11.14
+OmniClass Title	Pipework Fittings
+SlopeInvert	0.0
+SmartBIM Object Created By	SMARTBIM, LLC
+SmartBIM Object Version	3
+Specifications	http://www.charlottepipe.com/Documents/Specs/Spec_Service_Wt_CI_Soil_Pipe.pdf
+Subcategory	NH Fittings
+Technical and Installation	http://www.charlottepipe.com/Documents/CI_Technical_Manual/CI_Technical_Manual.pdf
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEv
+Type Image	0.0
+Type Mark	0.0
+Type Name	Standard
+URL	www.charlottepipe.com
+Workset	Family  : Pipe Fittings : Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434484	Category Pipes	Family Pipe Types	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0.00
+Area	30.70 SF
+BIMrx_SERVICE_NAME	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Pipes
+Category	Pipes
+Comments	0.0
+Connection Type	Generic
+Design Option	-1
+Diameter	6"
+Edited by	jgoweyLFZ7H
+End Middle Elevation	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Pipe Types
+Family Name	0.0
+Family and Type	Pipe Types: Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Flow	0.0
+Flow State	0.0
+Friction	0.0
+Friction Factor	0.0
+Horizontal Justification	Center
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOmL
+Image	0.0
+Inside Diameter	6"
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+Invert Elevation	1' - 10 3/4"
+Length	19' - 6 1/2"
+Lower End Bottom Elevation	1' - 10 5/8"
+Lower End Bottom of Insulation Elevation	1' - 10 5/8"
+Lower End Centerline Elevation	2' - 1 3/4"
+Lower End Invert Elevation	1' - 10 3/4"
+Lower End Obvert Elevation	2' - 4 3/4"
+Lower End Top Elevation	2' - 4 7/8"
+Lower End Top of Insulation Elevation	2' - 4 7/8"
+Mark	0.0
+Material	CP_PI - Iron - Cast
+Middle Elevation	2' - 1 3/4"
+NW_Spool ID	0.0
+Outside Diameter	6 1/4"
+Overall Size	6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Segment	CP_PI - Iron - Cast - No-Hub - Charlotte
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.001717
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds Number	0.0
+Roughness	0.00085'
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Schedule/Type	No-Hub - Charlotte
+Section	0.0
+Segment Description	0.0
+Size	6"
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	2' - 1 3/4"
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Type Id	296268
+Type Name	0.0
+Upper End Bottom Elevation	1' - 10 5/8"
+Upper End Bottom of Insulation Elevation	1' - 10 5/8"
+Upper End Centerline Elevation	2' - 1 3/4"
+Upper End Invert Elevation	1' - 10 3/4"
+Upper End Obvert Elevation	2' - 4 3/4"
+Upper End Top Elevation	2' - 4 7/8"
+Upper End Top of Insulation Elevation	2' - 4 7/8"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Wall Thickness	1/8"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Pipes
+Category	Pipes
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Pipe Types
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+PipeCostIntercept	0.0
+PipeCostSlopeInvert	0.0
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEz
+Type Image	0.0
+Type Mark	0.0
+Type Name	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+URL	0.0
+UnitLength	0.0
+Workset	Pipe Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434490	Category Pipe Fittings	Family Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Angle	90.00°
+Area	0.0
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Material & Coating	0.0
+CP_Phase Future	0.0
+CP_Service	0.0
+CP_Service Abbv	0.0
+CP_Service Name	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+Category	Pipe Fittings
+Category	Pipe Fittings
+Center Radius	7"
+Center to End	7"
+Comments	0.0
+D	0' - 9"
+D2	0' - 4 1/2"
+Design Option	-1
+Edited by	jgoweyLFZ7H
+Elevation from Level	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+Family Name	0.0
+Family and Type	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI: Standard
+Host Id	-1
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOmR
+Image	0.0
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+IsCustom	0.0
+Level	Level 01
+Level	Level 01
+Loss Method	3bf616f9-6b98-4a21-80ff-da1120c8f6d6
+Loss Method Settings	0.0
+Main Nominal Diameter	6"
+Main Nominal Radius	3"
+Mark	0.0
+Maximum Size	6"
+Minimum Size	6"
+NW_Equipment Weight	0.0
+NW_Equipment Weight Charged	0.0
+NW_Pipe Charged Weight	0.0
+NW_Pipe Dry Weight	0.0
+NW_Pipe Liquid Weight	0.0
+NW_Pipe Volume Gallons	0.0
+NW_Spool ID	0.0
+Overall Size	6"x6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Inside Diameter	0' - 6"
+Pipe Inside Radius	0' - 3"
+Pipe Outside Diameter	6 1/4"
+Pipe Outside Radius	3 1/8"
+Pressure Drop	0.0
+Report_Volume	0.0
+Report_Weight	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Size	6"x6"
+Specification Section	0.0
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Standard
+Type Id	296264
+Type Name	0.0
+Use Annotation Scale	Yes
+Volume	0.31 gal
+W	1' - 5 1/8"
+Weight	17.1
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+04 CSI	22 00 00
+95 CSI	15100
+Assembly Code	D2090800
+Assembly Description	Piping & Fittings
+CP_ElementFilter_Type	0.0
+CP_FX_PF_Bracket Description	0.0
+Category	Pipe Fittings
+Category	Pipe Fittings
+Certifications	http://www.charlottepipe.com/Documents/CI_Certification.pdf
+Code Name	0.0
+Cost	0.0
+Default Elevation	0' - 0"
+Description	1 1/2 NO HUB 1/8 BEND
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+Intercept	0.0
+K Coefficient	0.0
+K Coefficient Table	Regular 45, 90 and 180 Elbow
+Keynote	0.0
+LEED and Sustainability	http://www.charlottepipe.com/Documents/LEED_CastIron.pdf
+Lookup Table Name 12	NH-12
+Lookup Table Name 16	NH-16
+Loss Method	K Coefficient from Table
+Manufacturer	Charlotte Pipe and Foundry
+Material	Cast Iron-Charlotte
+Model	NH-12
+Model Number	61194200169
+OmniClass Number	23.60.30.11.14
+OmniClass Title	Pipework Fittings
+SlopeInvert	0.0
+SmartBIM Object Created By	SMARTBIM, LLC
+SmartBIM Object Version	3
+Specifications	http://www.charlottepipe.com/Documents/Specs/Spec_Service_Wt_CI_Soil_Pipe.pdf
+Subcategory	NH Fittings
+Technical and Installation	http://www.charlottepipe.com/Documents/CI_Technical_Manual/CI_Technical_Manual.pdf
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEv
+Type Image	0.0
+Type Mark	0.0
+Type Name	Standard
+URL	www.charlottepipe.com
+Workset	Family  : Pipe Fittings : Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434492	Category Pipes	Family Pipe Types	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0.00
+Area	18.10 SF
+BIMrx_SERVICE_NAME	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Pipes
+Category	Pipes
+Comments	0.0
+Connection Type	Generic
+Design Option	-1
+Diameter	6"
+Edited by	jgoweyLFZ7H
+End Middle Elevation	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Pipe Types
+Family Name	0.0
+Family and Type	Pipe Types: Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Flow	0.0
+Flow State	0.0
+Friction	0.0
+Friction Factor	0.0
+Horizontal Justification	Center
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOmT
+Image	0.0
+Inside Diameter	6"
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+Invert Elevation	1' - 10 3/4"
+Length	11' - 6 1/4"
+Lower End Bottom Elevation	1' - 10 5/8"
+Lower End Bottom of Insulation Elevation	1' - 10 5/8"
+Lower End Centerline Elevation	2' - 1 3/4"
+Lower End Invert Elevation	1' - 10 3/4"
+Lower End Obvert Elevation	2' - 4 3/4"
+Lower End Top Elevation	2' - 4 7/8"
+Lower End Top of Insulation Elevation	2' - 4 7/8"
+Mark	0.0
+Material	CP_PI - Iron - Cast
+Middle Elevation	2' - 1 3/4"
+NW_Spool ID	0.0
+Outside Diameter	6 1/4"
+Overall Size	6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Segment	CP_PI - Iron - Cast - No-Hub - Charlotte
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.001717
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds Number	0.0
+Roughness	0.00085'
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Schedule/Type	No-Hub - Charlotte
+Section	0.0
+Segment Description	0.0
+Size	6"
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	2' - 1 3/4"
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+Type Id	296268
+Type Name	0.0
+Upper End Bottom Elevation	1' - 10 5/8"
+Upper End Bottom of Insulation Elevation	1' - 10 5/8"
+Upper End Centerline Elevation	2' - 1 3/4"
+Upper End Invert Elevation	1' - 10 3/4"
+Upper End Obvert Elevation	2' - 4 3/4"
+Upper End Top Elevation	2' - 4 7/8"
+Upper End Top of Insulation Elevation	2' - 4 7/8"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Wall Thickness	1/8"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Pipes
+Category	Pipes
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Pipe Types
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+PipeCostIntercept	0.0
+PipeCostSlopeInvert	0.0
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEz
+Type Image	0.0
+Type Mark	0.0
+Type Name	Pipe_Charlotte_CastIron_No-Hub_Combo_SI
+URL	0.0
+UnitLength	0.0
+Workset	Pipe Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434500	Category Pipe Fittings	Family Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Angle	90.00°
+Area	0.0
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Material & Coating	0.0
+CP_Phase Future	0.0
+CP_Service	0.0
+CP_Service Abbv	0.0
+CP_Service Name	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+Category	Pipe Fittings
+Category	Pipe Fittings
+Center Radius	7"
+Center to End	7"
+Comments	0.0
+D	0' - 9"
+D2	0' - 4 1/2"
+Design Option	-1
+Edited by	jgoweyLFZ7H
+Elevation from Level	2' - 1 3/4"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+Family Name	0.0
+Family and Type	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI: Standard
+Host Id	-1
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFb
+Image	0.0
+Insulation Thickness	0"
+Insulation Thickness	0
+Insulation Type	0.0
+IsCustom	0.0
+Level	Level 01
+Level	Level 01
+Loss Method	3bf616f9-6b98-4a21-80ff-da1120c8f6d6
+Loss Method Settings	0.0
+Main Nominal Diameter	6"
+Main Nominal Radius	3"
+Mark	0.0
+Maximum Size	6"
+Minimum Size	6"
+NW_Equipment Weight	0.0
+NW_Equipment Weight Charged	0.0
+NW_Pipe Charged Weight	0.0
+NW_Pipe Dry Weight	0.0
+NW_Pipe Liquid Weight	0.0
+NW_Pipe Volume Gallons	0.0
+NW_Spool ID	0.0
+Overall Size	6"x6"
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pipe Inside Diameter	0' - 6"
+Pipe Inside Radius	0' - 3"
+Pipe Outside Diameter	6 1/4"
+Pipe Outside Radius	3 1/8"
+Pressure Drop	0.0
+Report_Volume	0.0
+Report_Weight	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Size	6"x6"
+Specification Section	0.0
+System Abbreviation	N2O
+System Classification	Hydronic Supply
+System Name	N2O 11
+System Type	SI_PJ - Nitrous Oxide
+TCM_PW_DESIGN_OPTION	0.0
+Type	Standard
+Type Id	296264
+Type Name	0.0
+Use Annotation Scale	Yes
+Volume	0.31 gal
+W	1' - 5 1/8"
+Weight	17.1
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+04 CSI	22 00 00
+95 CSI	15100
+Assembly Code	D2090800
+Assembly Description	Piping & Fittings
+CP_ElementFilter_Type	0.0
+CP_FX_PF_Bracket Description	0.0
+Category	Pipe Fittings
+Category	Pipe Fittings
+Certifications	http://www.charlottepipe.com/Documents/CI_Certification.pdf
+Code Name	0.0
+Cost	0.0
+Default Elevation	0' - 0"
+Description	1 1/2 NO HUB 1/8 BEND
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+Intercept	0.0
+K Coefficient	0.0
+K Coefficient Table	Regular 45, 90 and 180 Elbow
+Keynote	0.0
+LEED and Sustainability	http://www.charlottepipe.com/Documents/LEED_CastIron.pdf
+Lookup Table Name 12	NH-12
+Lookup Table Name 16	NH-16
+Loss Method	K Coefficient from Table
+Manufacturer	Charlotte Pipe and Foundry
+Material	Cast Iron-Charlotte
+Model	NH-12
+Model Number	61194200169
+OmniClass Number	23.60.30.11.14
+OmniClass Title	Pipework Fittings
+SlopeInvert	0.0
+SmartBIM Object Created By	SMARTBIM, LLC
+SmartBIM Object Version	3
+Specifications	http://www.charlottepipe.com/Documents/Specs/Spec_Service_Wt_CI_Soil_Pipe.pdf
+Subcategory	NH Fittings
+Technical and Installation	http://www.charlottepipe.com/Documents/CI_Technical_Manual/CI_Technical_Manual.pdf
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	02lK2fMy94dwzieGBPSWEv
+Type Image	0.0
+Type Mark	0.0
+Type Name	Standard
+URL	www.charlottepipe.com
+Workset	Family  : Pipe Fittings : Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434515	Category Ducts	Family Oval Duct	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0
+Area	84.81 SF
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Ducts
+Category	Ducts
+Comments	0.0
+Design Option	-1
+Edited by	jgoweyLFZ7H
+End Middle Elevation	9' - 0"
+Equivalent Diameter	12"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Oval Duct
+Family Name	0.0
+Family and Type	Oval Duct: Duct_G_Oval_GoredElbow-StraightTap_SI
+Flow	0.0
+Free Size	12/12
+Friction	0.0
+Height	12"
+Horizontal Justification	Center
+Hydraulic Diameter	12"
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFo
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length	27' - 0"
+Lining Thickness	0
+Lining Type	0.0
+Loss Coefficient	0.0
+Lower End Bottom Elevation	8' - 6"
+Lower End Bottom of Insulation Elevation	8' - 6"
+Lower End Centerline Elevation	9' - 0"
+Lower End Top Elevation	9' - 6"
+Lower End Top of Insulation Elevation	9' - 6"
+Mark	0.0
+Middle Elevation	9' - 0"
+NW_Spool ID	0.0
+Overall Size	12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.0003
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds number	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Section	0.0
+Size	12"/12"
+Size Lock	No
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	9' - 0"
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Duct_G_Oval_GoredElbow-StraightTap_SI
+Type Id	180963
+Type Name	0.0
+Upper End Bottom Elevation	8' - 6"
+Upper End Bottom of Insulation Elevation	8' - 6"
+Upper End Centerline Elevation	9' - 0"
+Upper End Top Elevation	9' - 6"
+Upper End Top of Insulation Elevation	9' - 6"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Width	12"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Ducts
+Category	Ducts
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Oval Duct
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+Roughness	0.0003'
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmAB
+Type Image	0.0
+Type Mark	0.0
+Type Name	Duct_G_Oval_GoredElbow-StraightTap_SI
+URL	0.0
+Workset	Duct Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434542	Category Ducts	Family Oval Duct	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0
+Area	18.83 SF
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Ducts
+Category	Ducts
+Comments	0.0
+Design Option	-1
+Edited by	jgoweyLFZ7H
+End Middle Elevation	9' - 0"
+Equivalent Diameter	12"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Oval Duct
+Family Name	0.0
+Family and Type	Oval Duct: Duct_G_Oval_GoredElbow-StraightTap_SI
+Flow	0.0
+Free Size	12/12
+Friction	0.0
+Height	12"
+Horizontal Justification	Center
+Hydraulic Diameter	12"
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFF
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length	6' - 0"
+Lining Thickness	0
+Lining Type	0.0
+Loss Coefficient	0.0
+Lower End Bottom Elevation	8' - 6"
+Lower End Bottom of Insulation Elevation	8' - 6"
+Lower End Centerline Elevation	9' - 0"
+Lower End Top Elevation	9' - 6"
+Lower End Top of Insulation Elevation	9' - 6"
+Mark	0.0
+Middle Elevation	9' - 0"
+NW_Spool ID	0.0
+Overall Size	12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.0003
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds number	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Section	0.0
+Size	12"/12"
+Size Lock	No
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	9' - 0"
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Duct_G_Oval_GoredElbow-StraightTap_SI
+Type Id	180963
+Type Name	0.0
+Upper End Bottom Elevation	8' - 6"
+Upper End Bottom of Insulation Elevation	8' - 6"
+Upper End Centerline Elevation	9' - 0"
+Upper End Top Elevation	9' - 6"
+Upper End Top of Insulation Elevation	9' - 6"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Width	12"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Ducts
+Category	Ducts
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Oval Duct
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+Roughness	0.0003'
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmAB
+Type Image	0.0
+Type Mark	0.0
+Type Name	Duct_G_Oval_GoredElbow-StraightTap_SI
+URL	0.0
+Workset	Duct Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434549	Category Duct Fittings	Family Fitting_G_Duct-Oval_Elbow-Gored_SI	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Angle	90.00°
+Area	0.0
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Material & Coating	0.0
+CP_Phase Future	0.0
+CP_Service	0.0
+CP_Service Abbv	0.0
+CP_Service Name	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Duct Fittings
+Category	Duct Fittings
+Center Radius	18"
+Comments	0.0
+Design Option	-1
+Duct Height	12"
+Duct Width	12"
+Edited by	jgoweyLFZ7H
+Elevation from Level	9' - 0"
+End Length	1/16"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Fitting_G_Duct-Oval_Elbow-Gored_SI
+Family Name	0.0
+Family and Type	Fitting_G_Duct-Oval_Elbow-Gored_SI: Standard
+Free Size	12/12-12/12
+Gores	5
+Host Id	-1
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFK
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length 1	18"
+Length 2	18"
+Length 3	18 1/16"
+Length 4	0"
+Length 5	1/16"
+Level	Level 01
+Level	Level 01
+Lining Thickness	0
+Lining Type	0.0
+Loss Method	8baf7d75-8b9b-46d0-b8ce-3ad1c19e6b19
+Loss Method Settings	0.0
+Mark	0.0
+Max Segmentation Angle	22.50°
+NW_Spool ID	0.0
+Overall Size	12/12-12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Report_Volume	0.0
+Report_Weight	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Size	12"/12"-12"/12"
+Specification Section	0.0
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Standard
+Type Id	181039
+Type Name	0.0
+Use Annotation Scale	Yes
+Volume	14.13 gal
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+CP_GN_Approved By	0.0
+CP_GN_Approved On	0.0
+CP_GN_Created By	0.0
+CP_GN_Created On	0.0
+CP_GN_Material	<By Category>
+CP_GN_Omni Class	0.0
+Category	Duct Fittings
+Category	Duct Fittings
+Code Name	0.0
+Cost	0.0
+Default Elevation	0' - 0"
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Fitting_G_Duct-Oval_Elbow-Gored_SI
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+OmniClass Number	23.75.70.14
+OmniClass Title	Air Ductwork
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmD7
+Type Image	0.0
+Type Mark	0.0
+Type Name	Standard
+URL	0.0
+Workset	Family  : Duct Fittings : Fitting_G_Duct-Oval_Elbow-Gored_SI
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434551	Category Ducts	Family Oval Duct	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0
+Area	31.26 SF
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Ducts
+Category	Ducts
+Comments	0.0
+Design Option	-1
+Edited by	jgoweyLFZ7H
+End Middle Elevation	9' - 0"
+Equivalent Diameter	12"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Oval Duct
+Family Name	0.0
+Family and Type	Oval Duct: Duct_G_Oval_GoredElbow-StraightTap_SI
+Flow	0.0
+Free Size	12/12
+Friction	0.0
+Height	12"
+Horizontal Justification	Center
+Hydraulic Diameter	12"
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFM
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length	9' - 11 3/8"
+Lining Thickness	0
+Lining Type	0.0
+Loss Coefficient	0.0
+Lower End Bottom Elevation	8' - 6"
+Lower End Bottom of Insulation Elevation	8' - 6"
+Lower End Centerline Elevation	9' - 0"
+Lower End Top Elevation	9' - 6"
+Lower End Top of Insulation Elevation	9' - 6"
+Mark	0.0
+Middle Elevation	9' - 0"
+NW_Spool ID	0.0
+Overall Size	12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.0003
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds number	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Section	0.0
+Size	12"/12"
+Size Lock	No
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	9' - 0"
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Duct_G_Oval_GoredElbow-StraightTap_SI
+Type Id	180963
+Type Name	0.0
+Upper End Bottom Elevation	8' - 6"
+Upper End Bottom of Insulation Elevation	8' - 6"
+Upper End Centerline Elevation	9' - 0"
+Upper End Top Elevation	9' - 6"
+Upper End Top of Insulation Elevation	9' - 6"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Width	12"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Ducts
+Category	Ducts
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Oval Duct
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+Roughness	0.0003'
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmAB
+Type Image	0.0
+Type Mark	0.0
+Type Name	Duct_G_Oval_GoredElbow-StraightTap_SI
+URL	0.0
+Workset	Duct Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434556	Category Duct Fittings	Family Fitting_G_Duct-Oval_Elbow-Gored_SI	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Angle	90.00°
+Area	0.0
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Material & Coating	0.0
+CP_Phase Future	0.0
+CP_Service	0.0
+CP_Service Abbv	0.0
+CP_Service Name	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Duct Fittings
+Category	Duct Fittings
+Center Radius	18"
+Comments	0.0
+Design Option	-1
+Duct Height	12"
+Duct Width	12"
+Edited by	jgoweyLFZ7H
+Elevation from Level	9' - 0"
+End Length	1/16"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Fitting_G_Duct-Oval_Elbow-Gored_SI
+Family Name	0.0
+Family and Type	Fitting_G_Duct-Oval_Elbow-Gored_SI: Standard
+Free Size	12/12-12/12
+Gores	5
+Host Id	-1
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFT
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length 1	18"
+Length 2	18"
+Length 3	18 1/16"
+Length 4	0"
+Length 5	1/16"
+Level	Level 01
+Level	Level 01
+Lining Thickness	0
+Lining Type	0.0
+Loss Method	8baf7d75-8b9b-46d0-b8ce-3ad1c19e6b19
+Loss Method Settings	0.0
+Mark	0.0
+Max Segmentation Angle	22.50°
+NW_Spool ID	0.0
+Overall Size	12/12-12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Report_Volume	0.0
+Report_Weight	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Size	12"/12"-12"/12"
+Specification Section	0.0
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Standard
+Type Id	181039
+Type Name	0.0
+Use Annotation Scale	Yes
+Volume	14.13 gal
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+CP_GN_Approved By	0.0
+CP_GN_Approved On	0.0
+CP_GN_Created By	0.0
+CP_GN_Created On	0.0
+CP_GN_Material	<By Category>
+CP_GN_Omni Class	0.0
+Category	Duct Fittings
+Category	Duct Fittings
+Code Name	0.0
+Cost	0.0
+Default Elevation	0' - 0"
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Fitting_G_Duct-Oval_Elbow-Gored_SI
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+OmniClass Number	23.75.70.14
+OmniClass Title	Air Ductwork
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmD7
+Type Image	0.0
+Type Mark	0.0
+Type Name	Standard
+URL	0.0
+Workset	Family  : Duct Fittings : Fitting_G_Duct-Oval_Elbow-Gored_SI
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434557	Category Ducts	Family Oval Duct	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Additional Flow	0
+Area	31.26 SF
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Phase Future	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Ducts
+Category	Ducts
+Comments	0.0
+Design Option	-1
+Edited by	jgoweyLFZ7H
+End Middle Elevation	9' - 0"
+Equivalent Diameter	12"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Oval Duct
+Family Name	0.0
+Family and Type	Oval Duct: Duct_G_Oval_GoredElbow-StraightTap_SI
+Flow	0.0
+Free Size	12/12
+Friction	0.0
+Height	12"
+Horizontal Justification	Center
+Hydraulic Diameter	12"
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOFS
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length	9' - 11 3/8"
+Lining Thickness	0
+Lining Type	0.0
+Loss Coefficient	0.0
+Lower End Bottom Elevation	8' - 6"
+Lower End Bottom of Insulation Elevation	8' - 6"
+Lower End Centerline Elevation	9' - 0"
+Lower End Top Elevation	9' - 6"
+Lower End Top of Insulation Elevation	9' - 6"
+Mark	0.0
+Middle Elevation	9' - 0"
+NW_Spool ID	0.0
+Overall Size	12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Reference Level	Level 01
+Relative Roughness	0.0003
+Report_Volume	0.0
+Report_Weight	0.0
+Reynolds number	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Section	0.0
+Size	12"/12"
+Size Lock	No
+Slope	0" / 12"
+Specification Section	0.0
+Spot Bottom Elevation	0.0
+Spot Bottom of Insulation Elevation	0.0
+Spot Centerline Elevation	0.0
+Spot Top Elevation	0.0
+Spot Top of Insulation Elevation	0.0
+Start Middle Elevation	9' - 0"
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Duct_G_Oval_GoredElbow-StraightTap_SI
+Type Id	180963
+Type Name	0.0
+Upper End Bottom Elevation	8' - 6"
+Upper End Bottom of Insulation Elevation	8' - 6"
+Upper End Centerline Elevation	9' - 0"
+Upper End Top Elevation	9' - 6"
+Upper End Top of Insulation Elevation	9' - 6"
+Velocity	0.0
+Velocity Pressure	0.0
+Vertical Justification	Middle
+Width	12"
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+Category	Ducts
+Category	Ducts
+Cost	0.0
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Oval Duct
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+Roughness	0.0003'
+Routing Preferences	0.0
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmAB
+Type Image	0.0
+Type Mark	0.0
+Type Name	Duct_G_Oval_GoredElbow-StraightTap_SI
+URL	0.0
+Workset	Duct Types
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0
+
+################################################################
+ElementId 3434566	Category Duct Fittings	Family Fitting_G_Duct-Oval_Elbow-Gored_SI	Type 
+################################################################
+
+== ELEMENT PARAMETERS ==
+Angle	40.00°
+Area	0.0
+BIMrx_SERVICE_NAME	0.0
+BOM Description	0.0
+CPHL_Null	0.0
+CPL_Family Category	0.0
+CPL_Family Classification	0.0
+CP_BOM_Category	0.0
+CP_BOM_Volume	0.0
+CP_BOM_Weight	0.0
+CP_Construction Area	0.0
+CP_ElementFilter_Instance	0.0
+CP_Item Number	0.0
+CP_Length	0.0
+CP_Material & Coating	0.0
+CP_Phase Future	0.0
+CP_Service	0.0
+CP_Service Abbv	0.0
+CP_Service Name	0.0
+CP_Size	0.0
+CP_Spool Type	0.0
+CP_Spool Type	0.0
+CP_Type Name	0.0
+CP_Volume	0.0
+CP_Weight	0.0
+Category	Duct Fittings
+Category	Duct Fittings
+Center Radius	18"
+Comments	0.0
+Design Option	-1
+Duct Height	12"
+Duct Width	12"
+Edited by	jgoweyLFZ7H
+Elevation from Level	9' - 0"
+End Length	1/16"
+Export to IFC	By Type
+Export to IFC As	0.0
+Family	Fitting_G_Duct-Oval_Elbow-Gored_SI
+Family Name	0.0
+Family and Type	Fitting_G_Duct-Oval_Elbow-Gored_SI: Standard
+Free Size	12/12-12/12
+Gores	3
+Host Id	-1
+IFC Predefined Type	0.0
+IfcGUID	0Gsr1tapzDA8854rXSlOEd
+Image	0.0
+Insulation Thickness	0
+Insulation Thickness	0
+Insulation Type	0.0
+Length 1	6 9/16"
+Length 2	11 5/8"
+Length 3	4 1/4"
+Length 4	0"
+Length 5	0"
+Level	Level 01
+Level	Level 01
+Lining Thickness	0
+Lining Type	0.0
+Loss Method	8baf7d75-8b9b-46d0-b8ce-3ad1c19e6b19
+Loss Method Settings	0.0
+Mark	0.0
+Max Segmentation Angle	20.00°
+NW_Spool ID	0.0
+Overall Size	12/12-12/12
+Phase Created	New Construction
+Phase Demolished	None
+Pipe Center Length	0.0
+Pipe ID	0.0
+Pressure Drop	0.0
+Report_Volume	0.0
+Report_Weight	0.0
+STRATUS Item Number	0.0
+STRATUS Package Name	0.0
+STRATUS QR Code	0.0
+STRATUS Status Name	0.0
+SU/SD from Bottom	0.0
+SU/SD from Top	0.0
+Size	12"/12"-12"/12"
+Specification Section	0.0
+System Abbreviation	SA
+System Classification	Supply Air
+System Name	SA 1
+System Type	SI_MH - Supply Air
+TCM_PW_DESIGN_OPTION	0.0
+Type	Standard
+Type Id	181039
+Type Name	0.0
+Use Annotation Scale	Yes
+Volume	6.28 gal
+Workset	Modeling - MP
+eM_CP_Override Parameter Sync	0.0
+eM_Service Abbreviation	0.0
+eM_Service Name	0.0
+eV_LBS_Id	0.0
+eV_PackageCondition	0.0
+eV_PackageId	0.0
+eV_PackageLevel	0.0
+eV_PackageStatus	0.0
+eV_SheetGroup	0.0
+eV_SheetSubGroup	0.0
+eV_SourceId	0.0
+eV_SpoolId	0.0
+eV_Weight	0.0
+eVolve_AreaTypeId	0.0
+eVolve_AssemblyGroup	0.0
+eVolve_ConfigurationId	0.0
+eVolve_CustomId	0.0
+eVolve_Description	0.0
+eVolve_DescriptionTwo	0.0
+eVolve_EstimateId	0.0
+eVolve_KitId	0.0
+eVolve_Length	0.0
+eVolve_LevelId	0.0
+eVolve_Offset	0.0
+eVolve_PhaseId	0.0
+eVolve_PrefabId	0.0
+eVolve_SpoolDescription	0.0
+
+== TYPE PARAMETERS ==
+Assembly Code	0.0
+Assembly Description	0.0
+CP_ElementFilter_Type	0.0
+CP_GN_Approved By	0.0
+CP_GN_Approved On	0.0
+CP_GN_Created By	0.0
+CP_GN_Created On	0.0
+CP_GN_Material	<By Category>
+CP_GN_Omni Class	0.0
+Category	Duct Fittings
+Category	Duct Fittings
+Code Name	0.0
+Cost	0.0
+Default Elevation	0' - 0"
+Description	0.0
+Design Option	-1
+Edited by	0.0
+Export Type to IFC	Default
+Export Type to IFC As	0.0
+Family Name	Fitting_G_Duct-Oval_Elbow-Gored_SI
+Keynote	0.0
+Manufacturer	0.0
+Model	0.0
+OmniClass Number	23.75.70.14
+OmniClass Title	Air Ductwork
+Type Comments	0.0
+Type IFC Predefined Type	0.0
+Type IfcGUID	2ApFgHB9j9UhAHZT4ylmD7
+Type Image	0.0
+Type Mark	0.0
+Type Name	Standard
+URL	0.0
+Workset	Family  : Duct Fittings : Fitting_G_Duct-Oval_Elbow-Gored_SI
+eVolve_CategoryId	0.0
+eVolve_SubCategoryId	0.0
+eVolve_UPC	0.0
+eVolve_UnitofMeasure	0.0

@@ -1,0 +1,9 @@
+title:
+  en_us: Script Test 1
+tooltip:
+  en_us:
+    Use for Script Ttesting
+author: "Jacob Gowey"
+
+engine:
+  persistent: true

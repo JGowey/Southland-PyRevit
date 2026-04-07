@@ -1,0 +1,21 @@
+Loaded 9 rules; 3 groups.
+
+==================================================================================
+Run started @ 2025-11-11 20:26:20
+Scope: Active View
+Rules to run (1): Clean Category -> CP_BOM_Category
+Using Active View scope (4012 candidates).
+Staged 4012 updates. Starting apply…
+Apply complete • elements: 4012 • writes: 4005 • conflicts: 0 • skips: 7 (missing 0, readonly 0, convert 0, type 0, error 0)
+Element 10695716 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10692523 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10696276 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10689326 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10691733 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10693956 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10694176 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10690168 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10694432 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Element 10695104 • CP_BOM_Category: '' → 'MEP Fabrication Pipework'
+Run finished.
+Processed: 4012/4012 elements.

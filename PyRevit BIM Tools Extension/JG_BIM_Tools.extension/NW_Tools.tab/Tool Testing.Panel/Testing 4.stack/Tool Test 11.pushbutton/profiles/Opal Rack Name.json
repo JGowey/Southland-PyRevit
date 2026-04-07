@@ -1,0 +1,64 @@
+{
+  "group_by_param": "", 
+  "notes": "", 
+  "filter_rules": [
+    {
+      "value": "MEP Fabrication Pipework", 
+      "type": "category_eq"
+    }
+  ], 
+  "filter_logic": "AND", 
+  "outputs": [
+    {
+      "label": "Drawing Name", 
+      "slots": [
+        {
+          "desc": "Ask: Level Name", 
+          "label": "?Level Name", 
+          "unit_type": "string", 
+          "key": "ASK:Level Name", 
+          "read_format": "str", 
+          "color": "#c07000"
+        }, 
+        {
+          "desc": "Fabrication Service Abbreviation", 
+          "label": "Fabrication Service Ab...", 
+          "unit_type": "string", 
+          "key": "param:Fabrication Service Abbreviation", 
+          "storage_type": "String", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }, 
+        {
+          "desc": "Assembly Name", 
+          "label": "Assembly Name", 
+          "unit_type": "string", 
+          "key": "param:Assembly Name", 
+          "storage_type": "String", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }, 
+        {
+          "desc": "Mark", 
+          "label": "Mark", 
+          "unit_type": "string", 
+          "key": "param:Mark", 
+          "storage_type": "String", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }, 
+        {
+          "desc": "Ask: Value2", 
+          "key": "ASK:Value2", 
+          "label": "?Value2", 
+          "color": "#c07000"
+        }
+      ], 
+      "seq_width": 3, 
+      "target_param": "Comments", 
+      "sep": "-"
+    }
+  ], 
+  "name": "Opal Rack Name", 
+  "allow_nested": false
+}

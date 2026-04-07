@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "Basic Test Group",
+      "rules": [
+        "demo_write_comments.py",
+        "demo_write_mark.py",
+        "demo_append_comments.py"
+      ]
+    },
+    {
+      "name": "Comments Only",
+      "rules": [
+        "demo_write_comments.py",
+        "demo_append_comments.py"
+      ]
+    }
+  ]
+}

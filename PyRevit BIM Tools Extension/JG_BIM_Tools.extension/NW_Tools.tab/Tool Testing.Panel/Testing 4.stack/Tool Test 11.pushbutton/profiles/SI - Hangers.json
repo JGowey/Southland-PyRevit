@@ -1,0 +1,84 @@
+{
+  "group_by_param": "", 
+  "notes": "Description: Rod Diam - Hanger Size - Mid Attachment\nPoint Number: JobNum - Service - 001", 
+  "filter_rules": [
+    {
+      "value": "Generic Models", 
+      "type": "category_eq"
+    }, 
+    {
+      "param": "SI_Version", 
+      "value": "", 
+      "type": "param_has_value"
+    }
+  ], 
+  "filter_logic": "AND", 
+  "outputs": [
+    {
+      "label": "Description", 
+      "slots": [
+        {
+          "desc": "CP_Rod Diameter", 
+          "label": "Rod Diam", 
+          "unit_type": "length", 
+          "key": "param:CP_Rod Diameter", 
+          "read_format": "in_frac", 
+          "color": "#2a7ae2"
+        }, 
+        {
+          "desc": "CP_Hanger Size", 
+          "label": "Hgr Size", 
+          "unit_type": "length", 
+          "key": "param:CP_Hanger Size", 
+          "read_format": "in_frac", 
+          "color": "#2a7ae2"
+        }, 
+        {
+          "desc": "CP_Rod Middle Attachment", 
+          "label": "Mid Attach", 
+          "unit_type": "string", 
+          "key": "param:CP_Rod Middle Attachment", 
+          "read_format": "str", 
+          "color": "#1a7a8a"
+        }
+      ], 
+      "seq_width": 3, 
+      "target_param": "GTP_PointDescription_0", 
+      "sep": "-"
+    }, 
+    {
+      "label": "Point Number", 
+      "slots": [
+        {
+          "desc": "ProjectInformation.Number", 
+          "label": "Job #", 
+          "unit_type": "string", 
+          "key": "project_number", 
+          "read_format": "str", 
+          "color": "#7b4ea0"
+        }, 
+        {
+          "desc": "CP_Service Abbv", 
+          "label": "Service", 
+          "unit_type": "string", 
+          "key": "param:CP_Service Abbv", 
+          "read_format": "str", 
+          "color": "#c0532a"
+        }, 
+        {
+          "desc": "Auto-increment sequence", 
+          "label": "###", 
+          "unit_type": "string", 
+          "key": "SEQUENCE", 
+          "read_format": "str", 
+          "color": "#1a8a4a"
+        }
+      ], 
+      "seq_width": 3, 
+      "target_param": "GTP_PointNumber_0", 
+      "sep": "-"
+    }
+  ], 
+  "name": "SI - Hangers", 
+  "allow_nested": false
+}

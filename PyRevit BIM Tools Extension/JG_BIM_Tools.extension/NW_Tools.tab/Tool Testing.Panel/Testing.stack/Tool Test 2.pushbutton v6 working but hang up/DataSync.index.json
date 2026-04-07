@@ -1,0 +1,259 @@
+{
+  "version": 1, 
+  "rules": {
+    "demo_append_comments.py": {
+      "meta": {
+        "description": "Appends '; Checked' to Comments", 
+        "priority": 60, 
+        "name": "Append to Comments", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\demo_append_comments.py", 
+        "_filename": "demo_append_comments.py", 
+        "_priority": 60, 
+        "filter": {
+          "categories": [
+            "MEP Fabrication Pipework"
+          ]
+        }, 
+        "target": {
+          "name": "Comments"
+        }, 
+        "combine": "append"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "demo_rule.py": {
+      "meta": {
+        "description": "Stub: returns None (no writes).", 
+        "batch": {
+          "chunk_size": 500
+        }, 
+        "name": "Demo Rule", 
+        "priority": 50, 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\demo_rule.py", 
+        "_filename": "demo_rule.py", 
+        "_priority": 50, 
+        "filter": {
+          "parameter_rules": [], 
+          "categories": [
+            "Pipes"
+          ]
+        }, 
+        "target": {
+          "name": "CP_Demo", 
+          "guid": ""
+        }, 
+        "scope": "in_view", 
+        "combine": "last_wins"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "category_test.py": {
+      "meta": {
+        "description": "Same clean-category logic, but writes to Comments (for quick verification).", 
+        "priority": 50, 
+        "name": "DEBUG Clean Category -> Comments", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\category_test.py", 
+        "_filename": "category_test.py", 
+        "_priority": 50, 
+        "filter": {
+          "categories": [
+            "MEP Fabrication Pipework", 
+            "MEP Fabrication Ductwork", 
+            "MEP Fabrication Hangers", 
+            "MEP Fabrication Containment", 
+            "Air Terminals", 
+            "Casework", 
+            "Ceilings", 
+            "Columns", 
+            "Communication Devices", 
+            "Conduits", 
+            "Data Devices", 
+            "Doors", 
+            "Duct Accessories", 
+            "Duct Fittings", 
+            "Duct Insulations", 
+            "Duct Linings", 
+            "Duct Systems", 
+            "Ducts", 
+            "Electrical Equipment", 
+            "Electrical Fixtures", 
+            "Fire Alarm Devices", 
+            "Flex Ducts", 
+            "Flex Pipes", 
+            "Furniture", 
+            "Lighting Devices", 
+            "Lighting Fixtures", 
+            "Mechanical Equipment", 
+            "Pipe Accessories", 
+            "Pipe Fittings", 
+            "Pipe Insulations", 
+            "Pipes", 
+            "Plumbing Fixtures", 
+            "Security Devices", 
+            "Specialty Equipment", 
+            "Sprinklers", 
+            "Structural Columns", 
+            "Structural Framing", 
+            "Windows"
+          ]
+        }, 
+        "target": {
+          "name": "Comments"
+        }, 
+        "combine": "last_wins"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "demo_write_comments.py": {
+      "meta": {
+        "description": "Writes 'DS Test' into Comments on fab pipework", 
+        "priority": 50, 
+        "name": "Write DS test to Comments", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\demo_write_comments.py", 
+        "_filename": "demo_write_comments.py", 
+        "_priority": 50, 
+        "filter": {
+          "categories": [
+            "MEP Fabrication Pipework"
+          ]
+        }, 
+        "target": {
+          "name": "Comments"
+        }, 
+        "combine": "last_wins"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "category_name.py": {
+      "meta": {
+        "description": "CPL_Family Category (instance->type) else Category.Name. Fabrication uses Category.Name.", 
+        "priority": 50, 
+        "name": "Clean Category -> CP_BOM_Category", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\category_name.py", 
+        "_filename": "category_name.py", 
+        "_priority": 50, 
+        "filter": {
+          "categories": [
+            "MEP Fabrication Pipework", 
+            "MEP Fabrication Ductwork", 
+            "MEP Fabrication Hangers", 
+            "MEP Fabrication Containment", 
+            "Air Terminals", 
+            "Casework", 
+            "Ceilings", 
+            "Columns", 
+            "Communication Devices", 
+            "Conduits", 
+            "Data Devices", 
+            "Doors", 
+            "Duct Accessories", 
+            "Duct Fittings", 
+            "Duct Insulations", 
+            "Duct Linings", 
+            "Duct Systems", 
+            "Ducts", 
+            "Electrical Equipment", 
+            "Electrical Fixtures", 
+            "Fire Alarm Devices", 
+            "Flex Ducts", 
+            "Flex Pipes", 
+            "Furniture", 
+            "Lighting Devices", 
+            "Lighting Fixtures", 
+            "Mechanical Equipment", 
+            "Pipe Accessories", 
+            "Pipe Fittings", 
+            "Pipe Insulations", 
+            "Pipes", 
+            "Plumbing Fixtures", 
+            "Security Devices", 
+            "Specialty Equipment", 
+            "Sprinklers", 
+            "Structural Columns", 
+            "Structural Framing", 
+            "Windows"
+          ]
+        }, 
+        "target": {
+          "name": "CP_BOM_Category"
+        }, 
+        "combine": "last_wins"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "rule_b.py": {
+      "meta": {
+        "description": "Test rule B does nothing", 
+        "priority": 20, 
+        "name": "Rule B", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\rule_b.py", 
+        "_filename": "rule_b.py", 
+        "_priority": 20, 
+        "filter": {
+          "parameter_rules": [], 
+          "categories": [
+            "Ducts"
+          ]
+        }, 
+        "target": "DummyParam"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "rule_c.py": {
+      "meta": {
+        "description": "Test rule C does nothing", 
+        "priority": 30, 
+        "name": "Rule C", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\rule_c.py", 
+        "_filename": "rule_c.py", 
+        "_priority": 30, 
+        "filter": {
+          "parameter_rules": [], 
+          "categories": [
+            "Mechanical Equipment"
+          ]
+        }, 
+        "target": "DummyParam"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "demo_write_mark.py": {
+      "meta": {
+        "description": "Sets Mark to DS-MARK (only if empty)", 
+        "priority": 40, 
+        "name": "Write DS mark", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\demo_write_mark.py", 
+        "_filename": "demo_write_mark.py", 
+        "_priority": 40, 
+        "filter": {
+          "categories": [
+            "MEP Fabrication Pipework"
+          ]
+        }, 
+        "target": {
+          "name": "Mark"
+        }, 
+        "combine": "only_if_empty"
+      }, 
+      "mtime": 1762922641
+    }, 
+    "rule_a.py": {
+      "meta": {
+        "description": "Test rule A does nothing", 
+        "priority": 10, 
+        "name": "Rule A", 
+        "_path": "\\\\si.net\\si\\TCM\\BIM\\PyRevit\\PyRevit BIM Tools Extension\\JG_BIM_Tools.extension\\pyRevit.tab\\Tool Testing.Panel\\Testing.stack\\Tool Test 2.pushbutton\\rules\\rule_a.py", 
+        "_filename": "rule_a.py", 
+        "_priority": 10, 
+        "filter": {
+          "parameter_rules": [], 
+          "categories": [
+            "Pipes"
+          ]
+        }, 
+        "target": "DummyParam"
+      }, 
+      "mtime": 1762922641
+    }
+  }
+}

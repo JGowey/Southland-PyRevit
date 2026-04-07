@@ -1,0 +1,24 @@
+Loaded 9 rules; 3 groups.
+
+==================================================================================
+Run started @ 2025-11-11 21:07:05
+Scope: Active View
+Rules to run (3): Append to Comments, Write DS test to Comments, Write DS mark
+Using Active View scope (4012 candidates).
+Staged 8024 updates. Starting apply…
+Stop requested by user.
+
+==================================================================================
+Run started @ 2025-11-11 21:07:40
+Scope: Active View
+Rules to run (2): Append to Comments, Write DS test to Comments
+Using Active View scope (4012 candidates).
+Staged 4012 updates. Starting apply…
+Apply complete • elements: 4012 • writes: 23 • conflicts: 4012 • skips: 3989 (missing 0, readonly 0, convert 0, type 0, error 0)
+Element 10688313 • Comments: '' → 'Checked'
+Element 10688309 • Comments: '' → 'Checked'
+Element 10688419 • Comments: '' → 'Checked'
+Element 10688363 • Comments: '' → 'Checked'
+Element 10688498 • Comments: '' → 'Checked'
+Run finished.
+Processed: 4012/4012 elements.

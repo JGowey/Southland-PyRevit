@@ -1,0 +1,15 @@
+ElementId	RevitCategory	IsFabricationPart	IsFamilyInstance	IsCurveLike	CPL_FamilyCategory(inst)	CPL_FamilyCategory(type)	FamilyName	TypeName	CP_ItemNumber	Param_ItemNumber	FAB_ItemNumber	CP_BOM_Description	CP_TypeName	TypeName_forDesc	CP_Size	BIP_RBS_CALCULATED_SIZE	BIP_RBS_PIPE_DIAMETER_PARAM	BIP_RBS_CURVE_DIAMETER_PARAM	BIP_RBS_CURVE_WIDTH_PARAM	BIP_RBS_CURVE_HEIGHT_PARAM	CP_Length(raw)	BIP_CURVE_ELEM_LENGTH(raw)	CP_Model(inst)	CP_Model(type)	Param_Model(type)	CP_ConstructionArea	CP_Meterial&Coating	CP_Material&Coating	Param_Material(el)	Param_Material(type)	BIP_RBS_PIPE_MATERIAL_PARAM	CP_Service	BIP_RBS_SYSTEM_NAME_PARAM	BIP_RBS_PIPING_SYSTEM_TYPE_PARAM	BIP_RBS_DUCT_SYSTEM_TYPE_PARAM	BIP_RBS_SYSTEM_CLASSIFICATION_PARAM	CP_HangerNumber	Param_InstallType(el)	Param_InstallType(type)
+3434465	Pipes	0	0	1			Pipe Types									6"	6"				0.0	25.5208333333							CP_PI - Iron - Cast		CP_PI - Iron - Cast		N2O 11	SI_PJ - Nitrous Oxide		Hydronic Supply			
+3434471	Pipes	0	0	1			Pipe Types									6"	6"				0.0	10.5416666667							CP_PI - Iron - Cast		CP_PI - Iron - Cast		N2O 11	SI_PJ - Nitrous Oxide		Hydronic Supply			
+3434482	Pipe Fittings	0	1	0			Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI									6"x6"					0.0				NH-12					Cast Iron-Charlotte			N2O 11	SI_PJ - Nitrous Oxide	SI_PJ - Nitrous Oxide	Hydronic Supply			
+3434484	Pipes	0	0	1			Pipe Types									6"	6"				0.0	19.5416666667							CP_PI - Iron - Cast		CP_PI - Iron - Cast		N2O 11	SI_PJ - Nitrous Oxide		Hydronic Supply			
+3434490	Pipe Fittings	0	1	0			Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI									6"x6"					0.0				NH-12					Cast Iron-Charlotte			N2O 11	SI_PJ - Nitrous Oxide	SI_PJ - Nitrous Oxide	Hydronic Supply			
+3434492	Pipes	0	0	1			Pipe Types									6"	6"				0.0	11.5208333333							CP_PI - Iron - Cast		CP_PI - Iron - Cast		N2O 11	SI_PJ - Nitrous Oxide		Hydronic Supply			
+3434500	Pipe Fittings	0	1	0			Fitting_Charlotte_Pipe-Cast-Iron_No-Hub_Elbow__SI									6"x6"					0.0				NH-12					Cast Iron-Charlotte			N2O 11	SI_PJ - Nitrous Oxide	SI_PJ - Nitrous Oxide	Hydronic Supply			
+3434515	Ducts	0	0	1			Oval Duct									12"/12"			12"	12"	0.0	26.9973958333											SA 1		SI_MH - Supply Air	Supply Air			
+3434542	Ducts	0	0	1			Oval Duct									12"/12"			12"	12"	0.0	5.99479166667											SA 1		SI_MH - Supply Air	Supply Air			
+3434549	Duct Fittings	0	1	0			Fitting_G_Duct-Oval_Elbow-Gored_SI									12"/12"-12"/12"					0.0												SA 1	SI_MH - Supply Air	SI_MH - Supply Air	Supply Air			
+3434551	Ducts	0	0	1			Oval Duct									12"/12"			12"	12"	0.0	9.94883631527											SA 1		SI_MH - Supply Air	Supply Air			
+3434556	Duct Fittings	0	1	0			Fitting_G_Duct-Oval_Elbow-Gored_SI									12"/12"-12"/12"					0.0												SA 1	SI_MH - Supply Air	SI_MH - Supply Air	Supply Air			
+3434557	Ducts	0	0	1			Oval Duct									12"/12"			12"	12"	0.0	9.95144048193											SA 1		SI_MH - Supply Air	Supply Air			
+3434566	Duct Fittings	0	1	0			Fitting_G_Duct-Oval_Elbow-Gored_SI									12"/12"-12"/12"					0.0												SA 1	SI_MH - Supply Air	SI_MH - Supply Air	Supply Air			

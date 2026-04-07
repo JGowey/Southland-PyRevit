@@ -1,0 +1,15 @@
+ElementId	RevitCategory	TypeName	BIP_SystemClassification	BIP_SystemName	BIP_PipingSystemType	BIP_DuctSystemType	Material_Param_Element	Material_Param_Type	BIP_PipeMaterial	BIP_DuctMaterial	CurveLengthFt	ConnectionCandidates(Instance)
+3434465	Pipes		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water		CP_PI - Iron - Cast		CP_PI - Iron - Cast		25.5208333333	Connection Type=Generic
+3434471	Pipes		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water		CP_PI - Iron - Cast		CP_PI - Iron - Cast		10.5416666667	Connection Type=Generic
+3434482	Pipe Fittings		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water	SI_PP - Domestic Cold Water		Cast Iron-Charlotte				
+3434484	Pipes		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water		CP_PI - Iron - Cast		CP_PI - Iron - Cast		19.5416666667	Connection Type=Generic
+3434490	Pipe Fittings		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water	SI_PP - Domestic Cold Water		Cast Iron-Charlotte				
+3434492	Pipes		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water		CP_PI - Iron - Cast		CP_PI - Iron - Cast		11.5208333333	Connection Type=Generic
+3434500	Pipe Fittings		Domestic Cold Water	DCW 1	SI_PP - Domestic Cold Water	SI_PP - Domestic Cold Water		Cast Iron-Charlotte				
+3434515	Ducts		Exhaust Air	EA[XX] 1		SI_MH - Exhaust Air (Type)					26.9973958333	
+3434542	Ducts		Exhaust Air	EA[XX] 1		SI_MH - Exhaust Air (Type)					5.99479166667	
+3434549	Duct Fittings		Exhaust Air	EA[XX] 1	SI_MH - Exhaust Air (Type)	SI_MH - Exhaust Air (Type)						
+3434551	Ducts		Exhaust Air	EA[XX] 1		SI_MH - Exhaust Air (Type)					9.94883631527	
+3434556	Duct Fittings		Exhaust Air	EA[XX] 1	SI_MH - Exhaust Air (Type)	SI_MH - Exhaust Air (Type)						
+3434557	Ducts		Exhaust Air	EA[XX] 1		SI_MH - Exhaust Air (Type)					9.95144048193	
+3434566	Duct Fittings		Exhaust Air	EA[XX] 1	SI_MH - Exhaust Air (Type)	SI_MH - Exhaust Air (Type)						

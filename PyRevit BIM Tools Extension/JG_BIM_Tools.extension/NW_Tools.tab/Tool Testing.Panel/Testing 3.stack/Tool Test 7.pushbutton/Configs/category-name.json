@@ -1,0 +1,53 @@
+{
+  "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+  "last_modified_by": "jgowey", 
+  "display_name": "Category Name", 
+  "parameters": [
+    {
+      "rvt_is_instance": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "rvt_categories": [
+        "Air Terminals", 
+        "Cable Tray Fittings", 
+        "Cable Trays", 
+        "Columns", 
+        "Conduit Fittings", 
+        "Conduits", 
+        "Duct Accessories", 
+        "Duct Fittings", 
+        "Ducts", 
+        "Electrical Equipment", 
+        "Electrical Fixtures", 
+        "Flex Ducts", 
+        "Flex Pipes", 
+        "Generic Models", 
+        "Lighting Devices", 
+        "Mechanical Control Devices", 
+        "Mechanical Equipment", 
+        "Medical Equipment", 
+        "MEP Fabrication Ductwork", 
+        "MEP Fabrication Hangers", 
+        "MEP Fabrication Pipework", 
+        "Nurse Call Devices", 
+        "Parts", 
+        "Pipe Accessories", 
+        "Pipes", 
+        "Plumbing Equipment", 
+        "Plumbing Fixtures", 
+        "Specialty Equipment", 
+        "Structural Columns", 
+        "Structural Connections", 
+        "Structural Foundations", 
+        "Structural Framing", 
+        "Structural Rebar"
+      ], 
+      "name": "CP_BOM_Category", 
+      "rvt_allow_vary_between_groups": true, 
+      "source": "shared", 
+      "group_key": "Set"
+    }
+  ], 
+  "last_modified_on": "2026-01-29 11:15:42", 
+  "version": 1
+}

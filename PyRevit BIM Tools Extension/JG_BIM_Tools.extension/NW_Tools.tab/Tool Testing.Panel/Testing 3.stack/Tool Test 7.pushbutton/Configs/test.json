@@ -1,0 +1,45 @@
+{
+  "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+  "last_modified_by": "jgowey", 
+  "display_name": "Test", 
+  "parameters": [
+    {
+      "rvt_is_instance": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "rvt_categories": [
+        "MEP Fabrication Pipework"
+      ], 
+      "name": "CP_Weight", 
+      "rvt_allow_vary_between_groups": true, 
+      "source": "shared", 
+      "group_key": "Other"
+    }, 
+    {
+      "rvt_is_instance": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "rvt_categories": [
+        "MEP Fabrication Pipework"
+      ], 
+      "name": "CP_Remarks", 
+      "rvt_allow_vary_between_groups": true, 
+      "source": "shared", 
+      "group_key": "Identity Data"
+    }, 
+    {
+      "rvt_is_instance": true, 
+      "shared_parameter_file": "\\\\si.net\\si\\TCM\\BIM\\Shared Parameters\\NW_Shared Parameters.txt", 
+      "rfa_is_instance": true, 
+      "rvt_categories": [
+        "MEP Fabrication Pipework"
+      ], 
+      "name": "CP_Pipe OD", 
+      "rvt_allow_vary_between_groups": true, 
+      "source": "shared", 
+      "group_key": "General"
+    }
+  ], 
+  "last_modified_on": "2025-09-15 16:02:19", 
+  "version": 1
+}
